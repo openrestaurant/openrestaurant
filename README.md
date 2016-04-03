@@ -1,3 +1,3 @@
-Open Restaurant
+Open Restaurant 2.0
 =========
-Project moved to [http://github.com/openrestaurant/restaurant](http://github.com/openrestaurant/restaurant).
+For Open Restaurant 1.0, see [http://github.com/openrestaurant/restaurant](http://github.com/openrestaurant/restaurant).
