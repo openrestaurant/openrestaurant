@@ -1,0 +1,54 @@
+name: Open Restaurant
+type: profile
+description: 'The Open Restaurant distribution has everything you need to kickstart your restaurant website.'
+core: 8.x
+version: 2.0-dev
+exclusive: true
+distribution:
+  name: Open Restaurant
+  install:
+    theme: openrestaurant_seven
+
+# Set to true if in development mode.
+development: true
+
+# Required modules.
+dependencies:
+# core
+  - node
+  - history
+  - block
+  - breakpoint
+  - ckeditor
+  - config
+  - contextual
+  - contact
+  - menu_link_content
+  - datetime
+  - block_content
+  - quickedit
+  - editor
+  - help
+  - image
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - taxonomy
+  - dblog
+  - search
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - tour
+  - automated_cron
+# contrib
+
+themes:
+  - bartik
+  - seven

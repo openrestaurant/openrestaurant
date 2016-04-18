@@ -1,0 +1,7 @@
+name: Open Restaurant Seven
+type: theme
+base theme: seven
+description: 'The default administration theme for Open Restaurant.'
+package: Open Restaurant
+version: 2.0-dev
+core: 8.x
