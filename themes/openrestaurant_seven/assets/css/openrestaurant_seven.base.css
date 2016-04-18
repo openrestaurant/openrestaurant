@@ -43,3 +43,7 @@ fieldset .form-item.form-item-account-pass-pass1 {
 
 .progress__bar {
   background: #3498db; }
+
+header.content-header {
+  background: #196090;
+  color: white; }

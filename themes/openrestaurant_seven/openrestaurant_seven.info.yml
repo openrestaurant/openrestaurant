@@ -5,3 +5,5 @@ description: 'The default administration theme for Open Restaurant.'
 package: Open Restaurant
 version: 2.0-dev
 core: 8.x
+libraries:
+ - openrestaurant_seven/global-styling
