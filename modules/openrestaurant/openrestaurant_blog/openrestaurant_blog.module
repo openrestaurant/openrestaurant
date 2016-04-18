@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains openrestaurant_blog.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function openrestaurant_blog_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the openrestaurant_blog module.
+    case 'help.page.openrestaurant_blog':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Blog system for the Open Restaurant.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

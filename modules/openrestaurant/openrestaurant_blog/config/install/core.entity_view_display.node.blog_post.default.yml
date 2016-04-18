@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.field.node.blog_post.field_blog_post_body
+        - node.type.blog_post
+    module:
+        - text
+        - user
+id: node.blog_post.default
+targetEntityType: node
+bundle: blog_post
+mode: default
+content:
+    field_blog_post_body:
+        weight: 101
+        label: above
+        settings: {  }
+        third_party_settings: {  }
+        type: text_default
+    links:
+        weight: 100
+hidden: {  }

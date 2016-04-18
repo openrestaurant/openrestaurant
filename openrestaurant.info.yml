@@ -48,6 +48,9 @@ dependencies:
   - tour
   - automated_cron
 # contrib
+# open restaurant
+  - openrestaurant_core
+  - openrestaurant_blog
 
 themes:
   - bartik

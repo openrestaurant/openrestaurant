@@ -1,0 +1,8 @@
+name: Open Restaurant Blog
+type: module
+description: Blog system for the Open Restaurant.
+core: 8.x
+package: Open Restaurant
+features: true
+dependencies:
+  openrestaurant_core
