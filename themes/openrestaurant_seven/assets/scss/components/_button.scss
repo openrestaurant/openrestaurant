@@ -1,0 +1,13 @@
+// Button
+// -----------------------------------------------------------------------------
+%button {
+  border-radius: 2px;
+  text-shadow: none;
+  display: inline-block;
+  padding: 0.75em 1.0em;
+  border: 0;
+}
+
+.button {
+  @extend %button;
+}

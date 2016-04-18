@@ -1,0 +1,107 @@
+.hidden {
+  display: none !important; }
+
+body.install-page header:after,
+body.install-page footer:after, body.install-page .wrapper:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.button, .form-actions input,
+.form-actions input[type="submit"],
+.form-wrapper .form-actions input,
+.form-wrapper .form-actions input[type="submit"] {
+  border-radius: 2px;
+  text-shadow: none;
+  display: inline-block;
+  padding: 0.75em 1.0em;
+  border: 0; }
+
+.form-item,
+.form-actions,
+details {
+  margin: 0 0 1.5em; }
+
+fieldset .form-item:last-child,
+fieldset .form-item:last-child .form-item {
+  margin-bottom: 0; }
+
+input.form-text,
+input.form-email,
+select {
+  width: 100%;
+  padding: 0.5em 1.0em; }
+
+fieldset legend {
+  margin-bottom: 1em; }
+
+ul.tips,
+div.description,
+.form-item .description {
+  font-size: 0.85em; }
+
+fieldset .form-item.form-item-account-pass-pass1 {
+  margin-bottom: 1.5em !important; }
+
+.progress__track, .progress__bar {
+  border-radius: 2px;
+  height: 24px; }
+
+.progress__bar {
+  background: #3498db; }
+
+body.install-page {
+  background: #2c3e50; }
+  body.install-page .layout-container {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    padding: 0; }
+  body.install-page header,
+  body.install-page footer {
+    padding: 1.5em; }
+  body.install-page header {
+    background: #3498db;
+    color: white; }
+  body.install-page .wrapper {
+    padding: 1.5em 1.5em 1.5em 0; }
+  @media (min-width: 48em) {
+    body.install-page aside {
+      width: 25%; } }
+  body.install-page main {
+    width: auto; }
+    @media (min-width: 48em) {
+      body.install-page main {
+        margin-left: 25%;
+        float: none; } }
+    body.install-page main h2 {
+      margin: 0 0 1em; }
+  body.install-page footer {
+    clear: both;
+    font-size: 0.85em;
+    background: #ebeae4; }
+    body.install-page footer p {
+      margin: 0; }
+  body.install-page .step-indicator {
+    top: 0.5em;
+    font-size: 1.0em; }
+  body.install-page .page-title {
+    margin: 0;
+    color: white; }
+  body.install-page .copyright {
+    text-align: center; }
+    @media (min-width: 48em) {
+      body.install-page .copyright {
+        float: left;
+        text-align: left; } }
+  body.install-page .version {
+    text-align: center; }
+    @media (min-width: 48em) {
+      body.install-page .version {
+        float: right;
+        text-align: right; } }
+
+.task-list {
+  padding: 0;
+  margin: 0; }
+  .task-list li {
+    padding: 0.5em 1em 0.5em 1.5em; }

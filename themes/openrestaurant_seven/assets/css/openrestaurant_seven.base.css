@@ -1,0 +1,45 @@
+.hidden {
+  display: none !important; }
+
+.button, .form-actions input,
+.form-actions input[type="submit"],
+.form-wrapper .form-actions input,
+.form-wrapper .form-actions input[type="submit"] {
+  border-radius: 2px;
+  text-shadow: none;
+  display: inline-block;
+  padding: 0.75em 1.0em;
+  border: 0; }
+
+.form-item,
+.form-actions,
+details {
+  margin: 0 0 1.5em; }
+
+fieldset .form-item:last-child,
+fieldset .form-item:last-child .form-item {
+  margin-bottom: 0; }
+
+input.form-text,
+input.form-email,
+select {
+  width: 100%;
+  padding: 0.5em 1.0em; }
+
+fieldset legend {
+  margin-bottom: 1em; }
+
+ul.tips,
+div.description,
+.form-item .description {
+  font-size: 0.85em; }
+
+fieldset .form-item.form-item-account-pass-pass1 {
+  margin-bottom: 1.5em !important; }
+
+.progress__track, .progress__bar {
+  border-radius: 2px;
+  height: 24px; }
+
+.progress__bar {
+  background: #3498db; }

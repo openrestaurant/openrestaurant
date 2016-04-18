@@ -1,0 +1,7 @@
+{
+  "name": "Open Restaurant Seven",
+  "description": "The default administration theme for Open Restaurant.",
+  "proxy" : "http://openrestaurantv2.dev/",
+  "bowerDir": "./bower_components",
+  "sassIncludePaths": []
+}

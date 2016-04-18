@@ -1,0 +1,20 @@
+{
+  "name": "Open Restaurant Seven",
+  "description": "The default administration theme for Open Restaurant.",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "includes",
+    "node_modules",
+    "templates",
+    "*.json",
+    "*.js",
+    "*.png",
+    "*.inc",
+    "*.info",
+    "*.md",
+    "*.php",
+    "*.theme"
+  ]
+}

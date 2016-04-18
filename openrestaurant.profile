@@ -4,7 +4,6 @@
  * Enables modules and site configuration for the Open Restaurant profile.
  */
 
-use Drupal\Core\Database\Database;
 use Drupal\Core\Form\FormStateInterface;
 
 function openrestaurant_form_install_settings_form_alter(&$form, FormStateInterface $form_state) {
@@ -41,6 +40,9 @@ function openrestaurant_form_install_configure_form_alter(&$form, FormStateInter
   // Move password fields after mail.
   $form['admin_account']['account']['pass']['#weight'] = 30;
 
+  // Add an after_build callback.
+  $form['admin_account']['account']['pass']['#after_build'][] = 'openrestaurant_install_configure_form_after_build';
+
   // Set a default username.
   $form['admin_account']['#title'] = t('Administration account');
   $form['admin_account']['account']['name']['#default_value'] = 'admin';
@@ -52,6 +54,19 @@ function openrestaurant_form_install_configure_form_alter(&$form, FormStateInter
 
   // Hide Update Notifications.
   $form['update_notifications']['#access'] = FALSE;
+}
+
+/**
+ * After build callback for install_configure_form.
+ */
+function openrestaurant_install_configure_form_after_build($form_element, FormStateInterface $form_state) {
+  // Set some defaults for development.
+  if (_open_restaurant_get_info('development')) {
+    $form_element['pass1']['#attributes']['value'] = 'admin';
+    $form_element['pass2']['#attributes']['value'] = 'admin';
+  }
+
+  return $form_element;
 }
 
 /**

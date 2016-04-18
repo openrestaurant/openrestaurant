@@ -1,0 +1,26 @@
+{
+  "name": "openrestaurant_seven",
+  "description": "The default administration theme for Open Restaurant.",
+  "private": true,
+  "scripts": {
+    "setup": "npm install && bower install",
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+  },
+  "devDependencies": {
+    "browser-sync": "~2.7.4",
+    "gulp": "~3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-compass": "~2.1.0",
+    "gulp-imagemin": "~2.2.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "~1.0.1",
+    "gulp-sass": "~2.0.1",
+    "gulp-sass-glob": "0.0.2",
+    "gulp-shell": "~0.4.1",
+    "gulp-util": "^3.0.7",
+    "imagemin-pngcrush": "~4.1.0",
+    "node-sass": "^3.4.1",
+    "browser-sync": "^2.7.13",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}

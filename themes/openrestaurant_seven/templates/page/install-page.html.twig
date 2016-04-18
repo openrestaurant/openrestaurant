@@ -10,37 +10,39 @@
     {% if site_name %}
       <h1 class="page-title">
         {{ site_name }}
-        {% if site_version %}
-          <span class="site-version">{{ site_version }}</span>
-        {% endif %}
       </h1>
     {% endif %}
   </header>
 
-  {% if page.sidebar_first %}
-    <aside class="layout-sidebar-first" role="complementary">
-      {{ page.sidebar_first }}
-    </aside>{# /.layout-sidebar-first #}
-  {% endif %}
-
-  <main role="main">
-    {% if title %}
-      <h2 class="heading-a">{{ title }}</h2>
+  <div class="wrapper">
+    {% if page.sidebar_first %}
+      <aside class="layout-sidebar-first" role="complementary">
+        {{ page.sidebar_first }}
+      </aside>{# /.layout-sidebar-first #}
     {% endif %}
-    {{ page.highlighted }}
-    {{ page.content }}
-  </main>
 
-  {% if page.sidebar_second %}
-    <aside class="layout-sidebar-second" role="complementary">
-      {{ page.sidebar_second }}
-    </aside>{# /.layout-sidebar-second #}
-  {% endif %}
+    <main role="main">
+      {% if title %}
+        <h2 class="heading-a">{{ title }}</h2>
+      {% endif %}
+      {{ page.highlighted }}
+      {{ page.content }}
+    </main>
 
-  {% if page.page_bottom %}
-    <footer role="contentinfo">
-      {{ page.page_bottom }}
-      <small>Built and maintained by <a href="http://open.restaurant">Open Restaurant</a>.</small>
+    {% if page.sidebar_second %}
+      <aside class="layout-sidebar-second" role="complementary">
+        {{ page.sidebar_second }}
+      </aside>{# /.layout-sidebar-second #}
+    {% endif %}
+  </div>
+
+  {% if page.copyright %}
+    <footer>
+      <p class="copyright">{{ page.copyright }}</p>
+
+      {% if site_version %}
+        <p class="version">{{ site_version }}</p>
+      {% endif %}
     </footer>
   {% endif %}
 

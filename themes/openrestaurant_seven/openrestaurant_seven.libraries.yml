@@ -1,0 +1,13 @@
+global-styling:
+  version: VERSION
+  css:
+    base:
+      assets/css/openrestaurant_seven.base.css: {}
+
+install-page:
+  version: VERSION
+  css:
+    theme:
+      assets/css/openrestaurant_seven.install.css: {}
+#  dependencies:
+#    - seven/maintenance-page

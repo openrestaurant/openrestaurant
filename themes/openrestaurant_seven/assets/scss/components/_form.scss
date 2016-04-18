@@ -1,0 +1,57 @@
+// Form item
+// -----------------------------------------------------------------------------
+.form-item,
+.form-actions,
+details {
+  margin: 0 0 1.5em;
+}
+
+fieldset {
+
+  .form-item:last-child,
+  .form-item:last-child .form-item {
+    margin-bottom: 0;
+  }
+}
+
+// Inputs
+// -----------------------------------------------------------------------------
+input.form-text,
+input.form-email,
+select {
+  width: 100%;
+  padding: 0.5em 1.0em;
+}
+
+// Fieldset
+// -----------------------------------------------------------------------------
+fieldset {
+  legend {
+    margin-bottom: 1em;
+  }
+}
+
+// Submit buttons
+// -----------------------------------------------------------------------------
+.form-actions,
+.form-wrapper .form-actions {
+
+  input,
+  input[type="submit"] {
+    @extend %button;
+  }
+}
+
+// Description
+// -----------------------------------------------------------------------------
+ul.tips,
+div.description,
+.form-item .description {
+  font-size: 0.85em;
+}
+
+// Fix for password field
+// -----------------------------------------------------------------------------
+fieldset .form-item.form-item-account-pass-pass1 {
+  margin-bottom: 1.5em !important;
+}

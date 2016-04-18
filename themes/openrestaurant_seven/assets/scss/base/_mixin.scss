@@ -1,0 +1,10 @@
+// Color
+// Example: color(primary)
+// -----------------------------------------------------------------------------
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  } @else {
+    @warn "Error: There is no color #{$key} associated";
+  }
+}

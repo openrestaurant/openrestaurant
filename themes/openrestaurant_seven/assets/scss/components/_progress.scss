@@ -1,0 +1,14 @@
+// Progress
+// -----------------------------------------------------------------------------
+.progress {
+
+  &__track,
+  &__bar {
+    border-radius: 2px;
+    height: 24px;
+  }
+
+  &__bar {
+    background: color(blue);
+  }
+}
