@@ -3,6 +3,8 @@
  * @file
  * Installation hooks for Open Restaurant Contact.
  */
+
+use Drupal\user\RoleInterface;
 use Drupal\menu_link_content\Entity\MenuLinkContent;
 
 /**
@@ -16,4 +18,8 @@ function openrestaurant_contact_install() {
     'menu_name' => 'main',
     'weight' => 100
   ])->save();
+
+  // Allow anonymous and authenticated users to access contact form.
+  user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, array('access site-wide contact form'));
+  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, array('access site-wide contact form'));
 }
