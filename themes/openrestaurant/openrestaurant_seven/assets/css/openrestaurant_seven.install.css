@@ -52,10 +52,11 @@ body.install-page {
     body.install-page aside {
       width: 25%; } }
   body.install-page main {
-    width: auto; }
+    width: auto;
+    padding-left: 1.5em; }
     @media (min-width: 48em) {
       body.install-page main {
-        margin-left: 25%;
+        margin-left: 27%;
         float: none; } }
     body.install-page main h2 {
       margin: 0 0 1em; }
