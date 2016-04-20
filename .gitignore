@@ -1,0 +1,5 @@
+# Ignore profile modules, libraries and themes
+modules/contrib/*
+themes/contrib/*
+libraries/*
+.DS_Store
