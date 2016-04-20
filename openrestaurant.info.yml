@@ -49,6 +49,7 @@ dependencies:
   - admin_toolbar
 # open restaurant
   - openrestaurant_blog
+  - openrestaurant_blog_demo
   - openrestaurant_core
   - openrestaurant_config
   - openrestaurant_contact
