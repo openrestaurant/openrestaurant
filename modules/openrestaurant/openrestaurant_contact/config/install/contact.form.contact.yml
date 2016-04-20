@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: contact
+label: Contact
+recipients:
+  - demo@open.restaurant
+reply: ''
+weight: 0

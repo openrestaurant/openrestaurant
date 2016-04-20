@@ -1,0 +1,19 @@
+<?php
+/**
+ * @file
+ * Installation hooks for Open Restaurant Contact.
+ */
+use Drupal\menu_link_content\Entity\MenuLinkContent;
+
+/**
+ * Implements hook_install().
+ */
+function openrestaurant_contact_install() {
+  // Create a menu link for the contact page.
+  MenuLinkContent::create([
+    'title' => 'Contact',
+    'link' => ['uri' => 'internal:/contact'],
+    'menu_name' => 'main',
+    'weight' => 100
+  ])->save();
+}

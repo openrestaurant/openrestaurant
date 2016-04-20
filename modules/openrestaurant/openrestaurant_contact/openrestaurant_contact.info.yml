@@ -1,0 +1,8 @@
+name: Open Restaurant Contact
+description: 'Contact page for Open Restaurant'
+type: module
+core: 8.x
+version: 8.x-2.0-dev
+dependencies:
+  - contact
+package: 'Open Restaurant'
