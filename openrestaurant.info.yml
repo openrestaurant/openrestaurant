@@ -51,6 +51,7 @@ dependencies:
   - openrestaurant_blog
   - openrestaurant_core
   - openrestaurant_config
+  - openrestaurant_contact
 
 themes:
   - sizzle
