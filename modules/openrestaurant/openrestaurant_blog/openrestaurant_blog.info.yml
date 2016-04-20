@@ -1,9 +1,16 @@
-name: Open Restaurant Blog
+name: 'Open Restaurant Blog'
+description: 'Blog system for the Open Restaurant.'
 type: module
-description: Blog system for the Open Restaurant.
 core: 8.x
-version: 8.x-2.0-dev
-package: Open Restaurant
-features: true
 dependencies:
-  openrestaurant_core
+  - field
+  - file
+  - image
+  - menu_ui
+  - node
+  - path
+  - text
+  - user
+  - views
+version: 8.x-2.0-dev
+package: 'Open Restaurant'

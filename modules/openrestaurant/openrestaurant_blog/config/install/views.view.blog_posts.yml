@@ -161,10 +161,44 @@ display:
       title: Blog
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: 'No blog post found.'
+            format: plain_text
+          plugin_id: text
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  blog:
+    display_plugin: page
+    id: blog
+    display_title: Page
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: blog
+      menu:
+        type: normal
+        title: Blog
+        menu_name: main
     cache_metadata:
       max-age: -1
       contexts:
@@ -190,33 +224,12 @@ display:
       path: blog.xml
       displays:
         default: default
-        page_1: page_1
+        blog: blog
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
-  page_1:
-    display_plugin: page
-    id: page_1
-    display_title: Page
-    position: 1
-    display_options:
-      display_extenders: {  }
-      path: blog
-      menu:
-        type: normal
-        title: Blog
-        menu_name: main
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
