@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: date_medium
+label: 'Date medium'
+locked: false
+pattern: 'M d, Y'
