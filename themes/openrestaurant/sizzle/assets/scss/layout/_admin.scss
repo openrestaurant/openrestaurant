@@ -1,0 +1,55 @@
+// Style for Admin elements
+// -----------------------------------------------------------------------------
+
+// Contextual links.
+// -----------------------------------------------------------------------------
+.contextual-links-region {
+  &.contextual-links-region-active {
+    outline: 1px dashed $brand-secondary;
+    background-color: rgba($brand-secondary, 0.2);
+  }
+}
+ul.contextual-links {
+  > li {
+    > a {
+      @include hover() {
+        background-color: rgba($brand-secondary, 0.5);
+      }
+    }
+  }
+}
+.pane-bundle-slideshow {
+  .contextual-links-wrapper {
+    right: 40px;
+  }
+}
+
+// Panels IPE.
+// -----------------------------------------------------------------------------
+body.panels-ipe {
+  margin-bottom: 0px !important;
+}
+div#panels-ipe-control-container {
+  background: none;
+  top: 52px;
+  left: auto;
+  bottom: auto;
+  float: right;
+  .panels-ipe-button-container,
+  .panels-ipe-form-container {
+    float: right;
+    padding: 0;
+  }
+}
+div.panels-ipe-placeholder {
+  background-color: rgba($brand-secondary, 0.5);
+  outline: 1px dashed $brand-secondary;
+  border: 0;
+}
+div.panels-ipe-newblock {
+  @include box-shadow(none);
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+}

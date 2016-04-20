@@ -1,0 +1,31 @@
+// Styles for the Maintenance page.
+// -----------------------------------------------------------------------------
+body.maintenance-page {
+  padding: 10px 0 50px;
+
+  .tasks-list {
+    > div {
+      margin-bottom: 25px;
+      h6 {
+        margin-bottom: 5px;
+      }
+      h4 {
+        margin: 0;
+      }
+
+      &.done {
+        @include opacity(0.5);
+      }
+
+      &.active {
+        h4 {
+          color: $brand-secondary;
+        }
+      }
+    }
+  }
+
+  .form-actions {
+    margin-top: 50px;
+  }
+}

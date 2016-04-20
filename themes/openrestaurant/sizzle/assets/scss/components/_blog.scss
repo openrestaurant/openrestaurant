@@ -1,0 +1,74 @@
+// Blog Post
+// -----------------------------------------------------------------------------
+.blog-post {
+
+  &__date {
+    margin-bottom: 0.2em;
+  }
+
+  &__readmore {
+    display: inline-block;
+    margin-top: 1em;
+  }
+}
+
+// Blog Post: Teaser view mode
+// -----------------------------------------------------------------------------
+.blog-post--teaser {
+  margin: 0 0 50px;
+  padding: 0 0 50px;
+  border-bottom: 1px solid lighten($brand-primary, 25);
+}
+
+// View: Blog
+// -----------------------------------------------------------------------------
+.view-blog-posts {
+  .view__col {
+    @extend .margin--sm--bottom;
+    @extend .padding--sm--bottom;
+    position: relative;
+    &:after {
+      content: "";
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: floor($grid-gutter-width / 2);
+      right: floor($grid-gutter-width / 2);
+      background: lighten($brand-primary, 30);
+    }
+    &:before {
+      content: "";
+      width: 1px;
+      position: absolute;
+      top: 0;
+      bottom: floor($grid-gutter-width / 2);
+      right: 0;
+      background: lighten($brand-primary, 30);
+      display: none;
+      @include breakpoint(md) {
+        display: block;
+      }
+    }
+    &:last-child {
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  .view__row {
+    &:last-child {
+      .view__col {
+        @include breakpoint(md) {
+          margin-bottom: 0 !important;
+          padding-bottom: 0 !important;
+        }
+        &:after {
+          @include breakpoint(md) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

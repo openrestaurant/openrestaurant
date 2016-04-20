@@ -1,0 +1,41 @@
+{#
+/**
+ * @file
+ * Theme override to display a single page.
+ */
+#}
+<div class="page">
+
+  <header class="page__header">
+    <div class="container">
+      {{ page.header }}
+    </div>
+  </header>
+
+  {% if page.navigation %}
+    <div class="page__navigation">
+      {{ page.navigation }}
+    </div>
+  {% endif %}
+
+  <main role="main">
+    <div class="page__content">
+      <div class="container">
+        {{ page.content }}
+      </div>
+    </div>
+
+    {% if page.sidebar_first %}
+      <aside class="layout-sidebar-first" role="complementary">
+        {{ page.sidebar_first }}
+      </aside>
+    {% endif %}
+  </main>
+
+  {% if page.footer %}
+    <footer role="contentinfo">
+      {{ page.footer }}
+    </footer>
+  {% endif %}
+
+</div>

@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Template for the main navigation.
+ */
+#}
+{%
+set classes = [
+'navbar',
+'navbar-default'
+]
+%}
+<nav{{ attributes.addClass(classes)|without('id') }} role="navigation">
+  {% block content %}
+    <div class="navbar-header">
+      <div class="visible-xs pull-left">
+        <a href="/menus" class="btn">{% trans %} The Menu {% endtrans %}</a>
+        <a href="/reservation" class="btn">{% trans %} Book a Table {% endtrans %}</a>
+      </div>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+        <i class="fa fa-cutlery fa-2x"></i>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      {{ content }}
+    </div>
+  {% endblock %}
+</nav>

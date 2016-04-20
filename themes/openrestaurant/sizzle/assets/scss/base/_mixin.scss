@@ -1,0 +1,56 @@
+// Hover.
+// -----------------------------------------------------------------------------
+@mixin hover() {
+  &:hover, &:focus {
+    @content;
+  }
+}
+
+// Fading border.
+// -----------------------------------------------------------------------------
+@mixin fading-border($position) {
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to right, transparent, rgba($brand-primary, 0.1), rgba($brand-primary, 0.5) 50%);
+
+  @if $position == 'top' {
+    top: 0;
+  }
+
+  @if $position == 'bottom' {
+    bottom: 0;
+  }
+}
+
+// Breakpoint mixin.
+// Usage: @include bp(sm) { ... }
+// -----------------------------------------------------------------------------
+@mixin bp($class) {
+  @if $class == xs {
+    @media (max-width: $screen-xs-max) { @content; }
+  }
+  @else if $class == sm {
+    @media (min-width: $screen-sm) { @content; }
+  }
+  @else if $class == md {
+    @media (min-width: $screen-md) { @content; }
+  }
+  @else if $class == lg {
+    @media (min-width: $screen-lg) { @content; }
+  }
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
+
+// Font Awesome.
+// Usage: @include fa(bars) { ... }
+// -----------------------------------------------------------------------------
+@mixin fa($icon) {
+  @extend .fa;
+  @extend .fa-#{$icon}
+}

@@ -1,0 +1,10 @@
+global-styling:
+  version: VERSION
+  css:
+    base:
+      assets/css/sizzle.style.css: {}
+  js:
+      bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js: {}
+  dependencies:
+    - core/jquery
+    - seven/global-styling

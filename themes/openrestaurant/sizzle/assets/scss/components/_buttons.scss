@@ -1,0 +1,48 @@
+
+// Buttons
+// -----------------------------------------------------------------------------
+.btn {
+  color: $brand-primary;
+  font-size: 13px;
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  background: none;
+  padding: 10px 20px;
+  border: 1px solid $brand-primary;
+  border-radius: 2px;
+  @include hover() {
+    color: #ffffff;
+    background: $brand-primary;
+    border-color: $brand-primary;
+  }
+
+  &.btn--hover {
+    color: #ffffff;
+    background: $brand-primary;
+    border-color: $brand-primary;
+  }
+
+  &.btn--secondary {
+    color: #ffffff;
+    background: $brand-secondary;
+    border-color: $brand-secondary;
+    @include hover() {
+      background: $brand-primary;
+      border-color: $brand-primary;
+    }
+  }
+
+  &.btn--xs {
+    padding: 5px 10px 4px;
+    font-size: 12px;
+  }
+
+  &.btn--lg {
+    padding: 7px 60px 5px;
+    font-size: 16px;
+  }
+}
+
+.btn + .btn {
+  margin-right: 10px;
+}

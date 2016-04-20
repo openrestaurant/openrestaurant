@@ -1,0 +1,12 @@
+// Event
+// -----------------------------------------------------------------------------
+.node--event {
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &--view-mode--featured {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,15 @@
+<?php
+// Plugin definition
+$plugin = array(
+  'title' => t('Blog post node'),
+  'icon' => 'layout_menu_node.png',
+  'category' => t('Sizzle'),
+  'theme' => 'layout__menu__node',
+  'regions' => array(
+    'region_a' => t('Region A'),
+    'region_b' => t('Region B'),
+    'region_c' => t('Region C'),
+    'region_d' => t('Region D'),
+    'region_e' => t('Region E'),
+  ),
+);

@@ -1,0 +1,33 @@
+//
+// Styles for Widgets
+// --------------------------------------------------
+
+// Page header
+// --------------------------------------------------
+.pane-bundle-page-banner {
+  .pane-title {
+    display: none;
+  }
+  .jumbotron {
+    border: 0;
+    margin-bottom: 0;
+    @include box-shadow(none);
+    h1 {
+      margin-top: 0;
+    }
+  }
+}
+.field-name-field-page-banner-links {
+  .field-items {
+    .field-item {
+      display: inline-block;
+      margin: 0 10px 0 0;
+    }
+  }
+}
+
+// Image
+// --------------------------------------------------
+.pane-bundle-image {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,75 @@
+// Form
+// -----------------------------------------------------------------------------
+form {
+  div.form-item {
+    margin: 0 0 25px;
+  }
+  label {
+    text-transform: uppercase;
+    font-family: $font-secondary;
+  }
+  .form-control {
+    @include hover {
+      @include box-shadow(none);
+    }
+  }
+
+  .radio, .checkbox {
+    label {
+      font-weight: 600;
+    }
+  }
+
+  .form-checkboxes {
+    .radio, .checkbox {
+      label {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+// Better Exposed Filters.
+// -----------------------------------------------------------------------------
+.bef-select-as-checkboxes {
+  .bef-checkboxes {
+    background: white;
+    border-bottom: 1px solid rgba($brand-primary, 0.2);
+    @include box-shadow(0 5px 5px rgba($brand-primary, 0.2));
+    .form-item {
+      font-size: 1.1em;
+      font-family: $font-secondary;
+      padding: 10px 20px;
+      border-bottom: 1px solid rgba($brand-primary, 0.2);
+      cursor: pointer;
+      &:last-child {
+        border: 0;
+      }
+      &:hover {
+        color: $brand-secondary;
+        background-color: rgba($brand-secondary, 0.1);
+      }
+      input {
+        margin: 5px 0 0;
+        float: right;
+        vertical-align: middle;
+      }
+      img {
+        margin: 0 8px 0 0;
+        vertical-align: middle;
+      }
+      label {
+        font-weight: 300;
+        text-transform: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// Other
+// -----------------------------------------------------------------------------
+.progress {
+  height: 30px;
+  @extend .border--xs;
+}

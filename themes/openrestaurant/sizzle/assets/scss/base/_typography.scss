@@ -1,0 +1,63 @@
+// Headings
+// -----------------------------------------------------------------------------
+h1 {
+  font-size: 2.6em;
+  margin: 0 0 0.5em;
+  line-height: 100%;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 0 0 10px;
+  line-height: 140%;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  line-height: 140%;
+}
+
+h4 {
+  font-size: 14px;
+  margin: 0 0 10px;
+  line-height: 140%;
+}
+
+h5 {
+  font-size: 12px;
+  margin: 0 0 10px;
+  line-height: 140%;
+}
+
+// Anchors
+// -----------------------------------------------------------------------------
+a {
+  @include hover() {
+    text-decoration: none;
+  }
+}
+
+// Text
+// -----------------------------------------------------------------------------
+.text {
+
+  &--lead {
+    color: $brand-secondary;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &--light {
+    font-weight: 300;
+  }
+
+  &--normal {
+    font-weight: 500;
+  }
+
+  &--bold {
+    font-weight: 600;
+  }
+}

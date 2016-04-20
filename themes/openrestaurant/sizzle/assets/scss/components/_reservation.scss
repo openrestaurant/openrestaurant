@@ -1,0 +1,8 @@
+// Reservation form
+// -----------------------------------------------------------------------------
+.pane-reservation-form {
+  margin-top: 20px;
+  @include bp(sm) {
+    margin-top: 0;
+  }
+}

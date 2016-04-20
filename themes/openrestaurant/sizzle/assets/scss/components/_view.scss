@@ -1,0 +1,124 @@
+// Styles for Views
+// -----------------------------------------------------------------------------
+
+// General
+// -----------------------------------------------------------------------------
+.view {
+  .view__header {
+    @extend .margin--md--bottom;
+    text-align: center;
+    h2 {
+      margin: 0 0 5px;
+    }
+  }
+  .view__footer {
+    @extend .margin--md--top;
+    text-align: center;
+  }
+}
+.front {
+  .view {
+    @include bp(md) {
+      background: url('../images/bg/bg-separator-shadow.png') no-repeat top center;
+      padding-top: 100px;
+    }
+
+    &__header {
+      h1 {
+        text-transform: uppercase;
+        margin-bottom: 5px;
+      }
+      p.lead {
+        text-transform: uppercase;
+        color: $brand-secondary;
+        font-size: 15px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+// Views Exposed Form.
+// -----------------------------------------------------------------------------
+.views-exposed-form {
+  .views-exposed-form__widget {
+    margin: 10px 0 0 0;
+    position: relative;
+    width: 100%;
+    &:last-child {
+      margin-top: 0;
+    }
+
+    @include bp(sm) {
+      margin: 0 0 0 10px;
+      width: auto;
+      float: left;
+    }
+
+    &--textfield {
+      > label {
+        display: none;
+      }
+      input {
+        font-size: 1.0em;
+        height: 41px;
+        width: 100%;
+        border-radius: 2px;
+        @include bp(sm) {
+          width: 200px;
+        }
+      }
+    }
+
+    &--select {
+      > label {
+        @extend .btn;
+        padding: 10px 20px 8px;
+        min-width: 200px;
+        text-align: left;
+        font-weight: 600;
+        border-radius: 2px;
+        &:before {
+          @include fa(filter);
+          font-size: 1.6em;
+          vertical-align: middle;
+          line-height: 100%;
+          width: 20px;
+        }
+      }
+      > .form-item {
+        display: none;
+        z-index: 600;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+      }
+
+      &.open {
+        > label {
+          @extend .btn--hover;
+        }
+        > .form-item {
+          display: block;
+        }
+      }
+    }
+
+    .form-submit {
+      margin-top: 0;
+    }
+
+    &#edit-location-wrapper {
+      > label {
+        &:before {
+          @include fa(map-marker);
+          font-size: 1.6em;
+          vertical-align: middle;
+          margin-right: 5px;
+          line-height: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+// Logo
+// -----------------------------------------------------------------------------
+.logo {
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    + h1 {
+      @extend .margin--sm--left;
+    }
+  }
+  h1 {
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+// Address
+// -----------------------------------------------------------------------------
+.address {
+  font-size: 12px;
+}
+
+// Page header
+// -----------------------------------------------------------------------------
+.page-header {
+  margin: 0 0 30px;
+}
+
+// Alerts
+// -----------------------------------------------------------------------------
+.alert {
+  &.alert-success {
+    background: $brand-primary;
+    color: lighten($brand-primary, 40);
+    @extend .border--xs;
+  }
+}
+
+// Node
+// -----------------------------------------------------------------------------
+.node {
+  position: relative;
+}
+
+// Page tabs.
+// -----------------------------------------------------------------------------
+.page-tabs {
+  ul.nav-tabs {
+    margin: 10px auto 0;
+    border: 0;
+    li {
+      border: 0;
+      + li {
+        margin-left: 10px;
+      }
+      a {
+        background-color: $brand-primary;
+        color: lighten($brand-primary, 40);
+        border: 1px solid $brand-primary;
+        min-width: 0;
+        padding: 5px 8px;
+        font-size: 0.85em;
+        line-height: 100%;
+        border-radius: 2px;
+      }
+
+      &.active {
+        a {
+          background: none;
+          box-shadow: none;
+          color: $brand-primary;
+          &:hover {
+            background: none;
+          }
+        }
+      }
+    }
+  }
+}

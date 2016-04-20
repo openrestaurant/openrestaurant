@@ -1,0 +1,10 @@
+{
+  "name": "Sizzle",
+  "description": "Default theme for Open Restaurant based on Radix.",
+  "proxy" : "http://openrestaurantv2.dev",
+  "bowerDir": "./bower_components",
+  "sassIncludePaths": [
+    "./bower_components/bootstrap-sass/assets/stylesheets",
+    "./bower_components/font-awesome/scss"
+  ]
+}

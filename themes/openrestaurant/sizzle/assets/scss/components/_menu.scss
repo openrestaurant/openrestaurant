@@ -1,0 +1,240 @@
+// Layout: Menus
+// -----------------------------------------------------------------------------
+.layout--menus {
+  .layout__region--region-c {
+    @include bp(md) {
+      padding-right: 0;
+    }
+  }
+  .layout__region__inner {
+    padding-top: 30px;
+    @include bp(md) {
+      padding-top: 50px;
+      padding-left: 30px;
+    }
+  }
+  .layout__region--region-d {
+    @include bp(md) {
+      border-left: 1px solid $brand-primary;
+      min-height: 400px;
+    }
+  }
+}
+
+// Node: Menu
+// -----------------------------------------------------------------------------
+.node--menu {
+  .menu__image {
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      border-radius: 2px;
+    }
+  }
+  .menu__one-liner {
+    display: block;
+  }
+  h4.menu__title {
+    font-size: 1.2em;
+    margin-top: 0;
+    @include bp(sm) {
+      margin-top: 10px;
+    }
+  }
+  .menu__variants {
+    border-color: rgba($brand-primary, 0.5);
+  }
+  .menu__variant {
+    margin-top: 8px;
+    &__type {
+      font-size: 1.0em;
+      float: left;
+      margin-top: 2px;
+    }
+    &__price {
+      font-weight: 400;
+      font-size: 1.2em;
+      float: right;
+      sup {
+        font-weight: 300;
+        font-size: 0.60em;
+      }
+    }
+  }
+  .menu__nutrition-types {
+    font-size: 0.85em;
+    margin-bottom: 10px;
+    @include clearfix();
+    > div {
+      display: inline-block;
+      margin: 0 5px 5px 0;
+    }
+  }
+
+  // View mode: Grid.
+  &--view-mode--grid {
+    .menu__wrapper {
+      border: 1px solid lighten($brand-primary, 30);
+      padding: 8px;
+      @include bp(sm) {
+        padding: 0;
+        border: 0;
+      }
+    }
+    .menu__image {
+      margin-bottom: 10px;
+    }
+  }
+
+  // View mode: Grid Featured.
+  &--view-mode--grid-featured {
+    .menu__title {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  // View mode: Featured.
+  &--view-mode--featured {
+    .menu__wrapper {
+      padding: 0;
+      position: relative;
+      border-radius: 2px;
+    }
+    .menu__image {
+      img {
+        border-radius: 0px;
+      }
+    }
+  }
+
+  &--view-mode--full {
+    .menu__title {
+      font-size: 30px;
+    }
+    .menu__image {
+      position: relative;
+    }
+  }
+
+  &--view-mode--stacked {
+    .ribbon {
+      left: -15px;
+    }
+  }
+
+  // Featured menu.
+  &--featured {
+    margin-bottom: 20px;
+    .menu__wrapper {
+      border: 1px solid $brand-primary;
+      padding: 8px;
+    }
+    .ribbon {
+      left: -15px;
+    }
+  }
+}
+
+// Menu Categories
+// -----------------------------------------------------------------------------
+.term--menu-categories {
+  &--view-mode--grid {
+    img {
+      margin-bottom: 20px;
+    }
+  }
+  &--view-mode--navigation {
+    position: relative;
+    &:after {
+      @include fading-border(bottom);
+    }
+    &:first-child {
+      @include box-shadow(linear-gradient(to right, transparent, rgba($brand-primary, 0.1), rgba($brand-primary, 0.5) 50%));
+      &:before {
+        @include fading-border(top);
+      }
+    }
+    a {
+      display: block;
+      font-family: $font-secondary;
+      font-size: 15px;
+      line-height: 18px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      min-height: 45px;
+      @include hover() {
+        color: $brand-secondary;
+        background-color: rgba($brand-secondary, 0.1);
+      }
+      img {
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &.active {
+    a {
+      color: $brand-secondary;
+      background-color: rgba($brand-secondary, 0.1);
+    }
+  }
+}
+
+// View: Menu Categories
+// -----------------------------------------------------------------------------
+.view--menu-categories--menu-categories {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  @include bp(sm) {
+    margin-top: 50px;
+  }
+  &.stuck {
+    @include bp(sm) {
+      position: fixed;
+      top: 0px;
+      width: 160px;
+    }
+    @include bp(md) {
+      width: 229px;
+    }
+  }
+}
+
+// View: Menus
+// -----------------------------------------------------------------------------
+.view--menus--all-menus {
+  > .view__content {
+    > .container {
+      margin-bottom: 40px;
+      position: relative;
+      &:after {
+        @include fading-border(bottom);
+      }
+      > .row {
+        position: relative;
+      }
+    }
+  }
+  .term, .node {
+    margin-bottom: 40px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// View: Featured Menus
+// -----------------------------------------------------------------------------
+.view--menus--featured-menus {
+  .node--menu {
+    .menu__wrapper {
+      border: 0;
+      padding: 0;
+    }
+  }
+}

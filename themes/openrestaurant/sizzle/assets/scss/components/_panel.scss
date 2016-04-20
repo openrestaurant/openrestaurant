@@ -1,0 +1,38 @@
+// Styles for panels and panes.
+// -----------------------------------------------------------------------------
+
+.panel-display {
+  padding: 40px 0;
+}
+
+// Panels Modal
+// -----------------------------------------------------------------------------
+.panels-add-content-modal {
+  .widget-preview {
+    .btn.panels-modal-add-config {
+      @extend .btn--xs;
+      background: rgba($brand-secondary, 0.8);
+      color: white;
+      border-color: rgba($brand-secondary, 0.8);
+      @include hover() {
+        background: rgba($brand-secondary, 1.0);
+        border-color: rgba($brand-secondary, 1.0);
+      }
+    }
+  }
+}
+
+// Region B
+// -----------------------------------------------------------------------------
+.layout__region {
+  &--region-b {
+    .views-exposed-form {
+      display: table;
+      margin: 0 auto;
+      width: 100%;
+      @include bp(sm) {
+        width: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+// Styles for layout
+// -----------------------------------------------------------------------------
+
+.layout {
+  > .padding--lg--top {
+    padding-top: 20px !important;
+    @include bp(sm) {
+      padding-top: 50px !important;
+    }
+  }
+  > .padding--lg--bottom {
+    padding-bottom: 20px !important;
+    @include bp(sm) {
+      padding-bottom: 50px !important;
+    }
+  }
+}
+
+// Top
+// -----------------------------------------------------------------------------
+.layout__region--top,
+.layout__region--region-b {
+  box-shadow: 0 5px 5px rgba($brand-primary, 0.2);
+  .pane-fieldable-panels-pane {
+    margin: 0 10px 0 0;
+    &.pane-bundle-text {
+      padding: 5px 0;
+      font-weight: 300;
+    }
+  }
+}
+

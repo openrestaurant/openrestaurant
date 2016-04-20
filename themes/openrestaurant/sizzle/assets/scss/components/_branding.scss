@@ -1,0 +1,33 @@
+// Branding
+// -----------------------------------------------------------------------------
+.site-branding {
+  text-align: center;
+
+  &__logo {
+    max-width: 120px;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__name,
+  &__slogan {
+    display: none;
+
+    @include breakpoint(md) {
+      display: block;
+    }
+  }
+
+  &__name {
+    margin: 0.5em 0 0;
+    font-size: 1.8em;
+  }
+
+  &__slogan {
+    margin: 0.25em 0 0;
+  }
+}
