@@ -9,31 +9,28 @@ distribution:
   install:
     theme: openrestaurant_seven
 
-# Set to true if in development mode.
-development: true
-
 # Required modules.
 dependencies:
 # core
   - node
-  - history
   - block
   - breakpoint
   - ckeditor
   - config
   - contextual
   - contact
+  - help
   - menu_link_content
   - datetime
   - block_content
   - quickedit
   - editor
-  - help
   - image
   - menu_ui
   - options
   - path
   - page_cache
+  - responsive_image
   - dynamic_page_cache
   - taxonomy
   - dblog
@@ -42,16 +39,36 @@ dependencies:
   - toolbar
   - field_ui
   - file
-  - rdf
   - views
   - views_ui
   - tour
   - automated_cron
 # contrib
+  - features
+  - features_ui
+  - admin_toolbar
 # open restaurant
-  - openrestaurant_core
   - openrestaurant_blog
+  - openrestaurant_core
+  - openrestaurant_config
 
 themes:
-  - bartik
+  - sizzle
   - openrestaurant_seven
+
+# Set the environment here.
+environment: development
+development:
+  database:
+    driver: mysql
+    database: openrestaurant
+    username: drupaluser
+    password: ''
+    host: 127.0.0.1
+  admin:
+    email: demo@open.restaurant
+    username: admin
+    password: admin
+  regional:
+    country: 'US'
+    timezone: 'America/Los_Angeles'
