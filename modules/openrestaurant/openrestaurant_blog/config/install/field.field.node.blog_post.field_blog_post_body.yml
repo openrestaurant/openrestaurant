@@ -1,11 +1,11 @@
 langcode: en
 status: true
 dependencies:
-    config:
-        - field.storage.node.field_blog_post_body
-        - node.type.blog_post
-    module:
-        - text
+  config:
+    - field.storage.node.field_blog_post_body
+    - node.type.blog_post
+  module:
+    - text
 id: node.blog_post.field_blog_post_body
 field_name: field_blog_post_body
 entity_type: node
@@ -17,5 +17,5 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-    display_summary: true
+  display_summary: true
 field_type: text_with_summary

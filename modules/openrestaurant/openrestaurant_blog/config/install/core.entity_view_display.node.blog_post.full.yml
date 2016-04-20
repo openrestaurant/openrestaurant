@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.blog_post.field_blog_post_body
     - field.field.node.blog_post.field_blog_post_featured_image
     - node.type.blog_post
@@ -9,28 +10,25 @@ dependencies:
     - image
     - text
     - user
-id: node.blog_post.default
+id: node.blog_post.full
 targetEntityType: node
 bundle: blog_post
-mode: default
+mode: full
 content:
   field_blog_post_body:
-    weight: 1
-    label: hidden
-    settings:
-      trim_length: 600
+    weight: 101
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    type: text_summary_or_trimmed
+    type: text_default
   field_blog_post_featured_image:
-    weight: 0
-    label: hidden
+    weight: 102
+    label: above
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
   links:
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
+    weight: 100
 hidden: {  }
