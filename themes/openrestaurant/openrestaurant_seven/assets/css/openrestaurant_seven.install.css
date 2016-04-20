@@ -7,16 +7,6 @@ body.install-page footer:after, body.install-page .wrapper:after {
   display: table;
   clear: both; }
 
-.button, .form-actions input,
-.form-actions input[type="submit"],
-.form-wrapper .form-actions input,
-.form-wrapper .form-actions input[type="submit"] {
-  border-radius: 2px;
-  text-shadow: none;
-  display: inline-block;
-  padding: 0.75em 1.0em;
-  border: 0; }
-
 .form-item,
 .form-actions,
 details {
@@ -25,12 +15,6 @@ details {
 fieldset .form-item:last-child,
 fieldset .form-item:last-child .form-item {
   margin-bottom: 0; }
-
-input.form-text,
-input.form-email,
-select {
-  width: 100%;
-  padding: 0.5em 1.0em; }
 
 fieldset legend {
   margin-bottom: 1em; }

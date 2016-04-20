@@ -19,8 +19,8 @@ fieldset {
 input.form-text,
 input.form-email,
 select {
-  width: 100%;
-  padding: 0.5em 1.0em;
+  //width: 100%;
+  //padding: 0.5em 1.0em;
 }
 
 // Fieldset
@@ -38,7 +38,7 @@ fieldset {
 
   input,
   input[type="submit"] {
-    @extend %button;
+    //@extend %button;
   }
 }
 
