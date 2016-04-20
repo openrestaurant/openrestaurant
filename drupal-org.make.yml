@@ -1,0 +1,15 @@
+# Make file for Open Restaurant dependencies.
+core: "8.x"
+api: 2
+projects:
+  admin_toolbar:
+    type: "module"
+    version: "1.14"
+
+  features:
+    type: "module"
+    version: "3.0-beta3"
+
+  config_update:
+    type: "module"
+    version: "1.1"
