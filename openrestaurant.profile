@@ -15,6 +15,7 @@ function openrestaurant_form_install_settings_form_alter(&$form, FormStateInterf
     $form['settings'][$database_driver]['username']['#default_value'] = $environment['database']['username'];
     $form['settings'][$database_driver]['password']['#attributes']['value'] = $environment['database']['password'];
     $form['settings'][$database_driver]['advanced_options']['host']['#default_value'] = $environment['database']['host'];
+    $form['settings'][$database_driver]['advanced_options']['port']['#default_value'] = $environment['database']['port'];
   }
 }
 
