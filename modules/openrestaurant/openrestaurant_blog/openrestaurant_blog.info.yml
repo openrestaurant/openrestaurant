@@ -2,6 +2,7 @@ name: Open Restaurant Blog
 type: module
 description: Blog system for the Open Restaurant.
 core: 8.x
+version: 8.x-2.0-dev
 package: Open Restaurant
 features: true
 dependencies:
