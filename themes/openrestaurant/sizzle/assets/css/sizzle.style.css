@@ -9432,6 +9432,12 @@ body {
 .node--event--view-mode--featured {
   margin-bottom: 20px; }
 
+.feed-icons {
+  text-align: center; }
+  .feed-icons a {
+    display: inline-block;
+    margin: 0 auto; }
+
 form div.form-item {
   margin: 0 0 25px; }
 
