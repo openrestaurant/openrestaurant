@@ -66,6 +66,7 @@ development:
     username: drupaluser
     password: ''
     host: 127.0.0.1
+    port: 33067
   admin:
     email: demo@open.restaurant
     username: admin
