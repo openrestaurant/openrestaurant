@@ -47,12 +47,15 @@ dependencies:
   - features
   - features_ui
   - admin_toolbar
+  - devel
 # open restaurant
   - openrestaurant_blog
-  - openrestaurant_blog_demo
   - openrestaurant_core
   - openrestaurant_config
   - openrestaurant_contact
+# open restaurant demo modules
+  - openrestaurant_demo
+  - openrestaurant_blog_demo
 
 themes:
   - sizzle
@@ -60,14 +63,17 @@ themes:
 
 # Set the environment here.
 environment: development
+
+# Settings for development environment.
+# Use this for development only.
 development:
   database:
     driver: mysql
     database: openrestaurant
-    username: drupaluser
-    password: ''
-    host: 127.0.0.1
-    port: 33067
+    username: root
+    password: root
+    host: localhost
+    port: 3306
   admin:
     email: demo@open.restaurant
     username: admin
