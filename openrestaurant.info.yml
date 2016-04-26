@@ -49,13 +49,13 @@ dependencies:
   - admin_toolbar
   - devel
 # open restaurant
+  - openrestaurant_blocks
   - openrestaurant_blog
   - openrestaurant_core
   - openrestaurant_config
   - openrestaurant_contact
 # open restaurant demo modules
   - openrestaurant_demo
-  - openrestaurant_blog_demo
 
 themes:
   - sizzle
@@ -72,7 +72,7 @@ development:
     database: openrestaurant
     username: root
     password: root
-    host: localhost
+    host: 127.0.0.1
     port: 3306
   admin:
     email: demo@open.restaurant
