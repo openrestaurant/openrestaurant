@@ -1,0 +1,73 @@
+// Hero
+// -----------------------------------------------------------------------------
+.hero {
+  position: relative;
+  min-height: 250px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__caption-wrapper {
+    text-align: center;
+    color: lighten($brand-primary, 40);
+    text-shadow: 0px 1px 8px rgba($brand-primary, 0.9);
+    background-color: rgba(darken($brand-primary, 10), 0.90);
+    padding: 30px;
+    max-width: 500px;
+    position: absolute;
+    margin: 50px auto;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 5px rgba($brand-primary, 0.9);
+
+    &:before {
+      content: " ";
+      border: 1px solid lighten($brand-primary, 30);
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      bottom: 15px;
+      left: 15px;
+    }
+
+    h1, h2, h3, h4, h5, h6, a {
+      font-family: $font-secondary;
+      margin: 0;
+      text-transform: uppercase;
+      position: relative;
+      color: lighten($brand-primary, 30);
+    }
+
+    h1 {
+      font-size: 28px;
+      @include bp(sm) {
+        font-size: 32px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 140%;
+      font-weight: 300;
+      @include bp(md) {
+        font-size: 18px;
+        line-height: 140%;
+      }
+    }
+
+    small {
+      font-size: 0.85em;
+    }
+
+    a {
+      color: white;
+
+      &:hover {
+        color: $brand-secondary;
+      }
+    }
+  }
+}

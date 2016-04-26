@@ -10,8 +10,12 @@ regions:
   header: Header
   sidebar_first: 'Sidebar first'
   navigation: Navigation
+  hero: Hero
   content: Content
   footer: Footer
 
 libraries:
  - sizzle/global-styling
+
+demo_content:
+  - content/block_content.basic.yml
