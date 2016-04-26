@@ -1,0 +1,16 @@
+entity_type: block_content
+bundle: hero
+content:
+  hero_1:
+    uuid: '235195a8-7c46-48f2-b98e-854038b394c3'
+    info: 'Front page hero'
+    field_hero_image:
+      path: 'content/images/front-page-hero.jpg'
+      alt: 'Front page hero'
+      title: 'Front page hero'
+    field_hero_caption:
+      value: '<h2>Open Restaurant</h2><p>Open Source Restaurant Software</p>'
+      format: 'full_html'
+    field_hero_link:
+      link: '/contact'
+      title: 'Contact'

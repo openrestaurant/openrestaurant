@@ -5,15 +5,15 @@ dependencies:
     - block_content
   theme:
     - sizzle
-id: copyright
+id: frontpagehero
 theme: sizzle
-region: footer
-weight: 20
+region: hero
+weight: -2
 provider: null
-plugin: 'block_content:76b40bce-60c3-4cf0-afb7-c72fd693e5f2'
+plugin: 'block_content:235195a8-7c46-48f2-b98e-854038b394c3'
 settings:
-  id: 'block_content:76b40bce-60c3-4cf0-afb7-c72fd693e5f2'
-  label: Copyright
+  id: 'block_content:235195a8-7c46-48f2-b98e-854038b394c3'
+  label: 'Front page hero'
   provider: block_content
   label_display: '0'
   status: true

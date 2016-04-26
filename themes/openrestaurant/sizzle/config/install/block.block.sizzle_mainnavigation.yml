@@ -7,8 +7,6 @@ dependencies:
     - system
   theme:
     - sizzle
-_core:
-  default_config_hash: c5ePJkeNo6EOx0K0Ld519AKB5_Cf6VasWc8ee7kskhw
 id: mainnavigation
 theme: sizzle
 region: navigation

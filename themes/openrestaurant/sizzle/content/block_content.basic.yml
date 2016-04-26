@@ -1,0 +1,21 @@
+entity_type: block_content
+bundle: basic
+content:
+  block_1:
+    uuid: '76b40bce-60c3-4cf0-afb7-c72fd693e5f2'
+    info: 'Copyright'
+    body:
+      value: '&copy; 2016 Open Restaurant - Open Source Restaurant Software'
+      format: 'full_html'
+  block_2:
+    uuid: 'c7a24e47-c895-44ba-b416-9523ef9ded98'
+    info: 'Footer text'
+    body:
+      value: '<div class="row"><div class="col-sm-5 col-sm-offset-1 text--center"><h3 class="clear-margin--bottom">Have any <strong>Questions</strong>?</h3><p><a href="http://open.restaurant">Go to the FAQs <i class="fa fa-angle-right">&nbsp;</i></a></p></div><div class="col-sm-4 col-sm-offset-1 text--center"><h3 class="clear-margin--bottom">Need <strong>Support</strong>?</h3><p><a href="http://open.restaurant">We are 1 click away <i class="fa fa-angle-right">&nbsp;</i></a></p></div></div>'
+      format: 'full_html'
+  block_3:
+      uuid: '0a5562b7-84c7-4baf-9b76-fbd6d8d0c8a4'
+      info: 'Social links'
+      body:
+        value: '<h4>Follow us on</h4><a href="http://open.restaurant"><i class="fa fa-yelp">&nbsp;</i></a> <a href="http://open.restaurant"><i class="fa fa-twitter-square">&nbsp;</i></a> <a href="http://open.restaurant"><i class="fa fa-facebook-square">&nbsp;</i></a> <a href="http://open.restaurant/+"><i class="fa fa-google-plus-square">&nbsp;</i></a>'
+        format: 'full_html'

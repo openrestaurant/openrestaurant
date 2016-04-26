@@ -19,3 +19,4 @@ libraries:
 
 demo_content:
   - content/block_content.basic.yml
+  - content/block_content.hero.yml

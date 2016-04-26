@@ -5,15 +5,15 @@ dependencies:
     - block_content
   theme:
     - sizzle
-id: copyright
+id: footertext
 theme: sizzle
 region: footer
-weight: 20
+weight: 10
 provider: null
-plugin: 'block_content:76b40bce-60c3-4cf0-afb7-c72fd693e5f2'
+plugin: 'block_content:c7a24e47-c895-44ba-b416-9523ef9ded98'
 settings:
-  id: 'block_content:76b40bce-60c3-4cf0-afb7-c72fd693e5f2'
-  label: Copyright
+  id: 'block_content:c7a24e47-c895-44ba-b416-9523ef9ded98'
+  label: 'Footer text'
   provider: block_content
   label_display: '0'
   status: true

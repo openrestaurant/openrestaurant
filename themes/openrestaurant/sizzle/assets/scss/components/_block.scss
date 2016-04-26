@@ -1,0 +1,26 @@
+// Footer text
+// -----------------------------------------------------------------------------
+.block-content--footertext {
+
+}
+
+// Social links
+// -----------------------------------------------------------------------------
+.block-content--sociallinks {
+  border-top: 1px solid rgba($footer-text-color, 0.5);
+  padding-top: 1.5em;
+  margin-top: 1.5em;
+  text-align: center;
+
+  .fa {
+    font-size: 2.4em;
+  }
+}
+
+// Block Copyright
+// -----------------------------------------------------------------------------
+.block-content--copyright {
+  text-align: center;
+  margin-top: 1.0em;
+}
+

@@ -5,15 +5,23 @@
  */
 
 /**
- * Implements template_preprocess_node_blog_post().
+ * Implements template_preprocess_node().
  */
-function sizzle_preprocess_node_blog_post(&$variables) {
+function sizzle_preprocess_node(&$variables) {
   $node = $variables['node'];
 
-  // Format and add date to template.
-  $variables['content']['posted_date'] = array(
-    '#markup' => format_date($node->created, 'panopoly_day'),
-  );
+  // Allow bundle type preprocess callbacks.
+  $function = __FUNCTION__ . '__' . $node->bundle();
+  if (function_exists($function)) {
+    $function($variables);
+  }
+}
+
+/**
+ * Implements template_preprocess_node_blog_post().
+ */
+function sizzle_preprocess_node__blog_post(&$variables) {
+  $node = $variables['node'];
 }
 
 /**

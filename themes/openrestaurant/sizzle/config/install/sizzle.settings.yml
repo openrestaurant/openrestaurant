@@ -1,0 +1,8 @@
+features:
+  comment_user_picture: false
+  comment_user_verification: false
+  node_user_picture: false
+  favicon: true
+  logo: true
+footer:
+  background_image: 'foo'
