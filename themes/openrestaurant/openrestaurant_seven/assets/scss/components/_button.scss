@@ -2,12 +2,14 @@
 // -----------------------------------------------------------------------------
 %button {
   border-radius: 2px;
-  text-shadow: none;
-  display: inline-block;
-  padding: 0.75em 1.0em;
-  border: 0;
+  //text-shadow: none;
+  //display: inline-block;
+  //padding: 0.75em 1.0em;
+  //border: 0;
 }
 
 .button {
-  //@extend %button;
+  @extend %button;
+  background: color(brown);
+  border-color: darken(color(brown), 10);
 }

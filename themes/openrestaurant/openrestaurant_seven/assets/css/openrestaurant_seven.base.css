@@ -1,6 +1,16 @@
 .hidden {
   display: none !important; }
 
+a {
+  color: #796b4f; }
+
+.button {
+  border-radius: 2px; }
+
+.button {
+  background: #796b4f;
+  border-color: #5a503b; }
+
 .form-item,
 .form-actions,
 details {
@@ -26,8 +36,8 @@ fieldset .form-item.form-item-account-pass-pass1 {
   height: 24px; }
 
 .progress__bar {
-  background: #3498db; }
+  background: #796b4f; }
 
 header.content-header {
-  background: #196090;
+  background: #796b4f;
   color: white; }

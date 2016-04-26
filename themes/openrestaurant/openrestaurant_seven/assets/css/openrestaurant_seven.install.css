@@ -7,6 +7,13 @@ body.install-page footer:after, body.install-page .wrapper:after {
   display: table;
   clear: both; }
 
+.button {
+  border-radius: 2px; }
+
+.button {
+  background: #796b4f;
+  border-color: #5a503b; }
+
 .form-item,
 .form-actions,
 details {
@@ -32,10 +39,15 @@ fieldset .form-item.form-item-account-pass-pass1 {
   height: 24px; }
 
 .progress__bar {
-  background: #3498db; }
+  background: #796b4f; }
 
 body.install-page {
-  background: #2c3e50; }
+  background: #222; }
+  body.install-page a {
+    color: #796b4f; }
+  body.install-page .button {
+    background: #796b4f;
+    border-color: #5a503b; }
   body.install-page .layout-container {
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.12);
     border-radius: 2px;
@@ -44,7 +56,7 @@ body.install-page {
   body.install-page footer {
     padding: 1.5em; }
   body.install-page header {
-    background: #3498db;
+    background: #796b4f;
     color: white; }
   body.install-page .wrapper {
     padding: 1.5em 1.5em 1.5em 0; }

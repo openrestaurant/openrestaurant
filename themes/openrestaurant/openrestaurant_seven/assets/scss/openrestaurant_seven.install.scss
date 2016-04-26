@@ -8,7 +8,16 @@
 @import "components/progress";
 
 body.install-page {
-  background: color(gray-dark);
+  background: #222;
+
+  a {
+    color: color(brown);
+  }
+
+  .button {
+    background: color(brown);
+    border-color: darken(color(brown), 10);
+  }
 
   .layout-container {
     box-shadow: $shadow;
@@ -23,7 +32,7 @@ body.install-page {
   }
 
   header {
-    background: color(blue);
+    background: color(brown);
     color: white;
   }
 
