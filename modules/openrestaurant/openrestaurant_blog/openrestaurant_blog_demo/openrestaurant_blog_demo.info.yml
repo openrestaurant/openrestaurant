@@ -4,5 +4,6 @@ description: 'Demo content for Open Restaurant Blog'
 package: 'Open Restaurant'
 core: 8.x
 dependencies:
-  - default_content
-  - openrestaurant_blog_demo
+  - openrestaurant_demo
+demo_content:
+  - content/node.blog_post.yml
