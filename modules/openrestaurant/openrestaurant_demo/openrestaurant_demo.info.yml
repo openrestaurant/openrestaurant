@@ -1,0 +1,9 @@
+name: Open Restaurant Demo
+description: 'Provides demo content for Open Restaurant.'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - system
+version: 8.x-2.0-dev
+package: 'Open Restaurant'
