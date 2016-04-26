@@ -1,0 +1,13 @@
+name: 'Open Restaurant Blocks'
+description: 'Custom block types for Open Restaurant.'
+type: module
+core: 8.x
+dependencies:
+  - block_content
+  - field
+  - image
+  - link
+  - responsive_image
+  - text
+version: 8.x-2.0-dev
+package: 'Open Restaurant'

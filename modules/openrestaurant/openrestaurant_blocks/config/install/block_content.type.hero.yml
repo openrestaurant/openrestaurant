@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: hero
+label: Hero
+revision: 1
+description: 'Use this block type to create a hero.'
