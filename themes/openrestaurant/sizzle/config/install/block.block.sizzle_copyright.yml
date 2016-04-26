@@ -1,0 +1,23 @@
+uuid: 1e97d677-e945-4220-a8fc-8653fafa000e
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  theme:
+    - sizzle
+id: copyright
+theme: sizzle
+region: footer
+weight: -2
+provider: null
+plugin: 'block_content:76b40bce-60c3-4cf0-afb7-c72fd693e5f2'
+settings:
+  id: 'block_content:76b40bce-60c3-4cf0-afb7-c72fd693e5f2'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
