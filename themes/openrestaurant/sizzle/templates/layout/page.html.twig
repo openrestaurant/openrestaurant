@@ -18,6 +18,12 @@
     </div>
   {% endif %}
 
+  {% if page.hero %}
+    <div class="page__hero">
+      {{ page.hero }}
+    </div>
+  {% endif %}
+
   <main role="main">
     <div class="page__content">
       <div class="container">
@@ -33,7 +39,7 @@
   </main>
 
   {% if page.footer %}
-    <footer class="footer" role="contentinfo">
+    <footer class="page__footer">
       <div class="container">
         {{ page.footer }}
       </div>
