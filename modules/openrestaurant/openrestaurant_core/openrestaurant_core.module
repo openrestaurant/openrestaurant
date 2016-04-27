@@ -2,23 +2,5 @@
 
 /**
  * @file
- * Contains openrestaurant_core.module..
+ * Contains openrestaurant_core.module.
  */
-
-use Drupal\Core\Routing\RouteMatchInterface;
-
-/**
- * Implements hook_help().
- */
-function openrestaurant_core_help($route_name, RouteMatchInterface $route_match) {
-  switch ($route_name) {
-    // Main module help for the openrestaurant_core module.
-    case 'help.page.openrestaurant_core':
-      $output = '';
-      $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('Core module for Open Restaurant.') . '</p>';
-      return $output;
-
-    default:
-  }
-}

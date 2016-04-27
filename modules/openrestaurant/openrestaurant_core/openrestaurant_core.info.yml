@@ -4,4 +4,3 @@ description: Core module for Open Restaurant.
 core: 8.x
 version: 8.x-2.0-dev
 package: 'Open Restaurant'
-features: true
