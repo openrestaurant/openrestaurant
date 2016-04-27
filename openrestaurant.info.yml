@@ -23,7 +23,6 @@ dependencies:
   - menu_link_content
   - datetime
   - block_content
-  - quickedit
   - editor
   - image
   - menu_ui
@@ -49,11 +48,12 @@ dependencies:
   - admin_toolbar
   - devel
 # open restaurant
+  - openrestaurant_config
   - openrestaurant_blocks
   - openrestaurant_blog
   - openrestaurant_core
-  - openrestaurant_config
   - openrestaurant_contact
+  - openrestaurant_pages
 # open restaurant demo modules
   - openrestaurant_demo
   - openrestaurant_blog_demo
