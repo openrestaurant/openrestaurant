@@ -1,0 +1,14 @@
+name: 'Open Restaurant Pages'
+description: 'Basic page content type for the Open Restaurant.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - node
+  - path
+  - text
+  - user
+  - views
+  - openrestaurant_config
+version: 8.x-2.0-dev
+package: 'Open Restaurant'

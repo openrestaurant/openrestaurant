@@ -1,0 +1,35 @@
+<?php
+/**
+ * @file
+ * Installation hooks for Open Restaurant Pages.
+ */
+
+use Drupal\node\Entity\Node;
+use Drupal\menu_link_content\Entity\MenuLinkContent;
+
+/**
+ * Implements hook_install().
+ */
+function openrestaurant_pages_install() {
+  // Create a node for the home page.
+  $node = Node::create([
+    'type'        => 'page',
+    'title'       => 'Home',
+    'body' => [
+      'value' => '<h1 class="text--center">Welcome to Open Restaurant</h1>',
+      'format' => 'full_html',
+    ],
+  ]);
+  $node->save();
+
+  // Set front page to this node.
+  \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/node/' . $node->id())->save(TRUE);
+
+  // Create a menu link for the home page.
+  MenuLinkContent::create([
+    'title' => 'Home',
+    'link' => ['uri' => 'internal:/'],
+    'menu_name' => 'main',
+    'weight' => -10
+  ])->save();
+}
