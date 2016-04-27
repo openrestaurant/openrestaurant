@@ -2,36 +2,32 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
     - field.field.node.blog_post.field_blog_post_body
     - field.field.node.blog_post.field_blog_post_featured_image
     - node.type.blog_post
   module:
-    - image
+    - responsive_image
     - text
     - user
-id: node.blog_post.teaser
+id: node.blog_post.featured
 targetEntityType: node
 bundle: blog_post
-mode: teaser
+mode: featured
 content:
   field_blog_post_body:
-    type: text_summary_or_trimmed
     weight: 1
     label: hidden
     settings:
-      trim_length: 300
+      trim_length: 140
     third_party_settings: {  }
+    type: text_summary_or_trimmed
   field_blog_post_featured_image:
-    type: image
     weight: 0
     label: hidden
     settings:
-      image_style: blog_post_teaser_image
+      responsive_image_style: blog_post_featured_image
       image_link: content
     third_party_settings: {  }
-  links:
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+    type: responsive_image
+hidden:
+  links: true
