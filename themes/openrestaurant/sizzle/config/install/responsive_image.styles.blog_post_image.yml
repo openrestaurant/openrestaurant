@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.blog_post_image__lg
+  theme:
+    - sizzle
+id: blog_post_image
+label: 'Blog post image'
+image_style_mappings:
+  -
+    breakpoint_id: sizzle.lg
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: blog_post_image__lg
+breakpoint_group: sizzle
+fallback_image_style: blog_post_image__lg

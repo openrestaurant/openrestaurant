@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.blog_post.field_blog_post_featured_image
     - node.type.blog_post
   module:
-    - image
+    - responsive_image
     - text
     - user
 id: node.blog_post.teaser
@@ -23,13 +23,13 @@ content:
       trim_length: 300
     third_party_settings: {  }
   field_blog_post_featured_image:
-    type: image
-    weight: 0
+    weight: 102
     label: hidden
     settings:
-      image_style: blog_post_teaser_image
+      responsive_image_style: blog_post_image
       image_link: content
     third_party_settings: {  }
+    type: responsive_image
   links:
     weight: 2
     settings: {  }

@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.blog_post.field_blog_post_featured_image
     - node.type.blog_post
   module:
-    - image
+    - responsive_image
     - text
     - user
 id: node.blog_post.full
@@ -17,18 +17,20 @@ mode: full
 content:
   field_blog_post_body:
     weight: 101
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
   field_blog_post_featured_image:
     weight: 102
-    label: above
+    label: hidden
     settings:
-      image_style: ''
+      responsive_image_style: blog_post_image
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
   links:
     weight: 100
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: blog_post_image__lg
+label: 'Blog post image (lg)'
+effects:
+  6cbe800a-7e3b-40b9-add2-a5e0abaffab5:
+    uuid: 6cbe800a-7e3b-40b9-add2-a5e0abaffab5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 375
+      height: 250
