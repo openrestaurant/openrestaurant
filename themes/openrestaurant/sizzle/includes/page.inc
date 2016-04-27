@@ -11,13 +11,20 @@ use Drupal\file\Entity\File;
  * Implements template_preprocess_page().
  */
 function sizzle_preprocess_page(&$variables) {
-  // Add the footer background image as footer style.
+  $theme_path = drupal_get_path('theme', 'sizzle');
+
+  // Default footer background image.
+  $footer_bg_image = '/' . $theme_path . '/assets/images/bg/bg-footer-default.jpg';
+
+  // Get footer background image from theme settings.
   $footer_bg_image_fid = theme_get_setting('features.footer_background_image');
   if (count($footer_bg_image_fid)) {
-    $footer_bg_image = (File::load($footer_bg_image_fid[0]))->url();
+    $file = File::load($footer_bg_image_fid[0]);
+    if (!empty($file)) {
+      $footer_bg_image = $file->url();
+    }
   }
-  else {
-    $footer_bg_image = drupal_get_path('theme', 'sizzle') . '/assets/images/bg/bg-footer-default.jpg';
-  }
+
+  // Add the footer background image to template..
   $variables['footer']['background_image'] = $footer_bg_image;
 }
