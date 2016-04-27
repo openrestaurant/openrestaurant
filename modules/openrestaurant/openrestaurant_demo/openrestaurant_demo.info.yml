@@ -6,5 +6,6 @@ dependencies:
   - block
   - system
   - demo_content
+  - openrestaurant_config
 version: 8.x-2.0-dev
 package: 'Open Restaurant'
