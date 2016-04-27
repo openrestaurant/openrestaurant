@@ -8,7 +8,7 @@ dependencies:
 id: sociallinks
 theme: sizzle
 region: footer
-weight: 10
+weight: 20
 provider: null
 plugin: 'block_content:0a5562b7-84c7-4baf-9b76-fbd6d8d0c8a4'
 settings:

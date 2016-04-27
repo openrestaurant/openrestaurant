@@ -8,7 +8,7 @@ dependencies:
 id: copyright
 theme: sizzle
 region: footer
-weight: 20
+weight: 30
 provider: null
 plugin: 'block_content:76b40bce-60c3-4cf0-afb7-c72fd693e5f2'
 settings:
