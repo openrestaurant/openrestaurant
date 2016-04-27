@@ -8817,7 +8817,7 @@ ul.dropdown-menu li {
 .clear-margin--sm--right {
   margin-right: -15px; }
 
-.margin--sm--bottom, .view-blog-posts .view__col {
+.margin--sm--bottom {
   margin-bottom: 15px !important; }
 
 .clear-margin--bottom {
@@ -8955,7 +8955,7 @@ ul.dropdown-menu li {
 .clear-padding--right {
   padding-right: 0; }
 
-.padding--sm--bottom, .view-blog-posts .view__col {
+.padding--sm--bottom {
   padding-bottom: 15px !important; }
 
 .clear-padding--bottom {
@@ -9295,39 +9295,10 @@ body {
   padding: 0 0 50px;
   border-bottom: 1px solid #b7aa91; }
 
-.view-blog-posts .view__col {
-  position: relative; }
-  .view-blog-posts .view__col:after {
-    content: "";
-    height: 1px;
-    position: absolute;
-    bottom: 0;
-    left: 15px;
-    right: 15px;
-    background: #c1b6a0; }
-  .view-blog-posts .view__col:before {
-    content: "";
-    width: 1px;
-    position: absolute;
-    top: 0;
-    bottom: 15px;
-    right: 0;
-    background: #c1b6a0;
-    display: none; }
-    @media (min-width: 992px) {
-      .view-blog-posts .view__col:before {
-        display: block; } }
-  .view-blog-posts .view__col:last-child:before {
-    display: none; }
-
-@media (min-width: 992px) {
-  .view-blog-posts .view__row:last-child .view__col {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important; } }
-
-@media (min-width: 992px) {
-  .view-blog-posts .view__row:last-child .view__col:after {
-    display: none; } }
+.view-display-id-featured_blog_posts .view__row .node {
+  border-top: 1px solid #b7aa91;
+  padding-top: 1em;
+  margin-top: 1em; }
 
 .site-branding {
   text-align: center; }
@@ -9495,7 +9466,6 @@ form .form-checkboxes .radio label, form .form-checkboxes .checkbox label {
   .hero__caption-wrapper {
     text-align: center;
     color: #d5cebf;
-    text-shadow: 0px 1px 8px rgba(121, 107, 79, 0.9);
     background-color: rgba(90, 80, 59, 0.9);
     padding: 30px;
     max-width: 500px;
