@@ -1,3 +1,4 @@
+uuid: d5920f99-7f11-47fc-822c-8481b330007d
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - image.style.hero__lg
   theme:
     - sizzle
+_core:
+  default_config_hash: a524LkNgYIxr4REXctpPweN0OisMf0i5paszuaxT1Pw
 id: hero
 label: Hero
 image_style_mappings:

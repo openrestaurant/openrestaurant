@@ -1,0 +1,14 @@
+uuid: 49c28c21-da03-4c22-b01a-172add9040de
+langcode: en
+status: true
+dependencies: {  }
+name: blog_post_featured_image__lg
+label: 'Blog post featured image (lg)'
+effects:
+  6cbe800a-7e3b-40b9-add2-a5e0abaffab5:
+    uuid: 6cbe800a-7e3b-40b9-add2-a5e0abaffab5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 165
+      height: 125

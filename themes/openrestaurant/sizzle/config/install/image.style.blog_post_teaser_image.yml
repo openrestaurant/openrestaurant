@@ -1,0 +1,16 @@
+uuid: 6835b479-af00-4f41-b06e-97763e7649cf
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: oXh-SBGyxcnAlM6-qEafNhJz_qbFqSenUKKzrFng17s
+name: blog_post_teaser_image
+label: 'Blog post teaser image'
+effects:
+  f22c08ca-dfba-4e24-ab25-452044ea8384:
+    uuid: f22c08ca-dfba-4e24-ab25-452044ea8384
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 375
+      height: 250

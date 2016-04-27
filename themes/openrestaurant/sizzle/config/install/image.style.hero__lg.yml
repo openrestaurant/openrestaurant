@@ -1,6 +1,9 @@
+uuid: d9690e6e-b414-45a4-ab20-edba59e70d05
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: 4IhJanheO78Fyz-WJhRHyfXkLZhkSdNcPIWmToSGv0w
 name: hero__lg
 label: 'Hero (lg)'
 effects:

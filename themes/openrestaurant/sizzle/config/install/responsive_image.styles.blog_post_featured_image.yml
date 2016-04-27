@@ -1,0 +1,18 @@
+uuid: cb004a08-51e1-40cc-bbee-f49cebe804e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.blog_post_featured_image__lg
+  theme:
+    - sizzle
+id: blog_post_featured_image
+label: 'Blog post featured image'
+image_style_mappings:
+  -
+    breakpoint_id: sizzle.lg
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: blog_post_featured_image__lg
+breakpoint_group: sizzle
+fallback_image_style: blog_post_featured_image__lg
