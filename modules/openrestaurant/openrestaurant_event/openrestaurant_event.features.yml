@@ -1,6 +1,2 @@
 bundle: openrestaurant
-excluded:
-  - image.style.blog_post_featured_image__lg
-  - image.style.blog_post_image__lg
-  - image.style.hero__lg
 required: true
