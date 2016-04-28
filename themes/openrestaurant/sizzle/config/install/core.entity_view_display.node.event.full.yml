@@ -9,7 +9,7 @@ dependencies:
     - node.type.event
   module:
     - datetime
-    - image
+    - responsive_image
     - text
     - user
 id: node.event.full
@@ -18,8 +18,8 @@ bundle: event
 mode: full
 content:
   field_event_body:
-    weight: 104
-    label: above
+    weight: 101
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
@@ -27,18 +27,18 @@ content:
     weight: 103
     label: above
     settings:
-      format_type: medium
+      format_type: date_medium
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
   field_event_featured_image:
-    weight: 102
-    label: above
+    weight: 0
+    label: hidden
     settings:
-      image_style: ''
-      image_link: ''
+      responsive_image_style: event_image
+      image_link: content
     third_party_settings: {  }
-    type: image
+    type: responsive_image
   links:
     weight: 100
 hidden: {  }

@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: event_image__lg
+label: 'Event image (lg)'
+effects:
+  8b26d2cc-2472-4186-8f91-7aeaad0683de:
+    uuid: 8b26d2cc-2472-4186-8f91-7aeaad0683de
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 375
+      height: 250

@@ -1,0 +1,34 @@
+{#
+/**
+ * @file
+ * Template to display an Event in Full mode.
+ */
+#}
+{% set bundle = node.bundle|clean_class %}
+{%
+set classes = [
+'node',
+bundle,
+node.isPromoted() ? bundle ~ '--promoted',
+node.isSticky() ? bundle ~ '--sticky',
+not node.isPublished() ? bundle ~ '--unpublished',
+view_mode ? bundle ~ '--' ~ view_mode|clean_class,
+]
+%}
+{{ attach_library('classy/node') }}
+<article{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+
+  <div{{ content_attributes.addClass('row') }}>
+    <div class="col-sm-5">
+      {{ content.field_event_featured_image }}
+    </div>
+    <div class="col-sm-7">
+      {{ content.field_event_date }}
+      <hr />
+      {{ content.field_event_body }}
+    </div>
+  </div>
+
+</article>

@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.event_image__lg
+  theme:
+    - sizzle
+id: event_image
+label: 'Event image'
+image_style_mappings:
+  -
+    breakpoint_id: sizzle.lg
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: event_image__lg
+breakpoint_group: sizzle
+fallback_image_style: event_image__lg

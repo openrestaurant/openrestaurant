@@ -17,14 +17,8 @@ targetEntityType: node
 bundle: event
 mode: teaser
 content:
-  field_event_body:
-    weight: 104
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
   field_event_date:
-    weight: 103
+    weight: 10
     label: hidden
     settings:
       format_type: date_medium
@@ -32,7 +26,7 @@ content:
     third_party_settings: {  }
     type: datetime_default
   field_event_featured_image:
-    weight: 0
+    weight: 20
     label: hidden
     settings:
       responsive_image_style: event_teaser_image
@@ -40,6 +34,8 @@ content:
     third_party_settings: {  }
     type: responsive_image
   links:
-    weight: 100
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
 hidden:
-  field_event_body
+  field_event_body: true
