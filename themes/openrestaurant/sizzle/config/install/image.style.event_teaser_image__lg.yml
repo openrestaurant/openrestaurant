@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: event_teaser_image__lg
+label: 'Event teaser image (lg)'
+effects:
+  136834c3-eb84-431a-95c1-30086ac1f6ce:
+    uuid: 136834c3-eb84-431a-95c1-30086ac1f6ce
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 295
+      height: 250

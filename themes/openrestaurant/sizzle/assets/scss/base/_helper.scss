@@ -138,11 +138,12 @@ $directions: top, right, bottom, left;
 // Link
 // -----------------------------------------------------------------------------
 .link {
+
   &--overlay {
     color: white;
     text-align: center;
     background: rgba(black, 0.3);
-    padding: $grid-gutter-width-half;
+    padding: 1.5em;
     position: absolute;
     top: 0;
     right: 0;
@@ -157,29 +158,24 @@ $directions: top, right, bottom, left;
 
     h3 {
       color: white;
-      font-size: 24px;
+      font-size: 1.8em;
       line-height: 120%;
-      margin: 45px auto 5px;
-      max-width: 80%;
-      @include bp(sm) {
-        margin-top: 15px;
-      }
-      @include bp(md) {
-        margin-top: 45px;
-      }
+      margin: 0;
     }
 
     small {
-      font-size: 18px;
+      font-size: 0.85em;
     }
 
     .bottom {
       position: absolute;
-      left: $grid-gutter-width-half;
-      right: $grid-gutter-width-half;
-      bottom: $grid-gutter-width-half;
+      left: 1em;
+      right: 1em;
+      bottom: 1em;
+
       span {
         display: block;
+
         + span {
           &:before {
             content: "";

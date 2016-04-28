@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.event.field_event_body
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_featured_image
+    - node.type.event
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.event.full
+targetEntityType: node
+bundle: event
+mode: full
+content:
+  field_event_body:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_event_date:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_event_featured_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  links:
+    weight: 100
+hidden: {  }

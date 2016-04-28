@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Template for Views Events: Featured Events.
+ */
+#}
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+<div class="row">
+  {% for row in rows %}
+    {%
+    set row_classes = [
+    default_row_class ? 'view__row col-xs-6 col-sm-3',
+    ]
+    %}
+    <div{{ row.attributes.addClass(row_classes) }}>
+      {{ row.content }}
+    </div>
+  {% endfor %}
+</div>

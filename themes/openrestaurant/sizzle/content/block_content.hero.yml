@@ -1,7 +1,7 @@
 entity_type: block_content
 bundle: hero
 content:
-  hero_1:
+  front_page_hero:
     uuid: '235195a8-7c46-48f2-b98e-854038b394c3'
     info: 'Front page hero'
     field_hero_image:
@@ -14,3 +14,13 @@ content:
     field_hero_link:
       link: '/contact'
       title: 'Contact'
+  events_hero:
+    uuid: 'd1bd928d-768d-422e-879a-54a3301a7833'
+    info: 'Events hero'
+    field_hero_image:
+      path: 'content/images/events-hero.jpg'
+      alt: 'Events hero'
+      title: 'Events hero'
+    field_hero_caption:
+      value: '<h2>Events</h2><p>Come see what''s cooking in our Kitchens</p>'
+      format: 'full_html'

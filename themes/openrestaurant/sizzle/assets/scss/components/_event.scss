@@ -1,12 +1,14 @@
 // Event
 // -----------------------------------------------------------------------------
-.node--event {
+.event {
   img {
     width: 100%;
     height: auto;
   }
+}
 
-  &--view-mode--featured {
-    margin-bottom: 20px;
-  }
+// Event: Featured view mode
+// -----------------------------------------------------------------------------
+.event--featured {
+  margin-bottom: 2.5em;
 }

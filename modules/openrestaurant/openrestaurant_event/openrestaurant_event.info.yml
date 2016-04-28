@@ -1,0 +1,18 @@
+name: 'Open Restaurant Event'
+description: 'Event management for Open Restaurant.'
+type: module
+core: 8.x
+dependencies:
+  - datetime
+  - field
+  - file
+  - image
+  - menu_ui
+  - node
+  - openrestaurant_config
+  - path
+  - text
+  - user
+  - views
+version: 8.x-2.0-dev
+package: 'Open Restaurant'

@@ -1,0 +1,39 @@
+entity_type: node
+bundle: event
+content:
+  event_1:
+    title: 'Lipsum dolor sit amet'
+    field_event_body:
+      value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
+      format: 'full_html'
+    field_event_featured_image:
+      path: 'content/images/event-1.jpg'
+      alt: 'This is alt text'
+      title: 'This is title'
+  event_2:
+    title: 'Veggie ipsum dolor'
+    field_event_body:
+      value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
+      format: 'full_html'
+    field_event_featured_image:
+      path: 'content/images/event-2.jpg'
+      alt: 'This is alt text'
+      title: 'This is title'
+  event_3:
+    title: 'Courgette bean lotus root kale leek'
+    field_event_body:
+      value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
+      format: 'full_html'
+    field_event_featured_image:
+      path: 'content/images/event-3.jpg'
+      alt: 'This is alt text'
+      title: 'This is title'
+  event_4:
+    title: 'Sea lettuce napa cabbage celery groundnut green'
+    field_event_body:
+      value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
+      format: 'full_html'
+    field_event_featured_image:
+      path: 'content/images/event-4.jpg'
+      alt: 'This is alt text'
+      title: 'This is title'

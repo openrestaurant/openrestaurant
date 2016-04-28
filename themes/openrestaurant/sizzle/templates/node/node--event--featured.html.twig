@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Template to display an Event in Featured mode.
+ */
+#}
+{% set bundle = node.bundle|clean_class %}
+{%
+set classes = [
+'node',
+bundle,
+node.isPromoted() ? bundle ~ '--promoted',
+node.isSticky() ? bundle ~ '--sticky',
+not node.isPublished() ? bundle ~ '--unpublished',
+view_mode ? bundle ~ '--' ~ view_mode|clean_class,
+]
+%}
+{{ attach_library('classy/node') }}
+<article{{ attributes.addClass(classes) }}>
+  {{ content.field_event_featured_image }}
+
+  <a href="{{ url }}" rel="bookmark" class="link--overlay">
+    {{ title_prefix }}
+      <h3 class="event__title">
+        {{ label }}
+      </h3>
+    {{ title_suffix }}
+
+    <div class="bottom">
+      {{ content.field_event_date }}
+    </div>
+  </a>
+</article>

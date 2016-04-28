@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: event_featured_image__lg
+label: 'Event featured image (lg)'
+effects:
+  905f132e-d102-41a5-a062-f78193941a93:
+    uuid: 905f132e-d102-41a5-a062-f78193941a93
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 215
+      height: 320

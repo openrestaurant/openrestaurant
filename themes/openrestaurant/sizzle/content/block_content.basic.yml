@@ -11,7 +11,7 @@ content:
     uuid: 'c7a24e47-c895-44ba-b416-9523ef9ded98'
     info: 'Footer text'
     body:
-      value: '<div class="row"><div class="col-sm-5 col-sm-offset-1 text--center"><h3 class="clear-margin--bottom">Have any <strong>Questions</strong>?</h3><p><a href="http://open.restaurant">Go to the FAQs <i class="fa fa-angle-right">&nbsp;</i></a></p></div><div class="col-sm-4 col-sm-offset-1 text--center"><h3 class="clear-margin--bottom">Need <strong>Support</strong>?</h3><p><a href="http://open.restaurant">We are 1 click away <i class="fa fa-angle-right">&nbsp;</i></a></p></div></div>'
+      value: '<div class="row"><div class="col-sm-5 col-sm-offset-1 text--center"><h3 class="clear-margin--bottom">Have any <strong>Questions</strong>?</h3><p><a href="http://docs.open.restaurant">Read the docs <i class="fa fa-angle-right">&nbsp;</i></a></p></div><div class="col-sm-4 col-sm-offset-1 text--center"><h3 class="clear-margin--bottom">Need <strong>Support</strong>?</h3><p><a href="http://open.restaurant">We are 1 click away <i class="fa fa-angle-right">&nbsp;</i></a></p></div></div>'
       format: 'full_html'
   block_3:
       uuid: '0a5562b7-84c7-4baf-9b76-fbd6d8d0c8a4'

@@ -9039,7 +9039,7 @@ ul.dropdown-menu li {
   color: white;
   text-align: center;
   background: rgba(0, 0, 0, 0.3);
-  padding: 15px;
+  padding: 1.5em;
   position: absolute;
   top: 0;
   right: 0;
@@ -9052,23 +9052,16 @@ ul.dropdown-menu li {
     background: rgba(0, 0, 0, 0.7); }
   .link--overlay h3 {
     color: white;
-    font-size: 24px;
+    font-size: 1.8em;
     line-height: 120%;
-    margin: 45px auto 5px;
-    max-width: 80%; }
-    @media (min-width: 768px) {
-      .link--overlay h3 {
-        margin-top: 15px; } }
-    @media (min-width: 992px) {
-      .link--overlay h3 {
-        margin-top: 45px; } }
+    margin: 0; }
   .link--overlay small {
-    font-size: 18px; }
+    font-size: 0.85em; }
   .link--overlay .bottom {
     position: absolute;
-    left: 15px;
-    right: 15px;
-    bottom: 15px; }
+    left: 1em;
+    right: 1em;
+    bottom: 1em; }
     .link--overlay .bottom span {
       display: block; }
       .link--overlay .bottom span + span:before {
@@ -9238,6 +9231,8 @@ body {
   .page__content > .container {
     padding-top: 50px;
     padding-bottom: 50px; }
+    .page__content > .container > .block {
+      margin-bottom: 2.5em; }
   .page__footer {
     margin: 0;
     padding: 65px 0 45px;
@@ -9406,12 +9401,12 @@ body {
   padding-top: 10px;
   margin: 0; }
 
-.node--event img {
+.event img {
   width: 100%;
   height: auto; }
 
-.node--event--view-mode--featured {
-  margin-bottom: 20px; }
+.event--featured {
+  margin-bottom: 2.5em; }
 
 .feed-icons {
   text-align: center; }
@@ -9982,15 +9977,15 @@ ul.footer-nav {
   text-align: center; }
 
 @media (min-width: 992px) {
-  .front .view {
+  .page--front .view {
     background: url("../images/bg/bg-separator-shadow.png") no-repeat top center;
     padding-top: 100px; } }
 
-.front .view__header h1 {
+.page--front .view__header h1 {
   text-transform: uppercase;
   margin-bottom: 5px; }
 
-.front .view__header p.lead, .front .view__header .lead.text, .front .view__header .lead.text--normal {
+.page--front .view__header p.lead, .page--front .view__header .lead.text, .page--front .view__header .lead.text--normal {
   text-transform: uppercase;
   color: #f26838;
   font-size: 15px;

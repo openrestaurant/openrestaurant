@@ -15,18 +15,22 @@
   }
 }
 
-.front {
+.page--front {
+
   .view {
+
     @include bp(md) {
       background: url('../images/bg/bg-separator-shadow.png') no-repeat top center;
       padding-top: 100px;
     }
 
     &__header {
+
       h1 {
         text-transform: uppercase;
         margin-bottom: 5px;
       }
+
       p.lead {
         text-transform: uppercase;
         color: $brand-secondary;
