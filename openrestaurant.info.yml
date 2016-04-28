@@ -53,6 +53,7 @@ dependencies:
   - openrestaurant_blog
   - openrestaurant_core
   - openrestaurant_contact
+  - openrestaurant_event
   - openrestaurant_pages
 # open restaurant demo modules
   - openrestaurant_demo
