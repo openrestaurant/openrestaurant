@@ -1,16 +1,14 @@
-uuid: 0e95e078-3724-4844-a788-76be0e4009e3
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.featured
+    - core.entity_view_mode.node.teaser
     - node.type.blog_post
     - system.menu.main
   module:
     - node
     - user
-_core:
-  default_config_hash: G4inWTX-Db-hgLpmdcLRu4Gr-6uPnC3M-bmph5Wcy-4
 id: blog_posts
 label: 'Blog Posts'
 module: views
@@ -75,7 +73,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: featured
+          view_mode: teaser
       fields:
         title:
           id: title
@@ -225,6 +223,9 @@ display:
         filter_groups: false
         header: false
         pager: false
+        style: false
+        row: false
+        footer: false
       filters:
         status:
           value: true
@@ -311,10 +312,10 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          empty: true
+          empty: false
           tokenize: false
           content:
-            value: "<a href=\"/blog\" class=\"btn btn--lg\">See more News</a>"
+            value: '<a href="/blog" class="btn btn--lg">See more News</a>'
             format: full_html
           plugin_id: text
       display_description: ''
@@ -323,6 +324,14 @@ display:
         options:
           items_per_page: 4
           offset: 0
+      style:
+        type: default
+        options: {  }
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: featured
     cache_metadata:
       max-age: -1
       contexts:
