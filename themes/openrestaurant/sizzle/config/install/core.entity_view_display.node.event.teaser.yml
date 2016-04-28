@@ -6,11 +6,12 @@ dependencies:
     - field.field.node.event.field_event_body
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_featured_image
+    - field.field.node.event.field_event_location
     - node.type.event
   module:
+    - address
     - datetime
     - responsive_image
-    - text
     - user
 id: node.event.teaser
 targetEntityType: node
@@ -18,7 +19,7 @@ bundle: event
 mode: teaser
 content:
   field_event_date:
-    weight: 10
+    weight: 0
     label: hidden
     settings:
       format_type: date_medium
@@ -26,15 +27,21 @@ content:
     third_party_settings: {  }
     type: datetime_default
   field_event_featured_image:
-    weight: 20
+    weight: 1
     label: hidden
     settings:
       responsive_image_style: event_teaser_image
       image_link: content
     third_party_settings: {  }
     type: responsive_image
+  field_event_location:
+    type: address_default
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   links:
-    weight: 30
+    weight: 2
     settings: {  }
     third_party_settings: {  }
 hidden:

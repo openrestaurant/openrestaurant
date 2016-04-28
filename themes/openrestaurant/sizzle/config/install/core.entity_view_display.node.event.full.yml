@@ -2,43 +2,46 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.full
     - field.field.node.event.field_event_body
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_featured_image
+    - field.field.node.event.field_event_location
     - node.type.event
   module:
+    - address
     - datetime
-    - responsive_image
-    - text
+    - image
     - user
-id: node.event.full
+id: node.event.default
 targetEntityType: node
 bundle: event
-mode: full
+mode: default
 content:
-  field_event_body:
-    weight: 101
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
   field_event_date:
-    weight: 103
-    label: above
+    weight: 2
+    label: hidden
     settings:
-      format_type: date_medium
       timezone_override: ''
+      format_type: long
     third_party_settings: {  }
     type: datetime_default
   field_event_featured_image:
-    weight: 0
+    weight: 1
     label: hidden
     settings:
-      responsive_image_style: event_image
-      image_link: content
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    type: responsive_image
+    type: image
+  field_event_location:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
   links:
-    weight: 100
-hidden: {  }
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_event_body: true

@@ -18,33 +18,19 @@ function sizzle_preprocess_node(&$variables) {
 }
 
 /**
- * Implements template_preprocess_node_blog_post().
+ * Implements template_preprocess_node__TYPE().
  */
-function sizzle_preprocess_node__blog_post(&$variables) {
-  $node = $variables['node'];
-}
-
-/**
- * Implements template_preprocess_node_event().
- */
-function sizzle_preprocess_node_event(&$variables) {
-  $node = $variables['node'];
-
-  // Format and add date to template.
-  $variables['content']['posted_date'] = array(
-    '#markup' => format_date($node->created, 'panopoly_day'),
-  );
-
+function sizzle_preprocess_node__event(&$variables) {
   switch ($variables['view_mode']) {
     case 'featured':
-      // Hide the street block
-      if (isset($variables['field_event_location'][0]['street_block']['#access'])) {
-        $variables['field_event_location'][0]['street_block']['#access'] = FALSE;
-      }
+      $elements_to_hide = ['address_line1', 'address_line2', 'postal_code'];
+      foreach ($elements_to_hide as $element_to_hide) {
+        if (!isset($variables['content']['field_event_location'][0][$element_to_hide])) {
+          return;
+        }
 
-      // Hide the country.
-      if (isset($variables['field_event_location'][0]['country']['#access'])) {
-        $variables['field_event_location'][0]['country']['#access'] = FALSE;
+        $variables['content']['field_event_location'][0][$element_to_hide]['#access'] = FALSE;
+        $variables['content']['field_event_location'][0][$element_to_hide]['#placeholder'] = '';
       }
       break;
   }

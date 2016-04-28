@@ -17,5 +17,5 @@ content:
       uuid: '0a5562b7-84c7-4baf-9b76-fbd6d8d0c8a4'
       info: 'Social links'
       body:
-        value: '<h4>Follow us on</h4><a href="http://open.restaurant"><i class="fa fa-yelp">&nbsp;</i></a> <a href="http://open.restaurant"><i class="fa fa-twitter-square">&nbsp;</i></a> <a href="http://open.restaurant"><i class="fa fa-facebook-square">&nbsp;</i></a> <a href="http://open.restaurant/+"><i class="fa fa-google-plus-square">&nbsp;</i></a>'
+        value: '<h4>Follow us on</h4><a href="http://open.restaurant"><i class="fa fa-tripadvisor">&nbsp;</i></a><a href="http://open.restaurant"><i class="fa fa-yelp">&nbsp;</i></a> <a href="http://open.restaurant"><i class="fa fa-twitter">&nbsp;</i></a> <a href="http://open.restaurant"><i class="fa fa-facebook">&nbsp;</i></a> <a href="http://open.restaurant/+"><i class="fa fa-google-plus-square">&nbsp;</i></a>'
         format: 'full_html'

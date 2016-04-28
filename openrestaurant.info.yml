@@ -43,6 +43,7 @@ dependencies:
   - tour
   - automated_cron
 # contrib
+  - address
   - features
   - features_ui
   - admin_toolbar
