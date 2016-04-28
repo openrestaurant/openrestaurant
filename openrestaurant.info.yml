@@ -46,6 +46,7 @@ dependencies:
   - features
   - features_ui
   - admin_toolbar
+  - admin_toolbar_tools
   - devel
 # open restaurant
   - openrestaurant_config
