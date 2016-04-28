@@ -13,6 +13,8 @@
  */
 #}
 {% set classes = ['btn', 'btn--xs', 'feed-icon'] %}
+{% if title %}
 <a href="{{ url }}"{{ attributes.addClass(classes) }}>
   <i class="fa fa-feed"></i> {{ 'Subscribe to @title'|t({'@title': title}) }}
 </a>
+{% endif %}
