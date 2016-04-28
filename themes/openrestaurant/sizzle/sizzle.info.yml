@@ -18,5 +18,6 @@ libraries:
  - sizzle/global-styling
 
 demo_content:
+  - content/node.blog_post.yml
   - content/block_content.basic.yml
   - content/block_content.hero.yml
