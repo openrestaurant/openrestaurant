@@ -56,7 +56,6 @@ dependencies:
   - openrestaurant_pages
 # open restaurant demo modules
   - openrestaurant_demo
-  - openrestaurant_blog_demo
 
 themes:
   - sizzle
