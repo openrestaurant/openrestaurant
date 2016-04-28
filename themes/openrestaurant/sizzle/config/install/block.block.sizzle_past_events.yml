@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.events
+  module:
+    - system
+    - views
+  theme:
+    - sizzle
+id: past_events
+theme: sizzle
+region: bottom
+weight: 10
+provider: null
+plugin: 'views_block:events-past_events'
+settings:
+  id: 'views_block:events-past_events'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/events'
+    negate: false
+    context_mapping: {  }

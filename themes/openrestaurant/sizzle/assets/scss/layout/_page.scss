@@ -24,6 +24,10 @@ body {
     padding: 15px;
   }
 
+  &__hero {
+    border-bottom: 2px solid $brand-primary;
+  }
+
   &__content {
 
     > .container {
@@ -33,6 +37,18 @@ body {
       > .block {
         margin-bottom: 2.5em;
       }
+    }
+  }
+
+  &__bottom {
+
+    .container {
+      padding-bottom: 4em;
+    }
+
+    h2 {
+      font-size: 2.4em;
+      margin-bottom: 0.8em;
     }
   }
 

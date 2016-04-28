@@ -9228,11 +9228,18 @@ body {
     max-width: 1200px; }
   .page__header {
     padding: 15px; }
+  .page__hero {
+    border-bottom: 2px solid #796b4f; }
   .page__content > .container {
     padding-top: 50px;
     padding-bottom: 50px; }
     .page__content > .container > .block {
       margin-bottom: 2.5em; }
+  .page__bottom .container {
+    padding-bottom: 4em; }
+  .page__bottom h2 {
+    font-size: 2.4em;
+    margin-bottom: 0.8em; }
   .page__footer {
     margin: 0;
     padding: 65px 0 45px;
@@ -9407,6 +9414,13 @@ body {
 
 .event--featured {
   margin-bottom: 2.5em; }
+
+.view-display-id-past_events .view__row {
+  padding-bottom: 1.0em;
+  margin-bottom: 1.0em;
+  border-bottom: 1px solid #b7aa91; }
+  .view-display-id-past_events .view__row h3 {
+    margin-bottom: 0; }
 
 .feed-icons {
   text-align: center; }
