@@ -1,6 +1,7 @@
 //
 // Variables
 // --------------------------------------------------
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,600|Open+Sans:300,400,700|Crimson+Text:600);
 
 // bootstrap specific variable. set to false if not using ruby + asset pipeline / compass.
 $bootstrap-sass-asset-helper: false !default;
@@ -27,6 +28,7 @@ $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 $brand-info:            #5bc0de !default;
 $footer-text-color:     #B6B6B6 !default;
+$border-color:          lighten($brand-primary, 25);
 
 // Scaffolding
 // -------------------------
@@ -43,8 +45,6 @@ $link-hover-color:      $brand-secondary !default;
 
 // Typography
 // -------------------------
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,600|Open+Sans:300,400,700|Crimson+Text:600);
-
 $font-primary:            "Open Sans", Helvetica, Arial, sans-serif !default;
 $font-secondary:          "Raleway", sans-serif !default;
 $font-tertiary:           "Crimson Text", serif !default;

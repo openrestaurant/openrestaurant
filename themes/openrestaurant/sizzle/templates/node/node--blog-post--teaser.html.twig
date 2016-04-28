@@ -36,9 +36,7 @@ view_mode ? bundle ~ '--' ~ view_mode|clean_class,
       {% endif %}
       {{ title_suffix }}
 
-      <div class="blog-post__body">
-        {{ content.field_blog_post_body }}
-      </div>
+      {{ content.field_blog_post_body }}
 
       <a href="{{ url }}" class="blog-post__readmore btn btn--xs">{% trans %} Read more {% endtrans %}</a>
     </div>

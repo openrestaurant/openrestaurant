@@ -18,29 +18,20 @@ view_mode ? bundle ~ '--' ~ view_mode|clean_class,
 %}
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
-
-  <h1 class="blog-post__title visible-xs">
-    <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-  </h1>
+  {{ title_prefix }}
+  {{ title_suffix }}
 
   <div{{ content_attributes.addClass('row') }}>
     <div class="col-sm-5">
       {{ content.field_blog_post_featured_image }}
     </div>
     <div class="col-sm-7">
-      {{ title_prefix }}
-        <h1 class="blog-post__title hidden-xs">
-          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-        </h1>
-      {{ title_suffix }}
 
       {% if display_submitted %}
-        <div class="blog-post__date">{{ date }}</div>
+        <h4 class="blog-post__date">{{ date }}</h4>
       {% endif %}
 
-      <div class="blog-post__body">
-        {{ content.field_blog_post_body }}
-      </div>
+      {{ content.field_blog_post_body }}
     </div>
   </div>
 
