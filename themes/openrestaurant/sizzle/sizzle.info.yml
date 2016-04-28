@@ -1,7 +1,7 @@
 name: Sizzle
+description: 'The default theme for Open Restaurant based on Radix.'
 type: theme
 base theme: radix
-description: 'The default theme for Open Restaurant based on Radix.'
 package: Open Restaurant
 version: 2.0-dev
 core: 8.x
@@ -12,6 +12,7 @@ regions:
   navigation: Navigation
   hero: Hero
   content: Content
+  bottom: Bottom
   footer: Footer
 
 libraries:
