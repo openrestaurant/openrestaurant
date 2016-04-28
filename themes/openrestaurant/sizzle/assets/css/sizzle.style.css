@@ -9062,16 +9062,23 @@ ul.dropdown-menu li {
     left: 1em;
     right: 1em;
     bottom: 1em; }
-    .link--overlay .bottom span {
+    .link--overlay .bottom > div {
       display: block; }
-      .link--overlay .bottom span + span:before {
-        content: "";
-        background: white;
-        height: 1px;
-        width: 50%;
-        position: absolute;
-        left: 50%;
-        margin-left: -25%; }
+      .link--overlay .bottom > div p, .link--overlay .bottom > div .text, .link--overlay .bottom > div .text--normal {
+        margin: 0; }
+      .link--overlay .bottom > div + div {
+        margin-top: 0.5em;
+        padding-top: 0.5em;
+        position: relative; }
+        .link--overlay .bottom > div + div:before {
+          content: "";
+          background: white;
+          height: 1px;
+          width: 50%;
+          position: absolute;
+          left: 50%;
+          top: 0;
+          margin-left: -25%; }
 
 .ribbon {
   position: absolute;
@@ -9414,6 +9421,9 @@ body {
 
 .event--featured {
   margin-bottom: 2.5em; }
+
+.event--full .event__location {
+  margin-top: 1em; }
 
 .view-display-id-past_events .view__row {
   padding-bottom: 1.0em;

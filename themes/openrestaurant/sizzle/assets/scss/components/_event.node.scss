@@ -13,3 +13,15 @@
 .event--featured {
   margin-bottom: 2.5em;
 }
+
+// Event: Full view mode
+// -----------------------------------------------------------------------------
+.event--full {
+
+  .event {
+
+    &__location {
+      margin-top: 1em;
+    }
+  }
+}

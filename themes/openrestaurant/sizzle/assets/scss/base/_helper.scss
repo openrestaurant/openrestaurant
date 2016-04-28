@@ -173,10 +173,18 @@ $directions: top, right, bottom, left;
       right: 1em;
       bottom: 1em;
 
-      span {
+      > div {
         display: block;
 
-        + span {
+        p {
+          margin: 0;
+        }
+
+        + div {
+          margin-top: 0.5em;
+          padding-top: 0.5em;
+          position: relative;
+
           &:before {
             content: "";
             background: white;
@@ -184,6 +192,7 @@ $directions: top, right, bottom, left;
             width: 50%;
             position: absolute;
             left: 50%;
+            top: 0;
             margin-left: -25%;
           }
         }
