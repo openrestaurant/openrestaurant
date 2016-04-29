@@ -21,19 +21,6 @@ function sizzle_preprocess_node(&$variables) {
  * Implements template_preprocess_node__TYPE().
  */
 function sizzle_preprocess_node__event(&$variables) {
-  switch ($variables['view_mode']) {
-    case 'featured':
-      $elements_to_hide = ['address_line1', 'address_line2', 'postal_code'];
-      foreach ($elements_to_hide as $element_to_hide) {
-        if (!isset($variables['content']['field_event_location'][0][$element_to_hide])) {
-          return;
-        }
-
-        $variables['content']['field_event_location'][0][$element_to_hide]['#access'] = FALSE;
-        $variables['content']['field_event_location'][0][$element_to_hide]['#placeholder'] = '';
-      }
-      break;
-  }
 }
 
 /**

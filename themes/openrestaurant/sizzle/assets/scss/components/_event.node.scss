@@ -23,5 +23,30 @@
     &__location {
       margin-top: 1em;
     }
+
+    &__featured-image {
+      margin-bottom: 1.0em;
+
+      @include breakpoint(md) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// Hide extra address fields with CSS for now.
+// Wait for the Plain formatter: https://www.drupal.org/node/2525762
+// -----------------------------------------------------------------------------
+.event--featured,
+.event--teaser {
+
+  .address-line1,
+  .administrative-area,
+  .postal-code {
+    display: none;
+  }
+
+  br {
+    display: none;
   }
 }

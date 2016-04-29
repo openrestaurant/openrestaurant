@@ -9425,6 +9425,24 @@ body {
 .event--full .event__location {
   margin-top: 1em; }
 
+.event--full .event__featured-image {
+  margin-bottom: 1.0em; }
+  @media (min-width: 992px) {
+    .event--full .event__featured-image {
+      margin-bottom: 0; } }
+
+.event--featured .address-line1,
+.event--featured .administrative-area,
+.event--featured .postal-code,
+.event--teaser .address-line1,
+.event--teaser .administrative-area,
+.event--teaser .postal-code {
+  display: none; }
+
+.event--featured br,
+.event--teaser br {
+  display: none; }
+
 .view-display-id-past_events .view__row {
   padding-bottom: 1.0em;
   margin-bottom: 1.0em;
