@@ -1,0 +1,11 @@
+// View: Menus
+// -----------------------------------------------------------------------------
+.view-display-id-menus {
+  padding-bottom: 4em;
+
+  .view__row {
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid lighten($border-color, 15);
+  }
+}

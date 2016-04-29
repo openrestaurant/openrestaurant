@@ -1,0 +1,75 @@
+{#
+/**
+ * @file
+ * Template for Menus view.
+ */
+#}
+{%
+set classes = [
+'view',
+'view-' ~ id|clean_class,
+'view-id-' ~ id,
+'view-display-id-' ~ display_id,
+dom_id ? 'js-view-dom-id-' ~ dom_id,
+]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if title %}
+    {{ title }}
+  {% endif %}
+  {{ title_suffix }}
+  {% if header %}
+    <div class="view__header">
+      {{ header }}
+    </div>
+  {% endif %}
+  <div class="row">
+    <div class="col-md-4">
+      {% if exposed %}
+        <div class="view__filters view-filters">
+          {{ exposed }}
+        </div>
+      {% endif %}
+    </div>
+    <div class="col-md-8">
+      {% if attachment_before %}
+        <div class="view__attachment view__attachment--before">
+          {{ attachment_before }}
+        </div>
+      {% endif %}
+
+      {% if rows %}
+        <div class="view__content">
+          {{ rows }}
+        </div>
+      {% elseif empty %}
+        <div class="view__empty">
+          {{ empty }}
+        </div>
+      {% endif %}
+
+      {% if pager %}
+        {{ pager }}
+      {% endif %}
+      {% if attachment_after %}
+        <div class="view__attachment view__attachment--after">
+          {{ attachment_after }}
+        </div>
+      {% endif %}
+      {% if more %}
+        {{ more }}
+      {% endif %}
+    </div>
+  </div>
+  {% if footer %}
+    <div class="view__footer">
+      {{ footer }}
+    </div>
+  {% endif %}
+  {% if feed_icons %}
+    <div class="feed-icons">
+      {{ feed_icons }}
+    </div>
+  {% endif %}
+</div>
