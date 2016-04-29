@@ -9653,6 +9653,11 @@ ul.footer-nav {
   border: 1px solid #796b4f;
   padding: 0.25em; }
 
+.menu__images img {
+  display: block;
+  border: 1px solid #796b4f;
+  padding: 0.25em; }
+
 .menu--teaser .menu__title {
   margin-bottom: 0.25em; }
 
@@ -9758,10 +9763,22 @@ ul.footer-nav {
 
 .view-display-id-menus {
   padding-bottom: 4em; }
-  .view-display-id-menus .view__row {
+  .view-display-id-menus > .view__content .view__row .node {
     margin-bottom: 1.5em;
     padding-bottom: 1.5em;
-    border-bottom: 1px solid #d5cebf; }
+    border-bottom: 1px solid #d5cebf;
+    min-height: 100px; }
+
+.view-display-id-menu_categories {
+  margin-bottom: 2.0em; }
+  .view-display-id-menu_categories .view__content {
+    text-align: center; }
+  .view-display-id-menu_categories .view__row {
+    display: inline-block;
+    margin: 0 0.5em;
+    font-size: 1.4em;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase; }
 
 .view .view__header {
   text-align: center; }

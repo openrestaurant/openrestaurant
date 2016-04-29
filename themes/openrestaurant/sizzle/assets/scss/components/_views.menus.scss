@@ -3,9 +3,37 @@
 .view-display-id-menus {
   padding-bottom: 4em;
 
-  .view__row {
-    margin-bottom: 1.5em;
-    padding-bottom: 1.5em;
-    border-bottom: 1px solid lighten($border-color, 15);
+  > .view__content {
+
+    .view__row {
+
+      .node {
+        margin-bottom: 1.5em;
+        padding-bottom: 1.5em;
+        border-bottom: 1px solid lighten($border-color, 15);
+        min-height: 100px;
+      }
+    }
+  }
+}
+
+// View: Menu categories
+// -----------------------------------------------------------------------------
+.view-display-id-menu_categories {
+  margin-bottom: 2.0em;
+
+  .view {
+
+    &__content {
+      text-align: center;
+    }
+
+    &__row {
+      display: inline-block;
+      margin: 0 0.5em;
+      font-size: 1.4em;
+      font-family: $font-secondary;
+      text-transform: uppercase;
+    }
   }
 }
