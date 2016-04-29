@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: menu
+label: Menu
+type: 'canonical_entities:node'
+pattern: 'menu/[node:title]'
+selection_criteria:
+  cebec82d-04a5-48ff-ba70-1251206fd2bd:
+    id: node_type
+    bundles:
+      menu: menu
+    negate: false
+    context_mapping:
+      node: node
+    uuid: cebec82d-04a5-48ff-ba70-1251206fd2bd
+selection_logic: and
+weight: -5
+relationships: {  }
