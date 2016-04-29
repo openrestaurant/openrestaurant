@@ -1,0 +1,16 @@
+// Location
+// -----------------------------------------------------------------------------
+.location {
+  &__images {
+
+    .field__item {
+      margin-bottom: 1em;
+    }
+
+    img {
+      display: block;
+      border: 1px solid $brand-primary;
+      padding: 0.25em;
+    }
+  }
+}

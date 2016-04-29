@@ -37,25 +37,3 @@
     }
   }
 }
-
-// View : Blog
-// -----------------------------------------------------------------------------
-.view-display-id-blog {
-
-  .blog-post {
-    margin: 0 0 2.5em;
-    padding: 0 0 2.5em;
-    border-bottom: 1px solid $border-color;
-  }
-}
-
-// View: Featured Blog Posts
-// -----------------------------------------------------------------------------
-.view-display-id-featured_blog_posts {
-
-  .blog-post {
-    border-top: 1px solid $border-color;
-    padding-top: 1em;
-    margin-top: 1em;
-  }
-}

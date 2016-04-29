@@ -1,0 +1,19 @@
+// Contextual links.
+// -----------------------------------------------------------------------------
+.contextual-region {
+
+  &.focus {
+    outline: 1px dashed $brand-secondary;
+    background-color: rgba($brand-secondary, 0.2);
+  }
+}
+
+ul.contextual-links {
+  > li {
+    > a {
+      @include hover() {
+        background-color: rgba($brand-secondary, 0.5);
+      }
+    }
+  }
+}
