@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.menu.field_menu_categories
+    - field.field.node.menu.field_menu_description
+    - field.field.node.menu.field_menu_featured
+    - field.field.node.menu.field_menu_images
+    - field.field.node.menu.field_menu_teaser
+    - node.type.menu
+  module:
+    - responsive_image
+    - text
+    - user
+id: node.menu.teaser
+targetEntityType: node
+bundle: menu
+mode: teaser
+content:
+  field_menu_images:
+    weight: 102
+    label: hidden
+    settings:
+      responsive_image_style: menu_teaser_image
+      image_link: content
+    third_party_settings: {  }
+    type: responsive_image
+  field_menu_teaser:
+    weight: 101
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+hidden:
+  field_menu_description: true
+  field_menu_categories: true
+  field_menu_featured: true
+  links: true

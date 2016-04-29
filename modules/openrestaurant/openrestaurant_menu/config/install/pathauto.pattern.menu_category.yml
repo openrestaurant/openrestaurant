@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: menu_category
+label: 'Menu Category'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'menu/[term:name]'
+selection_criteria:
+  e4d06a42-3c7a-464e-8a54-8e3caef0d646:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      menu_category: menu_category
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: e4d06a42-3c7a-464e-8a54-8e3caef0d646
+selection_logic: and
+weight: -5
+relationships: {  }

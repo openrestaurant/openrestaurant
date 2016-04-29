@@ -24,3 +24,5 @@ demo_content:
   - content/node.location.yml
   - content/block_content.basic.yml
   - content/block_content.hero.yml
+  - content/taxonomy_term.menu_category.yml
+  - content/node.menu.yml

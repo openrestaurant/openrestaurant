@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Menu category'
+vid: menu_category
+description: ''
+hierarchy: 0
+weight: 0

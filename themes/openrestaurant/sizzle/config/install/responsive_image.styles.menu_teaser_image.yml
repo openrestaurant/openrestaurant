@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.menu_teaser_image__lg
+  theme:
+    - sizzle
+id: menu_teaser_image
+label: 'Menu teaser image'
+image_style_mappings:
+  -
+    breakpoint_id: sizzle.lg
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: menu_teaser_image__lg
+breakpoint_group: sizzle
+fallback_image_style: menu_teaser_image__lg

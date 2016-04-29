@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_menu_featured
+    - node.type.menu
+id: node.menu.field_menu_featured
+field_name: field_menu_featured
+entity_type: node
+bundle: menu
+label: Featured
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Featured
+  off_label: 'Not featured'
+field_type: boolean

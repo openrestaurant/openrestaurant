@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Template to display a Menu in Teaser mode.
+ */
+#}
+{% set bundle = node.bundle|clean_class %}
+{%
+set classes = [
+'node',
+bundle,
+node.isPromoted() ? bundle ~ '--promoted',
+node.isSticky() ? bundle ~ '--sticky',
+not node.isPublished() ? bundle ~ '--unpublished',
+view_mode ? bundle ~ '--' ~ view_mode|clean_class,
+]
+%}
+{{ attach_library('classy/node') }}
+<article{{ attributes.addClass(classes) }}>
+
+  <div{{ content_attributes.addClass('row') }}>
+    <div class="col-sm-2">
+      {{ content.field_menu_images[0] }}
+    </div>
+    <div class="col-sm-10">
+      {{ title_prefix }}
+        <h2 class="menu__title">
+          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        </h2>
+      {{ title_suffix }}
+
+      {{ content.field_menu_teaser }}
+    </div>
+  </div>
+
+</article>

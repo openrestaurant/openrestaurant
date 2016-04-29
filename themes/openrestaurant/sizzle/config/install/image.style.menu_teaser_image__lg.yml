@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: menu_teaser_image__lg
+label: 'Menu teaser image (lg)'
+effects:
+  4565c31e-1eb5-4bbc-8d61-99c9a238ab84:
+    uuid: 4565c31e-1eb5-4bbc-8d61-99c9a238ab84
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 85
+      height: 70

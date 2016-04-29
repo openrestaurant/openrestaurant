@@ -60,6 +60,7 @@ dependencies:
   - openrestaurant_contact
   - openrestaurant_event
   - openrestaurant_location
+  - openrestaurant_menu
   - openrestaurant_pages
 # open restaurant demo modules
   - openrestaurant_demo

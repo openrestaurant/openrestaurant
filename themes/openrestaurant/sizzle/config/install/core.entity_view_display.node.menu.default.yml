@@ -1,0 +1,60 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.menu.field_menu_categories
+    - field.field.node.menu.field_menu_description
+    - field.field.node.menu.field_menu_featured
+    - field.field.node.menu.field_menu_images
+    - field.field.node.menu.field_menu_teaser
+    - node.type.menu
+  module:
+    - image
+    - text
+    - user
+id: node.menu.default
+targetEntityType: node
+bundle: menu
+mode: default
+content:
+  field_menu_categories:
+    weight: 105
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_menu_description:
+    weight: 103
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_menu_featured:
+    weight: 104
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_menu_images:
+    weight: 102
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_menu_teaser:
+    weight: 101
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
