@@ -1,0 +1,43 @@
+{#
+/**
+ * @file
+ * Template to display an Location in Full mode.
+ */
+#}
+{% set bundle = node.bundle|clean_class %}
+{%
+set classes = [
+'node',
+bundle,
+node.isPromoted() ? bundle ~ '--promoted',
+node.isSticky() ? bundle ~ '--sticky',
+not node.isPublished() ? bundle ~ '--unpublished',
+view_mode ? bundle ~ '--' ~ view_mode|clean_class,
+]
+%}
+{{ attach_library('classy/node') }}
+<article{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+
+  <div{{ content_attributes.addClass('row') }}>
+    <div class="col-sm-6">
+      {{ content.field_location_images }}
+    </div>
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-sm-6">
+          {{ content.field_location_address }}
+          {{ content.field_location_opening_hours }}
+        </div>
+        <div class="col-sm-6">
+          {{ content.field_location_contact }}
+        </div>
+      </div>
+
+      <hr />
+      {{ content.field_location_body }}
+    </div>
+  </div>
+
+</article>

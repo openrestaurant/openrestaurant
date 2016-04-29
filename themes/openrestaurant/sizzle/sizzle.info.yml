@@ -21,5 +21,6 @@ libraries:
 demo_content:
   - content/node.blog_post.yml
   - content/node.event.yml
+  - content/node.location.yml
   - content/block_content.basic.yml
   - content/block_content.hero.yml

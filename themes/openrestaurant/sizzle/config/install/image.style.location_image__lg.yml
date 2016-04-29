@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: location_image__lg
+label: 'Location image (lg)'
+effects:
+  4b24f688-0d61-4d65-936e-a6f32c8cf45d:
+    uuid: 4b24f688-0d61-4d65-936e-a6f32c8cf45d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 465
+      height: 300

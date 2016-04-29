@@ -1,0 +1,17 @@
+name: Location
+description: 'Manage multiple restaurant locations for Open Restaurant.'
+type: module
+core: 8.x
+dependencies:
+  - address
+  - field
+  - file
+  - image
+  - menu_ui
+  - node
+  - openrestaurant_config
+  - path
+  - text
+  - user
+version: 8.x-2.0-dev
+package: 'Open Restaurant'

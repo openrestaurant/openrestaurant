@@ -1,0 +1,66 @@
+entity_type: node
+bundle: location
+content:
+  location_1:
+    title: 'San Francisco'
+    field_location_body:
+      value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
+      format: 'full_html'
+    field_location_images:
+      path: 'content/images/location-2.jpg'
+      alt: 'This is alt text'
+      title: 'This is title'
+    field_location_address:
+      country_code: 'US'
+      administrative_area: 'US-CA'
+      locality: 'San Francisco'
+      postal_code: '94110'
+      address_line1: 'Dolores Street'
+    field_location_contact:
+      value: '<p>Phone: +1 999 9999<br>Fax: +1 888 8888</p>'
+      format: 'full_html'
+    field_location_opening_hours:
+      value: '<p>Monday - Tuesday 11am - 10pm<br>Friday - Sunday 11am - 11pm</p>'
+      format: 'full_html'
+  location_2:
+    title: 'Chicago'
+    field_location_body:
+      value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
+      format: 'full_html'
+    field_location_images:
+      path: 'content/images/location-1.jpg'
+      alt: 'This is alt text'
+      title: 'This is title'
+    field_location_location:
+      country_code: 'US'
+      administrative_area: 'US-IL'
+      locality: 'Chicago'
+      postal_code: '60804'
+      address_line1: '1600 S 61St Ave Cicero'
+    field_location_contact:
+      value: '<p>Phone: +1 999 9999<br>Fax: +1 888 8888</p>'
+      format: 'full_html'
+    field_location_opening_hours:
+      value: '<p>Monday - Tuesday 11am - 10pm<br>Friday - Sunday 11am - 11pm</p>'
+      format: 'full_html'
+  location_3:
+    title: 'New York'
+    field_location_body:
+      value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
+      format: 'full_html'
+    field_location_images:
+      path: 'content/images/location-3.jpg'
+      alt: 'This is alt text'
+      title: 'This is title'
+    field_location_address:
+      country_code: 'US'
+      administrative_area: 'US-NY'
+      locality: 'New York'
+      postal_code: '10036'
+      address_line1: '1501 Broadway'
+    field_location_contact:
+      value: '<p>Phone: +1 999 9999<br>Fax: +1 888 8888</p>'
+      format: 'full_html'
+    field_location_opening_hours:
+      value: '<p>Monday - Tuesday 11am - 10pm<br>Friday - Sunday 11am - 11pm</p>'
+      format: 'full_html'

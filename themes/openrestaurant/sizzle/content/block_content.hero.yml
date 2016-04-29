@@ -34,3 +34,13 @@ content:
     field_hero_caption:
       value: '<h2>News & Blog</h2><p>Keep up with the latest news</p>'
       format: 'full_html'
+  locations_hero:
+    uuid: 'a7bef790-b247-4970-b957-f04cb1da9575'
+    info: 'Locations hero'
+    field_hero_image:
+      path: 'content/images/locations-hero.jpg'
+      alt: 'Locations hero'
+      title: 'Locations hero'
+    field_hero_caption:
+      value: '<h2>Our Locations</h2><p>Find your favorite Open Restaurant</p>'
+      format: 'full_html'
