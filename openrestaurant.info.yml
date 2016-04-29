@@ -49,6 +49,9 @@ dependencies:
   - admin_toolbar
   - admin_toolbar_tools
   - devel
+  - pathauto
+  - token
+  - ctools
 # open restaurant
   - openrestaurant_config
   - openrestaurant_blocks

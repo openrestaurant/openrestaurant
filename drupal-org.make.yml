@@ -8,9 +8,18 @@ projects:
   admin_toolbar:
     type: "module"
     version: "1.14"
+  ctools:
+    type: "module"
+    version: "3.0-alpha25"
   composer_manager:
     type: "module"
     version: "1.0-dev"
   features:
     type: "module"
     version: "3.0-beta3"
+  pathauto:
+    type: "module"
+    version: "1.0-alpha3"
+  token:
+    type: "module"
+    version: "1.0-alpha2"
