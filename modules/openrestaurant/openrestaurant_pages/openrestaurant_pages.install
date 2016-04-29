@@ -16,7 +16,7 @@ function openrestaurant_pages_install() {
     'type'        => 'page',
     'title'       => 'Home',
     'body' => [
-      'value' => '<h1 class="text--center">Welcome to Open Restaurant</h1><p class="margin--md--top text--center"><a href="/menu" class="btn btn--lg btn--secondary">See our Menu</a></p>',
+      'value' => '<h1 class="text--center">Welcome to Open Restaurant</h1><p class="margin--lg--top text--center padding--sm--top padding--sm--bottom"><a href="/menu" class="btn btn--lg btn--secondary">See our Menu</a></p>',
       'format' => 'full_html',
     ],
   ]);
