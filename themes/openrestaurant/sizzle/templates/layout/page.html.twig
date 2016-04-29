@@ -31,16 +31,12 @@
       </div>
     </div>
 
-    <div class="page__bottom">
-      <div class="container">
-        {{ page.bottom }}
+    {% if page.bottom %}
+      <div class="page__bottom">
+        <div class="container">
+          {{ page.bottom }}
+        </div>
       </div>
-    </div>
-
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
     {% endif %}
   </main>
 
