@@ -14,6 +14,16 @@ content:
     field_hero_link:
       link: '/contact'
       title: 'Contact'
+  menu_hero:
+    uuid: cea4e0db-48e2-40e1-a59c-3c9d2678090c
+    info: 'Menu hero'
+    field_hero_image:
+      path: 'content/images/menu-hero.jpg'
+      alt: 'Menu hero'
+      title: 'Menu hero'
+    field_hero_caption:
+      value: '<h2>Our Menu</h2><p>Come see what''s cooking in our Kitchens</p>'
+      format: 'full_html'
   events_hero:
     uuid: 'd1bd928d-768d-422e-879a-54a3301a7833'
     info: 'Events hero'

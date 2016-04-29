@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero:cea4e0db-48e2-40e1-a59c-3c9d2678090c'
+  module:
+    - block_content
+    - system
+  theme:
+    - sizzle
+id: menu_hero
+theme: sizzle
+region: hero
+weight: -2
+provider: null
+plugin: 'block_content:cea4e0db-48e2-40e1-a59c-3c9d2678090c'
+settings:
+  id: 'block_content:cea4e0db-48e2-40e1-a59c-3c9d2678090c'
+  label: 'Menu hero'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/menu\r\n/menu/*"
+    negate: false
+    context_mapping: {  }
