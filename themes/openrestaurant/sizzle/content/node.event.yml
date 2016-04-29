@@ -2,7 +2,7 @@ entity_type: node
 bundle: event
 content:
   event_1:
-    title: '22 Lipsum dolor sit amet'
+    title: 'Lipsum dolor sit amet'
     field_event_body:
       value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
       format: 'full_html'
