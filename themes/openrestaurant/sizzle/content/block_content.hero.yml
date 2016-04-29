@@ -24,3 +24,13 @@ content:
     field_hero_caption:
       value: '<h2>Events</h2><p>Come see what''s cooking in our Kitchens</p>'
       format: 'full_html'
+  blog_hero:
+    uuid: 'e0f35b65-da6d-4b59-836e-54be9f6c7147'
+    info: 'Blog hero'
+    field_hero_image:
+      path: 'content/images/blog-hero.jpg'
+      alt: 'Blog hero'
+      title: 'Blog hero'
+    field_hero_caption:
+      value: '<h2>News & Blog</h2><p>Keep up with the latest news</p>'
+      format: 'full_html'

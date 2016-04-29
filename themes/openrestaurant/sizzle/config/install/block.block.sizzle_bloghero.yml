@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero:e0f35b65-da6d-4b59-836e-54be9f6c7147'
+  module:
+    - block_content
+    - system
+  theme:
+    - sizzle
+id: bloghero
+theme: sizzle
+region: hero
+weight: -2
+provider: null
+plugin: 'block_content:e0f35b65-da6d-4b59-836e-54be9f6c7147'
+settings:
+  id: 'block_content:e0f35b65-da6d-4b59-836e-54be9f6c7147'
+  label: 'Blog hero'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/blog\r\n/blog/*"
+    negate: false
+    context_mapping: {  }
