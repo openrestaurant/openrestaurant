@@ -1,8 +1,11 @@
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:hero:d1bd928d-768d-422e-879a-54a3301a7833'
   module:
     - block_content
+    - system
   theme:
     - sizzle
 id: eventshero
@@ -22,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '/events'
+    pages: "/events\r\n/events/*"
     negate: false
     context_mapping: {  }
