@@ -31,7 +31,7 @@ logged_in ? 'page--logged-in',
 not root_path ? 'page--front' : 'path--' ~ root_path|clean_class,
 node_type ? 'page--' ~ node_type|clean_class,
 db_offline ? 'db-offline',
-'boxed'
+layout.width
 ]
 %}
 <!DOCTYPE html>
