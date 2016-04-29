@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Template for Views Menus: Menus.
+ */
+#}
+{% if title %}
+  <h1 class="text--center">{{ title }}</h1>
+{% endif %}
+<div class="row">
+  {% for row in rows %}
+    {%
+    set row_classes = [
+    default_row_class ? 'col-md-6 view__row',
+    ]
+    %}
+    <div{{ row.attributes.addClass(row_classes) }}>
+      {{ row.content }}
+    </div>
+  {% endfor %}
+</div>

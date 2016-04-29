@@ -9763,6 +9763,8 @@ ul.footer-nav {
 
 .view-display-id-menus {
   padding-bottom: 4em; }
+  .view-display-id-menus > .view__content h1 {
+    margin: 1.0em 0; }
   .view-display-id-menus > .view__content .view__row .node {
     margin-bottom: 1.5em;
     padding-bottom: 1.5em;
