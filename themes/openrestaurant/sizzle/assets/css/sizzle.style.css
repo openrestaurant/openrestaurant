@@ -9658,6 +9658,10 @@ ul.footer-nav {
   border: 1px solid #796b4f;
   padding: 0.25em; }
 
+.menu__nutrition-types .field__item {
+  display: inline-block;
+  margin: 0 0.5em 0 0; }
+
 .menu--teaser .menu__title {
   margin-bottom: 0.25em; }
 
@@ -9739,6 +9743,16 @@ ul.footer-nav {
     .pane-reservation-form {
       margin-top: 0; } }
 
+.nutrition-type {
+  margin-bottom: 0.5em; }
+  .nutrition-type__name, .nutrition-type__icon {
+    display: inline-block; }
+  .nutrition-type__icon {
+    margin: 0 0.5em 0 0; }
+    .nutrition-type__icon img {
+      width: auto;
+      height: auto; }
+
 .view-display-id-blog .blog-post {
   margin: 0 0 2.5em;
   padding: 0 0 2.5em;
@@ -9769,7 +9783,7 @@ ul.footer-nav {
     margin-bottom: 1.5em;
     padding-bottom: 1.5em;
     border-bottom: 1px solid #d5cebf;
-    min-height: 100px; }
+    min-height: 130px; }
 
 .view-display-id-menu_categories {
   margin-bottom: 2.0em; }

@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_menu_nutrition_types
+    - node.type.menu
+    - taxonomy.vocabulary.nutrition_type
+id: node.menu.field_menu_nutrition_types
+field_name: field_menu_nutrition_types
+entity_type: node
+bundle: menu
+label: 'Nutrition types'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      nutrition_type: nutrition_type
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
+

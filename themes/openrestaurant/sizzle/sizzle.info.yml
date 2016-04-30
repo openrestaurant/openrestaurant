@@ -19,10 +19,13 @@ libraries:
  - sizzle/global-styling
 
 demo_content:
-  - content/node.blog_post.yml
-  - content/node.event.yml
-  - content/node.location.yml
   - content/block_content.basic.yml
   - content/block_content.hero.yml
   - content/taxonomy_term.menu_category.yml
+  - content/taxonomy_term.nutrition_type.yml
+  - content/node.page.yml
+  - content/node.blog_post.yml
+  - content/node.event.yml
+  - content/node.location.yml
   - content/node.menu.yml
+  - content/menu_link_content.menu_link_content.yml

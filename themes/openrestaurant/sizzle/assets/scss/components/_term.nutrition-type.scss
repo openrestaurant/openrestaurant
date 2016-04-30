@@ -1,0 +1,19 @@
+// Term: Nutrition type
+// -----------------------------------------------------------------------------
+.nutrition-type {
+  margin-bottom: 0.5em;
+
+  &__name,
+  &__icon {
+    display: inline-block;
+  }
+
+  &__icon {
+    margin: 0 0.5em 0 0;
+
+    img {
+      width: auto;
+      height: auto;
+    }
+  }
+}

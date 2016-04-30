@@ -1,0 +1,31 @@
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.nutrition_type.field_nutrition_type_icon
+    - taxonomy.vocabulary.nutrition_type
+  module:
+    - image
+    - text
+id: taxonomy_term.nutrition_type.default
+targetEntityType: taxonomy_term
+bundle: nutrition_type
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_nutrition_type_icon:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: 'nutrition_type_icon'
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden: {  }
+

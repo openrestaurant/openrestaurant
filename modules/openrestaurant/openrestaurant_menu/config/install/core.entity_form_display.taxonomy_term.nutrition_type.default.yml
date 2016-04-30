@@ -1,0 +1,45 @@
+uuid: 0874c8d1-28d5-4569-b801-28fe500d468b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.nutrition_type.field_nutrition_type_icon
+    - image.style.thumbnail
+    - taxonomy.vocabulary.nutrition_type
+  module:
+    - image
+    - path
+    - text
+id: taxonomy_term.nutrition_type.default
+targetEntityType: taxonomy_term
+bundle: nutrition_type
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_nutrition_type_icon:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  name:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
+

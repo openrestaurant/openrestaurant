@@ -10,6 +10,14 @@
       padding: 0.25em;
     }
   }
+
+  &__nutrition-types {
+
+    .field__item {
+      display: inline-block;
+      margin: 0 0.5em 0 0;
+    }
+  }
 }
 
 // View mode: Teaser

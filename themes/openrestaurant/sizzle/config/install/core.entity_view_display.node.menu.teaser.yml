@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.menu.field_menu_featured
     - field.field.node.menu.field_menu_images
     - field.field.node.menu.field_menu_teaser
+    - field.field.node.menu.field_menu_nutrition_types
     - node.type.menu
   module:
     - responsive_image
@@ -31,6 +32,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+  field_menu_nutrition_types:
+    type: entity_reference_entity_view
+    weight: 6
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
 hidden:
   field_menu_description: true
   field_menu_categories: true

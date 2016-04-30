@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {  }
+name: nutrition_type_icon
+label: 'Nutrition type icon'
+effects:
+  33eacaa7-85e5-4880-bc8e-1c6ac1793a76:
+    uuid: 33eacaa7-85e5-4880-bc8e-1c6ac1793a76
+    id: image_scale
+    weight: 1
+    data:
+      width: 18
