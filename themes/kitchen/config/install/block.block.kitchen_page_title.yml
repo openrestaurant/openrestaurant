@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - openrestaurant_seven
-id: openrestaurant_seven_page_title
-theme: openrestaurant_seven
+    - kitchen
+id: kitchen_page_title
+theme: kitchen
 region: header
 weight: -30
 provider: null

@@ -1,0 +1,13 @@
+global-styling:
+  version: VERSION
+  css:
+    base:
+      assets/css/kitchen.base.css: {}
+  dependencies:
+    - seven/global-styling
+
+install-page:
+  version: VERSION
+  css:
+    theme:
+      assets/css/kitchen.install.css: {}

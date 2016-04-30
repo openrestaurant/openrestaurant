@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - openrestaurant_seven
-id: openrestaurant_seven_content
-theme: openrestaurant_seven
+    - kitchen
+id: kitchen_content
+theme: kitchen
 region: content
 weight: 0
 provider: null

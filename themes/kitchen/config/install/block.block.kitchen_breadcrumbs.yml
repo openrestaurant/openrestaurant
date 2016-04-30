@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - openrestaurant_seven
-id: openrestaurant_seven_breadcrumbs
-theme: openrestaurant_seven
+    - kitchen
+id: kitchen_breadcrumbs
+theme: kitchen
 region: breadcrumb
 weight: 0
 provider: null

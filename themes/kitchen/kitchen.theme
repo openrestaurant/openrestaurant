@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Functions to support theming in the Open Restaurant Seven theme.
+ * Functions to support theming in the Kitchen theme.
  */
 
 use Drupal\Core\Url;
@@ -9,12 +9,12 @@ use Drupal\Core\Url;
 /**
  * Implements hook_preprocess_install_page().
  */
-function openrestaurant_seven_preprocess_install_page(&$variables) {
+function kitchen_preprocess_install_page(&$variables) {
   // Add a copyright to the page.
   $variables['page']['copyright'] = t('Need help? Ask us at <a href=":link.">www.open.restaurant</a>.', [
     ':link' => 'http://open.restaurant'
   ]);
 
   // Attach the install-page library.
-  $variables['#attached']['library'][] = 'openrestaurant_seven/install-page';
+  $variables['#attached']['library'][] = 'kitchen/install-page';
 }

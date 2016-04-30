@@ -2,18 +2,18 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - openrestaurant_seven
-id: openrestaurant_seven_primary_local_tasks
-theme: openrestaurant_seven
-region: header
+    - kitchen
+id: kitchen_secondary_local_tasks
+theme: kitchen
+region: pre_content
 weight: 0
 provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: 'Primary tabs'
+  label: 'Secondary tabs'
   provider: core
   label_display: '0'
-  primary: true
-  secondary: false
+  primary: false
+  secondary: true
 visibility: {  }
