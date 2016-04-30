@@ -1,4 +1,4 @@
-name: 'Open Restaurant Event'
+name: Event
 description: 'Event management for Open Restaurant.'
 type: module
 core: 8.x

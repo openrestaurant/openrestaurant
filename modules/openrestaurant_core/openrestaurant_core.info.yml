@@ -1,6 +1,6 @@
-name: Open Restaurant Core
+name: Core
 type: module
-description: Core module for Open Restaurant.
+description: 'Core module for Open Restaurant.'
 core: 8.x
 version: 8.x-2.0-dev
 package: 'Open Restaurant'

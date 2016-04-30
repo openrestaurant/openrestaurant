@@ -1,4 +1,4 @@
-name: 'Open Restaurant Blog'
+name: Blog
 description: 'Blog system for the Open Restaurant.'
 type: module
 core: 8.x

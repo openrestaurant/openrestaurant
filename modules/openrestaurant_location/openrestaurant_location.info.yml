@@ -1,4 +1,4 @@
-name: Open Restaurant Location
+name: Location
 description: 'Manage multiple restaurant locations for Open Restaurant.'
 type: module
 core: 8.x

@@ -1,4 +1,4 @@
-name: 'Open Restaurant Menu'
+name: Menu
 description: 'Menu management for Open Restaurant.'
 type: module
 core: 8.x
