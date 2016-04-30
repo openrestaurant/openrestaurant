@@ -11,25 +11,7 @@ use Drupal\menu_link_content\Entity\MenuLinkContent;
  * Implements hook_install().
  */
 function openrestaurant_pages_install() {
-  // Create a node for the home page.
-  $node = Node::create([
-    'type'        => 'page',
-    'title'       => 'Home',
-    'body' => [
-      'value' => '<h1 class="text--center">Welcome to Open Restaurant</h1><p class="margin--lg--top text--center padding--sm--top padding--sm--bottom"><a href="/menu" class="btn btn--lg btn--secondary">See our Menu</a></p>',
-      'format' => 'full_html',
-    ],
-  ]);
-  $node->save();
-
-  // Set front page to this node.
-  \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/node/' . $node->id())->save(TRUE);
-
-  // Create a menu link for the home page.
-  MenuLinkContent::create([
-    'title' => 'Home',
-    'link' => ['uri' => 'internal:/'],
-    'menu_name' => 'main',
-    'weight' => -20
-  ])->save();
+  // Set front page to node with id 1.
+  // Created via theme demo_content.
+  \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/node/1')->save(TRUE);
 }
