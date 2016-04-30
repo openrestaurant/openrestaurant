@@ -186,7 +186,7 @@ display:
         description: ''
         expanded: false
         parent: ''
-        weight: -15
+        weight: -5
         context: '0'
         menu_name: main
     cache_metadata:
