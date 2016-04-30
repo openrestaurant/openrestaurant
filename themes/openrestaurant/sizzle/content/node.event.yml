@@ -20,7 +20,7 @@ content:
       postal_code: '60804'
       address_line1: '1600 S 61St Ave Cicero'
   event_2:
-    uuid: d5999b98-81e2-4c37-bef7-e868d4c8c0cb
+    uuid: f9dfad1b-f524-40b1-b973-1ad9ec9213f4
     title: 'Veggie ipsum dolor'
     field_event_body:
       value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
@@ -36,7 +36,7 @@ content:
       postal_code: '94110'
       address_line1: 'Dolores Street'
   event_3:
-    uuid: d5999b98-81e2-4c37-bef7-e868d4c8c0cb
+    uuid: 5b298c0a-12dc-47a8-a310-f203307482de
     title: 'Courgette bean lotus root kale leek'
     field_event_body:
       value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
@@ -52,7 +52,7 @@ content:
       postal_code: '94110'
       address_line1: 'Dolores Street'
   event_4:
-    uuid: d5999b98-81e2-4c37-bef7-e868d4c8c0cb
+    uuid: 8667747e-f8eb-4c1e-8a22-b396aea48c52
     title: 'Sea lettuce napa cabbage celery groundnut green'
     field_event_body:
       value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
@@ -68,7 +68,7 @@ content:
       postal_code: '60804'
       address_line1: '1600 S 61St Ave Cicero'
   event_5:
-    uuid: d5999b98-81e2-4c37-bef7-e868d4c8c0cb
+    uuid: 22ebb832-71b5-40ef-a77d-1f2c724f9da1
     title: 'Celery quandong swiss chard chicory'
     field_event_body:
       value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
@@ -86,7 +86,7 @@ content:
       postal_code: '94110'
       address_line1: 'Dolores Street'
   event_6:
-    uuid: d5999b98-81e2-4c37-bef7-e868d4c8c0cb
+    uuid: 69fee15f-5fb6-47c7-8a02-c8123dfddec0
     title: 'Nori grape silver beet broccoli kombu'
     field_event_body:
       value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
@@ -104,7 +104,7 @@ content:
       postal_code: '60804'
       address_line1: '1600 S 61St Ave Cicero'
   event_7:
-    uuid: d5999b98-81e2-4c37-bef7-e868d4c8c0cb
+    uuid: 78e7ff1b-92b8-43bd-9f93-e4b48dfc1e5d
     title: 'Gumbo beet greens corn soko'
     field_event_body:
       value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'

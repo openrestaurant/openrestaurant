@@ -1,0 +1,9 @@
+entity_type: node
+bundle: page
+content:
+  page_1:
+    uuid: 0c632fcc-3706-4cc8-aeaa-eab3bd70afb7
+    title: 'Home'
+    body:
+      value: '<h1 class="text--center">Welcome to Open Restaurant</h1><p class="margin--lg--top text--center"><a href="/menu" class="btn btn--lg btn--secondary padding--sm--top padding--sm--bottom">See our Menu</a></p>'
+      format: full_html

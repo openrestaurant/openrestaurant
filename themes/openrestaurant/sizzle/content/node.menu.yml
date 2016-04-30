@@ -1,6 +1,7 @@
 entity_type: node
 bundle: menu
 content:
+
   starter_1:
     uuid: 3e2ead53-431c-4f34-9f13-616ddcd045fe
     title: 'Lipsum dolor sit menu'
@@ -11,6 +12,13 @@ content:
       category_1:
         entity_type: taxonomy_term
         uuid: c32c3563-a91f-4d05-84f9-9e923ae6f5b9
+    field_menu_nutrition_types:
+      type_1:
+        entity_type: taxonomy_term
+        uuid: b1c90145-ca39-432a-9d87-514a2fa12500
+      type_2:
+        entity_type: taxonomy_term
+        uuid: 4a8502c7-d748-4d30-8e3b-7bf5f64b7bf7
     field_menu_images:
       path: 'content/images/menus/starters-1.jpg'
       alt: 'This is alt text'
@@ -20,6 +28,7 @@ content:
     field_menu_description:
       value: '<p>Dolores, saepe exercitation fusce, posuere? Sociosqu? Nunc iste, iusto soluta nonummy vehicula nostrud ab pede, vero dicta eius. Dolorum, molestie, aptent vehicula dolore soluta! Est inventore? Molestiae nullam sagittis eligendi porro scelerisque mattis dicta tristique tenetur. Adipisicing porro explicabo sociosqu.</p><p>Ut occaecat condimentum error quibusdam blanditiis praesentium nostrum. Quibusdam? Quisquam ultricies nostrud accumsan primis, possimus ultrices, dolor platea, nulla ligula, sed consequat massa mollit feugiat, accumsan laudantium.</p>'
       format: full_html
+
   starter_2:
     uuid: b43e807d-ff05-47bb-8691-d2f0c40e1bfe
     title: 'Gumbo beet greens corn'
@@ -30,6 +39,13 @@ content:
       category_1:
         entity_type: taxonomy_term
         uuid: c32c3563-a91f-4d05-84f9-9e923ae6f5b9
+    field_menu_nutrition_types:
+      type_1:
+        entity_type: taxonomy_term
+        uuid: e9ac01e5-dd50-464a-9d41-9d9f3ece3072
+      type_2:
+        entity_type: taxonomy_term
+        uuid: 60293737-6e14-4cc5-b366-7bf9715834fa
     field_menu_images:
       path: 'content/images/menus/starters-2.jpg'
       alt: 'This is alt text'
@@ -39,6 +55,7 @@ content:
     field_menu_description:
       value: '<p>Dolores, saepe exercitation fusce, posuere? Sociosqu? Nunc iste, iusto soluta nonummy vehicula nostrud ab pede, vero dicta eius. Dolorum, molestie, aptent vehicula dolore soluta! Est inventore? Molestiae nullam sagittis eligendi porro scelerisque mattis dicta tristique tenetur. Adipisicing porro explicabo sociosqu.</p><p>Ut occaecat condimentum error quibusdam blanditiis praesentium nostrum. Quibusdam? Quisquam ultricies nostrud accumsan primis, possimus ultrices, dolor platea, nulla ligula, sed consequat massa mollit feugiat, accumsan laudantium.</p>'
       format: full_html
+
   starter_3:
     uuid: ede8637d-8bfc-4462-8b9f-4b3713316199
     title: 'Turnip greens'
@@ -49,6 +66,13 @@ content:
       category_1:
         entity_type: taxonomy_term
         uuid: c32c3563-a91f-4d05-84f9-9e923ae6f5b9
+    field_menu_nutrition_types:
+      type_1:
+        entity_type: taxonomy_term
+        uuid: e6240b6e-7c14-4f28-8264-9e9202ba60c4
+      type_2:
+        entity_type: taxonomy_term
+        uuid: 0c1d9a53-8e18-48aa-92b0-ffa994ef5a71
     field_menu_images:
       path: 'content/images/menus/starters-3.jpg'
       alt: 'This is alt text'
@@ -58,6 +82,7 @@ content:
     field_menu_description:
       value: '<p>Dolores, saepe exercitation fusce, posuere? Sociosqu? Nunc iste, iusto soluta nonummy vehicula nostrud ab pede, vero dicta eius. Dolorum, molestie, aptent vehicula dolore soluta! Est inventore? Molestiae nullam sagittis eligendi porro scelerisque mattis dicta tristique tenetur. Adipisicing porro explicabo sociosqu.</p><p>Ut occaecat condimentum error quibusdam blanditiis praesentium nostrum. Quibusdam? Quisquam ultricies nostrud accumsan primis, possimus ultrices, dolor platea, nulla ligula, sed consequat massa mollit feugiat, accumsan laudantium.</p>'
       format: full_html
+
   starter_4:
     uuid: 4538da5d-21b1-46c1-974e-eb5e90419385
     title: 'Turnip greens'
@@ -68,6 +93,13 @@ content:
       category_1:
         entity_type: taxonomy_term
         uuid: c32c3563-a91f-4d05-84f9-9e923ae6f5b9
+    field_menu_nutrition_types:
+      type_1:
+        entity_type: taxonomy_term
+        uuid: 0c1d9a53-8e18-48aa-92b0-ffa994ef5a71
+      type_2:
+        entity_type: taxonomy_term
+        uuid: e6240b6e-7c14-4f28-8264-9e9202ba60c4
     field_menu_images:
       path: 'content/images/menus/starters-4.jpg'
       alt: 'This is alt text'
@@ -249,7 +281,7 @@ content:
       value: '<p>Dolores, saepe exercitation fusce, posuere? Sociosqu? Nunc iste, iusto soluta nonummy vehicula nostrud ab pede, vero dicta eius. Dolorum, molestie, aptent vehicula dolore soluta! Est inventore? Molestiae nullam sagittis eligendi porro scelerisque mattis dicta tristique tenetur. Adipisicing porro explicabo sociosqu.</p><p>Ut occaecat condimentum error quibusdam blanditiis praesentium nostrum. Quibusdam? Quisquam ultricies nostrud accumsan primis, possimus ultrices, dolor platea, nulla ligula, sed consequat massa mollit feugiat, accumsan laudantium.</p>'
       format: full_html
   dinner_2:
-    uuid: 89fe898c-8b8c-474d-921e-69a2774b8242
+    uuid: 211b18e8-ffbe-4e67-a33c-b9c00b37e672
     title: 'Gumbo beet greens corn'
     field_menu_teaser:
       value: '<p>Kohlrabi radish okra azuki bean corn fava bean mustard.</p>'
@@ -390,7 +422,7 @@ content:
     field_menu_categories:
       category_1:
         entity_type: taxonomy_term
-        uuid: 4680d457-f1b5-4ef8-9a82-673234fdaed5
+        uuid: 5c64d565-d4d2-4fd4-8349-a3d78aa3cc92
     field_menu_images:
       path: 'content/images/menus/kids-1.jpg'
       alt: 'This is alt text'
@@ -409,7 +441,7 @@ content:
     field_menu_categories:
       category_1:
         entity_type: taxonomy_term
-        uuid: 4680d457-f1b5-4ef8-9a82-673234fdaed5
+        uuid: 5c64d565-d4d2-4fd4-8349-a3d78aa3cc92
     field_menu_images:
       path: 'content/images/menus/kids-2.jpg'
       alt: 'This is alt text'
@@ -428,7 +460,7 @@ content:
     field_menu_categories:
       category_1:
         entity_type: taxonomy_term
-        uuid: 4680d457-f1b5-4ef8-9a82-673234fdaed5
+        uuid: 5c64d565-d4d2-4fd4-8349-a3d78aa3cc92
     field_menu_images:
       path: 'content/images/menus/kids-3.jpg'
       alt: 'This is alt text'
@@ -447,7 +479,7 @@ content:
     field_menu_categories:
       category_1:
         entity_type: taxonomy_term
-        uuid: 4680d457-f1b5-4ef8-9a82-673234fdaed5
+        uuid: 5c64d565-d4d2-4fd4-8349-a3d78aa3cc92
     field_menu_images:
       path: 'content/images/menus/kids-4.jpg'
       alt: 'This is alt text'
