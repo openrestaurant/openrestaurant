@@ -2,15 +2,15 @@ entity_type: block_content
 bundle: hero
 content:
   front_page_hero:
-    uuid: '235195a8-7c46-48f2-b98e-854038b394c3'
+    uuid: 235195a8-7c46-48f2-b98e-854038b394c3
     info: 'Front page hero'
     field_hero_image:
-      path: 'content/images/front-page-hero.jpg'
+      path: 'content/images/hero/front-page-hero.jpg'
       alt: 'Front page hero'
       title: 'Front page hero'
     field_hero_caption:
       value: '<h2>Open Restaurant</h2><p>Open Source Restaurant Software</p>'
-      format: 'full_html'
+      format: full_html
     field_hero_link:
       link: '/contact'
       title: 'Contact'
@@ -18,39 +18,39 @@ content:
     uuid: cea4e0db-48e2-40e1-a59c-3c9d2678090c
     info: 'Menu hero'
     field_hero_image:
-      path: 'content/images/menu-hero.jpg'
+      path: 'content/images/hero/menu-hero.jpg'
       alt: 'Menu hero'
       title: 'Menu hero'
     field_hero_caption:
       value: '<h2>Our Menu</h2><p>Come see what''s cooking in our Kitchens</p>'
-      format: 'full_html'
+      format: full_html
   events_hero:
-    uuid: 'd1bd928d-768d-422e-879a-54a3301a7833'
+    uuid: d1bd928d-768d-422e-879a-54a3301a7833
     info: 'Events hero'
     field_hero_image:
-      path: 'content/images/events-hero.jpg'
+      path: 'content/images/hero/events-hero.jpg'
       alt: 'Events hero'
       title: 'Events hero'
     field_hero_caption:
       value: '<h2>Events</h2><p>Come see what''s cooking in our Kitchens</p>'
-      format: 'full_html'
+      format: full_html
   blog_hero:
-    uuid: 'e0f35b65-da6d-4b59-836e-54be9f6c7147'
+    uuid: e0f35b65-da6d-4b59-836e-54be9f6c7147
     info: 'Blog hero'
     field_hero_image:
-      path: 'content/images/blog-hero.jpg'
+      path: 'content/images/hero/blog-hero.jpg'
       alt: 'Blog hero'
       title: 'Blog hero'
     field_hero_caption:
       value: '<h2>News & Blog</h2><p>Keep up with the latest news</p>'
-      format: 'full_html'
+      format: full_html
   locations_hero:
-    uuid: 'a7bef790-b247-4970-b957-f04cb1da9575'
+    uuid: a7bef790-b247-4970-b957-f04cb1da9575
     info: 'Locations hero'
     field_hero_image:
-      path: 'content/images/locations-hero.jpg'
+      path: 'content/images/hero/locations-hero.jpg'
       alt: 'Locations hero'
       title: 'Locations hero'
     field_hero_caption:
       value: '<h2>Our Locations</h2><p>Find your favorite Open Restaurant</p>'
-      format: 'full_html'
+      format: full_html
