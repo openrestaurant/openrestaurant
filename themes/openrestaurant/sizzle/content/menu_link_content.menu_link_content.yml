@@ -1,0 +1,10 @@
+entity_type: menu_link_content
+bundle: menu_link_content
+content:
+  menu_link_content_1:
+    uuid: f4991af5-0125-4b92-935e-24045d90e31b
+    title: 'Home'
+    link:
+      uri: 'internal:/'
+    menu_name: main
+    weight: -20
