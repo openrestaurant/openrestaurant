@@ -23,3 +23,6 @@ projects:
   token:
     type: "module"
     version: "1.0-alpha2"
+defaults:
+  projects:
+    subdir: 'contrib/modules'
