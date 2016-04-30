@@ -2,12 +2,13 @@ entity_type: node
 bundle: location
 content:
   location_1:
+    uuid: 3332e225-7ada-4e0c-9159-e91afbbf9abb
     title: 'San Francisco'
     field_location_body:
       value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
-      format: 'full_html'
+      format: full_html
     field_location_images:
-      path: 'content/images/location-2.jpg'
+      path: 'content/images/locations/location-2.jpg'
       alt: 'This is alt text'
       title: 'This is title'
     field_location_address:
@@ -23,12 +24,13 @@ content:
       value: '<p>Monday - Tuesday 11am - 10pm<br>Friday - Sunday 11am - 11pm</p>'
       format: 'full_html'
   location_2:
+    uuid: 5715729a-1fd2-4b1b-8648-98e59970b010
     title: 'Chicago'
     field_location_body:
       value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
       format: 'full_html'
     field_location_images:
-      path: 'content/images/location-1.jpg'
+      path: 'content/images/locations/location-1.jpg'
       alt: 'This is alt text'
       title: 'This is title'
     field_location_location:
@@ -44,12 +46,13 @@ content:
       value: '<p>Monday - Tuesday 11am - 10pm<br>Friday - Sunday 11am - 11pm</p>'
       format: 'full_html'
   location_3:
+    uuid: edefe1ae-a2e5-4a94-b5fa-41392172e508
     title: 'New York'
     field_location_body:
       value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
       format: 'full_html'
     field_location_images:
-      path: 'content/images/location-3.jpg'
+      path: 'content/images/locations/location-3.jpg'
       alt: 'This is alt text'
       title: 'This is title'
     field_location_address:

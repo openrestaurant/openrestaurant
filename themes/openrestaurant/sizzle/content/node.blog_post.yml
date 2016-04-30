@@ -2,38 +2,42 @@ entity_type: node
 bundle: blog_post
 content:
   blog_post_1:
+    uuid: 30986517-32dc-4991-9f88-f61bf6d7ff98
     title: 'Lipsum dolor sit amet'
     field_blog_post_body:
       value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
-      format: 'full_html'
+      format: full_html
     field_blog_post_featured_image:
-      path: 'content/images/blog-post-1.jpg'
+      path: 'content/images/blog_posts/blog-post-1.jpg'
       alt: 'This is alt text'
       title: 'This is title'
   blog_post_2:
+    uuid: 6219b96d-0aab-496d-b3d9-5a2bb63d448f
     title: 'Veggie ipsum dolor'
     field_blog_post_body:
       value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
-      format: 'full_html'
+      format: full_html
     field_blog_post_featured_image:
-      path: 'content/images/blog-post-2.jpg'
+      path: 'content/images/blog_posts/blog-post-2.jpg'
       alt: 'This is alt text'
       title: 'This is title'
   blog_post_3:
+    uuid: d4f1dece-ba9c-4ca2-8512-d5cb347d9426
     title: 'Courgette bean lotus root kale leek'
     field_blog_post_body:
       value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
-      format: 'full_html'
+      format: full_html
     field_blog_post_featured_image:
-      path: 'content/images/blog-post-3.jpg'
+      path: 'content/images/blog_posts/blog-post-3.jpg'
       alt: 'This is alt text'
       title: 'This is title'
   blog_post_4:
+    uuid: bd402d6e-a175-4351-bb2e-e2ebbc6eab7e
     title: 'Sea lettuce napa cabbage celery groundnut green'
     field_blog_post_body:
       value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
-      format: 'full_html'
+      format: full_html
     field_blog_post_featured_image:
-      path: 'content/images/blog-post-4.jpg'
+      path: 'content/images/blog_posts/blog-post-4.jpg'
       alt: 'This is alt text'
       title: 'This is title'
