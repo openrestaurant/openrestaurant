@@ -7,7 +7,7 @@ exclusive: true
 distribution:
   name: Open Restaurant
   install:
-    theme: openrestaurant_seven
+    theme: kitchen
 
 # Required modules.
 dependencies:
@@ -67,7 +67,7 @@ dependencies:
 
 themes:
   - sizzle
-  - openrestaurant_seven
+  - kitchen
 
 # Set the environment here.
 environment: development
