@@ -23,6 +23,12 @@ projects:
   token:
     type: "module"
     version: "1.0-alpha2"
+  demo_content:
+    type: "module"
+    download:
+      type: "git"
+      url: "https://github.com/arshad/demo_content.git"
+      revision: "8.x-1.x"
 defaults:
   projects:
     subdir: 'contrib/modules'
