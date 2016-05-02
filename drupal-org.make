@@ -1,5 +1,5 @@
-core = 8.x
 api = 2
+core = 8.x
 
 projects[address][type] = module
 projects[address][version] = 1.0-beta2
@@ -23,7 +23,7 @@ projects[token][type] = module
 projects[token][version] = 1.0-alpha2
 
 projects[demo_content][type] = module
-projects[demo_content][download][url] = https://github.com/arshad/demo_content.git
+projects[demo_content][download][url] = http://git.drupal.org/sandbox/arshad/2717617.git
 projects[demo_content][download][branch] = 8.x-1.x
 
 defaults[projects][subdir] = "contrib/modules"
