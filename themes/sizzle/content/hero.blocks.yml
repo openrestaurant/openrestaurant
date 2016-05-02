@@ -5,7 +5,8 @@ content:
     uuid: 235195a8-7c46-48f2-b98e-854038b394c3
     info: 'Front page hero'
     field_hero_image:
-      path: 'content/images/hero/front-page-hero.jpg'
+      entity_type: file
+      uuid: 301942c9-a7f1-446f-a040-d7a6b981ee4c
       alt: 'Front page hero'
       title: 'Front page hero'
     field_hero_caption:
@@ -14,43 +15,51 @@ content:
     field_hero_link:
       link: '/contact'
       title: 'Contact'
+
   menu_hero:
     uuid: cea4e0db-48e2-40e1-a59c-3c9d2678090c
     info: 'Menu hero'
     field_hero_image:
-      path: 'content/images/hero/menu-hero.jpg'
+      entity_type: file
+      uuid: 8272a26d-6a09-467c-9be8-7341fdfd5b90
       alt: 'Menu hero'
       title: 'Menu hero'
     field_hero_caption:
       value: '<h2>Our Menu</h2><p>Come see what''s cooking in our Kitchens</p>'
       format: full_html
-  events_hero:
-    uuid: d1bd928d-768d-422e-879a-54a3301a7833
-    info: 'Events hero'
+
+  locations_hero:
+    uuid: a7bef790-b247-4970-b957-f04cb1da9575
+    info: 'Locations hero'
     field_hero_image:
-      path: 'content/images/hero/events-hero.jpg'
-      alt: 'Events hero'
-      title: 'Events hero'
+      entity_type: file
+      uuid: 2288478c-9c36-4b00-a339-59ffbc646544
+      alt: 'Locations hero'
+      title: 'Locations hero'
     field_hero_caption:
-      value: '<h2>Events</h2><p>Come see what''s cooking in our Kitchens</p>'
+      value: '<h2>Our Locations</h2><p>Find your favorite Open Restaurant</p>'
       format: full_html
+
   blog_hero:
     uuid: e0f35b65-da6d-4b59-836e-54be9f6c7147
     info: 'Blog hero'
     field_hero_image:
-      path: 'content/images/hero/blog-hero.jpg'
+      entity_type: file
+      uuid: 1412ada9-9b98-42cf-b764-170463a8932c
       alt: 'Blog hero'
       title: 'Blog hero'
     field_hero_caption:
       value: '<h2>News & Blog</h2><p>Keep up with the latest news</p>'
       format: full_html
-  locations_hero:
-    uuid: a7bef790-b247-4970-b957-f04cb1da9575
-    info: 'Locations hero'
+
+  events_hero:
+    uuid: d1bd928d-768d-422e-879a-54a3301a7833
+    info: 'Events hero'
     field_hero_image:
-      path: 'content/images/hero/locations-hero.jpg'
-      alt: 'Locations hero'
-      title: 'Locations hero'
+      entity_type: file
+      uuid: fb11fd5c-c217-410d-aa31-9c181074d171
+      alt: 'Events hero'
+      title: 'Events hero'
     field_hero_caption:
-      value: '<h2>Our Locations</h2><p>Find your favorite Open Restaurant</p>'
+      value: '<h2>Events</h2><p>Come see what''s cooking in our Kitchens</p>'
       format: full_html

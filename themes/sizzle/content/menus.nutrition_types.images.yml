@@ -1,0 +1,34 @@
+entity_type: file
+bundle: file
+content:
+  file_1:
+    uuid: fc91ceff-f916-4015-af95-4909ff9850d9
+    path: $PATH$/content/images/nutritions/icon-alcohol-free.png
+
+  file_2:
+    uuid: 8a9657a3-a42b-47e0-a086-be615c452ebc
+    path: $PATH$/content/images/nutritions/icon-dairy-free.png
+
+  file_3:
+    uuid: b8568839-6b97-4e2d-b34d-7841760e86f7
+    path: $PATH$/content/images/nutritions/icon-gluten-free.png
+
+  file_4:
+    uuid: 7c4a85c8-042f-46df-b798-ddbc51e0037f
+    path: $PATH$/content/images/nutritions/icon-nuts-free.png
+
+  file_5:
+    uuid: 1b56d42f-f75d-49c5-9c0d-0de5fdd62f1d
+    path: $PATH$/content/images/nutritions/icon-organic.png
+
+  file_6:
+    uuid: 4b8012c2-6908-4b1d-be74-3d3bb91ddf1a
+    path: $PATH$/content/images/nutritions/icon-sugar-free.png
+
+  file_7:
+    uuid: f794ea7a-9671-4ef2-a17a-fcc7466f8608
+    path: $PATH$/content/images/nutritions/icon-vegan.png
+
+  file_8:
+    uuid: 374a980b-f20a-47a5-b4ec-106dd7b73444
+    path: $PATH$/content/images/nutritions/icon-vegetarian.png

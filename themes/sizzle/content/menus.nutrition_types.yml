@@ -1,0 +1,66 @@
+entity_type: taxonomy_term
+bundle: nutrition_type
+content:
+  term_1:
+    uuid: b1c90145-ca39-432a-9d87-514a2fa12500
+    name: 'Alcohol Free'
+    weight: 10
+    field_nutrition_type_icon:
+      entity_type: file
+      uuid: fc91ceff-f916-4015-af95-4909ff9850d9
+
+  term_2:
+    uuid: 4a8502c7-d748-4d30-8e3b-7bf5f64b7bf7
+    name: 'Dairy Free'
+    weight: 20
+    field_nutrition_type_icon:
+      entity_type: file
+      uuid: 8a9657a3-a42b-47e0-a086-be615c452ebc
+
+  term_3:
+    uuid: e9ac01e5-dd50-464a-9d41-9d9f3ece3072
+    name: 'Gluten Free'
+    weight: 30
+    field_nutrition_type_icon:
+      entity_type: file
+      uuid: b8568839-6b97-4e2d-b34d-7841760e86f7
+
+  term_4:
+    uuid: 60293737-6e14-4cc5-b366-7bf9715834fa
+    name: 'Nuts free'
+    weight: 40
+    field_nutrition_type_icon:
+      entity_type: file
+      uuid: 7c4a85c8-042f-46df-b798-ddbc51e0037f
+
+  term_5:
+    uuid: 45b1bf06-43b0-46c6-9c43-e2890ad093c1
+    name: 'Organic'
+    weight: 50
+    field_nutrition_type_icon:
+      entity_type: file
+      uuid: 1b56d42f-f75d-49c5-9c0d-0de5fdd62f1d
+
+  term_6:
+    uuid: e6240b6e-7c14-4f28-8264-9e9202ba60c4
+    name: 'Sugar Free'
+    weight: 60
+    field_nutrition_type_icon:
+      entity_type: file
+      uuid: 4b8012c2-6908-4b1d-be74-3d3bb91ddf1a
+
+  term_7:
+    uuid: 77017fcd-3d6b-4fdc-bb81-4e3e0035f5c0
+    name: 'Vegan'
+    weight: 60
+    field_nutrition_type_icon:
+      entity_type: file
+      uuid: f794ea7a-9671-4ef2-a17a-fcc7466f8608
+
+  term_8:
+    uuid: 0c1d9a53-8e18-48aa-92b0-ffa994ef5a71
+    name: 'Vegetarian'
+    weight: 60
+    field_nutrition_type_icon:
+      entity_type: file
+      uuid: 374a980b-f20a-47a5-b4ec-106dd7b73444

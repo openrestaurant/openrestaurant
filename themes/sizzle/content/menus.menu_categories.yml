@@ -5,22 +5,27 @@ content:
     uuid: c32c3563-a91f-4d05-84f9-9e923ae6f5b9
     name: 'Starters'
     weight: 10
+
   term_2:
     uuid: 14ca546c-937b-468b-86c7-86a3d742b134
     name: 'Breakfast'
     weight: 20
+
   term_3:
     uuid: ef7d637a-e02c-4ca6-8d86-128edb3291d9
     name: 'Lunch'
     weight: 30
+
   term_4:
     uuid: c84c0035-25e4-43e4-8713-25888fa1ddf7
     name: 'Dinner'
     weight: 40
+
   term_5:
     uuid: 4680d457-f1b5-4ef8-9a82-673234fdaed5
     name: 'Drinks'
     weight: 50
+
   term_6:
     uuid: 5c64d565-d4d2-4fd4-8349-a3d78aa3cc92
     name: 'Kids'

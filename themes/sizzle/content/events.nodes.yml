@@ -10,7 +10,8 @@ content:
     field_event_date:
       value: '2015-05-08T17:30:00'
     field_event_featured_image:
-      path: 'content/images/events/event-1.jpg'
+      entity_type: file
+      uuid: 54afa17b-9847-47b9-8754-69027dda87fd
       alt: 'This is alt text'
       title: 'This is title'
     field_event_location:
@@ -19,6 +20,7 @@ content:
       locality: 'Chicago'
       postal_code: '60804'
       address_line1: '1600 S 61St Ave Cicero'
+
   event_2:
     uuid: f9dfad1b-f524-40b1-b973-1ad9ec9213f4
     title: 'Veggie ipsum dolor'
@@ -26,7 +28,8 @@ content:
       value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
       format: 'full_html'
     field_event_featured_image:
-      path: 'content/images/events/event-2.jpg'
+      entity_type: file
+      uuid: 3fa863b8-75b7-4032-8784-18b164e13639
       alt: 'This is alt text'
       title: 'This is title'
     field_event_location:
@@ -35,6 +38,7 @@ content:
       locality: 'San Francisco'
       postal_code: '94110'
       address_line1: 'Dolores Street'
+
   event_3:
     uuid: 5b298c0a-12dc-47a8-a310-f203307482de
     title: 'Courgette bean lotus root kale leek'
@@ -42,7 +46,8 @@ content:
       value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
       format: 'full_html'
     field_event_featured_image:
-      path: 'content/images/events/event-3.jpg'
+      entity_type: file
+      uuid: 77522c34-ecd2-4152-a316-b0e2ce8cd363
       alt: 'This is alt text'
       title: 'This is title'
     field_event_location:
@@ -51,6 +56,7 @@ content:
       locality: 'San Francisco'
       postal_code: '94110'
       address_line1: 'Dolores Street'
+
   event_4:
     uuid: 8667747e-f8eb-4c1e-8a22-b396aea48c52
     title: 'Sea lettuce napa cabbage celery groundnut green'
@@ -58,7 +64,8 @@ content:
       value: '<p>Mung bean lotus root kale leek black-eyed pea courgette celery pumpkin horseradish komatsuna dulse amaranth celery. Sea lettuce napa cabbage celery groundnut green bean yarrow bamboo shoot endive okra. Leek arugula sorrel corn pea sprouts leek mustard tomato endive soko lotus root j\u00edcama horseradish cress maize garlic bitterleaf nori.\r\n\r\nParsley broccoli rabe salad asparagus tatsoi quandong spinach mustard sea lettuce wakame.</p>'
       format: 'full_html'
     field_event_featured_image:
-      path: 'content/images/events/event-4.jpg'
+      entity_type: file
+      uuid: 3fa863b8-75b7-4032-8784-18b164e13639
       alt: 'This is alt text'
       title: 'This is title'
     field_event_location:
@@ -67,6 +74,7 @@ content:
       locality: 'Chicago'
       postal_code: '60804'
       address_line1: '1600 S 61St Ave Cicero'
+
   event_5:
     uuid: 22ebb832-71b5-40ef-a77d-1f2c724f9da1
     title: 'Celery quandong swiss chard chicory'
@@ -76,7 +84,8 @@ content:
     field_event_date:
       value: '2015-04-08T17:30:00'
     field_event_featured_image:
-      path: 'content/images/events/event-4.jpg'
+      entity_type: file
+      uuid: d2a6b5d3-6167-4377-99f5-5a2f0cd2ec60
       alt: 'This is alt text'
       title: 'This is title'
     field_event_location:
@@ -85,6 +94,7 @@ content:
       locality: 'San Francisco'
       postal_code: '94110'
       address_line1: 'Dolores Street'
+
   event_6:
     uuid: 69fee15f-5fb6-47c7-8a02-c8123dfddec0
     title: 'Nori grape silver beet broccoli kombu'
@@ -94,7 +104,8 @@ content:
     field_event_date:
       value: '2015-02-08T12:30:00'
     field_event_featured_image:
-      path: 'content/images/events/event-1.jpg'
+      entity_type: file
+      uuid: 77522c34-ecd2-4152-a316-b0e2ce8cd363
       alt: 'This is alt text'
       title: 'This is title'
     field_event_location:
@@ -103,6 +114,7 @@ content:
       locality: 'Chicago'
       postal_code: '60804'
       address_line1: '1600 S 61St Ave Cicero'
+
   event_7:
     uuid: 78e7ff1b-92b8-43bd-9f93-e4b48dfc1e5d
     title: 'Gumbo beet greens corn soko'
@@ -112,7 +124,8 @@ content:
     field_event_date:
       value: '2015-05-08T08:00:00'
     field_event_featured_image:
-      path: 'content/images/events/event-3.jpg'
+      entity_type: file
+      uuid: d2a6b5d3-6167-4377-99f5-5a2f0cd2ec60
       alt: 'This is alt text'
       title: 'This is title'
     field_event_location:

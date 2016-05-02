@@ -1,0 +1,98 @@
+entity_type: file
+bundle: file
+content:
+  file_1:
+    uuid: baec6f98-cacf-40e9-b44e-2e6f9e6d2a03
+    path: $PATH$/content/images/menus/breakfast-1.jpg
+
+  file_2:
+    uuid: 095f9d3a-ec50-4eff-bf95-2c86de0d5ed7
+    path: $PATH$/content/images/menus/breakfast-2.jpg
+
+  file_3:
+    uuid: 0845ad1b-3ed2-45b7-bade-0b04902fa78c
+    path: $PATH$/content/images/menus/breakfast-3.jpg
+
+  file_4:
+    uuid: 72c96106-e5f1-4227-83fd-36bd4bf919f3
+    path: $PATH$/content/images/menus/breakfast-4.jpg
+
+  file_5:
+    uuid: 90294130-9937-4006-94df-c6ac222c8210
+    path: $PATH$/content/images/menus/dinner-1.jpg
+
+  file_6:
+    uuid: 61b275f9-f94c-4a33-812d-2b660249170d
+    path: $PATH$/content/images/menus/dinner-2.jpg
+
+  file_7:
+    uuid: f683d094-5967-4579-866e-d13eb1eba6e6
+    path: $PATH$/content/images/menus/dinner-3.jpg
+
+  file_8:
+    uuid: ba9e95c5-fc5e-4b2d-9886-9e0aff9e41b6
+    path: $PATH$/content/images/menus/dinner-4.jpg
+
+  file_9:
+    uuid: 61efd41f-0d05-40d1-8a65-bab7b2cca9a0
+    path: $PATH$/content/images/menus/drinks-1.jpg
+
+  file_10:
+    uuid: 240ecc3e-b06c-43ac-87dd-e871d1742631
+    path: $PATH$/content/images/menus/drinks-2.jpg
+
+  file_11:
+    uuid: 07e7a8bf-3882-40ad-937e-eb8f36366863
+    path: $PATH$/content/images/menus/drinks-3.jpg
+
+  file_12:
+    uuid: ab82615c-6306-4eb1-a9c1-d8f4e5ada7f5
+    path: $PATH$/content/images/menus/drinks-4.jpg
+
+  file_13:
+    uuid: dd7e748e-02b0-4e4d-a8b7-ee6aa3d7bd68
+    path: $PATH$/content/images/menus/kids-1.jpg
+
+  file_14:
+    uuid: 5287a396-7d75-4baf-a584-1c68a766b460
+    path: $PATH$/content/images/menus/kids-2.jpg
+
+  file_15:
+    uuid: b1475786-f57a-491b-bfdd-a60776d40d33
+    path: $PATH$/content/images/menus/kids-3.jpg
+
+  file_16:
+    uuid: de56ec79-5b29-458d-8969-bf11ee4b5f2f
+    path: $PATH$/content/images/menus/kids-4.jpg
+
+  file_17:
+    uuid: e1b58f65-eb4f-4b3e-a7c4-b221c2414a6b
+    path: $PATH$/content/images/menus/lunch-1.jpg
+
+  file_18:
+    uuid: 4054218f-767c-42b8-bbe5-947cf8f8a27e
+    path: $PATH$/content/images/menus/lunch-2.jpg
+
+  file_19:
+    uuid: 6aaf8ec7-aaed-4bbe-9a10-8747486de0e1
+    path: $PATH$/content/images/menus/lunch-3.jpg
+
+  file_20:
+    uuid: 3ebe7b08-c4a3-4def-b077-264cc786e02c
+    path: $PATH$/content/images/menus/lunch-4.jpg
+
+  file_21:
+    uuid: cf7ac1cd-875c-4232-9871-660d071d2eba
+    path: $PATH$/content/images/menus/starters-1.jpg
+
+  file_22:
+    uuid: 57644df4-61c1-4aef-b10d-796e8f658fc1
+    path: $PATH$/content/images/menus/starters-2.jpg
+
+  file_23:
+    uuid: e4b77e5b-8a84-4f6d-8204-f8f5988835b9
+    path: $PATH$/content/images/menus/starters-3.jpg
+
+  file_24:
+    uuid: dbbb5085-2426-4e3d-9ebe-3199f537498f
+    path: $PATH$/content/images/menus/starters-4.jpg

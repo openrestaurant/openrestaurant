@@ -1,0 +1,14 @@
+entity_type: file
+bundle: file
+content:
+  file_1:
+    uuid: a4fd201b-6605-4da1-822d-44b8df4b97a4
+    path: $PATH$/content/images/locations/location-1.jpg
+
+  file_2:
+    uuid: e2bd0fe7-00f9-4b20-b710-b575bf1d0d3f
+    path: $PATH$/content/images/locations/location-2.jpg
+
+  file_3:
+    uuid: f8d1e28d-20e0-4199-99b3-89a5772ee9a6
+    path: $PATH$/content/images/locations/location-3.jpg

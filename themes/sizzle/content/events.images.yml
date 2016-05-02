@@ -1,0 +1,18 @@
+entity_type: file
+bundle: file
+content:
+  file_1:
+    uuid: 54afa17b-9847-47b9-8754-69027dda87fd
+    path: $PATH$/content/images/events/event-1.jpg
+
+  file_2:
+    uuid: 3fa863b8-75b7-4032-8784-18b164e13639
+    path: $PATH$/content/images/events/event-2.jpg
+
+  file_3:
+    uuid: 77522c34-ecd2-4152-a316-b0e2ce8cd363
+    path: $PATH$/content/images/events/event-3.jpg
+
+  file_4:
+    uuid: d2a6b5d3-6167-4377-99f5-5a2f0cd2ec60
+    path: $PATH$/content/images/events/event-4.jpg

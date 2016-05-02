@@ -1,0 +1,18 @@
+entity_type: file
+bundle: file
+content:
+  file_1:
+    uuid: 338abc48-3a01-402f-91df-568919021ccc
+    path: $PATH$/content/images/blog_posts/blog-post-1.jpg
+
+  file_2:
+    uuid: fc648908-d905-4bd2-8e92-ac401c7aa420
+    path: $PATH$/content/images/blog_posts/blog-post-2.jpg
+
+  file_3:
+    uuid: ef95b8c0-3c0b-4d94-941d-f696d37f71bb
+    path: $PATH$/content/images/blog_posts/blog-post-3.jpg
+
+  file_4:
+    uuid: 2b99bd96-be43-435e-83ea-92b518f31c57
+    path: $PATH$/content/images/blog_posts/blog-post-4.jpg

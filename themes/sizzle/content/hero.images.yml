@@ -1,0 +1,23 @@
+entity_type: file
+bundle: file
+content:
+  front_page_hero:
+    uuid: 301942c9-a7f1-446f-a040-d7a6b981ee4c
+    path: $PATH$/content/images/hero/front-page-hero.jpg
+
+  menu_hero:
+    uuid: 8272a26d-6a09-467c-9be8-7341fdfd5b90
+    path: $PATH$/content/images/hero/menu-hero.jpg
+
+  locations_hero:
+    uuid: 2288478c-9c36-4b00-a339-59ffbc646544
+    path: $PATH$/content/images/hero/locations-hero.jpg
+
+  blog_hero:
+    uuid: 1412ada9-9b98-42cf-b764-170463a8932c
+    path: $PATH$/content/images/hero/blog-hero.jpg
+
+  events_hero:
+    uuid: fb11fd5c-c217-410d-aa31-9c181074d171
+    path: $PATH$/content/images/hero/events-hero.jpg
+
