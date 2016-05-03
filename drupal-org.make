@@ -27,4 +27,4 @@ projects[demo_content][download][type] = git
 projects[demo_content][download][url] = http://git.drupal.org/sandbox/arshad/2717617.git
 projects[demo_content][download][branch] = 8.x-1.x
 
-defaults[projects][subdir] = "contrib/modules"
+defaults[projects][subdir] = "../contrib/modules"
