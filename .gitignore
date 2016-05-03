@@ -1,3 +1,4 @@
-# Ignore profile modules, libraries and themes
-contrib/*
+# Ignore contrib modules, libraries and themes
+contrib/modules/*
+contrib/themes/*
 .DS_Store
