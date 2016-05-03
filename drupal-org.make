@@ -23,6 +23,7 @@ projects[token][type] = module
 projects[token][version] = 1.0-alpha2
 
 projects[demo_content][type] = module
+projects[demo_content][download][type] = git
 projects[demo_content][download][url] = http://git.drupal.org/sandbox/arshad/2717617.git
 projects[demo_content][download][branch] = 8.x-1.x
 
