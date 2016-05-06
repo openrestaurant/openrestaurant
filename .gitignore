@@ -1,4 +1,4 @@
 # Ignore contrib modules, libraries and themes
 modules/contrib/*
-themes/radix/*
+themes/radix
 .DS_Store
