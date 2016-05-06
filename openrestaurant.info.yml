@@ -48,7 +48,6 @@ dependencies:
   - features_ui
   - admin_toolbar
   - admin_toolbar_tools
-  - devel
   - pathauto
   - token
   - ctools
