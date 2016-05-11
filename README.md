@@ -1,3 +1,5 @@
 Open Restaurant 2.0
 =========
-For Open Restaurant 1.0, see [http://github.com/openrestaurant/restaurant](http://github.com/openrestaurant/restaurant).
+See the project page on drupal.org for installation: [https://www.drupal.org/project/openrestaurant](https://www.drupal.org/project/openrestaurant).
+
+For Open Restaurant 1.0, see [https://www.drupal.org/project/restaurant](https://www.drupal.org/project/restaurant).
