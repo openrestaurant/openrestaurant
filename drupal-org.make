@@ -34,4 +34,4 @@ projects[demo_content][version] = 1.x-dev
 
 ; Themes
 projects[radix][type] = theme
-projects[radix][version] = 3.x-dev
+projects[radix][version] = 3.0-alpha3

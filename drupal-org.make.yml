@@ -31,7 +31,7 @@ projects:
     version: "1.x-dev"
   radix:
     type: "theme"
-    version: "3.x-dev"
+    version: "3.0-alpha3"
 defaults:
   projects:
     subdir: 'contrib/modules'
