@@ -16,7 +16,7 @@ projects:
     version: "3.0-alpha25"
   composer_manager:
     type: "module"
-    version: "1.0-dev"
+    version: "1.0-rc1"
   features:
     type: "module"
     version: "3.0-beta3"
@@ -28,10 +28,7 @@ projects:
     version: "1.0-alpha2"
   demo_content:
     type: "module"
-    download:
-      type: "git"
-      url: "https://github.com/arshad/demo_content.git"
-      revision: "8.x-1.x"
+    version: "1.x-dev"
 defaults:
   projects:
     subdir: 'contrib/modules'
