@@ -29,6 +29,9 @@ projects:
   demo_content:
     type: "module"
     version: "1.x-dev"
+  radix:
+    type: "theme"
+    version: "3.x-dev"
 defaults:
   projects:
     subdir: 'contrib/modules'
