@@ -44,13 +44,14 @@ dependencies:
   - automated_cron
 # contrib
   - address
-  - features
-  - features_ui
   - admin_toolbar
   - admin_toolbar_tools
+  - ctools
+  - demo_content
+  - features
+  - features_ui
   - pathauto
   - token
-  - ctools
 # open restaurant
   - openrestaurant_config
   - openrestaurant_blocks
@@ -65,7 +66,6 @@ dependencies:
   - openrestaurant_demo
 
 themes:
-  - sizzle
   - kitchen
 
 # Set the environment here.
