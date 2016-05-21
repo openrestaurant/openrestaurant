@@ -9,5 +9,5 @@ effects:
     id: image_scale_and_crop
     weight: 1
     data:
-      width: 85
-      height: 70
+      width: 120
+      height: 100
