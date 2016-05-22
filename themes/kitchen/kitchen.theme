@@ -11,7 +11,7 @@ use Drupal\Core\Url;
  */
 function kitchen_preprocess_install_page(&$variables) {
   // Add a copyright to the page.
-  $variables['page']['copyright'] = t('Need help? Ask us at <a href=":link.">www.open.restaurant</a>.', [
+  $variables['page']['copyright'] = t('Need help? Ask us at <a href=":link.">open.restaurant</a>.', [
     ':link' => 'http://open.restaurant'
   ]);
 
