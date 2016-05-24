@@ -3,3 +3,18 @@
  * @file
  * Install, update and uninstall functions for the Open Restaurant installation profile.
  */
+
+define('OPEN_RESTAURANT_DISTRIBUTION_NAME', 'Open Restaurant');
+
+/**
+ * Implements hook_install_tasks().
+ */
+function openrestaurant_install_tasks(&$install_state) {
+  return [
+    'install_select_themes' => [
+      'display_name' => t('Select theme'),
+      'type' => 'form',
+      'function' => 'Drupal\openrestaurant\Installer\Form\ThemeSelectionForm',
+    ],
+  ];
+}
