@@ -31,6 +31,9 @@ class ThemeSelectionForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
+    // Clear all messages.
+    drupal_get_messages();
+
     $form['#title'] = t('Select default theme');
 
     $form['default_theme'] = [
@@ -38,6 +41,12 @@ class ThemeSelectionForm extends ConfigFormBase {
       '#type' => 'select',
       '#options' => $this->getThemeOptions(),
       '#description' => $this->t('Select the default theme.'),
+    ];
+
+    $form['import_demo_content'] = [
+      '#title' => $this->t('Import demo content'),
+      '#type' => 'checkbox',
+      '#description' => $this->t('If checked, demo content from the selected theme will be installed.'),
     ];
 
     $form['actions'] = array('#type' => 'actions');
@@ -62,6 +71,12 @@ class ThemeSelectionForm extends ConfigFormBase {
 
     // Set it as default.
     \Drupal::service('theme_handler')->setDefault($default_theme);
+
+    // Import demo content.
+    $import_demo_content = $form_state->getValue('import_demo_content');
+    if ($import_demo_content) {
+      \Drupal::service('demo_content.manager')->importFromExtension($default_theme);
+    }
   }
 
   /**
