@@ -9,7 +9,7 @@ projects[address][type] = module
 projects[address][version] = 1.0-beta2
 
 projects[admin_toolbar][type] = module
-projects[admin_toolbar][version] = 1.14
+projects[admin_toolbar][version] = 1.15
 
 projects[config_update][type] = module
 projects[config_update][version] = 1.1
