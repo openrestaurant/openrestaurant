@@ -4,15 +4,13 @@
  * Functions to support theming in the Kitchen theme.
  */
 
-use Drupal\Core\Url;
-
 /**
  * Implements hook_preprocess_install_page().
  */
 function kitchen_preprocess_install_page(&$variables) {
   // Add a copyright to the page.
-  $variables['page']['copyright'] = t('Need help? Ask us at <a href=":link.">open.restaurant</a>.', [
-    ':link' => 'http://open.restaurant'
+  $variables['page']['copyright'] = t('Need help? <a href=":link." target="_blank">Ask us</a>.', [
+    ':link' => 'https://www.drupal.org/project/issues/openrestaurant'
   ]);
 
   // Attach the install-page library.
