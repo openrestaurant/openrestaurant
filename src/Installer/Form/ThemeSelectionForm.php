@@ -37,7 +37,7 @@ class ThemeSelectionForm extends ConfigFormBase {
     $form['#title'] = t('Select default theme');
 
     $form['default_theme'] = [
-      '#title' => $this->t('Select theme'),
+      '#title' => $this->t('Default theme'),
       '#type' => 'select',
       '#options' => $this->getThemeOptions(),
       '#description' => $this->t('Select the default theme.'),
@@ -46,6 +46,7 @@ class ThemeSelectionForm extends ConfigFormBase {
     $form['import_demo_content'] = [
       '#title' => $this->t('Import demo content'),
       '#type' => 'checkbox',
+      '#default_value' => 1,
       '#description' => $this->t('If checked, demo content from the selected theme will be installed.'),
     ];
 
