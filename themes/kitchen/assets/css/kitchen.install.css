@@ -34,11 +34,11 @@ div.description,
 fieldset .form-item.form-item-account-pass-pass1 {
   margin-bottom: 1.5em !important; }
 
-.progress__track, .progress__bar {
+.progress .progress__track, .progress .progress__bar {
   border-radius: 2px;
   height: 24px; }
 
-.progress__bar {
+.progress .progress__bar {
   background: #796b4f; }
 
 body.install-page {
