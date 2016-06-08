@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Installation hooks for Open Restaurant Menu.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function openrestaurant_menu_install() {
+  // Set the module weight.
+  module_set_weight('openrestaurant_menu', 50);
+}

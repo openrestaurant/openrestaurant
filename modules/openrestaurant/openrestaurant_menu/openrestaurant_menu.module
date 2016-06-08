@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Menu system for Open Restaurant.
+ */
+
+/**
+ * Implements hook_menu_links_discovered_alter().
+ */
+function openrestaurant_menu_menu_links_discovered_alter(&$links) {
+  // Update the title and description for entity.menu.collection.
+  $links['entity.menu.collection']['title'] = t('Navigation');
+  $links['entity.menu.collection']['description'] = t('Manage navs and nav links.');
+}
+
+/**
+ * Implements hook_menu_local_actions_alter().
+ */
+function openrestaurant_menu_menu_local_actions_alter(&$local_actions) {
+  $local_actions['entity.menu.add_form']['title'] = t('Add nav');
+}

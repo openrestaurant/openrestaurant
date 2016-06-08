@@ -1,0 +1,5 @@
+services:
+  openrestaurant_menu.route_subscriber:
+    class: Drupal\openrestaurant_menu\EventSubscriber\OpenRestaurantMenuRouteSubscriber
+    tags:
+      - { name: event_subscriber }
