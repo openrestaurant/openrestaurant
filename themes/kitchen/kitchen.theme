@@ -9,7 +9,7 @@
  */
 function kitchen_preprocess_install_page(&$variables) {
   // Add a copyright to the page.
-  $variables['page']['copyright'] = t('Need help? <a href=":link." target="_blank">Ask us</a>.', [
+  $variables['page']['copyright'] = t('Need help? <a href=":link" target="_blank">Ask us</a>.', [
     ':link' => 'https://www.drupal.org/project/issues/openrestaurant'
   ]);
 
