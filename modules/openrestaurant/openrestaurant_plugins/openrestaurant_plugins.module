@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * @file
+ * Plugins for Open Restaurant.
+ */
+
+include 'openrestaurant_plugins.theme.inc';
