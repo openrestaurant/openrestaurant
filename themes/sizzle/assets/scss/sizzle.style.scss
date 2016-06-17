@@ -2,15 +2,17 @@
 // SASS partials import
 // -----------------------------------------------------------------------------
 
-// Sizzle variables.
-// -----------------------------------------------------------------------------
-@import "base/variables";
-
 // Bootstrap global partials.
 // -----------------------------------------------------------------------------
-// Core variables and mixins
+@import "base/variables";
 @import "bootstrap/variables";
+
+// Global partials.
+// -----------------------------------------------------------------------------
+@import "radix/mixins";
 @import "bootstrap/mixins";
+@import "base/mixin";
+@import "base/helper";
 
 // Bootstrap reset and dependencies
 // -----------------------------------------------------------------------------
@@ -70,24 +72,10 @@
 
 // Radix styles overrides and fixes.
 // -----------------------------------------------------------------------------
-@import "radix/mixin";
-@import "radix/admin";
-@import "radix/comment";
-@import "radix/form";
-@import "radix/layout";
-@import "radix/maintenance";
-@import "radix/modal";
-@import "radix/nav";
-@import "radix/node";
-@import "radix/panel";
-@import "radix/structure";
-@import "radix/view";
+@import "radix";
 
-// Sizzle partials
-// -----------------------------------------------------------------------------
-@import "base/mixin";
-@import "base/helper";
+// Partials.
+// --------------------------------------------------
 @import "base/typography";
-
 @import "layout/**/*";
 @import "components/**/*";

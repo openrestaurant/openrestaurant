@@ -3,8 +3,34 @@
   "description": "Default theme for Open Restaurant based on Radix.",
   "proxy" : "http://openrestaurant.dev/",
   "bowerDir": "./bower_components",
-  "sassIncludePaths": [
-    "./bower_components/bootstrap-sass/assets/stylesheets",
-    "./bower_components/font-awesome/scss"
-  ]
+  "css": {
+    "file" : "sizzle.style.scss",
+    "src": [
+      "assets/scss/**/*.scss"
+    ],
+    "dest": "assets/css",
+    "includePaths": [
+      "./bower_components/bootstrap-sass/assets/stylesheets",
+      "./bower_components/font-awesome/scss",
+      "../radix/scss"
+    ]
+  },
+  "js": {
+    "file" : "sizzle.script.js",
+    "src": [
+      "assets/js/**/*.js"
+    ]
+  },
+  "images": {
+    "src": [
+      "assets/images/**/*"
+    ],
+    "dest": "assets/images/"
+  },
+  "fonts": {
+    "src": [
+      "./bower_components/font-awesome/fonts/**.*"
+    ],
+    "dest": "./assets/fonts/"
+  }
 }

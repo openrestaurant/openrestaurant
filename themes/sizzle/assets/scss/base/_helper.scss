@@ -150,7 +150,7 @@ $directions: top, right, bottom, left;
     bottom: 0;
     left: 0;
     text-shadow: 0 0 1px rgba(black, 0.7);
-    @include transition(all 500ms);
+    transition: all 500ms;
     @include hover() {
       color: white;
       background: rgba(black, 0.7);
