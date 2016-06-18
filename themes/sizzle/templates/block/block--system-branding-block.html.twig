@@ -1,8 +1,7 @@
-{% extends "block.html.twig" %}
 {#
 /**
  * @file
- * Theme override for a branding block.
+ * Template for the branding block.
  *
  * Each branding element variable (logo, name, slogan) is only available if
  * enabled in the block configuration.
@@ -13,20 +12,32 @@
  * - site_slogan: Slogan for site as defined in Site information settings.
  */
 #}
-{% block content %}
-  <div class="site-branding">
-    {% if (site_name or site_logo) %}
-      <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
-        {% if site_logo %}
-          <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" class="site-branding__logo" />
-        {% endif %}
-        {% if site_name %}
-          <h1 class="site-branding__name">{{ site_name }}</h1>
-        {% endif %}
-      </a>
-    {% endif %}
-    {% if site_slogan %}
-      <h5 class="site-branding__slogan">{{ site_slogan }}</h5>
-    {% endif %}
-  </div>
-{% endblock %}
+{%
+set classes = [
+'block',
+bundle ? 'block--' ~ bundle|clean_class,
+id ? 'block--' ~ id|clean_class,
+]
+%}
+<div{{ attributes.addClass(classes)|without('id') }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+
+  {% block content %}
+    <div class="site-branding">
+      {% if (site_name or site_logo) %}
+        <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
+          {% if site_logo %}
+            <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" class="site-branding__logo" />
+          {% endif %}
+          {% if site_name %}
+            <h1 class="site-branding__name">{{ site_name }}</h1>
+          {% endif %}
+        </a>
+      {% endif %}
+      {% if site_slogan %}
+        <h5 class="site-branding__slogan">{{ site_slogan }}</h5>
+      {% endif %}
+    </div>
+  {% endblock %}
+</div>

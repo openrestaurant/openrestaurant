@@ -3,7 +3,7 @@ status: true
 dependencies:
   theme:
     - sizzle
-id: pagetitle
+id: page__title
 theme: sizzle
 region: content
 weight: -10

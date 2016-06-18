@@ -55,7 +55,7 @@ $font-family-serif:       $font-tertiary;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          13px !default;
+$font-size-base:          14px !default;
 $font-size-large:         ceil($font-size-base * 1.25) !default;
 $font-size-small:         ceil($font-size-base * 0.75) !default;
 
@@ -66,7 +66,7 @@ $font-size-h4:            ceil($font-size-base * 1.25) !default;
 $font-size-h5:            $font-size-base !default;
 $font-size-h6:            ceil($font-size-base * 0.85) !default;
 
-$line-height-base:        1.5 !default;
+$line-height-base:        1.6 !default;
 $line-height-computed:    floor($font-size-base * $line-height-base) !default; // ~20px
 
 $headings-font-family:    $font-secondary !default;

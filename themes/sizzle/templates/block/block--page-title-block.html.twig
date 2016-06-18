@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Template for Page title block.
+ */
+#}
+{%
+set classes = [
+'block',
+'block--' ~ id|clean_class
+]
+%}
+<div{{ attributes.addClass(classes)|without('id') }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</div>

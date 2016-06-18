@@ -1,0 +1,56 @@
+// Nav: Footer
+// -----------------------------------------------------------------------------
+ul.footer-nav {
+  @extend .row;
+  margin: 30px auto;
+  padding: 30px 15px;
+  > li {
+    @extend .col-xs-6;
+    @extend .col-sm-3;
+    display: block;
+    margin-bottom: 35px;
+    @include breakpoint(md) {
+      margin-bottom: 0px;
+    }
+    > .dropdown-toggle {
+      font-weight: 400;
+      font-size: 14px;
+      padding: 0;
+      background: none;
+      text-transform: uppercase;
+      color: white;
+      .caret {
+        display: none;
+      }
+      &:hover, &.active {
+        background: none;
+      }
+    }
+
+    &.open {
+      > .dropdown-toggle {
+        background: none;
+      }
+    }
+
+    ul.dropdown-menu {
+      display: block;
+      position: static;
+      float: none;
+      background: none;
+      border: 0;
+      padding: 0;
+      li {
+        a {
+          font-size: 13px;
+          line-height: 160%;
+          padding: 0;
+          display: inline;
+          &:hover, &:focus, &.active, &.active-trail {
+            background: none;
+          }
+        }
+      }
+    }
+  }
+}

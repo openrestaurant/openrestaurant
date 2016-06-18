@@ -1,20 +1,22 @@
 // General
 // -----------------------------------------------------------------------------
 .view {
-  .view__header {
-    @extend .margin--md--bottom;
+
+  &__header,
+  &__footer {
     text-align: center;
+  }
+
+  &__header {
+
     h2 {
       margin: 0 0 5px;
     }
   }
-
-  .view__footer {
-    @extend .margin--md--top;
-    text-align: center;
-  }
 }
 
+// Front page view
+// -----------------------------------------------------------------------------
 .page--front {
 
   .view {

@@ -5,7 +5,7 @@ dependencies:
     - system
   theme:
     - sizzle
-id: sitebranding
+id: branding
 theme: sizzle
 region: header
 weight: -2

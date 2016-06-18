@@ -1,11 +1,18 @@
-// Page title
+// Block: Page title
 // -----------------------------------------------------------------------------
-.page-header {
+.block--page--title {
   margin: 0 0 2.5em;
   padding: 0 0 1.5em;
   border-bottom: 1px solid $border-color;
+  text-align: center;
 
   h1 {
-    font-size: 3.0em;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 2.0em;
+  }
+
+  .path--node & {
+    text-align: left;
   }
 }

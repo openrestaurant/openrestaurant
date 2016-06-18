@@ -1,0 +1,49 @@
+// Nav: Tabs
+// -----------------------------------------------------------------------------
+.nav {
+  &-tabs, &--tabs {
+    margin: 0 auto 25px;
+    text-align: center;
+    border: 1px solid $brand-primary;
+    border-radius: 2px;
+    @include bp(sm) {
+      display: table;
+    }
+    li {
+      margin: 0;
+      float: none;
+      border-bottom: 1px solid $brand-primary;
+      @include bp(sm) {
+        border: 0;
+        border-right: 1px solid $brand-primary;
+        float: left;
+      }
+      &:last-child {
+        border: 0;
+      }
+      a {
+        @extend .btn;
+        border: 0;
+        margin: 0;
+        border-radius: 0;
+        @include bp(md) {
+          min-width: 200px;
+        }
+        &:hover, &:focus {
+          border: 0;
+          background-color: $brand-secondary;
+          color: white;
+          @include box-shadow(none);
+        }
+      }
+
+      &.active-trail {
+        a, a:hover, a:focus {
+          border: 0;
+          background-color: $brand-secondary;
+          color: white;
+        }
+      }
+    }
+  }
+}

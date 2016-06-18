@@ -1,6 +1,6 @@
 // View : Blog
 // -----------------------------------------------------------------------------
-.view-display-id-blog {
+.view--blog-posts--blog {
 
   .blog-post {
     margin: 0 0 2.5em;
@@ -11,7 +11,7 @@
 
 // View: Featured Blog Posts
 // -----------------------------------------------------------------------------
-.view-display-id-featured_blog_posts {
+.view--blog-posts--featured-blog-posts {
 
   .blog-post {
     border-top: 1px solid $border-color;

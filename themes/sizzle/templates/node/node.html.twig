@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Template to display a node.
+ */
+#}
+{% set bundle = node.bundle|clean_class %}
+{%
+set classes = [
+'node',
+bundle,
+node.isPromoted() ? bundle ~ '--promoted',
+node.isSticky() ? bundle ~ '--sticky',
+not node.isPublished() ? bundle ~ '--unpublished',
+view_mode ? bundle ~ '--' ~ view_mode|clean_class,
+]
+%}
+{{ attach_library('classy/node') }}
+<article{{ attributes.addClass(classes) }}>
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</article>

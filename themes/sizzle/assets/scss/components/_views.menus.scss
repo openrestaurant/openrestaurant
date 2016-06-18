@@ -1,12 +1,20 @@
 // View: Menus
 // -----------------------------------------------------------------------------
-.view-display-id-menus {
+.view--menus {
   padding-bottom: 4em;
+
+  .view {
+
+    &__header {
+      margin-bottom: 3em;
+    }
+  }
 
   > .view__content {
 
-    h1 {
-      margin: 1.0em 0;
+    h2 {
+      margin: 2.0em 0 1.0em;
+      text-align: center;
     }
 
     .view__row {
@@ -21,23 +29,15 @@
   }
 }
 
-// View: Menu categories
+// Views: Menu category
 // -----------------------------------------------------------------------------
-.view-display-id-menu_categories {
-  margin-bottom: 2.0em;
+.view--menus--menus-by-category {
 
-  .view {
+  > .view__content {
+    margin-top: 2em;
 
-    &__content {
-      text-align: center;
-    }
-
-    &__row {
-      display: inline-block;
-      margin: 0 0.5em;
-      font-size: 1.4em;
-      font-family: $font-secondary;
-      text-transform: uppercase;
+    h2 {
+      display: none;
     }
   }
 }
