@@ -10,6 +10,7 @@ dependencies:
   - menu_ui
   - node
   - openrestaurant_config
+  - openrestaurant_plugins
   - path
   - pathauto
   - taxonomy
