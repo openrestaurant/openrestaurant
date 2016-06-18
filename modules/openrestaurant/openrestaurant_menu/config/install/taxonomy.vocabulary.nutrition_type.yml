@@ -1,4 +1,3 @@
-uuid: 79f0ab73-404a-492a-96c5-be11b922b1cc
 langcode: en
 status: true
 dependencies: {  }
@@ -7,4 +6,3 @@ vid: nutrition_type
 description: ''
 hierarchy: 0
 weight: 0
-
