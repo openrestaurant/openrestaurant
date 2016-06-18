@@ -10,17 +10,19 @@
     height: auto;
   }
 
-  &__caption-wrapper {
+  &__caption {
     text-align: center;
     color: lighten($brand-primary, 40);
     background-color: rgba(darken($brand-primary, 10), 0.90);
-    padding: 30px;
-    max-width: 500px;
     position: absolute;
-    margin: 50px auto;
-    left: 0;
+    top: 0;
     right: 0;
-    box-shadow: 0 0 5px rgba($brand-primary, 0.9);
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    margin: auto;
+    display: table;
+    padding: 30px;
 
     &:before {
       content: " ";
@@ -31,42 +33,42 @@
       bottom: 15px;
       left: 15px;
     }
+  }
 
-    h1, h2, h3, h4, h5, h6, a {
-      font-family: $font-secondary;
-      margin: 0;
-      text-transform: uppercase;
-      position: relative;
-      color: lighten($brand-primary, 30);
+  h1, h2, h3, h4, h5, h6, a {
+    font-family: $font-secondary;
+    margin: 0;
+    text-transform: uppercase;
+    position: relative;
+    color: lighten($brand-primary, 30);
+  }
+
+  h1 {
+    font-size: 28px;
+    @include bp(sm) {
+      font-size: 32px;
     }
+  }
 
-    h1 {
-      font-size: 28px;
-      @include bp(sm) {
-        font-size: 32px;
-      }
-    }
-
-    p {
+  p {
+    font-size: 18px;
+    line-height: 140%;
+    font-weight: 300;
+    @include bp(md) {
       font-size: 18px;
       line-height: 140%;
-      font-weight: 300;
-      @include bp(md) {
-        font-size: 18px;
-        line-height: 140%;
-      }
     }
+  }
 
-    small {
-      font-size: 0.85em;
-    }
+  small {
+    font-size: 0.85em;
+  }
 
-    a {
-      color: white;
+  a {
+    color: white;
 
-      &:hover {
-        color: $brand-secondary;
-      }
+    &:hover {
+      color: $brand-secondary;
     }
   }
 }
