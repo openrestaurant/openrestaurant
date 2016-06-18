@@ -5,16 +5,11 @@
  */
 #}
 {% if title %}
-  <h1>{{ title }}</h1>
+  <h2>{{ title }}</h2>
 {% endif %}
 <div class="row">
   {% for row in rows %}
-    {%
-    set row_classes = [
-    default_row_class ? 'col-md-6 view__row',
-    ]
-    %}
-    <div{{ row.attributes.addClass(row_classes) }}>
+    <div{{ row.attributes.addClass('col-md-6 view__row') }}>
       {{ row.content }}
     </div>
   {% endfor %}
