@@ -1,0 +1,6 @@
+enable_override: 1
+view: menus
+view_display: menus_by_category
+inherit_settings: 1
+pass_arguments: 1
+uuid: 13314816-35d6-46db-ad8a-e54e1d99ccdb

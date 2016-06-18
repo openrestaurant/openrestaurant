@@ -1,4 +1,3 @@
-uuid: e8d8eb8a-fde7-44e8-ba66-5c26375eb58b
 langcode: en
 status: true
 dependencies:
@@ -10,9 +9,9 @@ dependencies:
     - views.view.menu_categories
   module:
     - node
+    - openrestaurant_plugins
+    - taxonomy
     - user
-_core:
-  default_config_hash: k5vrFFUs4emngbFNoLs8cn_1JAkCyatyM2-z33Qd5mE
 id: menus
 label: Menus
 module: views
@@ -59,7 +58,7 @@ display:
           items_per_page: 0
           offset: 0
       style:
-        type: default
+        type: content
         options:
           grouping:
             -
@@ -67,7 +66,7 @@ display:
               rendered: true
               rendered_strip: false
           row_class: ''
-          default_row_class: true
+          default_row_class: false
           uses_fields: true
       row:
         type: 'entity:node'
@@ -264,26 +263,11 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:core.entity_view_display.node.blog_post.default'
-        - 'config:core.entity_view_display.node.blog_post.featured'
-        - 'config:core.entity_view_display.node.blog_post.full'
-        - 'config:core.entity_view_display.node.blog_post.teaser'
-        - 'config:core.entity_view_display.node.event.default'
-        - 'config:core.entity_view_display.node.event.featured'
-        - 'config:core.entity_view_display.node.event.teaser'
-        - 'config:core.entity_view_display.node.location.default'
-        - 'config:core.entity_view_display.node.location.full'
-        - 'config:core.entity_view_display.node.location.teaser'
-        - 'config:core.entity_view_display.node.menu.default'
-        - 'config:core.entity_view_display.node.menu.teaser'
-        - 'config:core.entity_view_display.node.page.default'
-        - 'config:core.entity_view_display.node.page.teaser'
-        - 'config:field.storage.node.field_menu_categories'
+      tags: {  }
   menus:
     display_plugin: page
     id: menus
-    display_title: Page
+    display_title: Menus
     position: 1
     display_options:
       display_extenders: {  }
@@ -297,6 +281,7 @@ display:
         weight: -10
         context: '0'
         menu_name: main
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:
@@ -304,20 +289,75 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:core.entity_view_display.node.blog_post.default'
-        - 'config:core.entity_view_display.node.blog_post.featured'
-        - 'config:core.entity_view_display.node.blog_post.full'
-        - 'config:core.entity_view_display.node.blog_post.teaser'
-        - 'config:core.entity_view_display.node.event.default'
-        - 'config:core.entity_view_display.node.event.featured'
-        - 'config:core.entity_view_display.node.event.teaser'
-        - 'config:core.entity_view_display.node.location.default'
-        - 'config:core.entity_view_display.node.location.full'
-        - 'config:core.entity_view_display.node.location.teaser'
-        - 'config:core.entity_view_display.node.menu.default'
-        - 'config:core.entity_view_display.node.menu.teaser'
-        - 'config:core.entity_view_display.node.page.default'
-        - 'config:core.entity_view_display.node.page.teaser'
-        - 'config:field.storage.node.field_menu_categories'
-
+      tags: {  }
+  menus_by_category:
+    display_plugin: page
+    id: menus_by_category
+    display_title: 'Menus by category'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: taxonomy/term/%
+      menu:
+        type: none
+        title: Menu
+        description: ''
+        expanded: false
+        parent: ''
+        weight: -10
+        context: '0'
+        menu_name: main
+      display_description: ''
+      arguments:
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: true
+          title: 'Our {{ arguments.tid }} Menu'
+          default_argument_type: taxonomy_tid
+          default_argument_options:
+            term_page: '1'
+            anyall: ','
+            node: false
+            limit: false
+            vids: {  }
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            items_per_page: 25
+            override: false
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          break_phrase: false
+          add_table: false
+          require_value: false
+          reduce_duplicates: false
+          plugin_id: taxonomy_index_tid
+      defaults:
+        arguments: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
