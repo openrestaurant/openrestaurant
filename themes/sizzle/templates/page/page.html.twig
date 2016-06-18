@@ -24,11 +24,9 @@
     </div>
   {% endif %}
 
-  <main role="main">
-    <div class="page__content">
-      <div class="container">
-        {{ page.content }}
-      </div>
+  <main class="page__content" role="main">
+    <div class="container">
+      {{ page.content }}
     </div>
 
     {% if page.bottom %}
@@ -41,7 +39,7 @@
   </main>
 
   {% if page.footer %}
-    <footer class="page__footer" style="background-image: url({{ footer.background_image }});">
+    <footer class="page__footer">
       <div class="container">
         {{ page.footer }}
       </div>
