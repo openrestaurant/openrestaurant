@@ -26,13 +26,16 @@ function sizzle_preprocess_page(&$variables) {
 
   // Get footer background image from theme settings.
   $footer_bg_image_fid = theme_get_setting('features.footer_background_image');
-  if (count($footer_bg_image_fid)) {
+  if (!empty($footer_bg_image_fid)) {
     $file = File::load($footer_bg_image_fid[0]);
     if (!empty($file)) {
       $footer_bg_image = $file->url();
     }
   }
 
-  // Add the footer background image to template..
-  $variables['footer']['background_image'] = $footer_bg_image;
+  // Add the css as inline.
+  $variables['#attached']['html_head'][] = [[
+    '#tag' => 'style',
+    '#value' => 'footer { background-image: url(' . $footer_bg_image . '); }',
+  ], 'sizzle_css'];
 }
