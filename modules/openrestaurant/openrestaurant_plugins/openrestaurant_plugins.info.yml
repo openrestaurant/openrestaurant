@@ -1,4 +1,4 @@
-name: 'Open Restaurant Plugins'
+name: Plugins
 description: 'Provides pluginsn for Open Restaurant'
 type: module
 core: 8.x
