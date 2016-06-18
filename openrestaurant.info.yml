@@ -52,6 +52,7 @@ dependencies:
   - features_ui
   - pathauto
   - token
+  - tvi
 # open restaurant
   - openrestaurant_config
   - openrestaurant_blocks
@@ -61,6 +62,7 @@ dependencies:
   - openrestaurant_location
   - openrestaurant_menu
   - openrestaurant_pages
+  - openrestaurant_plugins
 
 themes:
   - kitchen
