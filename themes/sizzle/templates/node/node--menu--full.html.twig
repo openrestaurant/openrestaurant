@@ -1,0 +1,24 @@
+{#
+/**
+ * @file
+ * Template to display a Menu in Teaser mode.
+ */
+#}
+{% extends 'node.html.twig' %}
+{% block content %}
+  <div{{ content_attributes.addClass('row') }}>
+    {{ title_prefix }}
+    {{ title_suffix }}
+
+    <div class="col-sm-4">
+      {{ content.field_menu_images }}
+    </div>
+    <div class="col-sm-8">
+      <div class="lead">
+        {{ content.field_menu_teaser }}
+      </div>
+      {{ content.field_menu_nutrition_types }}
+      {{ content.field_menu_description }}
+    </div>
+  </div>
+{% endblock %}
