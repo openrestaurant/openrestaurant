@@ -4,32 +4,34 @@
  * Template to display an Event in Full mode.
  */
 #}
-{% set bundle = node.bundle|clean_class %}
-{%
-set classes = [
-'node',
-bundle,
-node.isPromoted() ? bundle ~ '--promoted',
-node.isSticky() ? bundle ~ '--sticky',
-not node.isPublished() ? bundle ~ '--unpublished',
-view_mode ? bundle ~ '--' ~ view_mode|clean_class,
-]
-%}
-{{ attach_library('classy/node') }}
-<article{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-  {{ title_suffix }}
+{% extends 'node.html.twig' %}
 
-  <div{{ content_attributes.addClass('row') }}>
-    <div class="col-sm-5">
-      {{ content.field_event_featured_image }}
+{% block content %}
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="event__featured-image">
+        {{ content.field_event_featured_image }}
+      </div>
     </div>
-    <div class="col-sm-7">
-      {{ content.field_event_date }}
-      {{ content.field_event_location }}
+    <div class="col-sm-7 col-sm-offset-1">
+
+      <h6>
+        <a href="/events">
+          <i class="fa fa-long-arrow-left"></i> {% trans %} See all events {% endtrans %}
+        </a>
+      </h6>
+
+      <h1 class="page__title">{{ label }}</h1>
+
+      <p class="lead">
+        {{ content.field_event_date }}
+      </p>
+
+      <div class="event__location">
+        {{ content.field_event_location }}
+      </div>
       <hr />
       {{ content.field_event_body }}
     </div>
   </div>
-
-</article>
+{% endblock %}

@@ -16,6 +16,9 @@ bundle|clean_class
   {{ title_prefix }}
   {{ title_suffix }}
   {% block content %}
-    {{ content }}
+    {{ content.field_hero_image }}
+    <div class="hero__caption">
+      {{ content.field_hero_caption }}
+    </div>
   {% endblock %}
 </div>

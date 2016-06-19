@@ -17,6 +17,9 @@ view_mode ? bundle ~ '--' ~ view_mode|clean_class,
 %}
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+
   {% block content %}
     {{ content }}
   {% endblock %}

@@ -4,31 +4,27 @@
  * Template to display an Location in Full mode.
  */
 #}
-{% set bundle = node.bundle|clean_class %}
-{%
-set classes = [
-'node',
-bundle,
-node.isPromoted() ? bundle ~ '--promoted',
-node.isSticky() ? bundle ~ '--sticky',
-not node.isPublished() ? bundle ~ '--unpublished',
-view_mode ? bundle ~ '--' ~ view_mode|clean_class,
-]
-%}
-{{ attach_library('classy/node') }}
-<article{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-  {{ title_suffix }}
+{% extends 'node.html.twig' %}
 
-  <div{{ content_attributes.addClass('row') }}>
-    <div class="col-sm-6">
-      {{ content.field_location_images }}
-    </div>
-    <div class="col-sm-6">
+{% block content %}
+  <div class="row">
+    <div class="col-sm-7">
+
+      <h6>
+        <a href="/locations">
+          <i class="fa fa-long-arrow-left"></i> {% trans %} See all locations {% endtrans %}
+        </a>
+      </h6>
+
+      <h1 class="page__title">{{ label }}</h1>
+
       <div class="row">
         <div class="col-sm-6">
           {{ content.field_location_address }}
-          {{ content.field_location_opening_hours }}
+
+          <div class="location__opening-hours">
+            {{ content.field_location_opening_hours }}
+          </div>
         </div>
         <div class="col-sm-6">
           {{ content.field_location_contact }}
@@ -38,6 +34,10 @@ view_mode ? bundle ~ '--' ~ view_mode|clean_class,
       <hr />
       {{ content.field_location_body }}
     </div>
+    <div class="col-sm-4 col-sm-offset-1">
+      <div class="location__images">
+        {{ content.field_location_images }}
+      </div>
+    </div>
   </div>
-
-</article>
+{% endblock %}

@@ -4,22 +4,11 @@
  * Template to display a Blog Post in Teaser mode.
  */
 #}
-{% set bundle = node.bundle|clean_class %}
+{% extends 'node.html.twig' %}
 {% set date = node.createdtime|format_date('date_medium') %}
-{%
-set classes = [
-'node',
-bundle,
-node.isPromoted() ? bundle ~ '--promoted',
-node.isSticky() ? bundle ~ '--sticky',
-not node.isPublished() ? bundle ~ '--unpublished',
-view_mode ? bundle ~ '--' ~ view_mode|clean_class,
-]
-%}
-{{ attach_library('classy/node') }}
-<article{{ attributes.addClass(classes) }}>
 
-  <div{{ content_attributes.addClass('row') }}>
+{% block content %}
+  <div class="row">
     <div class="col-sm-5">
       {{ content.field_blog_post_featured_image }}
     </div>
@@ -28,18 +17,13 @@ view_mode ? bundle ~ '--' ~ view_mode|clean_class,
         <div class="blog-post__date">{{ date }}</div>
       {% endif %}
 
-      {{ title_prefix }}
-      {% if not page %}
-        <h1 class="blog-post__title">
-          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-        </h1>
-      {% endif %}
-      {{ title_suffix }}
+      <h2 class="blog-post__title">
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
 
       {{ content.field_blog_post_body }}
 
       <a href="{{ url }}" class="blog-post__readmore btn btn--xs">{% trans %} Read more {% endtrans %}</a>
     </div>
   </div>
-
-</article>
+{% endblock %}

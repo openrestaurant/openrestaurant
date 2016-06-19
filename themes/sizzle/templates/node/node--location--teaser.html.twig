@@ -4,43 +4,34 @@
  * Template to display an Location in Teaser mode.
  */
 #}
-{% set bundle = node.bundle|clean_class %}
-{%
-set classes = [
-'node',
-bundle,
-node.isPromoted() ? bundle ~ '--promoted',
-node.isSticky() ? bundle ~ '--sticky',
-not node.isPublished() ? bundle ~ '--unpublished',
-view_mode ? bundle ~ '--' ~ view_mode|clean_class,
-]
-%}
-{{ attach_library('classy/node') }}
-<article{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-  {{ title_suffix }}
+{% extends 'node.html.twig' %}
 
-  <div{{ content_attributes.addClass('row') }}>
-    <div class="col-sm-6">
+{% block content %}
+  <div class="row">
+    <div class="col-sm-5">
       {{ content.field_location_images[0] }}
     </div>
-    <div class="col-sm-6">
-      <h1 class="location__title">
+    <div class="col-sm-7">
+      <h2 class="location__title">
         <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-      </h1>
+      </h2>
 
       <div class="row">
         <div class="col-sm-6">
           {{ content.field_location_address }}
-          {{ content.field_location_opening_hours }}
+
+          <div class="location__opening-hours">
+            {{ content.field_location_opening_hours }}
+          </div>
         </div>
         <div class="col-sm-6">
           {{ content.field_location_contact }}
         </div>
       </div>
 
-      <a href="{{ url }}" class="location__readmore btn btn--xs">{% trans %} Read more {% endtrans %}</a>
+      <a href="{{ url }}" class="location__readmore btn btn--xs">
+        <i class="fa fa-map-marker"></i> {% trans %} View location {% endtrans %}
+      </a>
     </div>
   </div>
-
-</article>
+{% endblock %}

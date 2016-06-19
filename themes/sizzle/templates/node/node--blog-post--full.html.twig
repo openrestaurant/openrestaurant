@@ -4,28 +4,23 @@
  * Template to display a Blog Post in Teaser mode.
  */
 #}
-{% set bundle = node.bundle|clean_class %}
+{% extends 'node.html.twig' %}
 {% set date = node.createdtime|format_date('date_medium') %}
-{%
-set classes = [
-'node',
-bundle,
-node.isPromoted() ? bundle ~ '--promoted',
-node.isSticky() ? bundle ~ '--sticky',
-not node.isPublished() ? bundle ~ '--unpublished',
-view_mode ? bundle ~ '--' ~ view_mode|clean_class,
-]
-%}
-{{ attach_library('classy/node') }}
-<article{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-  {{ title_suffix }}
 
+{% block content %}
   <div{{ content_attributes.addClass('row') }}>
     <div class="col-sm-5">
       {{ content.field_blog_post_featured_image }}
     </div>
     <div class="col-sm-7">
+
+      <h6>
+        <a href="/blog">
+          <i class="fa fa-long-arrow-left"></i> {% trans %} See all blog posts {% endtrans %}
+        </a>
+      </h6>
+
+      <h1 class="page__title">{{ label }}</h1>
 
       {% if display_submitted %}
         <h4 class="blog-post__date">{{ date }}</h4>
@@ -34,5 +29,4 @@ view_mode ? bundle ~ '--' ~ view_mode|clean_class,
       {{ content.field_blog_post_body }}
     </div>
   </div>
-
-</article>
+{% endblock %}
