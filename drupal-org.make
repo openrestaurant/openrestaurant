@@ -32,6 +32,9 @@ projects[token][version] = 1.0-alpha2
 projects[demo_content][type] = module
 projects[demo_content][version] = 1.x-dev
 
+projects[tvi][type] = module
+projects[tvi][version] = 1.0-alpha9
+
 ; Themes
 projects[radix][type] = theme
 projects[radix][version] = 3.0-alpha3
