@@ -1,18 +1,28 @@
 // Block: Page title
 // -----------------------------------------------------------------------------
 .block--page--title {
-  margin: 0 0 2.5em;
-  padding: 0 0 1.5em;
-  border-bottom: 1px solid $border-color;
-  text-align: center;
-
-  h1 {
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 2.0em;
-  }
+  margin: 0;
 
   .path--node & {
-    text-align: left;
+
+    @include breakpoint(md) {
+      display: none;
+    }
+  }
+}
+
+.page__title {
+  margin: 0 0 0.5em;
+  padding: 0 0 0.5em;
+  border-bottom: 1px solid $border-color;
+  text-transform: uppercase;
+  font-size: 2.2em;
+
+  .path--node .node & {
+    display: none;
+    
+    @include breakpoint(md) {
+      display: block;
+    }
   }
 }

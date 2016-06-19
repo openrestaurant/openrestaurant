@@ -32,6 +32,18 @@ h5 {
   text-transform: uppercase;
 }
 
+h6 {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 1.0em;
+
+  .fa {
+    font-size: 1.4em;
+    position: relative;
+    top: 2px;
+  }
+}
+
 // Anchors
 // -----------------------------------------------------------------------------
 a {
@@ -62,4 +74,10 @@ a {
   &--bold {
     font-weight: 600;
   }
+}
+
+// Rule
+// -----------------------------------------------------------------------------
+hr {
+  border-top: 1px solid $border-color;
 }

@@ -9178,6 +9178,15 @@ h5 {
   font-size: 1.0em;
   text-transform: uppercase; }
 
+h6 {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 1.0em; }
+  h6 .fa, h6 .views-exposed-form .views-exposed-form__widget--select > label:before, .views-exposed-form h6 .views-exposed-form__widget--select > label:before, h6 .views-exposed-form .views-exposed-form__widget#edit-location-wrapper > label:before, .views-exposed-form h6 .views-exposed-form__widget#edit-location-wrapper > label:before {
+    font-size: 1.4em;
+    position: relative;
+    top: 2px; }
+
 a:hover, a:focus {
   text-decoration: none; }
 
@@ -9195,6 +9204,9 @@ a:hover, a:focus {
 
 .text--bold {
   font-weight: 600; }
+
+hr {
+  border-top: 1px solid #b7aa91; }
 
 body.maintenance-page {
   padding: 10px 0 50px; }
@@ -9238,7 +9250,7 @@ body {
     font-size: 2.4em;
     margin-bottom: 0.8em; }
   .page__footer {
-    margin: 0;
+    margin: 4em 0 0;
     padding: 65px 0 45px;
     position: relative;
     background-size: cover; }
@@ -9357,16 +9369,22 @@ body {
       color: #f26838; }
 
 .block--page--title {
-  margin: 0 0 2.5em;
-  padding: 0 0 1.5em;
+  margin: 0; }
+  @media (min-width: 992px) {
+    .path--node .block--page--title {
+      display: none; } }
+
+.page__title {
+  margin: 0 0 0.5em;
+  padding: 0 0 0.5em;
   border-bottom: 1px solid #b7aa91;
-  text-align: center; }
-  .block--page--title h1 {
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 2.0em; }
-  .path--node .block--page--title {
-    text-align: left; }
+  text-transform: uppercase;
+  font-size: 2.2em; }
+  .path--node .node .page__title {
+    display: none; }
+    @media (min-width: 992px) {
+      .path--node .node .page__title {
+        display: block; } }
 
 .btn, .media-widget > a, .nav-tabs li a, .nav--tabs li a, .views-exposed-form .views-exposed-form__widget--select > label {
   color: #796b4f;
@@ -9727,13 +9745,17 @@ ul.dropdown-menu {
 .event--teaser br {
   display: none; }
 
-.location__images .field__item {
-  margin-bottom: 1em; }
+.location__opening-hours {
+  margin-top: 1em; }
 
-.location__images img {
-  display: block;
-  border: 1px solid #796b4f;
-  padding: 0.25em; }
+.location__images {
+  margin-bottom: 2.0em; }
+  .location__images .field__item {
+    margin-bottom: 1em; }
+  .location__images img {
+    display: block;
+    border: 1px solid #796b4f;
+    padding: 0.25em; }
 
 .menu__images img {
   display: block;
@@ -9848,8 +9870,7 @@ ul.dropdown-menu {
   .view--menus .view__header {
     margin-bottom: 3em; }
   .view--menus > .view__content h2 {
-    margin: 2.0em 0 1.0em;
-    text-align: center; }
+    margin: 2.0em 0 1.0em; }
   .view--menus > .view__content .view__row .node {
     margin-bottom: 1.5em;
     padding-bottom: 1.5em;
