@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.menu.field_menu_description
     - field.field.node.menu.field_menu_featured
     - field.field.node.menu.field_menu_images
+    - field.field.node.menu.field_menu_nutrition_types
     - field.field.node.menu.field_menu_teaser
     - node.type.menu
   module:
@@ -57,4 +58,6 @@ content:
     weight: 100
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_menu_nutrition_types: true
+

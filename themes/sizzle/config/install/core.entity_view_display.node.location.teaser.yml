@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.teaser
     - field.field.node.location.field_location_address
     - field.field.node.location.field_location_body
     - field.field.node.location.field_location_contact
@@ -10,7 +11,7 @@ dependencies:
     - node.type.location
   module:
     - address
-    - image
+    - responsive_image
     - text
     - user
 id: node.location.teaser
@@ -41,7 +42,7 @@ content:
     label: hidden
     settings:
       responsive_image_style: location_image
-      image_link: 'file'
+      image_link: file
     third_party_settings: {  }
     type: responsive_image
   field_location_opening_hours:
@@ -53,3 +54,4 @@ content:
   links:
     weight: 100
 hidden: {  }
+

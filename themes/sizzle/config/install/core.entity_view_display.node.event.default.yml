@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.featured
     - field.field.node.event.field_event_body
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_featured_image
@@ -11,40 +10,39 @@ dependencies:
   module:
     - address
     - datetime
-    - responsive_image
+    - image
     - user
-_core:
-  default_config_hash: w7jQ9ytVsni9cplY-cfsr2MeIz5bHUbBsd3cIBAk6VQ
-id: node.event.featured
+id: node.event.default
 targetEntityType: node
 bundle: event
-mode: featured
+mode: default
 content:
   field_event_date:
     weight: 2
     label: hidden
     settings:
-      format_type: date_medium
       timezone_override: ''
+      format_type: date_medium
     third_party_settings: {  }
     type: datetime_default
   field_event_featured_image:
-    weight: 0
+    weight: 1
     label: hidden
     settings:
-      responsive_image_style: event_featured_image
-      image_link: content
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    type: responsive_image
+    type: image
   field_event_location:
-    type: address_default
     weight: 3
-    label: hidden
+    label: above
     settings: {  }
     third_party_settings: {  }
+    type: address_default
   links:
-    weight: 1
+    weight: 0
     settings: {  }
     third_party_settings: {  }
 hidden:
   field_event_body: true
+

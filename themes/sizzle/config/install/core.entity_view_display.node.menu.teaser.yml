@@ -2,12 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.teaser
     - field.field.node.menu.field_menu_categories
     - field.field.node.menu.field_menu_description
     - field.field.node.menu.field_menu_featured
     - field.field.node.menu.field_menu_images
-    - field.field.node.menu.field_menu_teaser
     - field.field.node.menu.field_menu_nutrition_types
+    - field.field.node.menu.field_menu_teaser
     - node.type.menu
   module:
     - responsive_image
@@ -26,12 +27,6 @@ content:
       image_link: content
     third_party_settings: {  }
     type: responsive_image
-  field_menu_teaser:
-    weight: 101
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
   field_menu_nutrition_types:
     type: entity_reference_entity_view
     weight: 6
@@ -40,8 +35,15 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
+  field_menu_teaser:
+    weight: 101
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
 hidden:
-  field_menu_description: true
   field_menu_categories: true
+  field_menu_description: true
   field_menu_featured: true
   links: true
+
