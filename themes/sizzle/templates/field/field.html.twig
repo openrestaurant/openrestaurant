@@ -1,0 +1,24 @@
+{#
+/**
+ * @file
+ * Template for a field. Only content is rendered. All wrappers removed.
+ */
+#}
+{%
+  set title_classes = [
+    'field__label',
+    label_display == 'visually_hidden' ? 'visually-hidden',
+  ]
+%}
+{% if label_display != 'hidden' %}
+  <h4{{ title_attributes.addClass(title_classes) }}>{{ label }}</h4>
+{% endif %}
+{% for item in items %}
+  {% if multiple %}
+    <div{{ item.attributes.addClass('field__item') }}>
+  {% endif %}
+    {{ item.content }}
+  {% if multiple %}
+    </div>
+  {% endif %}
+{% endfor %}
