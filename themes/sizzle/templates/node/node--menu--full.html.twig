@@ -5,20 +5,42 @@
  */
 #}
 {% extends 'node.html.twig' %}
+
 {% block content %}
   <div{{ content_attributes.addClass('row') }}>
-    {{ title_prefix }}
-    {{ title_suffix }}
-
     <div class="col-sm-4">
-      {{ content.field_menu_images }}
-    </div>
-    <div class="col-sm-8">
-      <div class="lead">
+      <div class="text--lead visible-xs">
         {{ content.field_menu_teaser }}
       </div>
-      {{ content.field_menu_nutrition_types }}
-      {{ content.field_menu_description }}
+
+      <div class="menu__nutrition-types visible-xs">
+        {{ content.field_menu_nutrition_types }}
+      </div>
+
+      <div class="menu__images">
+        {{ content.field_menu_images }}
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <h1 class="page__title">
+        {{ label }}
+      </h1>
+
+      <div class="lead hidden-xs">
+        {{ content.field_menu_teaser }}
+      </div>
+
+      <div class="menu__nutrition-types hidden-xs">
+        {{ content.field_menu_nutrition_types }}
+      </div>
+
+      <div class="menu__description">
+        {{ content.field_menu_description }}
+      </div>
+
+      <a href="/menu" class="btn btn--secondary">
+        <i class="fa fa-long-arrow-left"></i> {% trans %} See all menus {% endtrans %}
+      </a>
     </div>
   </div>
 {% endblock %}

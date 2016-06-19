@@ -8,30 +8,31 @@
 
 {% block content %}
   <div class="row">
+
     <div class="col-sm-4">
       <div class="event__featured-image">
         {{ content.field_event_featured_image }}
       </div>
     </div>
+
     <div class="col-sm-7 col-sm-offset-1">
-
-      <h6>
-        <a href="/events">
-          <i class="fa fa-long-arrow-left"></i> {% trans %} See all events {% endtrans %}
-        </a>
-      </h6>
-
       <h1 class="page__title">{{ label }}</h1>
 
-      <p class="lead">
+      <p class="event__date lead">
         {{ content.field_event_date }}
       </p>
 
       <div class="event__location">
         {{ content.field_event_location }}
       </div>
-      <hr />
-      {{ content.field_event_body }}
+
+      <div class="event__body">
+        {{ content.field_event_body }}
+      </div>
+
+      <a href="/events" class="btn btn--secondary">
+        <i class="fa fa-long-arrow-left"></i> {% trans %} See all events {% endtrans %}
+      </a>
     </div>
   </div>
 {% endblock %}

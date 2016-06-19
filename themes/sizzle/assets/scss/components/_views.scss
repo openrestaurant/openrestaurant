@@ -20,10 +20,12 @@
 .page--front {
 
   .view {
+    margin-top: 4em;
 
     @include bp(md) {
       background: url('../images/bg/bg-separator-shadow.png') no-repeat top center;
       padding-top: 100px;
+      margin-top: 0;
     }
 
     &__header {
@@ -32,13 +34,10 @@
         text-transform: uppercase;
         margin-bottom: 5px;
       }
+    }
 
-      p.lead {
-        text-transform: uppercase;
-        color: $brand-secondary;
-        font-size: 15px;
-        font-weight: 400;
-      }
+    &__footer {
+      margin-top: 2em;
     }
   }
 }

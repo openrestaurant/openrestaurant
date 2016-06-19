@@ -7,16 +7,22 @@
   }
 
   &__featured-image {
-    margin-bottom: 1.0em;
-    
-    @include breakpoint(md) {
-      margin-bottom: 0;
+    margin-bottom: 1.5em;
+
+    img {
+      display: block;
+      border: 1px solid $brand-primary;
+      padding: 0.25em;
     }
   }
 
   &__readmore {
     display: inline-block;
     margin-top: 1em;
+  }
+
+  &__body {
+    margin-bottom: 1.5em;
   }
 }
 
@@ -33,7 +39,8 @@
   .blog-post {
 
     &__date {
-      margin-bottom: 0.5em;
+      margin-top: -0.25em;
+      margin-bottom: 1.0em;
     }
   }
 }

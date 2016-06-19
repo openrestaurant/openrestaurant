@@ -13,13 +13,11 @@
 
 .page__title {
   margin: 0 0 0.5em;
-  padding: 0 0 0.5em;
-  border-bottom: 1px solid $border-color;
   text-transform: uppercase;
-  font-size: 2.2em;
 
   .path--node .node & {
     display: none;
+    margin-bottom: 0.25em;
     
     @include breakpoint(md) {
       display: block;

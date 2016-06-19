@@ -9,24 +9,35 @@
 
 {% block content %}
   <div{{ content_attributes.addClass('row') }}>
+
     <div class="col-sm-5">
-      {{ content.field_blog_post_featured_image }}
+
+      {% if display_submitted %}
+        <div class="blog-post__date visible-xs">
+          {% trans %}Posted on{% endtrans %} {{ date }}</div>
+      {% endif %}
+
+      <div class="blog-post__featured-image">
+        {{ content.field_blog_post_featured_image }}
+      </div>
     </div>
+
     <div class="col-sm-7">
-
-      <h6>
-        <a href="/blog">
-          <i class="fa fa-long-arrow-left"></i> {% trans %} See all blog posts {% endtrans %}
-        </a>
-      </h6>
-
       <h1 class="page__title">{{ label }}</h1>
 
       {% if display_submitted %}
-        <h4 class="blog-post__date">{{ date }}</h4>
+        <div class="blog-post__date hidden-xs">
+          {% trans %}Posted on{% endtrans %} {{ date }}</div>
       {% endif %}
 
-      {{ content.field_blog_post_body }}
+      <div class="blog-post__body">
+        {{ content.field_blog_post_body }}
+      </div>
+
+      <a href="/blog" class="btn btn--secondary">
+        <i class="fa fa-long-arrow-left"></i> {% trans %} See all blog posts {% endtrans %}
+      </a>
     </div>
+
   </div>
 {% endblock %}

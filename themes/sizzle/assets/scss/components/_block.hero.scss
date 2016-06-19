@@ -3,11 +3,17 @@
 .hero {
   position: relative;
   min-height: 250px;
+  overflow: hidden;
 
   img {
     display: block;
-    width: 100%;
-    height: auto;
+    height: 35vh;
+    width: auto;
+
+    @include breakpoint(md) {
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__caption {
@@ -19,10 +25,14 @@
     right: 0;
     bottom: 0;
     left: 0;
-    width: 50%;
+    width: 80%;
     margin: auto;
     display: table;
     padding: 30px;
+
+    @include breakpoint(md) {
+      width: 50%;
+    }
 
     &:before {
       content: " ";
