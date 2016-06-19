@@ -1,7 +1,9 @@
+uuid: 4ec64612-531e-4649-8b41-2fd8b57b69ba
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.event.field_disqus
     - field.field.node.event.field_event_body
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_featured_image
@@ -10,13 +12,29 @@ dependencies:
   module:
     - address
     - datetime
+    - disqus
     - image
+    - text
     - user
+_core:
+  default_config_hash: Mi9eiJjDS0goT-7YxkcweZMlIYkNU_VfkheIgA53qPI
 id: node.event.default
 targetEntityType: node
 bundle: event
 mode: default
 content:
+  field_disqus:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: disqus_comment
+  field_event_body:
+    type: text_default
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_event_date:
     weight: 2
     label: hidden
@@ -43,6 +61,5 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-hidden:
-  field_event_body: true
+hidden: {  }
 

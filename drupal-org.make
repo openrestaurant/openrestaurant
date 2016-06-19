@@ -35,6 +35,9 @@ projects[demo_content][version] = 1.x-dev
 projects[tvi][type] = module
 projects[tvi][version] = 1.0-alpha9
 
+projects[disqus][type] = module
+projects[disqus][version] = 1.0-rc1
+
 ; Themes
 projects[radix][type] = theme
 projects[radix][version] = 3.0-alpha3

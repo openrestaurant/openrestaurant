@@ -48,6 +48,7 @@ dependencies:
   - admin_toolbar_tools
   - ctools
   - demo_content
+  - disqus
   - features
   - features_ui
   - pathauto

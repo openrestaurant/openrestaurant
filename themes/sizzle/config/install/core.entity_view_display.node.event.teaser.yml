@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.event.field_disqus
     - field.field.node.event.field_event_body
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_featured_image
@@ -45,4 +46,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_disqus: true
   field_event_body: true
+

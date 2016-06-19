@@ -4,8 +4,10 @@ dependencies:
   config:
     - field.field.node.blog_post.field_blog_post_body
     - field.field.node.blog_post.field_blog_post_featured_image
+    - field.field.node.blog_post.field_disqus
     - node.type.blog_post
   module:
+    - disqus
     - image
     - text
     - user
@@ -29,8 +31,15 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+  field_disqus:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: disqus_comment
   links:
     weight: 2
     settings: {  }
     third_party_settings: {  }
 hidden: {  }
+

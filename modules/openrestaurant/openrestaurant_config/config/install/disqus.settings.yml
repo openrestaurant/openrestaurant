@@ -1,0 +1,20 @@
+disqus_domain: openrestaurantdistro
+behavior:
+  disqus_localization: false
+  disqus_inherit_login: false
+  disqus_disable_mobile: false
+  disqus_track_newcomment_ga: false
+advanced:
+  disqus_useraccesstoken: ''
+  disqus_publickey: ''
+  disqus_secretkey: ''
+  api:
+    disqus_api_update: false
+    disqus_api_delete: DISQUS_API_NO_ACTION
+  sso:
+    disqus_sso: false
+    disqus_use_site_logo: false
+    disqus_logo: ''
+_core:
+  default_config_hash: cLPUKXMlBdHBqZyzVRCLdj0IK7Z5zD6ro3GLAuIpiNU
+

@@ -20,14 +20,6 @@
 
   .event {
 
-    &__date {
-
-      @include breakpoint(md) {
-        margin-top: -1.3em;
-        margin-bottom: 1.2em;
-      }
-    }
-
     &__location {
       margin-top: 1em;
     }

@@ -34,4 +34,6 @@ content:
     weight: 2
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_disqus: true
+

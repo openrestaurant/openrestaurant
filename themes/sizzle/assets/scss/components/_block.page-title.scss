@@ -2,8 +2,10 @@
 // -----------------------------------------------------------------------------
 .block--page--title {
   margin: 0;
+  text-align: center;
 
   .path--node & {
+    text-align: left;
 
     @include breakpoint(md) {
       display: none;
