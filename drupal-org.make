@@ -40,5 +40,5 @@ projects[disqus][version] = 1.0-rc1
 
 ; Themes
 projects[radix][type] = theme
-projects[radix][version] = 3.0-alpha3
+projects[radix][version] = 3.0-alpha4
 projects[radix][subdir] = ''
