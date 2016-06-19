@@ -26,7 +26,10 @@ function sizzle_preprocess_views_view(&$variables) {
  */
 function sizzle_preprocess_views_view__menu_categories(&$variables, $view) {
   // Add an 'All' link to the menu_categories view.
-  $url = Url::fromUserInput('/menu');
-  $link = Link::fromTextAndUrl(t('All'), $url);
-  array_unshift($variables['rows'][0]['#rows'], $link);
+  $first_element = $variables['rows'][0]['#rows'][0];
+  if (!$first_element instanceof Link) {
+    $url = Url::fromUserInput('/menu');
+    $link = Link::fromTextAndUrl(t('All'), $url);
+    array_unshift($variables['rows'][0]['#rows'], $link);
+  }
 }
