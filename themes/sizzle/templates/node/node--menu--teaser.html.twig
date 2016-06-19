@@ -5,21 +5,22 @@
  */
 #}
 {% extends 'node.html.twig' %}
+
 {% block content %}
   <div{{ content_attributes.addClass('row') }}>
     <div class="col-sm-4">
       {{ content.field_menu_images[0] }}
     </div>
     <div class="col-sm-8">
-      {{ title_prefix }}
         <h3 class="menu__title">
           <a href="{{ url }}" rel="bookmark">{{ label }}</a>
         </h3>
-      {{ title_suffix }}
 
       {{ content.field_menu_teaser }}
 
-      {{ content.field_menu_nutrition_types }}
+      <div class="menu__nutrition-types">
+        {{ content.field_menu_nutrition_types }}
+      </div>
     </div>
   </div>
 {% endblock %}
