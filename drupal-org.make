@@ -6,7 +6,7 @@ defaults[projects][subdir] = "contrib"
 
 ; Modules
 projects[address][type] = module
-projects[address][version] = 1.0-beta2
+projects[address][version] = 1.0-beta3
 
 projects[admin_toolbar][type] = module
 projects[admin_toolbar][version] = 1.15
@@ -21,7 +21,7 @@ projects[composer_manager][type] = module
 projects[composer_manager][version] = 1.x-dev
 
 projects[features][type] = module
-projects[features][version] = 3.0-beta3
+projects[features][version] = 3.0-beta5
 
 projects[pathauto][type] = module
 projects[pathauto][version] = 1.0-alpha3
