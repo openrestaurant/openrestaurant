@@ -400,9 +400,12 @@
     background: rgba(0, 0, 0, 0.7); }
   .link--overlay h3 {
     color: white;
-    font-size: 1.8em;
+    font-size: 1.2em;
     line-height: 120%;
     margin: 0; }
+    @media (min-width: 992px) {
+      .link--overlay h3 {
+        font-size: 1.8em; } }
   .link--overlay small {
     font-size: 0.85em; }
   .link--overlay .bottom {
