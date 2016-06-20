@@ -1,3 +1,4 @@
+uuid: 0a42d2bb-0392-41c0-ad6c-b81e64b1ab20
 langcode: en
 status: true
 dependencies:
@@ -11,6 +12,8 @@ dependencies:
     - image
     - text
     - user
+_core:
+  default_config_hash: VWCuFOHFgZ-OLMl-sL1tbxdimbF7OANq5YClqUjG9xA
 id: node.blog_post.default
 targetEntityType: node
 bundle: blog_post
@@ -32,7 +35,7 @@ content:
     third_party_settings: {  }
     type: image
   field_disqus:
-    weight: 3
+    weight: 4
     label: hidden
     settings: {  }
     third_party_settings: {  }

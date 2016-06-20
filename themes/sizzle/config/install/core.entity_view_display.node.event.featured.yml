@@ -1,8 +1,10 @@
+uuid: f58f7477-6859-4e50-a7b1-4ecd794bec00
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.featured
+    - field.field.node.event.field_disqus
     - field.field.node.event.field_event_body
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_featured_image
@@ -13,6 +15,8 @@ dependencies:
     - datetime
     - responsive_image
     - user
+_core:
+  default_config_hash: A-bb1iEALjRbfj1Gp43QthydL3Ab_YUnGdrZTPAYmjA
 id: node.event.featured
 targetEntityType: node
 bundle: event
@@ -47,4 +51,3 @@ content:
 hidden:
   field_disqus: true
   field_event_body: true
-

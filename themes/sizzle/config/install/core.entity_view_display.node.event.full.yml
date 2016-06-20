@@ -1,7 +1,10 @@
+uuid: cf264f06-e157-4d07-a996-bc6c74be2e25
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
+    - field.field.node.event.field_disqus
     - field.field.node.event.field_event_body
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_featured_image
@@ -10,19 +13,35 @@ dependencies:
   module:
     - address
     - datetime
+    - disqus
     - image
+    - text
     - user
-id: node.event.default
+_core:
+  default_config_hash: rzTCtOmZ7i8RxjSPe7IZQ3EAgd86INUrMVzm_QqqelQ
+id: node.event.full
 targetEntityType: node
 bundle: event
-mode: default
+mode: full
 content:
+  field_disqus:
+    type: disqus_comment
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_event_body:
+    type: text_default
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_event_date:
     weight: 2
     label: hidden
     settings:
       timezone_override: ''
-      format_type: long
+      format_type: date_medium
     third_party_settings: {  }
     type: datetime_default
   field_event_featured_image:
@@ -43,5 +62,4 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-hidden:
-  field_event_body: true
+hidden: {  }
