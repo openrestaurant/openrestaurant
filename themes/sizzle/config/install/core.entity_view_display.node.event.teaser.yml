@@ -1,4 +1,3 @@
-uuid: aa5e2350-7346-420b-ad73-9395a0ddd38d
 langcode: en
 status: true
 dependencies:
@@ -15,8 +14,6 @@ dependencies:
     - datetime
     - responsive_image
     - user
-_core:
-  default_config_hash: WYPBnxnPiY4Lym0DrKWFHmvg67GrOqmSying_7zUVAE
 id: node.event.teaser
 targetEntityType: node
 bundle: event

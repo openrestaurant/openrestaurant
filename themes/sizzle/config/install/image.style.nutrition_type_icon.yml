@@ -1,6 +1,9 @@
+uuid: 116a8c41-08c5-40f3-8e78-1f19a69c794e
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: UjU7Mg8P4r8AFfsqhaI8ppT9xzQQeesvZ79zEXxRm5w
 name: nutrition_type_icon
 label: 'Nutrition type icon'
 effects:
@@ -10,3 +13,6 @@ effects:
     weight: 1
     data:
       width: 18
+      height: null
+      upscale: false
+

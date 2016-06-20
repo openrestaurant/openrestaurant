@@ -1,4 +1,3 @@
-uuid: 8d6b196b-7ce7-4eee-a6ca-6758c3861e7a
 langcode: en
 status: true
 dependencies:
@@ -12,8 +11,6 @@ dependencies:
     - responsive_image
     - text
     - user
-_core:
-  default_config_hash: P33iZQMdARIL1eVkntGgJnWRMekC4o1a7qmyE4LQuAc
 id: node.blog_post.teaser
 targetEntityType: node
 bundle: blog_post
