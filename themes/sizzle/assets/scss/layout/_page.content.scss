@@ -1,0 +1,14 @@
+// Page: Content
+// -----------------------------------------------------------------------------
+.page__content {
+
+  > .container {
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    @include breakpoint(md) {
+      padding-top: 4em;
+      padding-bottom: 4em;
+    }
+  }
+}

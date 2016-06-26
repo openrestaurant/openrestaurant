@@ -1,0 +1,48 @@
+// Page: Footer
+// -----------------------------------------------------------------------------
+.page__footer {
+  margin: 4em 0 0;
+  padding: 65px 0 45px;
+  position: relative;
+  background-size: cover;
+
+  &:before {
+    z-index: 100;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(darken($brand-primary, 30), 0.90);
+  }
+
+  > .container {
+    z-index: 200;
+    position: relative;
+    max-width: 767px;
+    color: $footer-text-color;
+    font-size: 14px;
+
+    h1, h2, h3, h4, h4, h6 {
+      color: $footer-text-color;
+      font-weight: 400;
+    }
+
+    a {
+      color: $footer-text-color;
+      &:hover, &:focus {
+        color: $brand-secondary;
+      }
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 1.4em;
+    }
+
+    h4, strong {
+      color: white;
+    }
+  }
+}

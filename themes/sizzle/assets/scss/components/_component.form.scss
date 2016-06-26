@@ -1,0 +1,35 @@
+// Form
+// -----------------------------------------------------------------------------
+form {
+
+  div.form-item {
+    margin: 0 0 1em;
+  }
+
+  label {
+    text-transform: uppercase;
+    font-family: $font-secondary;
+  }
+
+  .form-control {
+    box-shadow: none;
+  }
+
+  .radio,
+  .checkbox {
+
+    label {
+      font-weight: 600;
+    }
+  }
+
+  .form-checkboxes {
+    .radio,
+    .checkbox {
+
+      label {
+        font-weight: 400;
+      }
+    }
+  }
+}

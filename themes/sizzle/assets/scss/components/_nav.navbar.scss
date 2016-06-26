@@ -13,10 +13,10 @@
 // Navbar
 // -----------------------------------------------------------------------------
 .navbar.navbar-default {
-  @extend .border-color-primary;
+  border: 2px solid $brand-primary;
   border-width: 2px 0;
   margin: 0;
-  background: none;
+  background: $body-bg $body-bg-image;
 
   &.stuck {
     position: fixed;
@@ -45,11 +45,14 @@
 .navbar-toggle {
   padding: 5px 10px;
   margin-right: 15px;
+
   i {
     vertical-align: middle;
   }
+
   .navbar-default & {
-    @include hover() {
+
+    &:hover {
       background-color: $brand-secondary;
       border-color: $brand-secondary;
       color: white;
@@ -61,9 +64,11 @@
 // -----------------------------------------------------------------------------
 ul.navbar-nav {
   padding: 0 20px;
+
   @include breakpoint(md) {
     padding: 0;
   }
+
   @include breakpoint(sm) {
     position: relative;
     float: left;
@@ -74,9 +79,11 @@ ul.navbar-nav {
     position: relative;
     margin: 15px 0 10px;
     padding: 0 6px;
+
     @include breakpoint(md) {
       padding: 9px 0 9px 17px;
       margin: 0;
+
       &:before {
         content: "\2726";
         font-size: 10px;
@@ -84,20 +91,26 @@ ul.navbar-nav {
         position: absolute;
         left: 0;
       }
+
       &:first-child {
-        padding-left: 0px;
+        padding-left: 0;
+
         &:before {
           display: none;
         }
       }
     }
+
     + li {
+
       @include breakpoint(md) {
         margin-left: 17px;
       }
     }
   }
+
   li {
+
     a {
       font-family: $font-secondary;
       font-weight: 600;
@@ -105,10 +118,12 @@ ul.navbar-nav {
       padding: 4px 6px;
       font-size: 13px;
       text-align: center;
-      @include transition(all 0.2s ease-in-out);
+      transition: all 0.2s ease-in-out;
+
       @include breakpoint(md) {
         text-align: left;
       }
+
       @include breakpoint(md) {
         padding: 4px 10px;
         font-size: 15px;
@@ -117,18 +132,23 @@ ul.navbar-nav {
   }
 
   > li {
+
     &.has-btn {
+
       @include breakpoint(md) {
         padding-left: 25px;
       }
+
       a.btn {
         padding: 4px 8px 2px;
         display: table;
         margin: 0 auto;
-        @include hover {
+
+        &:hover {
           background-color: $brand-secondary;
           color: white;
         }
+
         @include breakpoint(md) {
           padding: 4px 15px 2px;
         }
@@ -147,7 +167,9 @@ ul.dropdown-menu {
   padding: 10px 0;
   box-shadow: none;
   border-radius: 0;
+
   li {
+
     a {
       padding: 5px 23px;
     }

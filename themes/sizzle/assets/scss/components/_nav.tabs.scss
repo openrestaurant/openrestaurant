@@ -6,39 +6,50 @@
     text-align: center;
     border: 1px solid $brand-primary;
     border-radius: 2px;
-    @include bp(sm) {
+
+    @include breakpoint(sm) {
       display: table;
     }
+
     li {
       margin: 0;
       float: none;
       border-bottom: 1px solid $brand-primary;
-      @include bp(sm) {
+
+      @include breakpoint(sm) {
         border: 0;
         border-right: 1px solid $brand-primary;
         float: left;
       }
+
       &:last-child {
         border: 0;
       }
+
       a {
         @extend .btn;
         border: 0;
         margin: 0;
         border-radius: 0;
-        @include bp(md) {
+
+        @include breakpoint(md) {
           min-width: 200px;
         }
-        &:hover, &:focus {
+
+        &:hover,
+        &:focus {
           border: 0;
           background-color: $brand-secondary;
           color: white;
-          @include box-shadow(none);
+          box-shadow: none;
         }
       }
 
       &.active-trail {
-        a, a:hover, a:focus {
+
+        a,
+        a:hover,
+        a:focus {
           border: 0;
           background-color: $brand-secondary;
           color: white;

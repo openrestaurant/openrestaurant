@@ -1,0 +1,43 @@
+// General
+// -----------------------------------------------------------------------------
+.view {
+
+  &__header,
+  &__footer {
+    text-align: center;
+  }
+
+  &__header {
+
+    h2 {
+      margin: 0 0 5px;
+    }
+  }
+}
+
+// Front page view
+// -----------------------------------------------------------------------------
+.page--front {
+
+  .view {
+    margin-top: 4em;
+
+    @include breakpoint(md) {
+      background: url('../images/bg/bg-separator-shadow.png') no-repeat top center;
+      padding-top: 100px;
+      margin-top: 0;
+    }
+
+    &__header {
+
+      h1 {
+        text-transform: uppercase;
+        margin-bottom: 5px;
+      }
+    }
+
+    &__footer {
+      margin-top: 2em;
+    }
+  }
+}

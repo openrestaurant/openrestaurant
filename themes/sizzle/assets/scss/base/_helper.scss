@@ -1,55 +1,55 @@
-// CSS Helpers
-// -----------------------------------------------------------------------------
-.color-primary {
-  color: $brand-primary;
-}
-.border-color-primary {
-  border-color: $brand-primary;
-}
-.background-color-primary {
-  background-color: $brand-primary;
-}
-
 // Text helpers
 // -----------------------------------------------------------------------------
 .text {
   @extend p;
+
   &--normal {
     @extend p;
   }
+
   &--large {
     font-size: 30px;
     line-height: 140%;
   }
+
   &--small {
     font-size: 16px;
     line-height: 150%;
   }
+
   &--extrasmall {
     font-size: 12px;
     line-height: 180%;
   }
+
   &--italic {
     font-style: italic;
   }
+
   &--bold {
     font-weight: 700;
   }
+
   &--left {
     text-align: left;
   }
+
   &--right {
     text-align: right;
   }
+
   &--center {
     text-align: center;
   }
+
   &--uppercase {
     text-transform: uppercase;
   }
+
   &--lowercase {
     text-transform: lowercase;
   }
+
   &--capitalize {
     text-transform: capitalize;
   }
@@ -119,22 +119,6 @@ $directions: top, right, bottom, left;
   }
 }
 
-.border--thin {
-  position: relative;
-  padding-bottom: 25px;
-  margin-bottom: 25px;
-  &:after {
-    content: "";
-    display: block;
-    height: 1px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: $brand-primary;
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from($brand-primary), to(transparent));
-  }
-}
-
 // Link
 // -----------------------------------------------------------------------------
 .link {
@@ -151,7 +135,8 @@ $directions: top, right, bottom, left;
     left: 0;
     text-shadow: 0 0 1px rgba(black, 0.7);
     transition: all 500ms;
-    @include hover() {
+
+    &:hover {
       color: white;
       background: rgba(black, 0.7);
     }

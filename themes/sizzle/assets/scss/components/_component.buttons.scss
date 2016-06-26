@@ -10,23 +10,19 @@
   padding: 10px 20px;
   border: 1px solid $brand-primary;
   border-radius: 2px;
-  @include hover() {
-    color: #ffffff;
-    background: $brand-primary;
-    border-color: $brand-primary;
-  }
 
-  &.btn--hover {
-    color: #ffffff;
+  &:hover {
+    color: white;
     background: $brand-primary;
     border-color: $brand-primary;
   }
 
   &.btn--secondary {
-    color: #ffffff;
+    color: white;
     background: $brand-secondary;
     border-color: $brand-secondary;
-    @include hover() {
+
+    &:hover {
       background: $brand-primary;
       border-color: $brand-primary;
     }
