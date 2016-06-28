@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero:a7bef790-b247-4970-b957-f04cb1da9575'
+  module:
+    - block_content
+    - system
+  theme:
+    - sizzle
+id: locations_hero
+theme: sizzle
+region: hero
+weight: -2
+provider: null
+plugin: 'block_content:a7bef790-b247-4970-b957-f04cb1da9575'
+settings:
+  id: 'block_content:a7bef790-b247-4970-b957-f04cb1da9575'
+  label: 'Locations hero'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/locations\r\n/locations/*"
+    negate: false
+    context_mapping: {  }

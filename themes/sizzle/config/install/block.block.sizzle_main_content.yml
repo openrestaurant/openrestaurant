@@ -5,7 +5,7 @@ dependencies:
     - system
   theme:
     - sizzle
-id: mainpagecontent
+id: main_content
 theme: sizzle
 region: content
 weight: 10

@@ -2,21 +2,21 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:hero:e0f35b65-da6d-4b59-836e-54be9f6c7147'
+    - 'block_content:hero:d1bd928d-768d-422e-879a-54a3301a7833'
   module:
     - block_content
     - system
   theme:
     - sizzle
-id: bloghero
+id: events_hero
 theme: sizzle
 region: hero
 weight: -2
 provider: null
-plugin: 'block_content:e0f35b65-da6d-4b59-836e-54be9f6c7147'
+plugin: 'block_content:d1bd928d-768d-422e-879a-54a3301a7833'
 settings:
-  id: 'block_content:e0f35b65-da6d-4b59-836e-54be9f6c7147'
-  label: 'Blog hero'
+  id: 'block_content:d1bd928d-768d-422e-879a-54a3301a7833'
+  label: 'Events hero'
   provider: block_content
   label_display: '0'
   status: true
@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/blog\r\n/blog/*"
+    pages: "/events\r\n/events/*"
     negate: false
     context_mapping: {  }

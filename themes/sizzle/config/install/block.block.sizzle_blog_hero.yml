@@ -2,21 +2,21 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:hero:a7bef790-b247-4970-b957-f04cb1da9575'
+    - 'block_content:hero:e0f35b65-da6d-4b59-836e-54be9f6c7147'
   module:
     - block_content
     - system
   theme:
     - sizzle
-id: locationshero
+id: blog_hero
 theme: sizzle
 region: hero
 weight: -2
 provider: null
-plugin: 'block_content:a7bef790-b247-4970-b957-f04cb1da9575'
+plugin: 'block_content:e0f35b65-da6d-4b59-836e-54be9f6c7147'
 settings:
-  id: 'block_content:a7bef790-b247-4970-b957-f04cb1da9575'
-  label: 'Locations hero'
+  id: 'block_content:e0f35b65-da6d-4b59-836e-54be9f6c7147'
+  label: 'Blog hero'
   provider: block_content
   label_display: '0'
   status: true
@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/locations\r\n/locations/*"
+    pages: "/blog\r\n/blog/*"
     negate: false
     context_mapping: {  }

@@ -1,22 +1,19 @@
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:hero:d1bd928d-768d-422e-879a-54a3301a7833'
   module:
     - block_content
-    - system
   theme:
     - sizzle
-id: eventshero
+id: front_page_hero
 theme: sizzle
 region: hero
 weight: -2
 provider: null
-plugin: 'block_content:d1bd928d-768d-422e-879a-54a3301a7833'
+plugin: 'block_content:235195a8-7c46-48f2-b98e-854038b394c3'
 settings:
-  id: 'block_content:d1bd928d-768d-422e-879a-54a3301a7833'
-  label: 'Events hero'
+  id: 'block_content:235195a8-7c46-48f2-b98e-854038b394c3'
+  label: 'Front page hero'
   provider: block_content
   label_display: '0'
   status: true
@@ -25,6 +22,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/events\r\n/events/*"
+    pages: '<front>'
     negate: false
     context_mapping: {  }

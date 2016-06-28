@@ -5,7 +5,7 @@ dependencies:
     - block_content
   theme:
     - sizzle
-id: footertext
+id: footer_text
 theme: sizzle
 region: footer
 weight: 10

@@ -28,6 +28,13 @@
   }
 }
 
+// Do not stick the navbar when the toolbar is present.
+.toolbar-fixed.toolbar-horizontal {
+  .navbar.stuck {
+    position: static;
+  }
+}
+
 .navbar-header {
 
   .btn {

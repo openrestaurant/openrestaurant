@@ -7,7 +7,7 @@ dependencies:
     - system
   theme:
     - sizzle
-id: mainnavigation
+id: main_navigation
 theme: sizzle
 region: navigation
 weight: null

@@ -5,7 +5,7 @@ dependencies:
     - block_content
   theme:
     - sizzle
-id: sociallinks
+id: social_links
 theme: sizzle
 region: footer
 weight: 20
