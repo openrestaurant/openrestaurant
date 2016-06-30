@@ -17,9 +17,6 @@ projects[config_update][version] = 1.1
 projects[ctools][type] = module
 projects[ctools][version] = 3.0-alpha26
 
-projects[composer_manager][type] = module
-projects[composer_manager][version] = 1.x-dev
-
 projects[features][type] = module
 projects[features][version] = 3.0-beta5
 
