@@ -42,6 +42,8 @@
     "drupal/admin_toolbar": "1.15.0",
     "drupal/config_update": "1.1.0",
     "drupal/ctools": "3.0.0-alpha26",
+    "drupal/demo_content": "1.x-dev",
+    "drupal/disqus": "1.0.0-rc1",
     "drupal/features": "3.0.0-beta5",
     "drupal/pathauto": "1.0.0-alpha3",
     "drupal/token": "1.0.0-alpha2",
