@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - openrestaurant_reservation
+id: reservation.field_reservation_date
+field_name: field_reservation_date
+entity_type: reservation
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

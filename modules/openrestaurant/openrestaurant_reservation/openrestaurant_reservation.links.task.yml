@@ -1,0 +1,17 @@
+# reservation routing definition
+entity.reservation.canonical:
+  route_name: entity.reservation.canonical
+  base_route: entity.reservation.canonical
+  title: 'View'
+
+entity.reservation.edit_form:
+  route_name: entity.reservation.edit_form
+  base_route: entity.reservation.canonical
+  title: Edit
+
+entity.reservation.delete_form:
+  route_name:  entity.reservation.delete_form
+  base_route:  entity.reservation.canonical
+  title: Delete
+  weight: 10
+

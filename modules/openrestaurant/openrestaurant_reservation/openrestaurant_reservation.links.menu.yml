@@ -1,0 +1,16 @@
+# reservation menu items definition
+entity.reservation.collection:
+  title: 'Reservations'
+  route_name: entity.reservation.collection
+  description: 'Find and manage reservations.'
+  parent: system.admin
+  weight: -9
+
+# reservation type menu items definition
+entity.reservation_type.collection:
+  title: 'Reservation types'
+  route_name: entity.reservation_type.collection
+  description: 'Create and manage reservation types.'
+  parent: system.admin_structure
+  weight: 1
+

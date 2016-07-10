@@ -1,0 +1,8 @@
+name: Reservation
+description: 'Provides a simple reservation system for Open Restaurant'
+type: module
+core: 8.x
+dependencies:
+  - openrestaurant_config
+version: 8.x-2.0-dev
+package: 'Open Restaurant'

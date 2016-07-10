@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.reservation.field_reservation_party_size
+    - openrestaurant_reservation.reservation_type.table_reservation
+id: reservation.table_reservation.field_reservation_party_size
+field_name: field_reservation_party_size
+entity_type: reservation
+bundle: table_reservation
+label: 'Party size'
+description: 'Number of persons.'
+required: true
+translatable: false
+default_value:
+  -
+    value: '2'
+default_value_callback: ''
+settings: {  }
+field_type: string

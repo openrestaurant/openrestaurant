@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - openrestaurant_reservation
+id: reservation.field_reservation_party_size
+field_name: field_reservation_party_size
+entity_type: reservation
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

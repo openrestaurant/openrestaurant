@@ -1,0 +1,56 @@
+<?php
+
+/**
+ * @file
+ * Contains openrestaurant_reservation.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function openrestaurant_reservation_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the openrestaurant_reservation module.
+    case 'help.page.openrestaurant_reservation':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function openrestaurant_reservation_theme() {
+  $theme = [];
+  $theme['reservation'] = [
+    'render element' => 'elements',
+    'file' => 'openrestaurant_reservation.page.inc',
+    'template' => 'reservation',
+  ];
+  $theme['reservation_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'openrestaurant_reservation.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function openrestaurant_reservation_theme_suggestions_reservation(array $variables) {
+  $suggestions = array();
+  $entity = $variables['elements']['#reservation'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'reservation__' . $sanitized_view_mode;
+  $suggestions[] = 'reservation__' . $entity->bundle();
+  $suggestions[] = 'reservation__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

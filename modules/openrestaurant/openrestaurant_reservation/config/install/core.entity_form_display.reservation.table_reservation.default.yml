@@ -1,0 +1,66 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.reservation.table_reservation.field_reservation_date
+    - field.field.reservation.table_reservation.field_reservation_email
+    - field.field.reservation.table_reservation.field_reservation_location
+    - field.field.reservation.table_reservation.field_reservation_party_size
+    - field.field.reservation.table_reservation.field_reservation_phone
+    - field.field.reservation.table_reservation.field_restaurant_name
+    - openrestaurant_reservation.reservation_type.table_reservation
+  module:
+    - datetime
+    - telephone
+id: reservation.table_reservation.default
+targetEntityType: reservation
+bundle: table_reservation
+mode: default
+content:
+  field_reservation_date:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_reservation_email:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+  field_reservation_location:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_reservation_party_size:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_reservation_phone:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+  field_restaurant_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  name:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  user_id: true

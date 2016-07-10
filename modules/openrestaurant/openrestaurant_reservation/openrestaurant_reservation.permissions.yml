@@ -1,0 +1,19 @@
+add reservation entities:
+  title: 'Create new reservation entities'
+
+administer reservation entities:
+  title: 'Administer reservation entities'
+  description: 'Allow to access the administration form to configure reservation entities.'
+  restrict access: true
+
+delete reservation entities:
+  title: 'Delete reservation entities'
+
+edit reservation entities:
+  title: 'Edit reservation entities'
+
+view published reservation entities:
+  title: 'View published reservation entities'
+
+view unpublished reservation entities:
+  title: 'View unpublished reservation entities'

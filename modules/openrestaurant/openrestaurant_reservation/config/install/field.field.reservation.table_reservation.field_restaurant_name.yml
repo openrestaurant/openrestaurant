@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.reservation.field_restaurant_name
+    - openrestaurant_reservation.reservation_type.table_reservation
+id: reservation.table_reservation.field_restaurant_name
+field_name: field_restaurant_name
+entity_type: reservation
+bundle: table_reservation
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

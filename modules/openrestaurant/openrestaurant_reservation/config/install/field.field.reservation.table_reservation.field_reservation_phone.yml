@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.reservation.field_reservation_phone
+    - openrestaurant_reservation.reservation_type.table_reservation
+  module:
+    - telephone
+id: reservation.table_reservation.field_reservation_phone
+field_name: field_reservation_phone
+entity_type: reservation
+bundle: table_reservation
+label: Phone
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone
