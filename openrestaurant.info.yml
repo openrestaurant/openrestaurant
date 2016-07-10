@@ -28,19 +28,15 @@ dependencies:
   - menu_ui
   - options
   - path
-  - page_cache
   - responsive_image
-  - dynamic_page_cache
   - taxonomy
   - dblog
   - search
-  - shortcut
   - toolbar
   - field_ui
   - file
   - views
   - views_ui
-  - tour
   - automated_cron
 # contrib
   - address
