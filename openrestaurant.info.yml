@@ -51,6 +51,7 @@ dependencies:
   - token
   - tvi
 # open restaurant
+  - openrestaurant_admin
   - openrestaurant_config
   - openrestaurant_blocks
   - openrestaurant_blog
