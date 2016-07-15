@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.reservation.field_reservation_location
+    - node.type.location
+    - openrestaurant_reservation.reservation_type.table_reservation
+id: reservation.table_reservation.field_reservation_location
+field_name: field_reservation_location
+entity_type: reservation
+bundle: table_reservation
+label: Location
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      location: location
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
+
