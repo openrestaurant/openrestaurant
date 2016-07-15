@@ -4,13 +4,12 @@ dependencies:
   module:
     - node
     - openrestaurant_reservation
-id: reservation.field_reservation_location
-field_name: field_reservation_location
-entity_type: reservation
-type: entity_reference
-settings:
-  target_type: node
-module: core
+id: node.field_reservation_page_type
+field_name: field_reservation_page_type
+entity_type: node
+type: reservation_type_field
+settings: {  }
+module: openrestaurant_reservation
 locked: false
 cardinality: 1
 translatable: true

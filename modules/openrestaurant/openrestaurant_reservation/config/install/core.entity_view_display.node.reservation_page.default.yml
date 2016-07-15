@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.reservation_page.body
+    - field.field.node.reservation_page.field_reservation_page_type
+    - node.type.reservation_page
+  module:
+    - text
+    - user
+id: node.reservation_page.default
+targetEntityType: node
+bundle: reservation_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_reservation_page_type: true

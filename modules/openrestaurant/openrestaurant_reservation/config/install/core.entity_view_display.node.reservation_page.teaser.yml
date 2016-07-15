@@ -1,0 +1,27 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.reservation_page.body
+    - field.field.node.reservation_page.field_reservation_page_type
+    - node.type.reservation_page
+  module:
+    - text
+    - user
+id: node.reservation_page.teaser
+targetEntityType: node
+bundle: reservation_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_reservation_page_type: true

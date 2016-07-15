@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reservation_page_type
+    - node.type.reservation_page
+  module:
+    - openrestaurant_reservation
+id: node.reservation_page.field_reservation_page_type
+field_name: field_reservation_page_type
+entity_type: node
+bundle: reservation_page
+label: 'Reservation type'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: table_reservation
+default_value_callback: ''
+settings: {  }
+field_type: reservation_type_field
