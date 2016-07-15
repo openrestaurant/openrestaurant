@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Admin enhancement for Open Restaurant.
+ */
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function openrestaurant_admin_form_system_modules_alter(&$form, FormStateInterface $form_state) {
+  foreach (Element::children($form['modules']) as $package) {
+    $form['modules'][$package]['#open'] = false;
+  }
+
+  // Expand Open Restaurant modules and show it first.
+  $form['modules']['Open Restaurant']['#open'] = true;
+  $form['modules']['Open Restaurant']['#weight'] = -1000;
+}

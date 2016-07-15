@@ -1,0 +1,6 @@
+name: Admin
+description: 'Admin enhancement for Open Restaurant.'
+type: module
+core: 8.x
+version: 8.x-2.0-dev
+package: 'Open Restaurant'
