@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.reservation_page.body
+    - field.field.node.reservation_page.field_reservation_page_body
     - field.field.node.reservation_page.field_reservation_page_type
     - node.type.reservation_page
   module:
@@ -14,14 +14,13 @@ targetEntityType: node
 bundle: reservation_page
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 2
+  field_reservation_page_body:
+    weight: 26
     settings:
-      rows: 9
-      summary_rows: 3
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
+    type: text_textarea
   field_reservation_page_type:
     weight: 1
     settings: {  }
@@ -54,3 +53,4 @@ content:
 hidden:
   created: true
   uid: true
+
