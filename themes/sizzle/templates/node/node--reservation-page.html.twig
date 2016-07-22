@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Template to display an Reservation page.
+ */
+#}
+{% extends 'node.html.twig' %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-md-4">
+      <h3 class="page__title">{{ label }}</h3>
+
+      <div class="reservation-page__body">
+        {{ content.field_reservation_page_body }}
+      </div>
+    </div>
+
+    <div class="col-md-7 col-md-offset-1">
+      {{ content.field_reservation_page_type }}
+    </div>
+  </div>
+{% endblock %}
