@@ -4,6 +4,9 @@ content:
   content_1:
     uuid: 4b923d79-8c59-41cc-88dd-345b295f3e78
     title: 'Book a table'
+    path_alias: '/reservation'
     field_reservation_page_type:
       value: table_reservation
-    path_alias: '/reservation'
+    field_reservation_page_body:
+      value: '<h4>Step 1</h4><p>Fill in the reservation form with your contact information, the date of your reservation and the number of persons.</p><h4>Step 2</h4><p>Wait for our email that confirms that your reservation has been received.</p><h4>Step 3</h4><p>We will email you or call you back when your reservation has been confirmed.</p>'
+      format: full_html
