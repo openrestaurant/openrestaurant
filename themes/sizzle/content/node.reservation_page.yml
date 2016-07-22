@@ -1,0 +1,9 @@
+entity_type: node
+bundle: reservation_page
+content:
+  content_1:
+    uuid: 4b923d79-8c59-41cc-88dd-345b295f3e78
+    title: 'Book a table'
+    field_reservation_page_type:
+      value: table_reservation
+    path_alias: '/reservation'

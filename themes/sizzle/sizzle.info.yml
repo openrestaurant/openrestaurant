@@ -41,3 +41,5 @@ demo_content:
 
   - content/menus.images.yml
   - content/menus.nodes.yml
+
+  - content/node.reservation_page.yml
