@@ -19,7 +19,6 @@ dependencies:
   - config
   - contextual
   - contact
-  - help
   - menu_link_content
   - datetime
   - block_content
@@ -30,14 +29,11 @@ dependencies:
   - path
   - responsive_image
   - taxonomy
-  - dblog
-  - search
   - toolbar
   - field_ui
   - file
   - views
   - views_ui
-  - automated_cron
 # contrib
   - address
   - admin_toolbar
