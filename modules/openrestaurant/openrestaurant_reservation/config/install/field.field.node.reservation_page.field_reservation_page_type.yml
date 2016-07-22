@@ -11,7 +11,7 @@ field_name: field_reservation_page_type
 entity_type: node
 bundle: reservation_page
 label: 'Reservation type'
-description: ''
+description: 'Select the type of reservation form to show.'
 required: true
 translatable: false
 default_value:
@@ -20,3 +20,4 @@ default_value:
 default_value_callback: ''
 settings: {  }
 field_type: reservation_type_field
+
