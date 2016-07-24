@@ -198,8 +198,7 @@ class Reservation extends ContentEntityBase implements ReservationInterface {
       ->setDisplayConfigurable('view', TRUE);
 
     $fields['name'] = BaseFieldDefinition::create('string')
-      ->setLabel(t('Administration name'))
-      ->setDescription(t('The administration name of the reservation entity.'))
+      ->setLabel(t('Name'))
       ->setSettings(array(
         'max_length' => 50,
         'text_processing' => 0,

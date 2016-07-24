@@ -7,7 +7,6 @@ dependencies:
     - field.field.reservation.table_reservation.field_reservation_location
     - field.field.reservation.table_reservation.field_reservation_party_size
     - field.field.reservation.table_reservation.field_reservation_phone
-    - field.field.reservation.table_reservation.field_restaurant_name
     - openrestaurant_reservation.reservation_type.table_reservation
   module:
     - datetime
@@ -47,13 +46,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
-  field_restaurant_name:
-    weight: 1
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
   name:
     type: string_textfield
     weight: 0
