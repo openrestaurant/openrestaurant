@@ -57,6 +57,7 @@ dependencies:
   - openrestaurant_menu
   - openrestaurant_pages
   - openrestaurant_plugins
+  - openrestaurant_reservation
 
 themes:
   - kitchen
