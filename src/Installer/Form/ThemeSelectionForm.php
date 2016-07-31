@@ -91,7 +91,7 @@ class ThemeSelectionForm extends ConfigFormBase {
     // Build options array.
     foreach ($themes as $name => $theme) {
       // Only show themes compatible with Open Restaurant.
-      if (!isset($theme->info['package'])) {
+      if (!isset($theme->info['package']) || (isset($theme->info['hidden']) && $theme->info['hidden'])) {
         continue;
       }
 
