@@ -1,0 +1,20 @@
+{#
+/**
+ * @file
+ * Template for field collection: field_menu_variants.
+ */
+#}
+{%
+set classes = [
+'menu__variant'
+]
+%}
+<div{{ attributes.addClass(classes) }}>
+    <strong class="menu__variant__type">
+      {{ content.field_menu_variant_type }}
+    </strong>
+
+    <span class="menu__variant__price">
+      {{ content.field_menu_variant_price }}
+    </span>
+</div>

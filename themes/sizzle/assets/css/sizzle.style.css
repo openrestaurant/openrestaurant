@@ -7476,6 +7476,22 @@ ul.dropdown-menu {
 .menu__description {
   margin-top: 1.5em; }
 
+.menu__variant {
+  margin-top: 0.5em;
+  position: relative;
+  border-bottom: 1px dotted #796b4f; }
+  .menu__variant__type, .menu__variant__price {
+    background: #222222 url("../images/bg/bg-body.jpg") repeat center;
+    position: relative;
+    top: 7px; }
+  .menu__variant__type {
+    display: inline-block;
+    text-transform: uppercase;
+    padding-right: 0.5em; }
+  .menu__variant__price {
+    float: right;
+    padding-left: 0.5em; }
+
 @media (min-width: 768px) {
   .menu--teaser .menu__image {
     float: left; } }
@@ -7486,6 +7502,9 @@ ul.dropdown-menu {
 
 .menu--teaser .menu__title {
   margin-bottom: 0.25em; }
+
+.menu--full .menu__variant {
+  margin-bottom: 1.0em; }
 
 .node {
   position: relative; }
@@ -7544,11 +7563,11 @@ ul.dropdown-menu {
 .view--menus > .view__content h2 {
   margin: 2.0em 0 1.0em; }
 
-.view--menus > .view__content .view__row .node {
+.view--menus .menu {
   margin-bottom: 1.5em;
   padding-bottom: 1.5em;
   border-bottom: 1px solid #d5cebf;
-  min-height: 130px; }
+  min-height: 200px; }
 
 .view--menus--menus-by-category > .view__content {
   margin-top: 2em; }

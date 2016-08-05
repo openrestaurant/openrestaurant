@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Template for field: field_menu_variants.
+ */
+#}
+{%
+set title_classes = [
+'field__label',
+label_display == 'visually_hidden' ? 'visually-hidden',
+]
+%}
+{% if label_display != 'hidden' %}
+  <h4{{ title_attributes.addClass(title_classes) }}>{{ label }}</h4>
+{% endif %}
+{% for item in items %}
+  {{ item.content }}
+{% endfor %}

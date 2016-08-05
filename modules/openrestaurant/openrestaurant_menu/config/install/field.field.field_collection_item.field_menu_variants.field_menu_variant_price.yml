@@ -1,0 +1,28 @@
+uuid: a425dc5a-f739-4e4b-a6a1-c08334893344
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_menu_variant_price
+    - field_collection.field_collection.field_menu_variants
+_core:
+  default_config_hash: l8x4aFIrY6a-Z1nyeh5d4_wglku_bQh7JFSyJZxzPso
+id: field_collection_item.field_menu_variants.field_menu_variant_price
+field_name: field_menu_variant_price
+entity_type: field_collection_item
+bundle: field_menu_variants
+label: Price
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: !!float 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: ''
+field_type: decimal
+

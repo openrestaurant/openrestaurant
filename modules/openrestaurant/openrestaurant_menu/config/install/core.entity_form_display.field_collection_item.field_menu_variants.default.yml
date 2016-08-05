@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_menu_variants.field_menu_variant_price
+    - field.field.field_collection_item.field_menu_variants.field_menu_variant_type
+    - field_collection.field_collection.field_menu_variants
+id: field_collection_item.field_menu_variants.default
+targetEntityType: field_collection_item
+bundle: field_menu_variants
+mode: default
+content:
+  field_menu_variant_price:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+  field_menu_variant_type:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+hidden: {  }

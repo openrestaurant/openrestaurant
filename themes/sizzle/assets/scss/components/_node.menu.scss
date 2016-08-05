@@ -28,6 +28,30 @@
   &__description {
     margin-top: 1.5em;
   }
+
+  &__variant {
+    margin-top: 0.5em;
+    position: relative;
+    border-bottom: 1px dotted $brand-primary;
+
+    &__type,
+    &__price {
+      background: $body-bg $body-bg-image;
+      position: relative;
+      top: 7px;
+    }
+
+    &__type {
+      display: inline-block;
+      text-transform: uppercase;
+      padding-right: 0.5em;
+    }
+
+    &__price {
+      float: right;
+      padding-left: 0.5em;
+    }
+  }
 }
 
 // View mode: Teaser
@@ -52,6 +76,18 @@
 
     &__title {
       margin-bottom: 0.25em;
+    }
+  }
+}
+
+// View mode: Full
+// -----------------------------------------------------------------------------
+.menu--full {
+
+  .menu {
+
+    &__variant {
+      margin-bottom: 1.0em;
     }
   }
 }

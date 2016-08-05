@@ -6,11 +6,13 @@ dependencies:
     - field.field.node.menu.field_menu_description
     - field.field.node.menu.field_menu_featured
     - field.field.node.menu.field_menu_images
-    - field.field.node.menu.field_menu_teaser
     - field.field.node.menu.field_menu_nutrition_types
+    - field.field.node.menu.field_menu_teaser
+    - field.field.node.menu.field_menu_variants
     - image.style.thumbnail
     - node.type.menu
   module:
+    - field_collection
     - image
     - path
     - text
@@ -26,11 +28,6 @@ content:
     third_party_settings: {  }
   field_menu_categories:
     weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-  field_menu_nutrition_types:
-    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -54,6 +51,11 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+  field_menu_nutrition_types:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
   field_menu_teaser:
     weight: 3
     settings:
@@ -61,6 +63,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+  field_menu_variants:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_embed
   path:
     type: path
     weight: 10

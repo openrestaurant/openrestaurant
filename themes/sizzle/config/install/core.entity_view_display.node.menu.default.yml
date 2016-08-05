@@ -1,3 +1,4 @@
+uuid: f5f6d0de-9661-453b-a5f8-b51d8b8e33ff
 langcode: en
 status: true
 dependencies:
@@ -8,11 +9,15 @@ dependencies:
     - field.field.node.menu.field_menu_images
     - field.field.node.menu.field_menu_nutrition_types
     - field.field.node.menu.field_menu_teaser
+    - field.field.node.menu.field_menu_variants
     - node.type.menu
   module:
+    - field_collection
     - image
     - text
     - user
+_core:
+  default_config_hash: hInDfUYpxvP_awl4MTY_k0T9jqbLQ_0DuicMrzTJXBw
 id: node.menu.default
 targetEntityType: node
 bundle: menu
@@ -62,6 +67,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+  field_menu_variants:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_items
   links:
     weight: 0
     settings: {  }

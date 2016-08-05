@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_menu_variant_type
+    - field_collection.field_collection.field_menu_variants
+id: field_collection_item.field_menu_variants.field_menu_variant_type
+field_name: field_menu_variant_type
+entity_type: field_collection_item
+bundle: field_menu_variants
+label: Type
+description: 'The type of menu. Example: small, large, with fries, with 2 sides..etc.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

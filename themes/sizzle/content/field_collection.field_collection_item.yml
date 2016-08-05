@@ -1,0 +1,9 @@
+entity_type: field_collection_item
+bundle: field_menu_variants
+content:
+  menu_variant_1:
+    uuid: c14e17e2-6d8b-4433-a41e-f2d46cedc3d4
+    field_menu_variant_type:
+      value: 'Small'
+    field_menu_variant_price:
+      price: 1.99

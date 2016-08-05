@@ -37,9 +37,8 @@ demo_content:
 
   - content/menus.nutrition_types.images.yml
   - content/menus.nutrition_types.yml
+#  - content/field_collection.field_collection_item.yml
   - content/menus.menu_categories.yml
 
   - content/menus.images.yml
   - content/menus.nodes.yml
-
-  - content/node.reservation_page.yml

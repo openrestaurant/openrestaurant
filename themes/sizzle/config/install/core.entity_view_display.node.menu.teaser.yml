@@ -9,8 +9,10 @@ dependencies:
     - field.field.node.menu.field_menu_images
     - field.field.node.menu.field_menu_nutrition_types
     - field.field.node.menu.field_menu_teaser
+    - field.field.node.menu.field_menu_variants
     - node.type.menu
   module:
+    - field_collection
     - responsive_image
     - text
     - user
@@ -20,7 +22,7 @@ bundle: menu
 mode: teaser
 content:
   field_menu_images:
-    weight: 102
+    weight: 2
     label: hidden
     settings:
       responsive_image_style: menu_teaser_image
@@ -29,21 +31,26 @@ content:
     type: responsive_image
   field_menu_nutrition_types:
     type: entity_reference_entity_view
-    weight: 6
+    weight: 0
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
   field_menu_teaser:
-    weight: 101
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
+  field_menu_variants:
+    type: field_collection_items
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_menu_categories: true
   field_menu_description: true
   field_menu_featured: true
   links: true
-
