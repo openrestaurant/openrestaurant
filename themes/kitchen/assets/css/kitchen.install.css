@@ -11,8 +11,8 @@ body.install-page footer:after, body.install-page .wrapper:after {
   border-radius: 2px; }
 
 .button {
-  background: #796b4f;
-  border-color: #5a503b; }
+  background: #27ae60;
+  border-color: #1e8449; }
 
 .form-item,
 .form-actions,
@@ -39,27 +39,29 @@ fieldset .form-item.form-item-account-pass-pass1 {
   height: 24px; }
 
 .progress .progress__bar {
-  background: #796b4f; }
+  background: #27ae60; }
 
 body.install-page {
-  background: #222; }
+  background: #34495e; }
   body.install-page a {
-    color: #796b4f; }
+    color: #27ae60; }
   body.install-page .button {
-    background: #796b4f;
-    border-color: #5a503b; }
+    background: #27ae60;
+    border-color: #1e8449; }
   body.install-page .layout-container {
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.12);
+    box-shadow: none;
     border-radius: 2px;
     padding: 0; }
   body.install-page header,
   body.install-page footer {
     padding: 1.5em; }
   body.install-page header {
-    background: #796b4f;
+    background: #27ae60;
     color: white; }
   body.install-page .wrapper {
-    padding: 1.5em 1.5em 1.5em 0; }
+    padding: 1.5em 1.5em 1.5em 0;
+    border: 1px solid #ebeae4;
+    border-width: 0 1px; }
   @media (min-width: 48em) {
     body.install-page aside {
       width: 25%; } }

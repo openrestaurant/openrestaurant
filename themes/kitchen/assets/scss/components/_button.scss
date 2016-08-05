@@ -10,6 +10,6 @@
 
 .button {
   @extend %button;
-  background: color(brown);
-  border-color: darken(color(brown), 10);
+  background: $brand-primary;
+  border-color: darken($brand-primary, 10);
 }

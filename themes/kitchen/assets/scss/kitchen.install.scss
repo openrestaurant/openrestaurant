@@ -8,19 +8,19 @@
 @import "components/progress";
 
 body.install-page {
-  background: #222;
+  background: #34495e;
 
   a {
-    color: color(brown);
+    color: $brand-primary;
   }
 
   .button {
-    background: color(brown);
-    border-color: darken(color(brown), 10);
+    background: $brand-primary;
+    border-color: darken($brand-primary, 10);
   }
 
   .layout-container {
-    box-shadow: $shadow;
+    box-shadow: none;
     border-radius: 2px;
     padding: 0;
   }
@@ -32,13 +32,15 @@ body.install-page {
   }
 
   header {
-    background: color(brown);
+    background: $brand-primary;
     color: white;
   }
 
   .wrapper {
     @extend %clearfix;
     padding: 1.5em 1.5em 1.5em 0;
+    border: 1px solid #ebeae4;
+    border-width: 0 1px;
   }
 
   aside {
