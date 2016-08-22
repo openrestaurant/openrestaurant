@@ -1,0 +1,5 @@
+Open Restaurant 8.x-2.00-alpha2, 2016-08-22
+---------------------------------------
+Perform recommended updates for contrib modules: admin_toolbar 8.x-1.16, ctools 8.x-2.0-alpha27, features 8.x-3.0-beta7, token 8.x-1.0-beta1, tvi 8.x-1.0-beta1
+Upgrade to Drupal Core 8.1.8
+Issue #2787375: Installation error Parse error: syntax error, unexpected '?'
