@@ -12,7 +12,10 @@ use Drupal\file\Entity\File;
  */
 function sizzle_preprocess_html(&$variables) {
   // Add layout_width to template.
-  $variables['layout']['width'] = theme_get_setting('features.layout_width') ?? 'boxed';
+  $variables['layout']['width'] = theme_get_setting('features.layout_width');
+  if (empty($layout_width)) {
+    $variables['layout']['width'] = 'boxed';
+  }
 }
 
 /**
