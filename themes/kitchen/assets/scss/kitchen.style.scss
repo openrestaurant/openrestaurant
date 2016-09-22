@@ -3,11 +3,14 @@
 
 // Mixins and Variables
 // -----------------------------------------------------------------------------
-@import "base/variables";
-@import "base/mixin";
-@import "base/helpers";
-@import "base/typography";
+@import "base/base.variables";
+@import "base/base.mixins";
+@import "base/base.helpers";
 
-// Theme CSS
+// Components
 // -----------------------------------------------------------------------------
 @import "components/**/*";
+
+// Pages
+// -----------------------------------------------------------------------------
+@import "pages/**/*";

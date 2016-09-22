@@ -2,14 +2,14 @@
   display: none !important; }
 
 a {
-  color: #27ae60; }
+  color: #f44336; }
 
 .button {
   border-radius: 2px; }
 
 .button {
-  background: #27ae60;
-  border-color: #1e8449; }
+  background: #f44336;
+  border-color: #ea1c0d; }
 
 .form-item,
 .form-actions,
@@ -36,10 +36,10 @@ fieldset .form-item.form-item-account-pass-pass1 {
   height: 24px; }
 
 .progress .progress__bar {
-  background: #27ae60; }
+  background: #f44336; }
 
 header.content-header {
-  background: #27ae60;
+  background: #f44336;
   color: white; }
 
 .toolbar-icon-entity-reservation-collection:before {

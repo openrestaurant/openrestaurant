@@ -11,8 +11,8 @@ body.install-page footer:after, body.install-page .wrapper:after {
   border-radius: 2px; }
 
 .button {
-  background: #27ae60;
-  border-color: #1e8449; }
+  background: #f44336;
+  border-color: #ea1c0d; }
 
 .form-item,
 .form-actions,
@@ -39,65 +39,75 @@ fieldset .form-item.form-item-account-pass-pass1 {
   height: 24px; }
 
 .progress .progress__bar {
-  background: #27ae60; }
+  background: #f44336; }
 
-body.install-page {
-  background: #34495e; }
-  body.install-page a {
-    color: #27ae60; }
-  body.install-page .button {
-    background: #27ae60;
-    border-color: #1e8449; }
-  body.install-page .layout-container {
-    box-shadow: none;
-    border-radius: 2px;
-    padding: 0; }
-  body.install-page header,
-  body.install-page footer {
-    padding: 1.5em; }
-  body.install-page header {
-    background: #27ae60;
-    color: white; }
-  body.install-page .wrapper {
-    padding: 1.5em 1.5em 1.5em 0;
-    border: 1px solid #ebeae4;
-    border-width: 0 1px; }
+body.install-page a {
+  color: #f44336; }
+
+body.install-page .button {
+  background: #f44336;
+  border-color: #ea1c0d; }
+
+body.install-page .layout-container {
+  box-shadow: none;
+  border-radius: 2px;
+  padding: 0; }
+
+body.install-page header,
+body.install-page footer {
+  padding: 1.5em; }
+
+body.install-page header {
+  background: #f44336;
+  color: white; }
+
+body.install-page .wrapper {
+  padding: 1.5em 1.5em 1.5em 0;
+  border: 1px solid #ebeae4;
+  border-width: 0 1px; }
+
+@media (min-width: 48em) {
+  body.install-page aside {
+    width: 25%; } }
+
+body.install-page main {
+  width: auto;
+  padding-left: 1.5em; }
   @media (min-width: 48em) {
-    body.install-page aside {
-      width: 25%; } }
-  body.install-page main {
-    width: auto;
-    padding-left: 1.5em; }
-    @media (min-width: 48em) {
-      body.install-page main {
-        margin-left: 27%;
-        float: none; } }
-    body.install-page main h2 {
-      margin: 0 0 1em; }
-  body.install-page footer {
-    clear: both;
-    font-size: 0.85em;
-    background: #ebeae4; }
-    body.install-page footer p {
-      margin: 0; }
-  body.install-page .step-indicator {
-    top: 0.5em;
-    font-size: 1.0em; }
-  body.install-page .page-title {
-    margin: 0;
-    color: white; }
-  body.install-page .copyright {
-    text-align: center; }
-    @media (min-width: 48em) {
-      body.install-page .copyright {
-        float: left;
-        text-align: left; } }
-  body.install-page .version {
-    text-align: center; }
-    @media (min-width: 48em) {
-      body.install-page .version {
-        float: right;
-        text-align: right; } }
+    body.install-page main {
+      margin-left: 27%;
+      float: none; } }
+  body.install-page main h2 {
+    margin: 0 0 1em; }
+
+body.install-page footer {
+  clear: both;
+  font-size: 0.85em;
+  background: #ebeae4; }
+  body.install-page footer p {
+    margin: 0; }
+
+body.install-page .step-indicator {
+  top: 0.5em;
+  font-size: 1.0em; }
+
+body.install-page .page-title {
+  margin: 0;
+  color: white; }
+
+body.install-page .copyright {
+  text-align: center; }
+  @media (min-width: 48em) {
+    body.install-page .copyright {
+      float: left;
+      text-align: left; } }
+
+body.install-page .version {
+  text-align: center; }
+  @media (min-width: 48em) {
+    body.install-page .version {
+      float: right;
+      text-align: right; } }
 
 .task-list {
   padding: 0;

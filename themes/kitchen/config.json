@@ -1,7 +1,19 @@
 {
-  "name": "Open Restaurant Seven",
+  "name": "Kitchen",
   "description": "The default administration theme for Open Restaurant.",
   "proxy" : "http://openrestaurant.dev/",
   "bowerDir": "./bower_components",
-  "sassIncludePaths": []
+  "css": {
+    "file" : "kitchen.style.scss",
+    "src": [
+      "assets/scss/**/*.scss"
+    ],
+    "dest": "assets/css"
+  },
+  "images": {
+    "src": [
+      "assets/images/**/*"
+    ],
+    "dest": "assets/images/"
+  }
 }

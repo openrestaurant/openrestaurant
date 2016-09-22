@@ -1,5 +1,9 @@
-// Anchors
+// Button
 // -----------------------------------------------------------------------------
-a {
-  color: $brand-primary;
+%button {
+  border-radius: 2px;
+}
+
+.button {
+  @extend %button;
 }

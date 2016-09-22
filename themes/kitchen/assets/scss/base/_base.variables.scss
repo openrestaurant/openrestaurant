@@ -1,5 +1,3 @@
-@import "mixin";
-
 // Colors
 // -----------------------------------------------------------------------------
 $colors: (
@@ -10,10 +8,11 @@ $colors: (
   brown:        #796b4f,
   purple:       #8e44ad,
   graphite:     #34495e,
-  green:        #27ae60
+  green:        #27ae60,
+  orange:       #f44336,
 );
 
-$brand-primary: color(green);
+$brand-primary: color(orange);
 
 // Shadow
 // -----------------------------------------------------------------------------
