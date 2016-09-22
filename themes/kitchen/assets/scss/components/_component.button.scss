@@ -4,6 +4,8 @@
   border-radius: 2px;
   padding: 0.5em 1em;
   min-width: 100px;
+  height: $input-height;
+  text-shadow: none;
 }
 
 .button {
@@ -13,14 +15,41 @@
 // Dropbutton
 // -----------------------------------------------------------------------------
 .js .dropbutton-widget,
-.js .dropbutton-multiple .dropbutton-widget {
+.js .dropbutton-multiple .dropbutton-widget,
+.js .dropbutton-multiple.open .dropbutton-widget {
   border-radius: 2px;
 
-  .dropbutton-action {
+  .dropbutton-action,
+  .dropbutton-toggle {
 
     a,
+    button,
+    input {
+      @extend %button;
+      min-width: auto;
+      height: $input-height - 2;
+
+      &:hover {
+       box-shadow: none;
+      }
+    }
+
+    a {
+      height: auto;
+    }
+  }
+
+  .dropbutton-toggle {
+
     button {
-      border-radius: 2px;
+      height: $input-height - 3;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: none;
+        box-shadow: none;
+      }
     }
   }
 }

@@ -2,9 +2,10 @@
 // -----------------------------------------------------------------------------
 %input {
   padding: 0.5em 1em;
-  height: 35px;
+  height: $input-height;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="submit"] {
   @extend %input;
 }

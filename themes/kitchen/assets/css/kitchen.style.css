@@ -5,21 +5,96 @@
 body {
   font-family: 'Open Sans', sans-serif; }
 
-.button {
+.button, .js .dropbutton-widget .dropbutton-action a,
+.js .dropbutton-widget .dropbutton-action button,
+.js .dropbutton-widget .dropbutton-action input,
+.js .dropbutton-widget .dropbutton-toggle a,
+.js .dropbutton-widget .dropbutton-toggle button,
+.js .dropbutton-widget .dropbutton-toggle input,
+.js .dropbutton-multiple .dropbutton-widget .dropbutton-action a,
+.js .dropbutton-multiple .dropbutton-widget .dropbutton-action button,
+.js .dropbutton-multiple .dropbutton-widget .dropbutton-action input,
+.js .dropbutton-multiple .dropbutton-widget .dropbutton-toggle a,
+.js .dropbutton-multiple .dropbutton-widget .dropbutton-toggle button,
+.js .dropbutton-multiple .dropbutton-widget .dropbutton-toggle input,
+.js .dropbutton-multiple.open .dropbutton-widget .dropbutton-action a,
+.js .dropbutton-multiple.open .dropbutton-widget .dropbutton-action button,
+.js .dropbutton-multiple.open .dropbutton-widget .dropbutton-action input,
+.js .dropbutton-multiple.open .dropbutton-widget .dropbutton-toggle a,
+.js .dropbutton-multiple.open .dropbutton-widget .dropbutton-toggle button,
+.js .dropbutton-multiple.open .dropbutton-widget .dropbutton-toggle input {
   border-radius: 2px;
   padding: 0.5em 1em;
-  min-width: 100px; }
+  min-width: 100px;
+  height: 35px;
+  text-shadow: none; }
 
 .js .dropbutton-widget,
-.js .dropbutton-multiple .dropbutton-widget {
+.js .dropbutton-multiple .dropbutton-widget,
+.js .dropbutton-multiple.open .dropbutton-widget {
   border-radius: 2px; }
   .js .dropbutton-widget .dropbutton-action a,
   .js .dropbutton-widget .dropbutton-action button,
+  .js .dropbutton-widget .dropbutton-action input,
+  .js .dropbutton-widget .dropbutton-toggle a,
+  .js .dropbutton-widget .dropbutton-toggle button,
+  .js .dropbutton-widget .dropbutton-toggle input,
   .js .dropbutton-multiple .dropbutton-widget .dropbutton-action a,
-  .js .dropbutton-multiple .dropbutton-widget .dropbutton-action button {
-    border-radius: 2px; }
+  .js .dropbutton-multiple .dropbutton-widget .dropbutton-action button,
+  .js .dropbutton-multiple .dropbutton-widget .dropbutton-action input,
+  .js .dropbutton-multiple .dropbutton-widget .dropbutton-toggle a,
+  .js .dropbutton-multiple .dropbutton-widget .dropbutton-toggle button,
+  .js .dropbutton-multiple .dropbutton-widget .dropbutton-toggle input,
+  .js .dropbutton-multiple.open .dropbutton-widget .dropbutton-action a,
+  .js .dropbutton-multiple.open .dropbutton-widget .dropbutton-action button,
+  .js .dropbutton-multiple.open .dropbutton-widget .dropbutton-action input,
+  .js .dropbutton-multiple.open .dropbutton-widget .dropbutton-toggle a,
+  .js .dropbutton-multiple.open .dropbutton-widget .dropbutton-toggle button,
+  .js .dropbutton-multiple.open .dropbutton-widget .dropbutton-toggle input {
+    min-width: auto;
+    height: 33px; }
+    .js .dropbutton-widget .dropbutton-action a:hover,
+    .js .dropbutton-widget .dropbutton-action button:hover,
+    .js .dropbutton-widget .dropbutton-action input:hover,
+    .js .dropbutton-widget .dropbutton-toggle a:hover,
+    .js .dropbutton-widget .dropbutton-toggle button:hover,
+    .js .dropbutton-widget .dropbutton-toggle input:hover,
+    .js .dropbutton-multiple .dropbutton-widget .dropbutton-action a:hover,
+    .js .dropbutton-multiple .dropbutton-widget .dropbutton-action button:hover,
+    .js .dropbutton-multiple .dropbutton-widget .dropbutton-action input:hover,
+    .js .dropbutton-multiple .dropbutton-widget .dropbutton-toggle a:hover,
+    .js .dropbutton-multiple .dropbutton-widget .dropbutton-toggle button:hover,
+    .js .dropbutton-multiple .dropbutton-widget .dropbutton-toggle input:hover,
+    .js .dropbutton-multiple.open .dropbutton-widget .dropbutton-action a:hover,
+    .js .dropbutton-multiple.open .dropbutton-widget .dropbutton-action button:hover,
+    .js .dropbutton-multiple.open .dropbutton-widget .dropbutton-action input:hover,
+    .js .dropbutton-multiple.open .dropbutton-widget .dropbutton-toggle a:hover,
+    .js .dropbutton-multiple.open .dropbutton-widget .dropbutton-toggle button:hover,
+    .js .dropbutton-multiple.open .dropbutton-widget .dropbutton-toggle input:hover {
+      box-shadow: none; }
+  .js .dropbutton-widget .dropbutton-action a,
+  .js .dropbutton-widget .dropbutton-toggle a,
+  .js .dropbutton-multiple .dropbutton-widget .dropbutton-action a,
+  .js .dropbutton-multiple .dropbutton-widget .dropbutton-toggle a,
+  .js .dropbutton-multiple.open .dropbutton-widget .dropbutton-action a,
+  .js .dropbutton-multiple.open .dropbutton-widget .dropbutton-toggle a {
+    height: auto; }
+  .js .dropbutton-widget .dropbutton-toggle button,
+  .js .dropbutton-multiple .dropbutton-widget .dropbutton-toggle button,
+  .js .dropbutton-multiple.open .dropbutton-widget .dropbutton-toggle button {
+    height: 32px; }
+    .js .dropbutton-widget .dropbutton-toggle button:hover, .js .dropbutton-widget .dropbutton-toggle button:active, .js .dropbutton-widget .dropbutton-toggle button:focus,
+    .js .dropbutton-multiple .dropbutton-widget .dropbutton-toggle button:hover,
+    .js .dropbutton-multiple .dropbutton-widget .dropbutton-toggle button:active,
+    .js .dropbutton-multiple .dropbutton-widget .dropbutton-toggle button:focus,
+    .js .dropbutton-multiple.open .dropbutton-widget .dropbutton-toggle button:hover,
+    .js .dropbutton-multiple.open .dropbutton-widget .dropbutton-toggle button:active,
+    .js .dropbutton-multiple.open .dropbutton-widget .dropbutton-toggle button:focus {
+      background: none;
+      box-shadow: none; }
 
-input[type="text"] {
+input[type="text"],
+input[type="submit"] {
   padding: 0.5em 1em;
   height: 35px; }
 
