@@ -19,7 +19,12 @@ body {
   .js .dropbutton-multiple .dropbutton-widget .dropbutton-action button {
     border-radius: 2px; }
 
+input[type="text"] {
+  padding: 0.5em 1em;
+  height: 35px; }
+
 select {
-  padding: 0.5em 1em; }
+  padding: 0.5em 1em;
+  height: 35px; }
 
 /*# sourceMappingURL=kitchen.style.css.map */
