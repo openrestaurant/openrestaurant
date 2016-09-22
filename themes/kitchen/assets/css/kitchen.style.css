@@ -98,6 +98,10 @@ input[type="submit"] {
   padding: 0.5em 1em;
   height: 35px; }
 
+label {
+  font-size: 1.1em;
+  margin: 0 0 0.25em; }
+
 select {
   padding: 0.5em 1em;
   height: 35px; }
