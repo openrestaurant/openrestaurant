@@ -8,8 +8,18 @@
   text-shadow: none;
 }
 
-.button {
+%button--small {
+  font-size: 1em;
+  padding: 0.5em 1em;
+}
+
+.button,
+.no-touchevents .button {
   @extend %button;
+
+  &--small {
+    @extend %button--small;
+  }
 }
 
 // Dropbutton

@@ -5,7 +5,8 @@
 body {
   font-family: 'Open Sans', sans-serif; }
 
-.button, .js .dropbutton-widget .dropbutton-action a,
+.button,
+.no-touchevents .button, .js .dropbutton-widget .dropbutton-action a,
 .js .dropbutton-widget .dropbutton-action button,
 .js .dropbutton-widget .dropbutton-action input,
 .js .dropbutton-widget .dropbutton-toggle a,
@@ -28,6 +29,11 @@ body {
   min-width: 100px;
   height: 35px;
   text-shadow: none; }
+
+.button--small,
+.no-touchevents .button--small {
+  font-size: 1em;
+  padding: 0.5em 1em; }
 
 .js .dropbutton-widget,
 .js .dropbutton-multiple .dropbutton-widget,
