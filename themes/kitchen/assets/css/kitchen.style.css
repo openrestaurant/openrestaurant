@@ -1,7 +1,25 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
 .hidden {
   display: none !important; }
 
+body {
+  font-family: 'Open Sans', sans-serif; }
+
 .button {
+  border-radius: 2px;
+  padding: 0.5em 1em;
+  min-width: 100px; }
+
+.js .dropbutton-widget,
+.js .dropbutton-multiple .dropbutton-widget {
   border-radius: 2px; }
+  .js .dropbutton-widget .dropbutton-action a,
+  .js .dropbutton-widget .dropbutton-action button,
+  .js .dropbutton-multiple .dropbutton-widget .dropbutton-action a,
+  .js .dropbutton-multiple .dropbutton-widget .dropbutton-action button {
+    border-radius: 2px; }
+
+select {
+  padding: 0.5em 1em; }
 
 /*# sourceMappingURL=kitchen.style.css.map */

@@ -2,8 +2,25 @@
 // -----------------------------------------------------------------------------
 %button {
   border-radius: 2px;
+  padding: 0.5em 1em;
+  min-width: 100px;
 }
 
 .button {
   @extend %button;
+}
+
+// Dropbutton
+// -----------------------------------------------------------------------------
+.js .dropbutton-widget,
+.js .dropbutton-multiple .dropbutton-widget {
+  border-radius: 2px;
+
+  .dropbutton-action {
+
+    a,
+    button {
+      border-radius: 2px;
+    }
+  }
 }

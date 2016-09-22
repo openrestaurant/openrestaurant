@@ -1,7 +1,5 @@
 global-styling:
   version: VERSION
   css:
-    base:
+    theme:
       assets/css/kitchen.style.css: {}
-  dependencies:
-    - seven/global-styling
