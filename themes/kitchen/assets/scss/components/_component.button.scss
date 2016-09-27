@@ -2,15 +2,31 @@
 // -----------------------------------------------------------------------------
 %button {
   border-radius: 2px;
-  padding: 0.5em 1em;
+  padding: 0 1em;
   min-width: 100px;
   height: $input-height;
+  line-height: $input-height - 2;
   text-shadow: none;
+  box-shadow: none;
+  font-weight: 700;
 }
 
 %button--small {
   font-size: 1em;
-  padding: 0.5em 1em;
+  padding: 0 1em;
+  height: $input-height - 8;
+  line-height: $input-height - 10;
+}
+
+%button--primary {
+  background: $brand-primary;
+  border-color: $brand-primary;
+
+  &:hover,
+  &:focus {
+    border-color: lighten($brand-primary, 15);
+    background-color: lighten($brand-primary, 15);
+  }
 }
 
 .button,
@@ -19,6 +35,10 @@
 
   &--small {
     @extend %button--small;
+  }
+
+  &--primary {
+    @extend %button--primary;
   }
 }
 

@@ -1,0 +1,16 @@
+// Details
+// -----------------------------------------------------------------------------
+@mixin details {
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+
+  summary {
+    text-transform: none;
+    font-size: 1.2em;
+    padding: 1em;
+  }
+}
+
+details {
+  @include details;
+}

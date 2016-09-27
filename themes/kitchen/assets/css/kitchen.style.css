@@ -3,7 +3,11 @@
   display: none !important; }
 
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px; }
+
+a {
+  color: #2980b9; }
 
 .button,
 .no-touchevents .button, .js .dropbutton-widget .dropbutton-action a,
@@ -25,15 +29,28 @@ body {
 .js .dropbutton-multiple.open .dropbutton-widget .dropbutton-toggle button,
 .js .dropbutton-multiple.open .dropbutton-widget .dropbutton-toggle input {
   border-radius: 2px;
-  padding: 0.5em 1em;
+  padding: 0 1em;
   min-width: 100px;
   height: 35px;
-  text-shadow: none; }
+  line-height: 33px;
+  text-shadow: none;
+  box-shadow: none;
+  font-weight: 700; }
 
 .button--small,
 .no-touchevents .button--small {
   font-size: 1em;
-  padding: 0.5em 1em; }
+  padding: 0 1em;
+  height: 27px;
+  line-height: 25px; }
+
+.button--primary,
+.no-touchevents .button--primary {
+  background: #2980b9;
+  border-color: #2980b9; }
+  .button--primary:hover, .button--primary:focus {
+    border-color: #55a5d9;
+    background-color: #55a5d9; }
 
 .js .dropbutton-widget,
 .js .dropbutton-multiple .dropbutton-widget,
@@ -99,17 +116,149 @@ body {
       background: none;
       box-shadow: none; }
 
-input[type="text"],
-input[type="submit"] {
-  padding: 0.5em 1em;
-  height: 35px; }
+div.cke_chrome {
+  box-shadow: none; }
+  div.cke_chrome .cke_top,
+  div.cke_chrome .cke_bottom {
+    background: #fcfcfa; }
 
-label {
+details {
+  border: 1px solid #ebeae4;
+  border-radius: 2px; }
+  details summary {
+    text-transform: none;
+    font-size: 1.2em;
+    padding: 1em; }
+
+.form-item,
+.field--type-datetime {
+  margin: 0 0 2em; }
+
+.description {
+  margin: 0.25em 0 0; }
+
+input[type="text"],
+input[type="submit"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="file"] {
+  padding: 0.5em 1em;
+  height: 35px;
+  background: white;
+  box-shadow: none; }
+  input[type="text"]:focus,
+  input[type="submit"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  input[type="date"]:focus,
+  input[type="time"]:focus,
+  input[type="file"]:focus, input[type="text"]:active,
+  input[type="submit"]:active,
+  input[type="email"]:active,
+  input[type="tel"]:active,
+  input[type="date"]:active,
+  input[type="time"]:active,
+  input[type="file"]:active {
+    box-shadow: none; }
+
+label,
+.label {
+  display: block;
   font-size: 1.1em;
   margin: 0 0 0.25em; }
+
+.container-inline label, .container-inline
+.label {
+  display: inline-block; }
 
 select {
   padding: 0.5em 1em;
   height: 35px; }
+
+.system-themes-list,
+body.toolbar-horizontal .system-themes-list-installed,
+body.toolbar-horizontal .system-themes-list-uninstalled,
+body.toolbar-vertical .system-themes-list-installed,
+body.toolbar-vertical .system-themes-list-uninstalled {
+  margin: 0 0 2em;
+  padding: 1em 1em 0;
+  border: 1px solid #ebeae4;
+  border-radius: 2px; }
+  .system-themes-list__header,
+  body.toolbar-horizontal .system-themes-list-installed__header,
+  body.toolbar-horizontal .system-themes-list-uninstalled__header,
+  body.toolbar-vertical .system-themes-list-installed__header,
+  body.toolbar-vertical .system-themes-list-uninstalled__header {
+    margin: 0 0 1em; }
+  .system-themes-list__description,
+  body.toolbar-horizontal .system-themes-list-installed__description,
+  body.toolbar-horizontal .system-themes-list-uninstalled__description,
+  body.toolbar-vertical .system-themes-list-installed__description,
+  body.toolbar-vertical .system-themes-list-uninstalled__description {
+    margin: -0.5em 0 1.5em; }
+  .system-themes-list .theme-selector,
+  body.toolbar-horizontal .system-themes-list-installed .theme-selector,
+  body.toolbar-horizontal .system-themes-list-uninstalled .theme-selector,
+  body.toolbar-vertical .system-themes-list-installed .theme-selector,
+  body.toolbar-vertical .system-themes-list-uninstalled .theme-selector {
+    float: none;
+    width: 100%;
+    padding: 0 0 1em;
+    margin: 0 0 1em; }
+    .system-themes-list .theme-selector:last-child,
+    body.toolbar-horizontal .system-themes-list-installed .theme-selector:last-child,
+    body.toolbar-horizontal .system-themes-list-uninstalled .theme-selector:last-child,
+    body.toolbar-vertical .system-themes-list-installed .theme-selector:last-child,
+    body.toolbar-vertical .system-themes-list-uninstalled .theme-selector:last-child {
+      margin-bottom: 0; }
+  .system-themes-list .screenshot,
+  .system-themes-list .no-screenshot,
+  body.toolbar-horizontal .system-themes-list-installed .screenshot,
+  body.toolbar-horizontal .system-themes-list-installed .no-screenshot,
+  body.toolbar-horizontal .system-themes-list-uninstalled .screenshot,
+  body.toolbar-horizontal .system-themes-list-uninstalled .no-screenshot,
+  body.toolbar-vertical .system-themes-list-installed .screenshot,
+  body.toolbar-vertical .system-themes-list-installed .no-screenshot,
+  body.toolbar-vertical .system-themes-list-uninstalled .screenshot,
+  body.toolbar-vertical .system-themes-list-uninstalled .no-screenshot {
+    width: 300px;
+    max-width: 300px;
+    border: 1px solid #ebeae4;
+    border-radius: 2px;
+    padding: 0;
+    float: left;
+    margin: 0 2em 0 0; }
+  .system-themes-list .theme-info,
+  body.toolbar-horizontal .system-themes-list-installed .theme-info,
+  body.toolbar-horizontal .system-themes-list-uninstalled .theme-info,
+  body.toolbar-vertical .system-themes-list-installed .theme-info,
+  body.toolbar-vertical .system-themes-list-uninstalled .theme-info {
+    min-height: 0; }
+    .system-themes-list .theme-info__header,
+    body.toolbar-horizontal .system-themes-list-installed .theme-info__header,
+    body.toolbar-horizontal .system-themes-list-uninstalled .theme-info__header,
+    body.toolbar-vertical .system-themes-list-installed .theme-info__header,
+    body.toolbar-vertical .system-themes-list-uninstalled .theme-info__header {
+      font-size: 1.4em;
+      margin: 0 0 0.5em;
+      padding: 0.5em 0 0;
+      font-weight: bold; }
+    .system-themes-list .theme-info__description,
+    body.toolbar-horizontal .system-themes-list-installed .theme-info__description,
+    body.toolbar-horizontal .system-themes-list-uninstalled .theme-info__description,
+    body.toolbar-vertical .system-themes-list-installed .theme-info__description,
+    body.toolbar-vertical .system-themes-list-uninstalled .theme-info__description {
+      line-height: 140%; }
+
+.system-themes-list-installed,
+body.toolbar-horizontal .system-themes-list-installed,
+body.toolbar-vertical .system-themes-list-installed {
+  border: 2px solid #2980b9; }
+  .system-themes-list-installed .system-themes-list__header,
+  body.toolbar-horizontal .system-themes-list-installed .system-themes-list__header,
+  body.toolbar-vertical .system-themes-list-installed .system-themes-list__header {
+    color: #2980b9; }
 
 /*# sourceMappingURL=kitchen.style.css.map */

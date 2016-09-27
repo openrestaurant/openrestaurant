@@ -1,0 +1,14 @@
+// Form Item
+// -----------------------------------------------------------------------------
+%form-item {
+  margin: 0 0 2em;
+}
+
+.form-item,
+.field--type-datetime {
+  @extend %form-item;
+}
+
+.description {
+  margin: 0.25em 0 0;
+}

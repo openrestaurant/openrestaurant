@@ -1,0 +1,80 @@
+// Themes list
+// -----------------------------------------------------------------------------
+.system-themes-list,
+body.toolbar-horizontal .system-themes-list-installed,
+body.toolbar-horizontal .system-themes-list-uninstalled,
+body.toolbar-vertical .system-themes-list-installed,
+body.toolbar-vertical .system-themes-list-uninstalled {
+  margin: 0 0 2em;
+  padding: 1em 1em 0;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+
+  &__header {
+    margin: 0 0 1em;
+  }
+
+  &__description {
+    margin: -0.5em 0 1.5em;
+  }
+
+  .theme-selector {
+    float: none;
+    width: 100%;
+    padding: 0 0 1em;
+    margin: 0 0 1em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .screenshot,
+  .no-screenshot {
+    width: 300px;
+    max-width: 300px;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    padding: 0;
+    float: left;
+    margin: 0 2em 0 0;
+  }
+
+  .theme-info {
+    min-height: 0;
+
+    &__header {
+      font-size: 1.4em;
+      margin: 0 0 0.5em;
+      padding: 0.5em 0 0;
+      font-weight: bold;
+    }
+
+    &__description {
+      line-height: 140%;
+    }
+  }
+}
+
+// Themes list - Installed
+// -----------------------------------------------------------------------------
+.system-themes-list-installed,
+body.toolbar-horizontal .system-themes-list-installed,
+body.toolbar-vertical .system-themes-list-installed {
+  border: 2px solid $brand-primary;
+
+  .system-themes-list {
+
+    &__header {
+      color: $brand-primary;
+    }
+  }
+}
+
+// Themes list - Uninstalled
+// -----------------------------------------------------------------------------
+.system-themes-list-uninstalled,
+body.toolbar-horizontal .system-themes-list-uninstalled,
+body.toolbar-vertical .system-themes-list-uninstalled {
+
+}

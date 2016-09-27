@@ -7,6 +7,8 @@
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Render\Element;
 
+define('OPEN_RESTAURANT_DISTRIBUTION_NAME', 'Open Restaurant');
+
 /**
  * Implements hook_form_FORM_ID_alter().
  */
@@ -16,6 +18,39 @@ function openrestaurant_admin_form_system_modules_alter(&$form, FormStateInterfa
   }
 
   // Expand Open Restaurant modules and show it first.
-  $form['modules']['Open Restaurant']['#open'] = true;
-  $form['modules']['Open Restaurant']['#weight'] = -1000;
+  $form['modules'][OPEN_RESTAURANT_DISTRIBUTION_NAME]['#open'] = true;
+  $form['modules'][OPEN_RESTAURANT_DISTRIBUTION_NAME]['#weight'] = -1000;
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function openrestaurant_admin_form_system_themes_admin_form_alter(&$form, FormStateInterface $form_state) {
+  // Collapse the form by default.
+  $form['admin_theme']['#open'] = false;
+}
+
+/**
+ * Implements hook_system_themes_page_alter().
+ */
+function openrestaurant_admin_system_themes_page_alter(&$theme_groups) {
+  // Remove incompatible themes.
+  foreach ($theme_groups as $group_name => $theme_group) {
+    foreach ($theme_group as $key => $theme) {
+      if (!isset($theme->info['package']) || $theme->info['package'] !== OPEN_RESTAURANT_DISTRIBUTION_NAME) {
+        unset($theme_groups[$group_name][$key]);
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_system_themes_page().
+ */
+function openrestaurant_admin_preprocess_system_themes_page(&$variables) {
+  // Rename the theme_groups and add a description.
+  $variables['theme_groups'][1]['title'] = t('Other themes');
+  $variables['theme_groups'][1]['description'] = t('List of themes currently not installed on your site. <strong><a href="@url" target="_blank">Only themes compatible with Open Restaurant are shown here</a></strong>.', array(
+    '@url' => 'http://docs.open.restaurant/en/2.0.dev1/theming/#compatibility-with-open-restaurant',
+  ));
 }
