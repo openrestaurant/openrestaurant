@@ -23,11 +23,17 @@ projects[demo_content][version] = 1.x-dev
 projects[disqus][type] = module
 projects[disqus][version] = 1.0-rc1
 
+projects[eck][type] = module
+projects[eck][version] = 1.0-alpha1
+
 projects[features][type] = module
 projects[features][version] = 3.0-beta8
 
 projects[field_collection][type] = module
 projects[field_collection][version] = 1.0-alpha1
+
+projects[inline_entity_form][type] = module
+projects[inline_entity_form][version] = 1.0-alpha6
 
 projects[pathauto][type] = module
 projects[pathauto][version] = 1.0-alpha3
