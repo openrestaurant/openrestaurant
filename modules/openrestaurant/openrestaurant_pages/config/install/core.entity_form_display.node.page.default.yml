@@ -3,8 +3,10 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_slices
     - node.type.page
   module:
+    - inline_entity_form
     - path
     - text
 id: node.page.default
@@ -14,7 +16,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 31
+    weight: 7
     settings:
       rows: 9
       summary_rows: 3
@@ -22,36 +24,48 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 3
     settings: {  }
     third_party_settings: {  }
+  field_slices:
+    weight: 1
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: slice
+      label_plural: slices
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+    third_party_settings: {  }
+    type: inline_entity_form_complex
   path:
     type: path
-    weight: 30
+    weight: 6
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 4
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 5
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 2
     settings:
       match_operator: CONTAINS
       size: 60

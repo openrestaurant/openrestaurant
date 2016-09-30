@@ -3,12 +3,15 @@ description: 'Basic page content type for the Open Restaurant.'
 type: module
 core: 8.x
 dependencies:
+  - eck
   - field
+  - inline_entity_form
   - node
+  - openrestaurant_config
   - path
+  - pathauto
   - text
   - user
   - views
-  - openrestaurant_config
 version: 8.x-2.0-dev
 package: 'Open Restaurant'

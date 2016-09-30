@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.column
+    - field.field.component.column.field_component_css_classes
+    - field.field.component.column.field_component_text
+  module:
+    - text
+id: component.column.default
+targetEntityType: component
+bundle: column
+mode: default
+content:
+  field_component_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+hidden:
+  field_component_css_classes: true
+  id: true
+  langcode: true

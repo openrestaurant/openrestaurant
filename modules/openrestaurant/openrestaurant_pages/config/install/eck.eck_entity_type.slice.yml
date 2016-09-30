@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: slice
+label: Slice
+created: true
+changed: true
+uid: false
+title: true

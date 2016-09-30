@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.slice.columns
+    - field.field.slice.columns.field_columns
+id: slice.columns.default
+targetEntityType: slice
+bundle: columns
+mode: default
+content:
+  field_columns:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+hidden:
+  changed: true
+  created: true
+  id: true
+  langcode: true
+  title: true

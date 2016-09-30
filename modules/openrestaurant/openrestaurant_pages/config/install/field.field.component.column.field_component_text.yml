@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.column
+    - field.storage.component.field_component_text
+  module:
+    - text
+id: component.column.field_component_text
+field_name: field_component_text
+entity_type: component
+bundle: column
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
