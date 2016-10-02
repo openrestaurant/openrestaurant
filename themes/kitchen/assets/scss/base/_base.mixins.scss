@@ -8,3 +8,10 @@
     @warn "Error: There is no color #{$key} associated";
   }
 }
+
+// Border Box.
+// Example: @include border-box();
+// -----------------------------------------------------------------------------
+@mixin border-box() {
+  box-sizing: border-box;
+}

@@ -10,6 +10,7 @@ a {
   color: #2980b9; }
 
 .button,
+input[type="submit"],
 .no-touchevents .button, .js .dropbutton-widget .dropbutton-action a,
 .js .dropbutton-widget .dropbutton-action button,
 .js .dropbutton-widget .dropbutton-action input,
@@ -51,6 +52,16 @@ a {
   .button--primary:hover, .button--primary:focus {
     border-color: #55a5d9;
     background-color: #55a5d9; }
+
+.button--danger,
+.no-touchevents .button--danger {
+  display: inline-block;
+  text-decoration: none;
+  background: #d9534f;
+  border-color: #d9534f;
+  color: white;
+  float: right;
+  margin-right: 0; }
 
 .js .dropbutton-widget,
 .js .dropbutton-multiple .dropbutton-widget,
@@ -131,14 +142,48 @@ details {
     padding: 1em; }
 
 .form-item,
-.field--type-datetime {
+.field--type-datetime, .field--widget-inline-entity-form-complex {
   margin: 0 0 2em; }
 
 .description {
   margin: 0.25em 0 0; }
 
+.field--widget-inline-entity-form-complex .form-wrapper {
+  padding: 0;
+  border: 0;
+  background: none; }
+  .field--widget-inline-entity-form-complex .form-wrapper > legend {
+    position: static;
+    float: left;
+    width: 100%;
+    font-size: 1.1em;
+    margin: 0 0 0.25em;
+    letter-spacing: 0;
+    text-transform: none;
+    box-sizing: border-box; }
+  .field--widget-inline-entity-form-complex .form-wrapper > .fieldset-wrapper {
+    clear: both;
+    border: 1px solid #ebeae4; }
+    .field--widget-inline-entity-form-complex .form-wrapper > .fieldset-wrapper table {
+      margin: 0; }
+      .field--widget-inline-entity-form-complex .form-wrapper > .fieldset-wrapper table thead th {
+        border-top: 0;
+        border-color: #ebeae4; }
+    .field--widget-inline-entity-form-complex .form-wrapper > .fieldset-wrapper .tabledrag-toggle-weight-wrapper {
+      display: none; }
+    .field--widget-inline-entity-form-complex .form-wrapper > .fieldset-wrapper .form-type-entity-autocomplete {
+      padding: 0 1em;
+      margin: 0; }
+    .field--widget-inline-entity-form-complex .form-wrapper > .fieldset-wrapper > .form-wrapper {
+      padding: 1em; }
+
+.field--widget-inline-entity-form-complex .ief-form {
+  margin: 1em; }
+
+.field--widget-inline-entity-form-complex .ief-tabledrag-handle {
+  width: 30px; }
+
 input[type="text"],
-input[type="submit"],
 input[type="email"],
 input[type="tel"],
 input[type="date"],
@@ -149,13 +194,11 @@ input[type="file"] {
   background: white;
   box-shadow: none; }
   input[type="text"]:focus,
-  input[type="submit"]:focus,
   input[type="email"]:focus,
   input[type="tel"]:focus,
   input[type="date"]:focus,
   input[type="time"]:focus,
   input[type="file"]:focus, input[type="text"]:active,
-  input[type="submit"]:active,
   input[type="email"]:active,
   input[type="tel"]:active,
   input[type="date"]:active,
@@ -260,5 +303,8 @@ body.toolbar-vertical .system-themes-list-installed {
   body.toolbar-horizontal .system-themes-list-installed .system-themes-list__header,
   body.toolbar-vertical .system-themes-list-installed .system-themes-list__header {
     color: #2980b9; }
+
+body.install-page .layout-container {
+  border-radius: 2px; }
 
 /*# sourceMappingURL=kitchen.style.css.map */

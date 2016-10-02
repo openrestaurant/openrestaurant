@@ -29,7 +29,18 @@
   }
 }
 
+%button--danger {
+  display: inline-block;
+  text-decoration: none;
+  background: $brand-danger;
+  border-color: $brand-danger;
+  color: white;
+  float: right;
+  margin-right: 0;
+}
+
 .button,
+input[type="submit"],
 .no-touchevents .button {
   @extend %button;
 
@@ -39,6 +50,10 @@
 
   &--primary {
     @extend %button--primary;
+  }
+
+  &--danger {
+    @extend %button--danger;
   }
 }
 
