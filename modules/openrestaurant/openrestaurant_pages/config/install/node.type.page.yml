@@ -1,10 +1,10 @@
 langcode: en
 status: true
 dependencies: {  }
-name: 'Basic page'
+name: 'Page'
 type: page
-description: 'Use <em>basic pages</em> for your static content, such as an ''About us'' page.'
+description: 'Use this content type to create a landing page.'
 help: ''
 new_revision: false
-preview_mode: 1
+preview_mode: 0
 display_submitted: false
