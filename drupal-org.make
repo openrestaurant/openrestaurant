@@ -32,6 +32,12 @@ projects[features][version] = 3.0-rc1
 projects[field_collection][type] = module
 projects[field_collection][version] = 1.0-alpha1
 
+projects[geocoder][type] = module
+projects[geocoder][version] = 2.0-alpha4
+
+projects[geofield][type] = module
+projects[geofield][version] = 1.0-alpha2
+
 projects[inline_entity_form][type] = module
 projects[inline_entity_form][version] = 1.0-alpha6
 

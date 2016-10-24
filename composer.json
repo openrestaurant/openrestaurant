@@ -47,6 +47,8 @@
     "drupal/eck": "1.0.0-alpha1",
     "drupal/features": "3.0.0-rc1",
     "drupal/field_collection": "1.0.0-alpha1",
+    "drupal/geocoder": "2.0.0-alpha4",
+    "drupal/geofield": "1.0.0-alpha2",
     "drupal/inline_entity_form": "1.0.0-alpha6",
     "drupal/pathauto": "1.0.0-beta1",
     "drupal/token": "1.0.0-beta2",
