@@ -5,12 +5,14 @@ dependencies:
     - field.field.node.location.field_location_address
     - field.field.node.location.field_location_body
     - field.field.node.location.field_location_contact
+    - field.field.node.location.field_location_geographic_data
     - field.field.node.location.field_location_images
     - field.field.node.location.field_location_opening_hours
     - image.style.thumbnail
     - node.type.location
   module:
     - address
+    - geofield
     - image
     - path
     - text
@@ -21,7 +23,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 7
+    weight: 8
     settings: {  }
     third_party_settings: {  }
   field_location_address:
@@ -31,7 +33,7 @@ content:
     third_party_settings: {  }
     type: address_default
   field_location_body:
-    weight: 5
+    weight: 6
     settings:
       rows: 9
       summary_rows: 3
@@ -39,21 +41,27 @@ content:
     third_party_settings: {  }
     type: text_textarea_with_summary
   field_location_contact:
-    weight: 2
+    weight: 3
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+  field_location_geographic_data:
+    weight: 2
+    settings:
+      html5_geolocation: false
+    third_party_settings: {  }
+    type: geofield_latlon
   field_location_images:
-    weight: 4
+    weight: 5
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
   field_location_opening_hours:
-    weight: 3
+    weight: 4
     settings:
       rows: 5
       placeholder: ''
@@ -61,20 +69,20 @@ content:
     type: text_textarea
   path:
     type: path
-    weight: 10
+    weight: 11
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 9
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 10
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -85,7 +93,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 6
+    weight: 7
     settings:
       match_operator: CONTAINS
       size: 60

@@ -6,12 +6,16 @@ dependencies:
   - address
   - field
   - file
+  - geocoder_field
+  - geofield
   - image
   - menu_ui
   - node
   - openrestaurant_config
   - path
+  - pathauto
   - text
   - user
+  - views
 version: 8.x-2.0-dev
 package: 'Open Restaurant'

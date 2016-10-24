@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.location.field_location_address
+    - field.field.node.location.field_location_body
+    - field.field.node.location.field_location_contact
+    - field.field.node.location.field_location_geographic_data
+    - field.field.node.location.field_location_images
+    - field.field.node.location.field_location_opening_hours
+    - node.type.location
+  module:
+    - geofield
+    - user
+id: node.location.default
+targetEntityType: node
+bundle: location
+mode: default
+content:
+  field_location_geographic_data:
+    weight: 101
+    label: above
+    settings:
+      output_format: wkt
+    third_party_settings: {  }
+    type: geofield_default
+  links:
+    weight: 100
+hidden:
+  field_location_address: true
+  field_location_body: true
+  field_location_contact: true
+  field_location_images: true
+  field_location_opening_hours: true
