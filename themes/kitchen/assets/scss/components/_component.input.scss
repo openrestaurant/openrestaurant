@@ -5,18 +5,38 @@
   height: $input-height;
   background: white;
   box-shadow: none;
+  outline: none;
 
   &:focus,
   &:active {
     box-shadow: none;
+    outline: none;
   }
 }
 
 input[type="text"],
 input[type="email"],
+input[type="number"],
+input[type="password"],
 input[type="tel"],
 input[type="date"],
 input[type="time"],
 input[type="file"] {
   @extend %input;
+}
+
+input[type="file"] {
+  padding-left: 0.5em;
+}
+
+textarea,
+textarea.form-textarea {
+  @extend %input;
+  height: auto;
+
+  &:focus,
+  &:active {
+    box-shadow: none;
+    outline: none;
+  }
 }

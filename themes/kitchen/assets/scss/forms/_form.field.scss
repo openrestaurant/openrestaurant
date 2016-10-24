@@ -1,0 +1,11 @@
+// Storage Config
+// -----------------------------------------------------------------------------
+.field-storage-config-form {
+
+  .form-composite {
+
+    > legend {
+      @extend %label;
+    }
+  }
+}

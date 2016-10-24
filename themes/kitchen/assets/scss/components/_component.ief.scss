@@ -1,0 +1,64 @@
+// Inline Entity Form
+// -----------------------------------------------------------------------------
+.field--widget-inline-entity-form-complex {
+  @extend %form-item;
+
+  .form-wrapper {
+    padding: 0;
+    border: 0;
+    background: none;
+
+    > legend {
+      position: static;
+      float: left;
+      width: 100%;
+      font-size: 1.1em;
+      margin: 0 0 0.25em;
+      letter-spacing: 0;
+      text-transform: none;
+      @include border-box();
+    }
+
+    > .fieldset-wrapper {
+      clear: both;
+      border: 1px solid $border-color;
+
+      table {
+        margin: 0;
+
+        thead th {
+          border-top: 0;
+          border-color: $border-color;
+        }
+
+        tr {
+
+          .form-item {
+            @extend %form-item;
+          }
+        }
+      }
+
+      .tabledrag-toggle-weight-wrapper {
+        display: none;
+      }
+
+      .form-type-entity-autocomplete {
+        padding: 0 1em;
+        margin: 0;
+      }
+
+      > .form-wrapper {
+        padding: 1em;
+      }
+    }
+  }
+
+  .ief-form {
+    margin: 1em;
+  }
+
+  .ief-tabledrag-handle {
+    width: 30px;
+  }
+}

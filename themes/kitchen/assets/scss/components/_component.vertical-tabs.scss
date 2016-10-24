@@ -1,0 +1,25 @@
+// Vertical Tabs
+// -----------------------------------------------------------------------------
+.vertical-tabs {
+  background: none;
+  border-radius: 2px;
+  border: 1px solid $border-color;
+
+  &__menu,
+  &__panes {
+    border-color: $border-color;
+  }
+
+  &__menu-item {
+
+    a {
+      background: none;
+      border-color: $border-color;
+    }
+
+    &.is-selected {
+      border-bottom-color: $border-color;
+      box-shadow: none;
+    }
+  }
+}

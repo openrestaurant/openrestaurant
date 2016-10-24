@@ -7,7 +7,8 @@
 }
 
 label,
-.label {
+.label,
+.form-composite > legend {
   @extend %label;
 
   .container-inline & {

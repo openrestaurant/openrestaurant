@@ -8,3 +8,12 @@ div.cke_chrome {
     background: #fcfcfa;
   }
 }
+
+div.cke_contents {
+  min-height: 600px;
+  padding: 1em;
+
+  .field--name-description & {
+    min-height: 150px;
+  }
+}

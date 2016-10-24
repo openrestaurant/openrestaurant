@@ -1,0 +1,21 @@
+// Views Form
+// -----------------------------------------------------------------------------
+.views-form {
+
+  > form {
+
+    > .form-wrapper {
+      border: 1px solid $border-color;
+      padding: 1em;
+      margin-bottom: 2em;
+
+      .form-item {
+        margin: 0;
+      }
+
+      .form-wrapper {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

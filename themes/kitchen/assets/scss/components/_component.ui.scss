@@ -1,0 +1,16 @@
+// UI: Dialog
+// -----------------------------------------------------------------------------
+.ui-dialog {
+
+  .ui-dialog-titlebar {
+    background: $brand-primary;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+
+  .ui-widget-content.ui-dialog-buttonpane {
+    background: $border-color;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+}
