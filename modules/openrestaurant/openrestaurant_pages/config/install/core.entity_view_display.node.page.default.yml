@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_slices
     - node.type.page
   module:
     - text
@@ -19,13 +18,5 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
-  field_slices:
-    weight: 0
-    label: hidden
-    settings:
-      link: true
-      view_mode: default
-    third_party_settings: {  }
-    type: entity_reference_entity_view
 hidden:
   links: true

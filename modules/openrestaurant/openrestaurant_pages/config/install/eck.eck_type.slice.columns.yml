@@ -1,8 +1,0 @@
-langcode: en
-status: true
-dependencies:
-  config:
-    - eck.eck_entity_type.slice
-name: Columns
-type: columns
-description: 'Use this type to create a multi-column slice.'

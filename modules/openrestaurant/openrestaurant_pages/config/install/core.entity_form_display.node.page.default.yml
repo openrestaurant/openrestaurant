@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_slices
     - node.type.page
   module:
     - inline_entity_form
@@ -27,18 +26,6 @@ content:
     weight: 3
     settings: {  }
     third_party_settings: {  }
-  field_slices:
-    weight: 1
-    settings:
-      form_mode: default
-      override_labels: true
-      label_singular: slice
-      label_plural: slices
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
-    third_party_settings: {  }
-    type: inline_entity_form_complex
   path:
     type: path
     weight: 6
