@@ -1,3 +1,8 @@
+Open Restaurant 8.x-2.00-alpha4, 2016-11-11
+---------------------------------------
+Perform recommended updates for contrib modules: config_update: 1.2.0, features: 3.0.0
+Update Drupal core to 8.2.2
+
 Open Restaurant 8.x-2.00-alpha3, 2016-09-08
 ---------------------------------------
 Perform recommended updates for contrib modules: admin_toolbar 8.x-1.17, features 8.x-3.0-beta8
