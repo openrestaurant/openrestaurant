@@ -12,7 +12,7 @@ projects[admin_toolbar][type] = module
 projects[admin_toolbar][version] = 1.17
 
 projects[config_update][type] = module
-projects[config_update][version] = 1.1
+projects[config_update][version] = 1.2
 
 projects[ctools][type] = module
 projects[ctools][version] = 3.0-alpha27
@@ -27,7 +27,7 @@ projects[eck][type] = module
 projects[eck][version] = 1.0-alpha1
 
 projects[features][type] = module
-projects[features][version] = 3.0-rc1
+projects[features][version] = 3.0
 
 projects[field_collection][type] = module
 projects[field_collection][version] = 1.0-alpha1
