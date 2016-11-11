@@ -24,7 +24,7 @@ projects[disqus][type] = module
 projects[disqus][version] = 1.0-rc3
 
 projects[eck][type] = module
-projects[eck][version] = 1.0-alpha1
+projects[eck][version] = 1.0-alpha2
 
 projects[features][type] = module
 projects[features][version] = 3.0
@@ -39,13 +39,13 @@ projects[geofield][type] = module
 projects[geofield][version] = 1.0-alpha2
 
 projects[inline_entity_form][type] = module
-projects[inline_entity_form][version] = 1.0-alpha6
+projects[inline_entity_form][version] = 1.0-beta1
 
 projects[pathauto][type] = module
 projects[pathauto][version] = 1.0-beta1
 
 projects[token][type] = module
-projects[token][version] = 1.0-beta1
+projects[token][version] = 1.0-beta2
 
 projects[tvi][type] = module
 projects[tvi][version] = 1.0-beta2
