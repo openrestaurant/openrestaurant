@@ -5,7 +5,6 @@ dependencies:
     - field.field.node.page.body
     - node.type.page
   module:
-    - inline_entity_form
     - path
     - text
 id: node.page.default
