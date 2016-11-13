@@ -62,7 +62,7 @@ themes:
   - kitchen
 
 # Set the environment here.
-environment: development
+environment: ''
 
 # Settings for development environment.
 # Use this for development only.
