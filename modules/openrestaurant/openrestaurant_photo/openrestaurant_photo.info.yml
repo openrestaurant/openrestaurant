@@ -1,0 +1,21 @@
+name: Photo
+description: 'Provides Photo content type and related configuration.'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - field
+  - file
+  - image
+  - menu_ui
+  - node
+  - openrestaurant_config
+  - openrestaurant_plugins
+  - path
+  - responsive_image
+  - system
+  - text
+  - user
+  - views
+version: 8.x-2.0-dev
+package: 'Open Restaurant'

@@ -1,0 +1,20 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.photo.field_photo_caption
+    - field.field.node.photo.field_photo_image
+    - node.type.photo
+  module:
+    - user
+id: node.photo.teaser
+targetEntityType: node
+bundle: photo
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_photo_caption: true
+  field_photo_image: true

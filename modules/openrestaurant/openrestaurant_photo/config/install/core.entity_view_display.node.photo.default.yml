@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.photo.field_photo_caption
+    - field.field.node.photo.field_photo_image
+    - node.type.photo
+    - responsive_image.styles.photo
+  module:
+    - responsive_image
+    - text
+    - user
+id: node.photo.default
+targetEntityType: node
+bundle: photo
+mode: default
+content:
+  field_photo_caption:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_photo_image:
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: photo
+      image_link: file
+    third_party_settings: {  }
+    type: responsive_image
+  links:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

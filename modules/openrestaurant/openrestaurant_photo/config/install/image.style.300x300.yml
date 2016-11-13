@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 300x300
+label: 300x300
+effects:
+  6c4c5610-e9a1-4385-adf1-fb70a6bc186d:
+    uuid: 6c4c5610-e9a1-4385-adf1-fb70a6bc186d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 300
