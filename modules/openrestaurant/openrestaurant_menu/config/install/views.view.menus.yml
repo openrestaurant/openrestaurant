@@ -9,13 +9,17 @@ dependencies:
     - node.type.menu
     - system.menu.admin
     - system.menu.main
+    - taxonomy.vocabulary.menu_category
     - views.view.menu_categories
   module:
     - image
     - node
     - openrestaurant_plugins
     - taxonomy
+    - text
     - user
+_core:
+  default_config_hash: _C8kL4dK-EGoEY7rAQjscAgEYQUeWcy7GGaB9dM4nWY
 id: menus
 label: Menus
 module: views
@@ -34,7 +38,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'administer nodes'
+          perm: 'access content'
       cache:
         type: tag
         options: {  }
@@ -66,8 +70,8 @@ display:
         options:
           grouping:
             -
-              field: field_menu_categories
-              rendered: true
+              field: description__value
+              rendered: false
               rendered_strip: false
           row_class: ''
           default_row_class: false
@@ -78,18 +82,84 @@ display:
           relationship: none
           view_mode: teaser
       fields:
-        field_menu_categories:
-          id: field_menu_categories
-          table: node__field_menu_categories
-          field: field_menu_categories
-          relationship: none
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: term_node_tid
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: true
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: true
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: h1
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          convert_spaces: false
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: term_name
+        description__value:
+          id: description__value
+          table: taxonomy_term_field_data
+          field: description__value
+          relationship: term_node_tid
           group_type: group
           admin_label: ''
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: "<h1>{{ name }}</h1>\n<div class=\"lead\">{{ description__value }}</div>"
             make_link: false
             path: ''
             absolute: false
@@ -114,8 +184,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
-          element_class: ''
+          element_type: div
+          element_class: lead
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -126,20 +196,21 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: false
-          group_column: target_id
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
           group_columns: {  }
           group_rows: true
-          delta_limit: 1
+          delta_limit: 0
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: taxonomy_term
+          entity_field: description
           plugin_id: field
         rendered_entity:
           id: rendered_entity
@@ -214,20 +285,34 @@ display:
           entity_field: type
           plugin_id: bundle
       sorts:
+        weight:
+          id: weight
+          table: taxonomy_term_field_data
+          field: weight
+          relationship: term_node_tid
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: taxonomy_term
+          entity_field: weight
+          plugin_id: standard
         title:
           id: title
           table: node_field_data
           field: title
-          order: DESC
-          entity_type: node
-          entity_field: title
-          plugin_id: standard
           relationship: none
           group_type: group
           admin_label: ''
+          order: ASC
           exposed: false
           expose:
             label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
       title: 'Our Menu'
       header:
         view:
@@ -236,7 +321,7 @@ display:
           field: view
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Menu categories'
           empty: false
           view_to_insert: 'menu_categories:menu_categories'
           inherit_arguments: false
@@ -256,7 +341,19 @@ display:
             value: 'No menu found.'
             format: plain_text
           plugin_id: text
-      relationships: {  }
+      relationships:
+        term_node_tid:
+          id: term_node_tid
+          table: node_field_data
+          field: term_node_tid
+          relationship: none
+          group_type: group
+          admin_label: term
+          required: false
+          vids:
+            - menu_category
+          entity_type: node
+          plugin_id: node_term_data
       arguments: {  }
       display_extenders: {  }
       use_ajax: true
@@ -268,14 +365,26 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:core.entity_view_display.node.blog_post.full'
+        - 'config:core.entity_view_display.node.event.full'
+        - 'config:core.entity_view_display.node.event.teaser'
+        - 'config:core.entity_view_display.node.photo.teaser'
+        - 'config:core.entity_view_display.node.blog_post.default'
+        - 'config:core.entity_view_display.node.blog_post.featured'
+        - 'config:core.entity_view_display.node.blog_post.teaser'
+        - 'config:core.entity_view_display.node.event.default'
+        - 'config:core.entity_view_display.node.event.featured'
+        - 'config:core.entity_view_display.node.location.default'
         - 'config:core.entity_view_display.node.menu.default'
         - 'config:core.entity_view_display.node.menu.teaser'
-        - 'config:field.storage.node.field_menu_categories'
+        - 'config:core.entity_view_display.node.page.default'
+        - 'config:core.entity_view_display.node.photo.default'
+        - 'config:core.entity_view_display.node.photo.photo_2x'
   administration:
     display_plugin: page
     id: administration
     display_title: Administration
-    position: 3
+    position: 1
     display_options:
       display_extenders: {  }
       display_description: ''
@@ -301,6 +410,7 @@ display:
         sorts: false
         filters: false
         filter_groups: false
+        access: false
       style:
         type: table
         options:
@@ -868,6 +978,10 @@ display:
         operator: AND
         groups:
           1: AND
+      access:
+        type: perm
+        options:
+          perm: 'administer nodes'
     cache_metadata:
       max-age: 0
       contexts:
@@ -882,8 +996,8 @@ display:
   menus:
     display_plugin: page
     id: menus
-    display_title: Menus
-    position: 1
+    display_title: 'All Menus'
+    position: 2
     display_options:
       display_extenders: {  }
       path: menu
@@ -893,10 +1007,25 @@ display:
         description: ''
         expanded: false
         parent: ''
-        weight: -10
+        weight: -49
         context: '0'
         menu_name: main
       display_description: ''
+      relationships:
+        term_node_tid:
+          id: term_node_tid
+          table: node_field_data
+          field: term_node_tid
+          relationship: none
+          group_type: group
+          admin_label: term
+          required: true
+          vids:
+            - menu_category
+          entity_type: node
+          plugin_id: node_term_data
+      defaults:
+        relationships: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -905,14 +1034,26 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:core.entity_view_display.node.blog_post.default'
+        - 'config:core.entity_view_display.node.blog_post.featured'
+        - 'config:core.entity_view_display.node.blog_post.full'
+        - 'config:core.entity_view_display.node.blog_post.teaser'
+        - 'config:core.entity_view_display.node.event.default'
+        - 'config:core.entity_view_display.node.event.featured'
+        - 'config:core.entity_view_display.node.event.full'
+        - 'config:core.entity_view_display.node.event.teaser'
+        - 'config:core.entity_view_display.node.location.default'
         - 'config:core.entity_view_display.node.menu.default'
         - 'config:core.entity_view_display.node.menu.teaser'
-        - 'config:field.storage.node.field_menu_categories'
+        - 'config:core.entity_view_display.node.page.default'
+        - 'config:core.entity_view_display.node.photo.default'
+        - 'config:core.entity_view_display.node.photo.photo_2x'
+        - 'config:core.entity_view_display.node.photo.teaser'
   menus_by_category:
     display_plugin: page
     id: menus_by_category
     display_title: 'Menus by category'
-    position: 1
+    position: 3
     display_options:
       display_extenders: {  }
       path: taxonomy/term/%
@@ -970,6 +1111,19 @@ display:
           plugin_id: taxonomy_index_tid
       defaults:
         arguments: false
+        header: false
+      header:
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: 'Menu categories'
+          empty: true
+          view_to_insert: 'menu_categories:menu_categories'
+          inherit_arguments: false
+          plugin_id: view
     cache_metadata:
       max-age: -1
       contexts:
@@ -979,7 +1133,19 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:core.entity_view_display.node.blog_post.default'
+        - 'config:core.entity_view_display.node.blog_post.featured'
+        - 'config:core.entity_view_display.node.blog_post.full'
+        - 'config:core.entity_view_display.node.blog_post.teaser'
+        - 'config:core.entity_view_display.node.event.default'
+        - 'config:core.entity_view_display.node.event.featured'
+        - 'config:core.entity_view_display.node.event.full'
+        - 'config:core.entity_view_display.node.event.teaser'
+        - 'config:core.entity_view_display.node.location.default'
         - 'config:core.entity_view_display.node.menu.default'
         - 'config:core.entity_view_display.node.menu.teaser'
-        - 'config:field.storage.node.field_menu_categories'
+        - 'config:core.entity_view_display.node.page.default'
+        - 'config:core.entity_view_display.node.photo.default'
+        - 'config:core.entity_view_display.node.photo.photo_2x'
+        - 'config:core.entity_view_display.node.photo.teaser'
 

@@ -12,7 +12,10 @@ dependencies:
   module:
     - image
     - node
+    - openrestaurant_plugins
     - user
+_core:
+  default_config_hash: gZjAquZtU0Ys-tPysokGDVhaWt8wV2OLCjCvc9Y6k9g
 id: blog_posts
 label: 'Blog Posts'
 module: views
@@ -31,7 +34,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'administer nodes'
+          perm: 'access content'
       cache:
         type: tag
         options: {  }
@@ -196,7 +199,7 @@ display:
     display_plugin: page
     id: administration
     display_title: Administration
-    position: 4
+    position: 1
     display_options:
       display_extenders: {  }
       title: 'Blog Posts'
@@ -209,6 +212,7 @@ display:
         row: false
         fields: false
         pager: false
+        access: false
       path: admin/content/blog
       menu:
         type: normal
@@ -672,6 +676,10 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
+      access:
+        type: perm
+        options:
+          perm: 'administer nodes'
     cache_metadata:
       max-age: 0
       contexts:
@@ -686,7 +694,7 @@ display:
     display_plugin: page
     id: blog
     display_title: Page
-    position: 1
+    position: 3
     display_options:
       display_extenders: {  }
       path: blog
@@ -694,6 +702,7 @@ display:
         type: normal
         title: Blog
         menu_name: main
+        weight: -47
     cache_metadata:
       max-age: -1
       contexts:
@@ -707,7 +716,7 @@ display:
     display_plugin: block
     id: featured_blog_posts
     display_title: 'Featured blog posts'
-    position: 3
+    position: 2
     display_options:
       display_extenders: {  }
       title: 'Featured Blog Posts'
@@ -795,7 +804,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<h1>News &amp; Blog</h1>\n<p class=\"lead\">Keep up with the latest updates from our chefs<br>Lipsum dolor&nbsp;proinde vos postulo</p>"
+            value: "<object data=\"/themes/cafe/assets/images/icons/icon-bread.svg\" type=\"image/svg+xml\">\n    <img src=\"/themes/cafe/assets/images/icons/icon-bread.svg\" />\n  </object>\n<h1>News &amp; Blog</h1>\n<p class=\"lead\">Keep up with the latest updates from our chefs<br>Lipsum dolor&nbsp;proinde vos postulo</p>"
             format: full_html
           plugin_id: text
       footer:
@@ -809,18 +818,21 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<a href="/blog" class="btn btn--lg">See more News</a>'
+            value: '<a href="/blog" class="button">See more News</a>'
             format: full_html
           plugin_id: text
       display_description: ''
       pager:
         type: some
         options:
-          items_per_page: 4
+          items_per_page: 3
           offset: 0
       style:
-        type: default
-        options: {  }
+        type: content
+        options:
+          row_class: 'col-sm-6 col-md-4'
+          default_row_class: true
+          uses_fields: false
       row:
         type: 'entity:node'
         options:
@@ -838,7 +850,7 @@ display:
     display_plugin: feed
     id: feed
     display_title: Feed
-    position: 2
+    position: 4
     display_options:
       display_extenders: {  }
       row:

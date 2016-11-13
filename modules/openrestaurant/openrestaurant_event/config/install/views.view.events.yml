@@ -14,7 +14,10 @@ dependencies:
     - datetime
     - image
     - node
+    - openrestaurant_plugins
     - user
+_core:
+  default_config_hash: XcoZzJvH8rqfaXBnap6V5BZT2Trzgohp4E2JgtXQMag
 id: events
 label: Events
 module: views
@@ -33,7 +36,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'administer nodes'
+          perm: 'access content'
       cache:
         type: tag
         options: {  }
@@ -74,7 +77,11 @@ display:
             previous: ‹‹
             next: ››
       style:
-        type: default
+        type: content
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
       row:
         type: 'entity:node'
         options:
@@ -182,7 +189,7 @@ display:
     display_plugin: page
     id: administration
     display_title: Administration
-    position: 5
+    position: 1
     display_options:
       display_extenders: {  }
       path: admin/content/events
@@ -213,6 +220,7 @@ display:
         sorts: false
         fields: false
         pager: false
+        access: false
       filter_groups:
         operator: AND
         groups:
@@ -668,6 +676,10 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
+      access:
+        type: perm
+        options:
+          perm: 'administer nodes'
     cache_metadata:
       max-age: 0
       contexts:
@@ -682,7 +694,7 @@ display:
     display_plugin: page
     id: events
     display_title: 'Upcoming Events'
-    position: 1
+    position: 2
     display_options:
       display_extenders: {  }
       path: events
@@ -690,12 +702,15 @@ display:
         type: normal
         title: Events
         menu_name: main
+        weight: -46
       title: 'Upcoming Events'
       defaults:
         title: false
         filters: false
         filter_groups: false
         pager: false
+        header: false
+        footer: false
       filters:
         status:
           value: true
@@ -766,6 +781,34 @@ display:
         type: none
         options:
           offset: 0
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<object data=\"/themes/cafe/assets/images/icons/icon-hearts.svg\" type=\"image/svg+xml\">\n    <img src=\"/themes/cafe/assets/images/icons/icon-hearts.svg\" />\n  </object>\n<h1>Upcoming Events</h1><p class=\"lead\">Come see what's cooking in our Kitchens</p>"
+            format: full_html
+          plugin_id: text
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<div class=\"text--center\">\n<h3>Planning an event?</h3>\n<a href=\"/contact\" class=\"button button--large\">Get in touch</a>\n<p><strong>The coffee shop is the perfect venue for almost any event, medium or small.</strong><br />\n<small>(You can even personalise our magnetic contact)</small></p>\n</div>"
+            format: full_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
@@ -778,7 +821,7 @@ display:
     display_plugin: block
     id: featured_events
     display_title: 'Featured Events'
-    position: 3
+    position: 4
     display_options:
       display_extenders: {  }
       title: 'Featured Events'
@@ -793,7 +836,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h1>Featured Events</h1><p class="lead">Come see what''s cooking in our Kitchens</p>'
+            value: "<object data=\"/themes/cafe/assets/images/icons/icon-hearts.svg\" type=\"image/svg+xml\">\n    <img src=\"/themes/cafe/assets/images/icons/icon-hearts.svg\" />\n  </object>\n<h1>Featured Events</h1><p class=\"lead\">Come see what's cooking in our Kitchens</p>"
             format: full_html
           plugin_id: text
       footer:
@@ -807,7 +850,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<a href="/events" class="btn btn--lg">See more Events</a>'
+            value: "<div class=\"text--center\">\n<h3>Planning an event?</h3>\n<a href=\"/contact\" class=\"button button--large\">Get in touch</a>\n<p><strong>The coffee shop is the perfect venue for almost any event, medium or small.</strong><br />\n<small>(You can even personalise our magnetic contact)</small></p>\n</div>"
             format: full_html
           plugin_id: text
       defaults:
@@ -822,7 +865,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 4
+          items_per_page: 3
           offset: 0
       row:
         type: 'entity:node'
@@ -831,8 +874,11 @@ display:
           view_mode: featured
       display_description: ''
       style:
-        type: default
-        options: {  }
+        type: content
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
       filters:
         status:
           value: true
@@ -908,7 +954,7 @@ display:
     display_plugin: feed
     id: feed_1
     display_title: Feed
-    position: 2
+    position: 5
     display_options:
       display_extenders: {  }
       row:
@@ -933,7 +979,7 @@ display:
     display_plugin: block
     id: past_events
     display_title: 'Past events'
-    position: 4
+    position: 3
     display_options:
       display_extenders: {  }
       display_description: ''
