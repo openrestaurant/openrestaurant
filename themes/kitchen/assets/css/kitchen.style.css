@@ -365,6 +365,9 @@ body.toolbar-vertical .system-themes-list-installed {
     border-bottom-color: #ebeae4;
     box-shadow: none; }
 
+.view-header {
+  padding: 0 0 1em; }
+
 .views-form > form > .form-wrapper {
   border: 1px solid #ebeae4;
   padding: 1em;
