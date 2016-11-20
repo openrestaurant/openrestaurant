@@ -1,0 +1,5 @@
+snazymaps.styles:
+  title: 'Snazzy Maps'
+  parent: system.admin_config_services
+  description: 'Create custom Google Maps with Snazzy Maps.'
+  route_name: snazzymaps.styles

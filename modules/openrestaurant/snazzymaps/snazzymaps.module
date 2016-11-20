@@ -1,0 +1,21 @@
+<?php
+
+\Drupal::moduleHandler()->loadInclude('snazzymaps', 'inc', 'snazzymaps.theme');
+
+/**
+ * Implements hook_theme().
+ */
+function snazzymaps_theme($existing, $type, $theme, $path) {
+  return array(
+    'snazzymaps_results' => array(
+      'variables' => array('results' => array()),
+      'file' => 'snazzymaps.theme.inc',
+    ),
+    'snazzymaps_result' => array(
+      'file' => 'snazzymaps.theme.inc',
+    ),
+    'snazzymap' => array(
+      'file' => 'snazzymaps.theme.inc',
+    ),
+  );
+}

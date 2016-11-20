@@ -1,0 +1,15 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a snazzymap view.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ *
+ * @see template_preprocess_views_view_snazzymap()
+ *
+ * @ingroup themeable
+ */
+#}
+{{ attach_library('snazzymaps/snazzymaps') }}
+<div class="snazzymap" style="height: {{ height }};"></div>

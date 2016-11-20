@@ -1,0 +1,14 @@
+snazymaps.styles:
+  title: 'Styles'
+  route_name: snazzymaps.styles
+  base_route: snazymaps.styles
+
+snazymaps.explore:
+  title: 'Explore'
+  route_name: snazzymaps.explore
+  base_route: snazymaps.styles
+
+snazymaps.settings:
+  title: 'Settings'
+  route_name: snazzymaps.settings
+  base_route: snazymaps.styles

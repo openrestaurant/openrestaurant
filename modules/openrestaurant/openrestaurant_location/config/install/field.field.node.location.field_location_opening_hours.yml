@@ -1,3 +1,4 @@
+uuid: 37703a1b-fc00-4246-87b6-4683153bc736
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - node.type.location
   module:
     - text
+_core:
+  default_config_hash: gJm-W6pXDBTZbGsnOU5Pne5k52wIPmxAAg2iePzN-gM
 id: node.location.field_location_opening_hours
 field_name: field_location_opening_hours
 entity_type: node

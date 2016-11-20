@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Contact page for Open Restaurant.
+ */
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function openrestaurant_contact_form_contact_message_contact_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Hide the preview button.
+  if (isset($form['actions']['preview'])) {
+    $form['actions']['preview']['#access'] = FALSE;
+  }
+}

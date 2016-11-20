@@ -1,3 +1,4 @@
+uuid: 31dc67a2-1a4c-4709-9849-91fad4ca4aac
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - node.type.blog_post
   module:
     - disqus
+_core:
+  default_config_hash: dZN4SltITNDJBFJBlxkoOgVpcxvHMyhfzTHSbnY0r-A
 id: node.blog_post.field_disqus
 field_name: field_disqus
 entity_type: node

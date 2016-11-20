@@ -1,8 +1,11 @@
+uuid: e27e821c-77dc-44d1-8d0d-8aaa5a4a57fa
 langcode: en
 status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: OXF9BDiQbmRB1gbVbK0ZDELXO_LS3N_hUsZopB2OCu0
 id: location
 label: Location
 type: 'canonical_entities:node'

@@ -1,9 +1,12 @@
+uuid: ca1c3fba-2851-4f1c-b06d-691ec3bb9fd3
 langcode: en
 status: true
 dependencies:
   module:
     - address
     - node
+_core:
+  default_config_hash: ASGr0fmHAxCgehgCcINxE4Gpqsu3kLaHFmTaq3UNIFc
 id: node.field_event_location
 field_name: field_event_location
 entity_type: node

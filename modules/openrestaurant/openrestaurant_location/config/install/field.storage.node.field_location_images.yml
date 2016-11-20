@@ -1,3 +1,4 @@
+uuid: eae08b97-8e09-433a-8e20-bea5ea73d761
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - file
     - image
     - node
+_core:
+  default_config_hash: qeyVZ87WAOCqj4WR0eoXzE_EH18ryMedrm_MEufJjtI
 id: node.field_location_images
 field_name: field_location_images
 entity_type: node

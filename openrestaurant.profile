@@ -10,12 +10,14 @@ function openrestaurant_form_install_settings_form_alter(&$form, FormStateInterf
   // Set some defaults for the environment.
   $environment = _openrestaurant_get_environment();
   if (!empty($environment)) {
-    $database_driver = $environment['database']['driver'];
-    $form['settings'][$database_driver]['database']['#default_value'] = $environment['database']['database'];
-    $form['settings'][$database_driver]['username']['#default_value'] = $environment['database']['username'];
-    $form['settings'][$database_driver]['password']['#attributes']['value'] = $environment['database']['password'];
-    $form['settings'][$database_driver]['advanced_options']['host']['#default_value'] = $environment['database']['host'];
-    $form['settings'][$database_driver]['advanced_options']['port']['#default_value'] = $environment['database']['port'];
+    if (isset($environment['database'])) {
+      $database_driver = $environment['database']['driver'];
+      $form['settings'][$database_driver]['database']['#default_value'] = $environment['database']['database'];
+      $form['settings'][$database_driver]['username']['#default_value'] = $environment['database']['username'];
+      $form['settings'][$database_driver]['password']['#attributes']['value'] = $environment['database']['password'];
+      $form['settings'][$database_driver]['advanced_options']['host']['#default_value'] = $environment['database']['host'];
+      $form['settings'][$database_driver]['advanced_options']['port']['#default_value'] = $environment['database']['port'];
+    }
   }
 }
 
@@ -29,8 +31,10 @@ function openrestaurant_form_install_configure_form_alter(&$form, FormStateInter
   $form['site_information']['site_name']['#default_value'] = 'Open Restaurant';
 
   // Set a default email address.
-  $form['site_information']['site_mail']['#default_value'] = $environment['admin']['email'];
-  $form['admin_account']['account']['mail']['#default_value'] = $environment['admin']['email'];
+  if (isset($environment['admin'])) {
+    $form['site_information']['site_mail']['#default_value'] = $environment['admin']['email'];
+    $form['admin_account']['account']['mail']['#default_value'] = $environment['admin']['email'];
+  }
 
   // Set the weight for the admin_account mail field.
   $form['admin_account']['account']['mail']['#weight'] = 20;
@@ -48,15 +52,16 @@ function openrestaurant_form_install_configure_form_alter(&$form, FormStateInter
   $form['admin_account']['#title'] = t('Administration account');
 
   // Set some defaults for the environment.
-  if (!empty($environment)) {
+  if (isset($environment['admin'])) {
     $form['admin_account']['account']['name']['#default_value'] = $environment['admin']['username'];
   }
   
   // Set some defaults for the environment.
-  if (!empty($environment)) {
+  if (isset($environment['regional'])) {
     $form['regional_settings']['site_default_country']['#default_value'] = $environment['regional']['country'];
     $form['regional_settings']['date_default_timezone']['#default_value'] = $environment['regional']['timezone'];
   }
+
   $form['regional_settings']['#access'] = FALSE;
 
   // Hide Update Notifications.
@@ -70,7 +75,7 @@ function openrestaurant_install_configure_form_after_build($form_element, FormSt
   $environment = _openrestaurant_get_environment();
 
   // Set some defaults for the environment.
-  if (!empty($environment)) {
+  if (isset($environment['admin'])) {
     $form_element['pass1']['#attributes']['value'] = $environment['admin']['password'];
     $form_element['pass2']['#attributes']['value'] = $environment['admin']['password'];
   }

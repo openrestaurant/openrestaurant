@@ -1,3 +1,4 @@
+uuid: 39af9c0d-9445-4a81-810c-aea2d4eac568
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - node.type.event
   module:
     - address
+_core:
+  default_config_hash: PCMz67qct41Tes1PQN-CrhRZ_HEP1Bt_XDqYtGzBON0
 id: node.event.field_event_location
 field_name: field_event_location
 entity_type: node

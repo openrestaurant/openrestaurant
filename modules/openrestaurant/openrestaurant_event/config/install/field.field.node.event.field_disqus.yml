@@ -7,6 +7,8 @@ dependencies:
     - node.type.event
   module:
     - disqus
+_core:
+  default_config_hash: HxLiQfJGIQz5YAjP5dKSVngqZ3BsKKtQjDT-bSsg7XQ
 id: node.event.field_disqus
 field_name: field_disqus
 entity_type: node

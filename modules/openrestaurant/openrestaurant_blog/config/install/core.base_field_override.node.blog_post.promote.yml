@@ -1,8 +1,11 @@
+uuid: 970190fd-6e49-4a1d-93f9-33754ff191a1
 langcode: en
 status: true
 dependencies:
   config:
     - node.type.blog_post
+_core:
+  default_config_hash: 20DdvpRNKEV5615qLsQxcgWpNXdyGuIe-_JEFfgNe2E
 id: node.blog_post.promote
 field_name: promote
 entity_type: node

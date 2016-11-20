@@ -1,3 +1,4 @@
+uuid: 6186b1af-fd24-470e-a72a-37224f15bc43
 langcode: en
 status: true
 dependencies:
@@ -8,6 +9,8 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
+_core:
+  default_config_hash: JOuTLFtgSduBIMUnEsG5lWk5UW8S-vzSm2lh8qtgs7Y
 name: Location
 type: location
 description: 'Use this content type to create a restaurant location.'

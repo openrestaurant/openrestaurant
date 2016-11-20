@@ -1,3 +1,4 @@
+uuid: 1a2e548f-e3cc-4faf-a833-18fc7b7f71d1
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - node.type.blog_post
   module:
     - text
+_core:
+  default_config_hash: fbEj2v3Zt2JSK2udGMwUHwqztqWRWJW6OTX-Cr1WMxg
 id: node.blog_post.field_blog_post_body
 field_name: field_blog_post_body
 entity_type: node

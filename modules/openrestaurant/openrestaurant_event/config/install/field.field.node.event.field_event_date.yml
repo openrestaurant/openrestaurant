@@ -1,3 +1,4 @@
+uuid: 0ad7840e-3afa-4c41-a97a-6a58d4a797ca
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - node.type.event
   module:
     - datetime
+_core:
+  default_config_hash: uur-bX0-99cviNzp_BeTY_VWg8ii4nsEKvDej7z2wCk
 id: node.event.field_event_date
 field_name: field_event_date
 entity_type: node

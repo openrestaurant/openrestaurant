@@ -1,3 +1,4 @@
+uuid: 4b0df1cc-91c1-4409-bab3-6f97107fe8e1
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - node.type.location
   module:
     - address
+_core:
+  default_config_hash: ANaXQ2-TWqmXt3tNf28uC5ngU-dSdVDBBxyrzyPuzeI
 id: node.location.field_location_address
 field_name: field_location_address
 entity_type: node

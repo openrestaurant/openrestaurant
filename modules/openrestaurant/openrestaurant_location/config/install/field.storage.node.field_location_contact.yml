@@ -1,9 +1,12 @@
+uuid: 0d0fd8cb-9cac-4be9-ba64-8ac90c2daaff
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - text
+_core:
+  default_config_hash: tgTYQPodLWw7yw8UUUUpABFVu6MqUT1arsPLwc3MNk0
 id: node.field_location_contact
 field_name: field_location_contact
 entity_type: node

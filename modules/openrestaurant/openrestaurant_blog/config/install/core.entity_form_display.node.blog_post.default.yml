@@ -1,15 +1,19 @@
+uuid: f4307a27-e2b5-4978-b572-92fecbdbf8e6
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.blog_post.field_blog_post_body
     - field.field.node.blog_post.field_blog_post_featured_image
+    - field.field.node.blog_post.field_disqus
     - image.style.thumbnail
     - node.type.blog_post
   module:
     - image
     - path
     - text
+_core:
+  default_config_hash: yUGQHXVIwU7YBrCBrcfWngzj52Fyw7gOnks5xE2kFw4
 id: node.blog_post.default
 targetEntityType: node
 bundle: blog_post
@@ -67,4 +71,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_disqus: true

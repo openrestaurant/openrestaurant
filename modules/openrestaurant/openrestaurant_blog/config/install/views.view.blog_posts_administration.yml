@@ -1,4 +1,3 @@
-uuid: e8aba4fa-26ae-42a6-8779-6fd2c78be990
 langcode: en
 status: true
 dependencies:
@@ -71,6 +70,65 @@ display:
             next: ››
       style:
         type: table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          override: true
+          sticky: false
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            node_bulk_form: node_bulk_form
+            field_blog_post_featured_image: field_blog_post_featured_image
+            title: title
+            status: status
+            changed: changed
+            operations: operations
+          info:
+            node_bulk_form:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_blog_post_featured_image:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            title:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            status:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            changed:
+              sortable: true
+              default_sort_order: desc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            operations:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          default: changed
+          empty_table: false
       row:
         type: fields
       fields:
@@ -466,7 +524,17 @@ display:
             label: ''
           granularity: second
       title: 'Blog Posts'
-      header: {  }
+      header:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          content: 'Displaying @start - @end of @total'
+          plugin_id: result
       footer: {  }
       empty: {  }
       relationships: {  }
@@ -509,4 +577,3 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_blog_post_featured_image'
-

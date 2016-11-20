@@ -1,21 +1,18 @@
+uuid: 403e3413-bcf4-41d3-ac7a-8a943f6995da
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_photo_image
+    - field.storage.node.field_location_images
     - image.style.thumbnail
-    - node.type.photo
-    - responsive_image.styles.photo
+    - node.type.location
     - system.menu.admin
-    - system.menu.main
   module:
     - image
     - node
-    - openrestaurant_plugins
-    - responsive_image
     - user
-id: photos
-label: Photos
+id: locations_administration
+label: 'Locations (Administration)'
 module: views
 description: ''
 tag: ''
@@ -32,7 +29,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'access content'
+          perm: 'administer nodes'
       cache:
         type: tag
         options: {  }
@@ -55,167 +52,23 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: some
+        type: mini
         options:
-          items_per_page: 5
+          items_per_page: 25
           offset: 0
-      style:
-        type: content
-      row:
-        type: 'entity:node'
-        options:
-          relationship: none
-          view_mode: default
-      fields:
-        field_photo_image:
-          id: field_photo_image
-          table: node__field_photo_image
-          field: field_photo_image
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: responsive_image
-          settings:
-            responsive_image_style: photo
-            image_link: content
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-      filters:
-        status:
-          value: true
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
+          id: 0
+          total_pages: null
           expose:
-            operator: ''
-          group: 1
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          value:
-            photo: photo
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-      sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
-      title: 'Featured Photos'
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content:
-            value: "<object data=\"/themes/cafe/assets/images/icons/icon-hearts.svg\" type=\"image/svg+xml\">\n    <img src=\"/themes/cafe/assets/images/icons/icon-hearts.svg\" />\n  </object>\n<h1>Our Gallery</h1>\n<p class=\"lead\">Parturient a parturient venenatis a dis ad dis nisl ad.</p>"
-            format: full_html
-          plugin_id: text
-      footer: {  }
-      empty: {  }
-      relationships: {  }
-      arguments: {  }
-      display_extenders: {  }
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_photo_image'
-  administration:
-    display_plugin: page
-    id: administration
-    display_title: Administration
-    position: 1
-    display_options:
-      display_extenders: {  }
-      display_description: ''
-      access:
-        type: perm
-        options:
-          perm: 'administer nodes'
-      defaults:
-        access: false
-        title: false
-        style: false
-        row: false
-        fields: false
-      title: Photos
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          tags:
+            previous: ‹‹
+            next: ››
       style:
         type: table
         options:
@@ -228,22 +81,57 @@ display:
           summary: ''
           description: ''
           columns:
-            field_photo_image: field_photo_image
+            node_bulk_form: node_bulk_form
+            field_blog_post_featured_image: field_blog_post_featured_image
+            title: title
+            status: status
+            changed: changed
+            operations: operations
           info:
-            field_photo_image:
+            node_bulk_form:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_blog_post_featured_image:
               sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
-          default: '-1'
+            title:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            status:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            changed:
+              sortable: true
+              default_sort_order: desc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            operations:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          default: changed
           empty_table: false
       row:
-        type: 'entity:node'
-        options:
-          relationship: none
-          view_mode: default
+        type: fields
       fields:
         node_bulk_form:
           id: node_bulk_form
@@ -297,14 +185,16 @@ display:
           include_exclude: exclude
           selected_actions:
             - node_delete_action
+            - node_promote_action
             - node_publish_action
+            - node_unpromote_action
             - node_unpublish_action
           entity_type: node
           plugin_id: node_bulk_form
-        field_photo_image:
-          id: field_photo_image
-          table: node__field_photo_image
-          field: field_photo_image
+        field_location_images:
+          id: field_location_images
+          table: node__field_location_images
+          field: field_location_images
           relationship: none
           group_type: group
           admin_label: ''
@@ -341,7 +231,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -357,7 +247,7 @@ display:
           group_column: ''
           group_columns: {  }
           group_rows: true
-          delta_limit: 0
+          delta_limit: 1
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
@@ -369,39 +259,28 @@ display:
           id: title
           table: node_field_data
           field: title
+          entity_type: node
+          entity_field: title
+          alter:
+            alter_text: false
+            make_link: false
+            absolute: false
+            trim: false
+            word_boundary: false
+            ellipsis: false
+            strip_tags: false
+            html: false
+          hide_empty: false
+          empty_zero: false
+          settings:
+            link_to_entity: true
+          plugin_id: field
           relationship: none
           group_type: group
           admin_label: ''
           label: Title
           exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: h5
+          element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -410,13 +289,9 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
-          empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
           type: string
-          settings:
-            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -427,9 +302,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
         status:
           id: status
           table: node_field_data
@@ -615,33 +487,6 @@ display:
           destination: true
           entity_type: node
           plugin_id: entity_operations
-      path: admin/content/photos
-      menu:
-        type: normal
-        title: Photos
-        description: ''
-        expanded: false
-        parent: system.admin_content
-        weight: 60
-        context: '0'
-        menu_name: admin
-    cache_metadata:
-      max-age: 0
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_photo_image'
-  featured_photos:
-    display_plugin: block
-    id: featured_photos
-    display_title: 'Featured Photos'
-    position: 2
-    display_options:
-      display_extenders: {  }
-      display_description: ''
       filters:
         status:
           value: true
@@ -658,20 +503,12 @@ display:
           id: type
           table: node_field_data
           field: type
-          value:
-            photo: photo
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-        promote:
-          id: promote
-          table: node_field_data
-          field: promote
           relationship: none
           group_type: group
           admin_label: ''
-          operator: '='
-          value: true
+          operator: in
+          value:
+            location: location
           group: 1
           exposed: false
           expose:
@@ -686,6 +523,7 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -699,69 +537,43 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           entity_type: node
-          entity_field: promote
-          plugin_id: boolean
-      defaults:
-        filters: false
-        filter_groups: false
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_photo_image'
-  gallery:
-    display_plugin: page
-    id: gallery
-    display_title: Gallery
-    position: 3
-    display_options:
-      display_extenders: {  }
-      path: gallery
-      menu:
-        type: normal
-        title: Gallery
-        description: ''
-        expanded: false
-        parent: ''
-        weight: -45
-        context: '0'
-        menu_name: main
-      display_description: ''
-      title: 'Our Gallery'
-      defaults:
-        title: false
-        pager: false
-      pager:
-        type: full
-        options:
-          items_per_page: 9
-          offset: 0
-          id: 0
-          total_pages: null
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+          entity_field: type
+          plugin_id: bundle
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          order: DESC
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          exposed: false
           expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          quantity: 9
+            label: ''
+          granularity: second
+      title: Locations
+      header:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          content: 'Displaying @start - @end of @total'
+          plugin_id: result
+      footer: {  }
+      empty: {  }
+      relationships: {  }
+      arguments: {  }
+      display_extenders: {  }
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -769,4 +581,31 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_photo_image'
+        - 'config:field.storage.node.field_location_images'
+  administration:
+    display_plugin: page
+    id: administration
+    display_title: Page
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: admin/content/locations
+      menu:
+        type: normal
+        title: Locations
+        description: ''
+        expanded: false
+        parent: system.admin_content
+        weight: 40
+        context: '0'
+        menu_name: admin
+    cache_metadata:
+      max-age: 0
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_location_images'

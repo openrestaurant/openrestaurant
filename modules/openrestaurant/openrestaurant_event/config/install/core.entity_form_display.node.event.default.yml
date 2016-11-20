@@ -1,10 +1,13 @@
+uuid: 63da12e0-f050-4cf5-917e-b4f1c2157dee
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.event.field_disqus
     - field.field.node.event.field_event_body
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_featured_image
+    - field.field.node.event.field_event_location
     - image.style.thumbnail
     - node.type.event
   module:
@@ -12,6 +15,8 @@ dependencies:
     - image
     - path
     - text
+_core:
+  default_config_hash: S3c5T7ibkL31LqtFScV9YyAp5EaAfIUkVmJSkmjCPV8
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -74,4 +79,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_disqus: true
+  field_event_location: true

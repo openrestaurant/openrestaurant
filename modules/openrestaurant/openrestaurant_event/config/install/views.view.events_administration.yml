@@ -1,23 +1,18 @@
+uuid: 8f3de8d8-2a91-4c3c-97a5-b5bf341decfe
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
-    - field.storage.node.field_location_address
-    - field.storage.node.field_location_images
-    - field.storage.node.field_location_opening_hours
+    - field.storage.node.field_event_featured_image
     - image.style.thumbnail
-    - node.type.location
+    - node.type.event
     - system.menu.admin
-    - system.menu.main
   module:
-    - address
     - image
     - node
-    - text
     - user
-id: locations
-label: Locations
+id: events_administration
+label: 'Events (Administration)'
 module: views
 description: ''
 tag: ''
@@ -34,7 +29,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'access content'
+          perm: 'administer nodes'
       cache:
         type: tag
         options: {  }
@@ -59,7 +54,7 @@ display:
       pager:
         type: mini
         options:
-          items_per_page: 10
+          items_per_page: 25
           offset: 0
           id: 0
           total_pages: null
@@ -75,140 +70,6 @@ display:
             previous: ‹‹
             next: ››
       style:
-        type: default
-      row:
-        type: 'entity:node'
-        options:
-          view_mode: teaser
-      fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          entity_type: node
-          entity_field: title
-          label: ''
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            trim: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            html: false
-          hide_empty: false
-          empty_zero: false
-          settings:
-            link_to_entity: true
-          plugin_id: field
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exclude: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-      filters:
-        status:
-          value: true
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-          group: 1
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          value:
-            location: location
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-      sorts:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          order: DESC
-          entity_type: node
-          entity_field: title
-          plugin_id: standard
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exposed: false
-          expose:
-            label: ''
-      title: 'Hours & Locations'
-      header: {  }
-      footer: {  }
-      empty: {  }
-      relationships: {  }
-      arguments: {  }
-      display_extenders: {  }
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url.query_args
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
-  administration:
-    display_plugin: page
-    id: administration
-    display_title: Administration
-    position: 1
-    display_options:
-      display_extenders: {  }
-      display_description: ''
-      title: Locations
-      defaults:
-        title: false
-        style: false
-        row: false
-        pager: false
-        filters: false
-        filter_groups: false
-        fields: false
-        access: false
-      path: admin/content/locations
-      menu:
-        type: normal
-        title: Locations
-        description: ''
-        expanded: false
-        parent: system.admin_content
-        weight: 40
-        context: '0'
-        menu_name: admin
-      style:
         type: table
         options:
           grouping: {  }
@@ -221,9 +82,8 @@ display:
           description: ''
           columns:
             node_bulk_form: node_bulk_form
-            field_location_images: field_location_images
+            field_blog_post_featured_image: field_blog_post_featured_image
             title: title
-            field_location_address: title
             status: status
             changed: changed
             operations: operations
@@ -233,20 +93,15 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            field_location_images:
+            field_blog_post_featured_image:
+              sortable: false
+              default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
             title:
               sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_location_address:
-              sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
@@ -261,7 +116,7 @@ display:
               responsive: ''
             changed:
               sortable: true
-              default_sort_order: asc
+              default_sort_order: desc
               align: ''
               separator: ''
               empty_column: false
@@ -273,47 +128,10 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-          default: '-1'
-          empty_table: true
+          default: changed
+          empty_table: false
       row:
-        type: 'entity:node'
-        options:
-          view_mode: teaser
-      pager:
-        type: full
-        options:
-          items_per_page: 25
-          offset: 0
-          id: 0
-          total_pages: null
-          tags:
-            previous: ‹‹
-            next: ››
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          quantity: 9
-      filters:
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          value:
-            location: location
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
+        type: fields
       fields:
         node_bulk_form:
           id: node_bulk_form
@@ -364,17 +182,19 @@ display:
           empty_zero: false
           hide_alter_empty: true
           action_title: 'With selection'
-          include_exclude: include
+          include_exclude: exclude
           selected_actions:
             - node_delete_action
+            - node_promote_action
             - node_publish_action
+            - node_unpromote_action
             - node_unpublish_action
           entity_type: node
           plugin_id: node_bulk_form
-        field_location_images:
-          id: field_location_images
-          table: node__field_location_images
-          field: field_location_images
+        field_event_featured_image:
+          id: field_event_featured_image
+          table: node__field_event_featured_image
+          field: field_event_featured_image
           relationship: none
           group_type: group
           admin_label: ''
@@ -427,7 +247,7 @@ display:
           group_column: ''
           group_columns: {  }
           group_rows: true
-          delta_limit: 1
+          delta_limit: 0
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
@@ -439,54 +259,39 @@ display:
           id: title
           table: node_field_data
           field: title
+          entity_type: node
+          entity_field: title
+          alter:
+            alter_text: false
+            make_link: false
+            absolute: false
+            trim: false
+            word_boundary: false
+            ellipsis: false
+            strip_tags: false
+            html: false
+          hide_empty: false
+          empty_zero: false
+          settings:
+            link_to_entity: true
+          plugin_id: field
           relationship: none
           group_type: group
           admin_label: ''
           label: Title
           exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: false
-            ellipsis: false
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: h5
+          element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
-          empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
           type: string
-          settings:
-            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -497,133 +302,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
-        field_location_address:
-          id: field_location_address
-          table: node__field_location_address
-          field: field_location_address
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Address
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: locality
-          type: address_default
-          settings: {  }
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_location_opening_hours:
-          id: field_location_opening_hours
-          table: node__field_location_opening_hours
-          field: field_location_opening_hours
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: 'Opening hours'
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
         status:
           id: status
           table: node_field_data
@@ -698,7 +376,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Changed
+          label: Updated
           exclude: false
           alter:
             alter_text: false
@@ -809,10 +487,91 @@ display:
           destination: true
           entity_type: node
           plugin_id: entity_operations
-      access:
-        type: perm
-        options:
-          perm: 'administer nodes'
+      filters:
+        status:
+          value: true
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            event: event
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          order: DESC
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+      title: Events
+      header:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          content: 'Displaying @start - @end of @total'
+          plugin_id: result
+      footer: {  }
+      empty: {  }
+      relationships: {  }
+      arguments: {  }
+      display_extenders: {  }
     cache_metadata:
       max-age: 0
       contexts:
@@ -822,33 +581,31 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_location_address'
-        - 'config:field.storage.node.field_location_images'
-        - 'config:field.storage.node.field_location_opening_hours'
-  locations:
+        - 'config:field.storage.node.field_event_featured_image'
+  administration:
     display_plugin: page
-    id: locations
+    id: administration
     display_title: Page
-    position: 2
+    position: 1
     display_options:
       display_extenders: {  }
-      path: locations
+      path: admin/content/events
       menu:
         type: normal
-        title: 'Hours & Locations'
+        title: Events
         description: ''
         expanded: false
-        parent: ''
-        weight: -5
+        parent: system.admin_content
+        weight: 40
         context: '0'
-        menu_name: main
+        menu_name: admin
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
-
+      tags:
+        - 'config:field.storage.node.field_event_featured_image'

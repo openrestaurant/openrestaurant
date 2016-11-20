@@ -1,3 +1,4 @@
+uuid: 7636a08c-5e93-4578-ad6c-543372278177
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - node.type.blog_post
   module:
     - image
+_core:
+  default_config_hash: QzDATVcVeEnaF7d5zvBBnRSGBDoUxANCCkwzcZHOviM
 id: node.blog_post.field_blog_post_featured_image
 field_name: field_blog_post_featured_image
 entity_type: node

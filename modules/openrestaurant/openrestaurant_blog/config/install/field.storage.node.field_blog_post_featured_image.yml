@@ -1,3 +1,4 @@
+uuid: 62dd06b2-9c2a-466b-84e9-6fc3f4a2c0ed
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - file
     - image
     - node
+_core:
+  default_config_hash: VnGesAirl06bXpGcQpL14ewxmxjx8i2fPKOh50a1l10
 id: node.field_blog_post_featured_image
 field_name: field_blog_post_featured_image
 entity_type: node

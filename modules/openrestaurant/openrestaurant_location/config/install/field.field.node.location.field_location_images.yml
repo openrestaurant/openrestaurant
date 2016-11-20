@@ -1,3 +1,4 @@
+uuid: 53bb99a7-992c-40c2-8eb4-0a6419781f05
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - node.type.location
   module:
     - image
+_core:
+  default_config_hash: O5oK3XLxGMimXRsYnQka1YSb-duquF_e6W3aWIYOPMI
 id: node.location.field_location_images
 field_name: field_location_images
 entity_type: node

@@ -1,3 +1,4 @@
+uuid: 52e035c2-8255-4016-8bf2-0bd383d3d491
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - node.type.event
   module:
     - image
+_core:
+  default_config_hash: AdsjyFi21KwPbR5hQHoZWtzhGKu7HYE9hM_XtznqjXE
 id: node.event.field_event_featured_image
 field_name: field_event_featured_image
 entity_type: node

@@ -1,0 +1,6 @@
+name: 'Snazzy Maps'
+description: 'Custom styles for your Google Maps.'
+type: module
+core: 8.x
+dependencies:
+  - views

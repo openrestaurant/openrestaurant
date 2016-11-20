@@ -16,7 +16,7 @@ function openrestaurant_admin_link_alter(&$variables) {
   // Rename ECK Entity Types to Entity types.
   if (isset($variables['url'])) {
     $url = $variables['url'];
-    if ($url->getRouteName() == 'eck.entity_type.list') {
+    if (!$url->isExternal() && $url->getRouteName() == 'eck.entity_type.list') {
       $variables['text'] = 'Entity types';
     }
   }

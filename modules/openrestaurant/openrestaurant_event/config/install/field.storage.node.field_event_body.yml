@@ -1,9 +1,12 @@
+uuid: 950ce689-2a6a-4efe-8693-d3466439411b
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - text
+_core:
+  default_config_hash: W0fmhssTl9QV70c_dV5bHWOdHe76Ufj0tcyjHbNxHC0
 id: node.field_event_body
 field_name: field_event_body
 entity_type: node
