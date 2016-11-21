@@ -14,6 +14,9 @@ function openrestaurant_form_install_select_language_form_alter(&$form, FormStat
   $form['langcode']['#description'] = t('Select the language for the site administration.');
 }
 
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
 function openrestaurant_form_install_settings_form_alter(&$form, FormStateInterface $form_state) {
   // Set some defaults for the environment.
   $environment = _openrestaurant_get_environment();
