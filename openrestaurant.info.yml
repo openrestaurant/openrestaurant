@@ -43,6 +43,10 @@ dependencies:
   - disqus
   - features
   - features_ui
+  - geocoder
+  - geocoder_address
+  - geocoder_geofield
+  - geofield
   - pathauto
   - token
   - tvi
