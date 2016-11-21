@@ -1,14 +1,34 @@
-Open Restaurant 8.x-2.00-alpha4, 2016-11-11
----------------------------------------
-Perform recommended updates for contrib modules: config_update: 1.2.0, features: 3.0.0
-Update Drupal core to 8.2.2
+Open Restaurant 8.x-2.0-beta1, 2016-11-11
+-------------------------
+- Perform contrib module updates.
+- Update CHANGELOG.
+- Update Drupal core to 8.2.2.
+- Perform recommended updates for contrib modules:.
+- Add a geographic data field to location nodes for mapping.
+- Add geofield and geocoder modules as dependencies.
+- Remove the slice and column eck type.
+- Update default Basic page node type.
+- Add style for several form components.
+- Update styles for button and ief.
+- Rename ECK Entity Types to Entity Types in the admin UI.
+- Add the slice and component entity type.
+- Add eck and inline_entity_form to make and composer file.
+- Add screenshot for sizzle theme.
+- Improve the Appearance landing page.
+- Add administration views for blog posts, menus, events and locations.
+- Fix style for button--small.
+- Add style for labels.
+- Fix style of dropbuttons.
+- Add style for input and fix style for select.
+- Add styling for button, dropbutton and select.
+- Restructure kitchen theme.
 
 Open Restaurant 8.x-2.00-alpha3, 2016-09-08
----------------------------------------
+-------------------------
 Perform recommended updates for contrib modules: admin_toolbar 8.x-1.17, features 8.x-3.0-beta8
 
 Open Restaurant 8.x-2.00-alpha2, 2016-08-22
----------------------------------------
+-------------------------
 Perform recommended updates for contrib modules: admin_toolbar 8.x-1.16, ctools 8.x-2.0-alpha27, features 8.x-3.0-beta7, token 8.x-1.0-beta1, tvi 8.x-1.0-beta1
 Upgrade to Drupal Core 8.1.8
 Issue #2787375: Installation error Parse error: syntax error, unexpected '?'
