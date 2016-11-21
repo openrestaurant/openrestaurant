@@ -38,9 +38,11 @@ class ThemeSelectionForm extends ConfigFormBase {
 
     $form['default_theme'] = [
       '#title' => $this->t('Default theme'),
-      '#type' => 'select',
+      '#title_display' => 'invisible',
+      '#type' => 'radios',
+      '#required' => TRUE,
       '#options' => $this->getThemeOptions(),
-      '#description' => $this->t('Select the default theme.'),
+      '#default_value' => 'sizzle',
     ];
 
     $form['import_demo_content'] = [
@@ -85,6 +87,8 @@ class ThemeSelectionForm extends ConfigFormBase {
    * @return array
    */
   protected function getThemeOptions() {
+    global $base_url;
+
     $options = [];
     $themes = \Drupal::service('theme_handler')->rebuildThemeData();
 
@@ -96,7 +100,9 @@ class ThemeSelectionForm extends ConfigFormBase {
       }
 
       if ($theme->info['package'] == OPEN_RESTAURANT_DISTRIBUTION_NAME) {
-        $options[$name] = $theme->info['name'];
+        $options[$name] = '<h4>' . $theme->info['name'] . '</h4>';
+        $options[$name] .= '<p class="description">' . $theme->info['description'] . '</p>';
+        $options[$name] .= '<img src="' . $base_url . '/' . $theme->info['screenshot'] . '" />';
       }
     }
 

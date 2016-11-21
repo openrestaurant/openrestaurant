@@ -1,0 +1,28 @@
+// Theme Selection form
+// -----------------------------------------------------------------------------
+.install-theme-selection-form {
+
+  .form-item-default-theme {
+    position: relative;
+    padding: 0 0 0 2em;
+    margin: 2em 0 0;
+
+    input {
+      position: absolute;
+      top: 4px;
+      left: 0;
+    }
+
+    h4,
+    p {
+      margin: 0 0 0.25em;
+    }
+
+    img {
+      width: 200px;
+      height: auto;
+      display: inline-block;
+      margin-top: 0.25em;
+    }
+  }
+}
