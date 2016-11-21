@@ -64,6 +64,6 @@ function openrestaurant_admin_preprocess_system_themes_page(&$variables) {
   // Rename the theme_groups and add a description.
   $variables['theme_groups'][1]['title'] = t('Other themes');
   $variables['theme_groups'][1]['description'] = t('List of themes currently not installed on your site. <strong><a href="@url" target="_blank">Only themes compatible with Open Restaurant are shown here</a></strong>.', array(
-    '@url' => 'http://docs.open.restaurant/en/2.0.dev1/theming/#compatibility-with-open-restaurant',
+    '@url' => 'http://docs.open.restaurant/en/2.x/theming/#compatibility-with-open-restaurant',
   ));
 }
