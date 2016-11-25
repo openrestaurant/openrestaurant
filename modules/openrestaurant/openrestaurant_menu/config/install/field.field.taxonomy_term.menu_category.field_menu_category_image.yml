@@ -2,22 +2,22 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.taxonomy_term.field_nutrition_type_icon
-    - taxonomy.vocabulary.nutrition_type
+    - field.storage.taxonomy_term.field_menu_category_image
+    - taxonomy.vocabulary.menu_category
   module:
     - image
-id: taxonomy_term.nutrition_type.field_nutrition_type_icon
-field_name: field_nutrition_type_icon
+id: taxonomy_term.menu_category.field_menu_category_image
+field_name: field_menu_category_image
 entity_type: taxonomy_term
-bundle: nutrition_type
-label: Icon
+bundle: menu_category
+label: Image
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: nutritions
+  file_directory: menu/categories
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: ''
@@ -35,4 +35,3 @@ settings:
   handler: 'default:file'
   handler_settings: {  }
 field_type: image
-
