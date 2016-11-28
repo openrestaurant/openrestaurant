@@ -2,7 +2,7 @@ name: Open Restaurant
 type: profile
 description: 'The Open Restaurant distribution has everything you need to kickstart your restaurant website.'
 core: 8.x
-version: 2.0-dev
+version: 2.0-beta2
 exclusive: true
 distribution:
   name: Open Restaurant
@@ -67,7 +67,7 @@ themes:
   - kitchen
 
 # Set the environment here.
-environment: development
+environment: ''
 
 # Settings for development environment.
 # Use this for development only.
@@ -77,7 +77,7 @@ development:
     database: openrestaurant
     username: root
     password: root
-    host: 127.0.0.1
+    host: localhost
     port: 3306
   admin:
     email: demo@open.restaurant
