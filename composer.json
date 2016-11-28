@@ -53,6 +53,6 @@
     "drupal/pathauto": "1.0.0-beta1",
     "drupal/token": "1.0.0-beta2",
     "drupal/tvi": "1.0.0-beta1",
-    "drupal/radix": "3.x-dev"
+    "drupal/radix": "3.0.0-beta1"
   }
 }
