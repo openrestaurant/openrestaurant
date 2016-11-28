@@ -1,3 +1,26 @@
+Open Restaurant 8.x-2.0-beta2, 2016-11-28
+-------------------------
+- Update to radix 3.0.0-beta1.
+- Reset environment.
+- Fix default config for openrestaurant_menu.
+- Add a menus administration view.
+- Update the url for theme compatibilty documentation.
+- Add geocoder and submodules as dependencies.
+- Update CHANGELOG for 8.x-2.0-beta1.
+- Add the screenshot and description to the theme selection form.
+- Add missing gulp packages.
+- Make bower name lowercase for compatibility.
+- Fix missing hook comment.
+- Make sure user knows this is the administration language and not the site language.
+- Move default views into the sizzle theme.
+- Restructure default features config.
+- Update the style of view headers.
+- Move the blog administration into its own view.
+- Add the Photo feature.
+- Update default views for blog, event, location and menu.
+- Unset the development environment.
+- Remove inline_entity_form as a dependency for page default.
+
 Open Restaurant 8.x-2.0-beta1, 2016-11-11
 -------------------------
 - Perform contrib module updates.
