@@ -60,6 +60,15 @@ class ThemeSelectionForm extends ConfigFormBase {
       '#button_type' => 'primary',
     );
 
+    // Add a link to the theme store.
+    $theme_store_message = $this->t('Download a premium theme from our <a href="@url">theme store</a>.', [
+      '@url' => 'http://www.open.restaurant/#themes',
+    ]);
+
+    $form['message'] = [
+      '#markup' => '<h3>' . $theme_store_message . '</h3>'
+    ];
+
     return $form;
   }
 
