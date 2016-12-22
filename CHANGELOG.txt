@@ -1,3 +1,10 @@
+Open Restaurant 8.x-2.0, 2016-12-22
+-------------------------
+- Update geocoder to 2.0-alpha5.
+- Update Drupal core to 8.2.4.
+- Update contrib modules to latest stable version.
+- Add a link to the theme store on the theme selection step.
+
 Open Restaurant 8.x-2.0-beta2, 2016-11-28
 -------------------------
 - Update to radix 3.0.0-beta1.
