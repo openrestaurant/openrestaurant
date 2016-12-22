@@ -2,7 +2,7 @@ name: Open Restaurant
 type: profile
 description: 'The Open Restaurant distribution has everything you need to kickstart your restaurant website.'
 core: 8.x
-version: 2.0-beta2
+version: 2.0
 exclusive: true
 distribution:
   name: Open Restaurant
