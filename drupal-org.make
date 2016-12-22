@@ -9,7 +9,7 @@ projects[address][type] = module
 projects[address][version] = 1.x-dev
 
 projects[admin_toolbar][type] = module
-projects[admin_toolbar][version] = 1.17
+projects[admin_toolbar][version] = 1.18
 
 projects[config_update][type] = module
 projects[config_update][version] = 1.2
@@ -27,7 +27,7 @@ projects[eck][type] = module
 projects[eck][version] = 1.0-alpha2
 
 projects[features][type] = module
-projects[features][version] = 3.0
+projects[features][version] = 3.2
 
 projects[field_collection][type] = module
 projects[field_collection][version] = 1.0-alpha1
@@ -52,5 +52,5 @@ projects[tvi][version] = 1.0-beta2
 
 ; Themes
 projects[radix][type] = theme
-projects[radix][version] = 3.x-dev
+projects[radix][version] = 3.0
 projects[radix][subdir] = ''
