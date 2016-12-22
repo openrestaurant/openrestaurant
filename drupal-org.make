@@ -33,7 +33,7 @@ projects[field_collection][type] = module
 projects[field_collection][version] = 1.0-alpha1
 
 projects[geocoder][type] = module
-projects[geocoder][version] = 2.0-alpha4
+projects[geocoder][version] = 2.0-alpha5
 
 projects[geofield][type] = module
 projects[geofield][version] = 1.0-alpha2
