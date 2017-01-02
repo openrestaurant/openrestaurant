@@ -12,10 +12,7 @@ use Drupal\file\Entity\File;
  */
 function sizzle_preprocess_html(&$variables) {
   // Add layout_width to template.
-  $variables['layout']['width'] = theme_get_setting('features.layout_width');
-  if (empty($layout_width)) {
-    $variables['layout']['width'] = 'boxed';
-  }
+  $variables['layout']['width'] = theme_get_setting('layout_width');
 }
 
 /**
@@ -28,7 +25,7 @@ function sizzle_preprocess_page(&$variables) {
   $footer_bg_image = '/' . $theme_path . '/assets/images/bg/bg-footer-default.jpg';
 
   // Get footer background image from theme settings.
-  $footer_bg_image_fid = theme_get_setting('features.footer_background_image');
+  $footer_bg_image_fid = theme_get_setting('footer_background_image');
   if (!empty($footer_bg_image_fid)) {
     $file = File::load($footer_bg_image_fid[0]);
     if (!empty($file)) {

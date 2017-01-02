@@ -4,4 +4,5 @@ features:
   node_user_picture: false
   favicon: true
   logo: true
-  layout_width: boxed
+layout_width: boxed
+footer_background_image: ''

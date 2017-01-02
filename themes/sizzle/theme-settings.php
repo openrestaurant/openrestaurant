@@ -27,14 +27,14 @@ function sizzle_form_system_theme_settings_alter(&$form, FormStateInterface &$fo
     '#open' => TRUE,
   ];
 
-  $form['layout_settings']['toggle_sizzle_layout_width'] = [
+  $form['layout_settings']['layout_width'] = [
     '#title' => t('Width'),
     '#type' => 'radios',
     '#options' => [
       'boxed' => t('Boxed'),
       'full' => t('Full width'),
     ],
-    '#default_value' => theme_get_setting('features.layout_width') ?? 'boxed',
+    '#default_value' => theme_get_setting('layout_width'),
   ];
 
   // Add footer settings.
@@ -44,14 +44,12 @@ function sizzle_form_system_theme_settings_alter(&$form, FormStateInterface &$fo
     '#open' => TRUE,
   ];
 
-  // Use toggle prefix so that settings get converted to config.
-  // @see theme_settings_convert_to_config().
-  $form['footer_settings']['toggle_footer_background_image'] = [
+  $form['footer_settings']['footer_background_image'] = [
     '#title' => t('Background image'),
     '#type' => 'managed_file',
     '#description' => t('The background image for the footer.'),
     '#upload_location' => 'public://',
-    '#default_value' => theme_get_setting('features.footer_background_image') ?? NULL,
+    '#default_value' => theme_get_setting('footer_background_image') ?? NULL,
     '#upload_validators' => array(
       'file_validate_extensions' => array('png jpg jpeg'),
     ),
@@ -65,7 +63,7 @@ function sizzle_form_system_theme_settings_alter(&$form, FormStateInterface &$fo
  */
 function sizzle_form_system_theme_settings_submit(array &$form, FormStateInterface $form_state) {
   // Set file status to permanent.
-  $fid = $form_state->getValue('toggle_footer_background_image');
+  $fid = $form_state->getValue('footer_background_image');
   if (count($fid)) {
     $file = File::load($fid[0]);
     $file->status = FILE_STATUS_PERMANENT;
