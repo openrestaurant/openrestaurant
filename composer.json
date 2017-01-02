@@ -41,7 +41,7 @@
     "drupal/geofield": "1.0.0-alpha2",
     "drupal/inline_entity_form": "1.0.0-beta1",
     "drupal/pathauto": "1.0.0-beta1",
-    "drupal/token": "1.0.0-beta2",
+    "drupal/token": "1.0.0-rc1",
     "drupal/tvi": "1.0.0-beta1",
     "drupal/radix": "3.0.0"
   }

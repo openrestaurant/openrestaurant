@@ -45,7 +45,7 @@ projects[pathauto][type] = module
 projects[pathauto][version] = 1.0-beta1
 
 projects[token][type] = module
-projects[token][version] = 1.0-beta2
+projects[token][version] = 1.0-rc1
 
 projects[tvi][type] = module
 projects[tvi][version] = 1.0-beta2
