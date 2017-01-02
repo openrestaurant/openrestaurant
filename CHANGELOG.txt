@@ -1,3 +1,10 @@
+Open Restaurant 8.x-2.01, 2017-01-02
+-------------------
+- Fix issue for layout_width and footer_background_image settings.
+- Update the token module to 1.0.0-rc1.
+- Update the composer.json file for packages.drupal.org.
+- Remove snazzymaps custom module.
+
 Open Restaurant 8.x-2.0, 2016-12-22
 -------------------------
 - Update geocoder to 2.0-alpha5.
