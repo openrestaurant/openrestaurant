@@ -31,7 +31,7 @@
     },
     "packagist.drupal-composer.org": {
       "discover-make-files": false
-    },
+    }
   },
   "require-dev": {
     "drupal/devel": "1.0.0-alpha1"
