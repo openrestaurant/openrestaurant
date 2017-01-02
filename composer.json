@@ -14,23 +14,19 @@
   "config": {
     "bin-dir": "bin/"
   },
-  "repositories": {
-    "drupal": {
+  "repositories": [
+    {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
     }
-  },
+  ],
   "scripts": {
     "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
   },
   "extra": {
     "installer-paths": {
-      "web/core": ["type:drupal-core"],
       "modules/contrib/{$name}": ["type:drupal-module"],
       "themes/{$name}": ["type:drupal-theme"]
-    },
-    "packagist.drupal-composer.org": {
-      "discover-make-files": false
     }
   },
   "require-dev": {
