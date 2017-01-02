@@ -25,13 +25,13 @@
   },
   "extra": {
     "installer-paths": {
-      "modules/contrib/{$name}": [
-        "type:drupal-module"
-      ],
-      "themes/{$name}": [
-        "type:drupal-theme"
-      ]
-    }
+      "web/core": ["type:drupal-core"],
+      "modules/contrib/{$name}": ["type:drupal-module"],
+      "themes/{$name}": ["type:drupal-theme"]
+    },
+    "packagist.drupal-composer.org": {
+      "discover-make-files": false
+    },
   },
   "require-dev": {
     "drupal/devel": "1.0.0-alpha1"
