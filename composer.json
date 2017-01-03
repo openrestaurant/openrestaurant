@@ -11,6 +11,9 @@
       "email": "arshad@chummun.com"
     }
   ],
+  "config": {
+    "bin-dir": "bin/"
+  },
   "repositories": [
     {
       "type": "composer",
@@ -21,7 +24,11 @@
     "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
   },
   "require-dev": {
-    "drupal/devel": "1.0.0-alpha1"
+    "drupal/devel": "1.0.0-alpha1",
+    "behat/mink-extension": "^2.2",
+    "behat/mink-goutte-driver": "^1.2",
+    "behat/behat": "^3.0",
+    "drupal/drupal-extension": "^3.2"
   },
   "require": {
     "cweagans/composer-patches": "^1.5.0",
