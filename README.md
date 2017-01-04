@@ -7,7 +7,6 @@
 <a href="https://packagist.org/packages/openrestaurant/openrestaurant-project"><img src="https://poser.pugx.org/openrestaurant/openrestaurant-project/license.svg" alt="License"></a>
 </p>
 
-## Open Restaurant
 The Open Restaurant distribution has everything you need to build your restaurant website. It comes with a menu management system, a customizable blog, events management, support for multiple locations and a responsive theme.
 
 ## Features
