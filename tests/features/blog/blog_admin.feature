@@ -13,3 +13,12 @@ Feature: Blog admin
     Given I am logged in as a user with the "Administer content" permission
     When I visit "/admin/content/blog"
     Then I should see "Blog Posts"
+
+  @javascript
+  Scenario: Create blog post
+    Given I am logged in as a user with the "create blog_post content" permission
+    When I visit "/node/add/blog_post"
+    And I fill in "Title" with "Hello World"
+    And I fill in "Body" ckeditor field with "Lipsum dolor sit amet."
+    And I press "Save"
+    Then I should see "Blog post Hello World has been created."
