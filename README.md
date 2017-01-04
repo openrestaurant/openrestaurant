@@ -1,5 +1,13 @@
-Open Restaurant 2.0
-=========
+<p align="center"><img src="http://www.open.restaurant/images/logo.svg"></p>
+<h1 align="center">Open Restaurant</h1>
+
+<p align="center">
+<a href="https://packagist.org/packages/openrestaurant/openrestaurant-project"><img src="https://poser.pugx.org/openrestaurant/openrestaurant-project/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/openrestaurant/openrestaurant-project"><img src="https://poser.pugx.org/openrestaurant/openrestaurant-project/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/openrestaurant/openrestaurant-project"><img src="https://poser.pugx.org/openrestaurant/openrestaurant-project/license.svg" alt="License"></a>
+</p>
+
+## Open Restaurant
 The Open Restaurant distribution has everything you need to build your restaurant website. It comes with a menu management system, a customizable blog, events management, support for multiple locations and a responsive theme.
 
 ## Features
