@@ -2,6 +2,7 @@
 <h1 align="center">Open Restaurant</h1>
 
 <p align="center">
+<a href="https://travis-ci.org/openrestaurant/openrestaurant"><img src="https://travis-ci.org/openrestaurant/openrestaurant.svg?branch=8.x-2.x"></a>
 <a href="https://packagist.org/packages/openrestaurant/openrestaurant-project"><img src="https://poser.pugx.org/openrestaurant/openrestaurant-project/d/total.svg" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/openrestaurant/openrestaurant-project"><img src="https://poser.pugx.org/openrestaurant/openrestaurant-project/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/openrestaurant/openrestaurant-project"><img src="https://poser.pugx.org/openrestaurant/openrestaurant-project/license.svg" alt="License"></a>
