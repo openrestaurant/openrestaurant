@@ -1,7 +1,7 @@
 default:
   extensions:
     Behat\MinkExtension:
-      base_url: 'http://openrestaurant.dev'
+      base_url: 'http://127.0.0.1:8080'
       selenium2:
         wd_host: 'http://127.0.0.1:4444/wd/hub'
         browser: chrome

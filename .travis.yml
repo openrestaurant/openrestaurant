@@ -2,10 +2,86 @@ dist: trusty
 language: php
 
 php:
-  - 5.6
   - 7.0
 
 env:
   - VERSION=HEAD
-  - VERSION=2.0.1
-  - VERSION=2.0.0
+
+addons:
+  apt:
+    packages:
+    # Dependencies for Chrome.
+    - libappindicator1
+    - fonts-liberation
+
+before_install:
+  - phpenv config-rm xdebug.ini
+  - composer self-update
+  - composer --version
+  # Initialize xvfb (see https://docs.travis-ci.com/user/gui-and-headless-browsers)
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+  - sleep 3
+
+  # Download Chrome Driver
+  - LATEST_CHROMEDRIVER=$(wget -q -O - http://chromedriver.storage.googleapis.com/LATEST_RELEASE)
+  - wget http://chromedriver.storage.googleapis.com/$LATEST_CHROMEDRIVER/chromedriver_linux64.zip
+  - unzip chromedriver_linux64.zip
+  - chmod +x chromedriver
+  - mkdir -p $HOME/.composer/vendor/bin
+  - mv -f chromedriver $HOME/.composer/vendor/bin/
+  - rm chromedriver_linux64.zip
+
+  # Update Chrome.
+  - export CHROME_BIN=/usr/bin/google-chrome
+  - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  - sudo dpkg -i google-chrome-stable_current_amd64.deb
+  - rm google-chrome-stable_current_amd64.deb
+  - google-chrome --version
+
+install:
+  # Add Composer's local bin directory to the PATH so that we will be running
+  # our installed versions of Drush, PHPCS, Behat, PhantomJS, etc.
+  - export PATH="$HOME/.composer/vendor/bin:$TRAVIS_BUILD_DIR/bin:$PATH"
+
+  # composer install should fail on bad patches.
+  - export COMPOSER_EXIT_ON_PATCH_FAILURE=1
+
+  # Create the MySQL database and add a user for testing.
+  - mysql -u root -e "CREATE DATABASE drupal; CREATE USER 'openrestaurant'@'localhost' IDENTIFIED BY 'openrestaurant'; GRANT ALL ON drupal.* TO 'openrestaurant'@'localhost';"
+
+  # Install the PECL YAML extension for strict parsing. yes is used to
+  # acknowledge all prompts.
+  - yes '' | pecl install yaml
+  # Tweak PHP configuration.
+  - echo 'max_execution_time = 120' >> drupal.php.ini;
+  - echo 'sendmail_path = /bin/true' >> drupal.php.ini;
+  - phpenv config-add drupal.php.ini
+  - phpenv rehash
+
+  # We need Phing to execute our build steps.
+  - composer global require phing/phing
+  # Build the Open Restaurant code base.
+  - composer install
+  # Install Open Restaurant cleanly so that settings.php will be created properly.
+  - phing install -Ddb.database=drupal -Ddb.user=openrestaurant -Ddb.password=openrestaurant -Ddb.host=127.0.0.1
+  - cd web
+  - drush cache-rebuild
+  # Execute database updates, if there are any.
+  - drush updatedb --yes
+
+before_script:
+  - drush runserver --default-server=builtin 8080 &>/dev/null &
+  - jdk_switcher use oraclejdk8
+  # Start Selenium and dump its ginormous log into a temporary file.
+  - mkdir ../tmp
+  - selenium-server-standalone -port 4444 -log ../tmp/selenium2.log &
+  - sleep 5
+  - cd ./profiles/openrestaurant
+
+script:
+  - composer validate --no-check-all --ansi
+  - behat --strict --stop-on-failure
+
+matrix:
+  fast_finish: true

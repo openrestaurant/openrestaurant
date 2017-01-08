@@ -21,20 +21,43 @@
     }
   ],
   "scripts": {
-    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+    "post-install-cmd": [
+      "@composer drupal-scaffold",
+      "./bin/phing push"
+    ],
+    "post-update-cmd": [
+      "./bin/phing push"
+    ]
+  },
+  "extra": {
+    "installer-paths": {
+      "web/core": ["type:drupal-core"],
+      "web/profiles/{$name}": ["type:drupal-profile"],
+      "web/modules/contrib/{$name}": ["type:drupal-module"],
+      "web/themes/{$name}": ["type:drupal-theme"],
+      "drush/contrib/{$name}": ["type:drupal-drush"]
+    }
   },
   "require-dev": {
-    "behat/behat": "^3.0",
-    "behat/mink": "^1.7",
-    "behat/mink-extension": "^2.2",
-    "behat/mink-goutte-driver": "^1.2",
+    "drush/drush": "^8.0",
     "drupal/drupal-extension": "^3.2",
-    "se/selenium-server-standalone": "^3.0"
+    "drupal-composer/drupal-scaffold": "^2.0.0",
+    "behat/behat": "^3.0",
+    "phing/phing": "^2.14",
+    "behat/mink": "~1.7",
+    "behat/mink-goutte-driver": "~1.2",
+    "jcalderonzumba/gastonjs": "~1.0.2",
+    "mikey179/vfsStream": "~1.2",
+    "phpunit/phpunit": "~4.8",
+    "symfony/css-selector": "~2.8",
+    "drupal/devel": "^1.0",
+    "squizlabs/php_codesniffer": "2.*",
+    "se/selenium-server-standalone": "^2.53"
   },
   "require": {
     "cweagans/composer-patches": "^1.5.0",
     "composer/installers": "^1.0",
-    "drupal-composer/drupal-scaffold": "^2.0.0",
     "drupal/core": "8.2.4",
     "drupal/address": "1.x-dev",
     "drupal/admin_toolbar": "1.18.0",
