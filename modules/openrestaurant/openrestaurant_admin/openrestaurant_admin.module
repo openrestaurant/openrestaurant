@@ -10,19 +10,6 @@ use Drupal\Core\Render\Element;
 define('OPEN_RESTAURANT_DISTRIBUTION_NAME', 'Open Restaurant');
 
 /**
- * Implements hook_link_alter().
- */
-function openrestaurant_admin_link_alter(&$variables) {
-  // Rename ECK Entity Types to Entity types.
-  if (isset($variables['url'])) {
-    $url = $variables['url'];
-    if (!$url->isExternal() && $url->getRouteName() == 'eck.entity_type.list') {
-      $variables['text'] = 'Entity types';
-    }
-  }
-}
-
-/**
  * Implements hook_form_FORM_ID_alter().
  */
 function openrestaurant_admin_form_system_modules_alter(&$form, FormStateInterface $form_state) {
