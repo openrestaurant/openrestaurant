@@ -1,3 +1,12 @@
+Open Restaurant 8.x-2.10, 2017-01-23
+-------------------
+- Add the composer.lock file.
+- Update core to 8.2.5, contrib_update to 1.3.0 and pathauto to 1.0.0-beta2.
+- Remove code for ECK entity menu_link alter.
+- Add Travis CI integration.
+- Add the blog.feature and the blog_admin.feature.
+- Add behat and dependencies.
+
 Open Restaurant 8.x-2.01, 2017-01-02
 -------------------
 - Fix issue for layout_width and footer_background_image settings.
