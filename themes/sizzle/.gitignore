@@ -4,5 +4,4 @@
 /extensions/compass_radix
 *.codekit
 .idea
-bower_components
 node_modules
