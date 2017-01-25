@@ -12,7 +12,7 @@
     "includePaths": [
       "./bower_components/bootstrap-sass/assets/stylesheets",
       "./bower_components/font-awesome/scss",
-      "../radix/scss"
+      "../../../../themes/radix/scss"
     ]
   },
   "js": {
