@@ -10,6 +10,6 @@ Feature: Blog
 
   Scenario: View the News & Blog block on the front page
     Given I am on "/"
-    Then I should see "Blog" in the "Header" region
+    Then I should see "Blog" in the "navigation" region
     Then I should see "News & Blog"
     And I should see "See more news"

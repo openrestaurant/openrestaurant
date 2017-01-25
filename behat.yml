@@ -20,5 +20,7 @@ default:
       blackbox: ~
       drush:
         alias: self
+      region_map:
+        navigation: ".page__navigation"
 imports:
   - behat.local.yml
