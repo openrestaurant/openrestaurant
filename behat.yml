@@ -14,6 +14,7 @@ default:
     Behat\MinkExtension:
       goutte: ~
       selenium2: ~
+      files_path: '%paths.base%/tests/files'
     Drupal\DrupalExtension:
       api_driver: drupal
       blackbox: ~

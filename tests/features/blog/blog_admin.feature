@@ -20,5 +20,7 @@ Feature: Blog admin
     When I visit "/node/add/blog_post"
     And I fill in "Title" with "Hello World"
     And I fill in "Body" ckeditor field with "Lipsum dolor sit amet."
+    And I attach the file "image.jpg" to "files[field_blog_post_featured_image_0]"
     And I press "Save"
     Then I should see "Blog post Hello World has been created."
+    And the ".blog-post__featured-image" element should contain "/sites/default/files/styles/blog_post_image__lg/public/blog/image"
