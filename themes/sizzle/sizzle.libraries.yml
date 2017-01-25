@@ -4,6 +4,7 @@ global-styling:
     base:
       assets/css/sizzle.style.css: {}
   js:
+      bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js: {}
       bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js: {}
       assets/vendor/waypoints/lib/jquery.waypoints.min.js: {}
       assets/vendor/waypoints/lib/shortcuts/sticky.min.js: {}
