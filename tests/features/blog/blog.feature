@@ -13,3 +13,8 @@ Feature: Blog
     Then I should see "Blog" in the "navigation" region
     Then I should see "News & Blog"
     And I should see "See more news"
+    
+  Scenario: View the blog post view on the Blog page
+    Given I am on "/"
+    When I click "Blog"
+    Then the ".view--blog-posts--blog" element should contain "Sea lettuce napa cabbage celery groundnut green"

@@ -22,5 +22,6 @@ default:
         alias: self
       region_map:
         navigation: ".page__navigation"
+        content: ".page__content"
 imports:
   - behat.local.yml

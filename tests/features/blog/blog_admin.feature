@@ -24,3 +24,5 @@ Feature: Blog admin
     And I press "Save"
     Then I should see "Blog post Hello World has been created."
     And the ".blog-post__featured-image" element should contain "/sites/default/files/styles/blog_post_image__lg/public/blog/image"
+    When I visit "/blog"
+    Then the ".view--blog-posts--blog" element should contain "Hello World"
