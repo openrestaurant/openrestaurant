@@ -2,13 +2,62 @@
 
 namespace Drupal\openrestaurant\Installer\Form;
 
+use Drupal\Core\Config\ConfigFactoryInterface;
+use Drupal\Core\Extension\ThemeHandlerInterface;
+use Drupal\Core\Extension\ThemeInstallerInterface;
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\demo_content\DemoContentManagerInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Provides the site configuration form.
  */
 class ThemeSelectionForm extends ConfigFormBase {
+
+  /**
+   * The theme handler.
+   *
+   * @var \Drupal\Core\Extension\ThemeHandlerInterface
+   */
+  protected $themeHandler;
+
+  /**
+   * The demo content manager.
+   *
+   * @var \Drupal\demo_content\DemoContentManagerInterface
+   */
+  protected $demoContentManager;
+
+  /**
+   * The theme installer.
+   *
+   * @var \Drupal\Core\Extension\ThemeInstallerInterface
+   */
+  private $themeInstaller;
+
+  /**
+   * @inheritDoc
+   */
+  public function __construct(ConfigFactoryInterface $config_factory, ThemeHandlerInterface $themeHandler, ThemeInstallerInterface $themeInstaller, DemoContentManagerInterface $demoContentManager) {
+    parent::__construct($config_factory);
+    $this->themeHandler = $themeHandler;
+    $this->demoContentManager = $demoContentManager;
+    $this->themeInstaller = $themeInstaller;
+  }
+
+  /**
+   * @inheritDoc
+   */
+  public static function create(ContainerInterface $container) {
+    return new static(
+      $container->get('config.factory'),
+      $container->get('theme_handler'),
+      $container->get('theme_installer'),
+      $container->get('demo_content.manager')
+    );
+  }
+
 
   /**
    * @inheritDoc
@@ -61,12 +110,21 @@ class ThemeSelectionForm extends ConfigFormBase {
     );
 
     // Add a link to the theme store.
-    $theme_store_message = $this->t('Download a premium theme from our <a href="@url">theme store</a>.', [
-      '@url' => 'http://www.open.restaurant/#themes',
-    ]);
-
     $form['message'] = [
-      '#markup' => '<h3>' . $theme_store_message . '</h3>'
+      '#type' => 'html_tag',
+      '#tag' => 'h3',
+      '#value' => $this->t('Download a premium theme from our <a href="@url" target="_blank">theme store</a>.', [
+        '@url' => 'http://www.open.restaurant/#themes',
+      ])
+    ];
+
+    // Add theme notes.
+    $form['notes'] = [
+      '#type' => 'html_tag',
+      '#tag' => 'small',
+      '#value' => $this->t('If your theme is not showing, please make sure it is in the <strong>/web/themes</strong> directory and it is <a href="@url" target="_blank">compatible with Open Restaurant</a>.', [
+        '@url' => 'http://docs.open.restaurant/en/2.x/theming/#compatibility-with-open-restaurant'
+      ]),
     ];
 
     return $form;
@@ -79,15 +137,15 @@ class ThemeSelectionForm extends ConfigFormBase {
     $default_theme = $form_state->getValue('default_theme');
 
     // Install the theme.
-    \Drupal::service('theme_handler')->install([$default_theme]);
+    $this->themeInstaller->install([$default_theme]);
 
     // Set it as default.
-    \Drupal::service('theme_handler')->setDefault($default_theme);
+    $this->themeHandler->setDefault($default_theme);
 
     // Import demo content.
     $import_demo_content = $form_state->getValue('import_demo_content');
     if ($import_demo_content) {
-      \Drupal::service('demo_content.manager')->importFromExtension($default_theme);
+      $this->demoContentManager->importFromExtension($default_theme);
     }
   }
 
@@ -99,7 +157,7 @@ class ThemeSelectionForm extends ConfigFormBase {
     global $base_url;
 
     $options = [];
-    $themes = \Drupal::service('theme_handler')->rebuildThemeData();
+    $themes = $this->themeHandler->rebuildThemeData();
 
     // Build options array.
     foreach ($themes as $name => $theme) {
