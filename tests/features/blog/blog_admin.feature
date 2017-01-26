@@ -9,11 +9,6 @@ Feature: Blog admin
     When I visit "/node/add/blog_post"
     Then I should see "Create Blog post"
 
-  Scenario: Access the blog posts admin page
-    Given I am logged in as a user with the "Administer content" permission
-    When I visit "/admin/content/blog"
-    Then I should see "Blog Posts"
-
   @javascript
   Scenario: Create blog post
     Given I am logged in as a user with the "create blog_post content" permission
@@ -26,3 +21,25 @@ Feature: Blog admin
     And the ".blog-post__featured-image" element should contain "/sites/default/files/styles/blog_post_image__lg/public/blog/image"
     When I visit "/blog"
     Then the ".view--blog-posts--blog" element should contain "Hello World"
+
+  Scenario: Access the blog posts admin page
+    Given I am logged in as a user with the "Administrator" role
+    When I visit "/admin/content/blog"
+    Then I should see "Blog Posts"
+    And I should see "Sea lettuce napa cabbage celery groundnut green" in the ".view-blog-posts-administration" element
+
+  @javascript
+  Scenario: Edit a blog post
+    Given I am logged in as a user with the "Administrator" role
+    And I visit "/admin/content/blog"
+    And I click "Edit" in the "Sea lettuce napa cabbage celery groundnut green" row
+    And I fill in "Title" with "Veggies es bonus vobis"
+    And I fill in "Body" ckeditor field with "Lipsum dolor sit amet."
+    And I press "Remove"
+    And I wait for AJAX to finish
+    And I attach the file "image.jpg" to "files[field_blog_post_featured_image_0]"
+    And I press "Save and keep published"
+    Then I should see "Blog post Veggies es bonus vobis has been updated."
+    When I visit "/blog"
+    Then the ".view--blog-posts--blog" element should contain "Veggies es bonus vobis"
+    And I should see "Lipsum dolor sit amet."
