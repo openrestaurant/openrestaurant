@@ -1,5 +1,0 @@
-services:
-  example.route_subscriber:
-    class: Drupal\openrestaurant_admin\Routing\RouteSubscriber
-    tags:
-      - { name: event_subscriber }
