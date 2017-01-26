@@ -1,10 +1,14 @@
+@api
 Feature: Blog
   In order to read blog posts
   As a site user
   I need to be able to see the blog posts
 
   Background:
-    Given I am on "/"
+    Given blog_post content:
+      | title |
+      | Veggies es bonus vobis |
+    And I am on "/"
 
   Scenario: View the News & Blog block on the front page
     Then I should see "Blog" in the "navigation" region
@@ -15,7 +19,8 @@ Feature: Blog
     When I click "Blog"
     Then I should be on "/blog"
     And I should see "Blog"
+    And I should see "Veggies es bonus vobis"
 
   Scenario: View the blog post view on the Blog page
     When I click "Blog"
-    Then the ".view--blog-posts--blog" element should contain "Sea lettuce napa cabbage celery groundnut green"
+    Then the ".view--blog-posts--blog" element should contain "Veggies es bonus vobis"

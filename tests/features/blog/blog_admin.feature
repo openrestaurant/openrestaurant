@@ -23,23 +23,29 @@ Feature: Blog admin
     Then the ".view--blog-posts--blog" element should contain "Hello World"
 
   Scenario: Access the blog posts admin page
-    Given I am logged in as a user with the "Administrator" role
+    Given blog_post content:
+      | title |
+      | Veggies es bonus vobis |
+    And I am logged in as a user with the "Administrator" role
     When I visit "/admin/content/blog"
     Then I should see "Blog Posts"
-    And I should see "Sea lettuce napa cabbage celery groundnut green" in the ".view-blog-posts-administration" element
+    And I should see "Veggies es bonus vobis" in the ".view-blog-posts-administration" element
 
   @javascript
   Scenario: Edit a blog post
-    Given I am logged in as a user with the "Administrator" role
+    Given blog_post content:
+      | title |
+      | Veggies es bonus vobis |
+    And I am logged in as a user with the "Administrator" role
     And I visit "/admin/content/blog"
-    And I click "Edit" in the "Sea lettuce napa cabbage celery groundnut green" row
-    And I fill in "Title" with "Veggies es bonus vobis"
+    And I click "Edit" in the "Veggies es bonus vobi" row
+    And I fill in "Title" with "Gumbo beet greens"
     And I fill in "Body" ckeditor field with "Lipsum dolor sit amet."
     And I press "Remove"
     And I wait for AJAX to finish
     And I attach the file "image.jpg" to "files[field_blog_post_featured_image_0]"
     And I press "Save and keep published"
-    Then I should see "Blog post Veggies es bonus vobis has been updated."
+    Then I should see "Blog post Gumbo beet greens has been updated."
     When I visit "/blog"
-    Then the ".view--blog-posts--blog" element should contain "Veggies es bonus vobis"
+    Then the ".view--blog-posts--blog" element should contain "Gumbo beet greens"
     And I should see "Lipsum dolor sit amet."
