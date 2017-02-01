@@ -12,6 +12,13 @@ use Drupal\Core\Form\FormStateInterface;
 function openrestaurant_form_install_select_language_form_alter(&$form, FormStateInterface $form_state) {
   // Make sure user knows this is the administration language and not the site language.
   $form['langcode']['#description'] = t('Select the language for the site administration.');
+
+  // Add note about adding languages.
+  $form['note'] = [
+    '#type' => 'html_tag',
+    '#tag' => 'small',
+    '#value' => t('You can add more languages and translate your site after installation.'),
+  ];
 }
 
 /**
