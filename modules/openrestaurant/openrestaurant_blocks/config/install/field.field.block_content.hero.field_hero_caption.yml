@@ -13,7 +13,7 @@ bundle: hero
 label: Caption
 description: 'The caption for the hero. It is recommended to keep this within the 200 characters limit.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

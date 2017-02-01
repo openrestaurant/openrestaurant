@@ -11,7 +11,7 @@ bundle: field_menu_variants
 label: Type
 description: 'The type of menu. Example: small, large, with fries, with 2 sides..etc.'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

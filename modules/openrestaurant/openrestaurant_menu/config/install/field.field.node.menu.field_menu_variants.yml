@@ -13,7 +13,7 @@ bundle: menu
 label: Variants
 description: 'Use variants to create different types and prices for this menu. Example. Small and Large variants.'
 required: false
-translatable: false
+translatable: true
 default_value:
   - {  }
   - {  }

@@ -16,7 +16,7 @@ bundle: blog_post
 label: 'Featured image'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

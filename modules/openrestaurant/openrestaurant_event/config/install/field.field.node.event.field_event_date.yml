@@ -16,7 +16,7 @@ bundle: event
 label: Date
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     default_date_type: relative

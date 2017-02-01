@@ -13,7 +13,7 @@ bundle: reservation_page
 label: 'Reservation type'
 description: 'Select the type of reservation form to show.'
 required: true
-translatable: false
+translatable: true
 default_value:
   -
     value: table_reservation

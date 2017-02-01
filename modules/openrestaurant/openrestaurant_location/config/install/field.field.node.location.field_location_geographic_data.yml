@@ -27,7 +27,7 @@ bundle: location
 label: 'Geographic data'
 description: 'If empty, the geographic data will be generated from the address supplied.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
