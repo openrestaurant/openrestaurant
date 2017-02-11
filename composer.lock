@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9306cac11104713cd148b09813193836",
+    "content-hash": "74c0185df34d42f8172f1637b10dccde",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1878,17 +1878,17 @@
         },
         {
             "name": "drupal/radix",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/radix",
-                "reference": "8.x-3.0"
+                "reference": "8.x-3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/radix-8.x-3.0.zip",
+                "url": "https://ftp.drupal.org/files/projects/radix-8.x-3.1.zip",
                 "reference": null,
-                "shasum": "e1654f236ff62aa3d3cfd12b99ca7fddfd0443ce"
+                "shasum": "010c54c7d586852c08ae4d207eb477506f410ace"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1899,7 +1899,7 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0",
+                    "version": "8.x-3.1",
                     "datestamp": "1486028883"
                 }
             },
