@@ -23,9 +23,6 @@ projects[demo_content][version] = 1.x-dev
 projects[disqus][type] = module
 projects[disqus][version] = 1.0-rc3
 
-projects[eck][type] = module
-projects[eck][version] = 1.0-alpha2
-
 projects[features][type] = module
 projects[features][version] = 3.2
 
