@@ -11,7 +11,7 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: RLwTMMy9gXPDuVqYlSn0t2OyS8srrDcCIdrU_fl48vE
+  default_config_hash: vsTWLY_lr47aut44p2B-txTff-IeUOgsj8HZ5Ca5eTs
 id: menus_administration
 label: 'Menus (Administration)'
 module: views
@@ -556,7 +556,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Blog Posts'
+      title: Menus
       header:
         result:
           id: result
@@ -610,3 +610,4 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_menu_images'
+
