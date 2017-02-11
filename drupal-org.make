@@ -49,5 +49,5 @@ projects[tvi][version] = 1.0-beta2
 
 ; Themes
 projects[radix][type] = theme
-projects[radix][version] = 3.0
+projects[radix][version] = 3.1
 projects[radix][subdir] = ''
