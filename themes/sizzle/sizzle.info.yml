@@ -18,6 +18,10 @@ regions:
 libraries:
  - sizzle/global-styling
 
+libraries-override:
+  radix/bootstrap: false
+  radix/style: false
+
 demo_content:
   - content/basic.blocks.yml
   - content/pages.nodes.yml
