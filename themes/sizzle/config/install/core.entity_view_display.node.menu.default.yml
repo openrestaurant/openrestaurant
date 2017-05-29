@@ -1,4 +1,3 @@
-uuid: f5f6d0de-9661-453b-a5f8-b51d8b8e33ff
 langcode: en
 status: true
 dependencies:
@@ -7,6 +6,7 @@ dependencies:
     - field.field.node.menu.field_menu_description
     - field.field.node.menu.field_menu_featured
     - field.field.node.menu.field_menu_images
+    - field.field.node.menu.field_menu_locations
     - field.field.node.menu.field_menu_nutrition_types
     - field.field.node.menu.field_menu_teaser
     - field.field.node.menu.field_menu_variants
@@ -16,8 +16,6 @@ dependencies:
     - image
     - text
     - user
-_core:
-  default_config_hash: hInDfUYpxvP_awl4MTY_k0T9jqbLQ_0DuicMrzTJXBw
 id: node.menu.default
 targetEntityType: node
 bundle: menu
@@ -30,12 +28,14 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
   field_menu_description:
     weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
   field_menu_featured:
     weight: 4
     label: hidden
@@ -45,6 +45,7 @@ content:
       format_custom_true: ''
     third_party_settings: {  }
     type: boolean
+    region: content
   field_menu_images:
     weight: 2
     label: hidden
@@ -53,6 +54,15 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_menu_locations:
+    weight: 8
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_menu_nutrition_types:
     type: entity_reference_entity_view
     weight: 6
@@ -61,21 +71,24 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
+    region: content
   field_menu_teaser:
     weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
   field_menu_variants:
     weight: 7
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: field_collection_items
+    region: content
   links:
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
 hidden: {  }
-

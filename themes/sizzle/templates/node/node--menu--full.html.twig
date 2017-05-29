@@ -42,6 +42,13 @@
         {{ content.field_menu_variants }}
       </div>
 
+      {% if content.field_menu_locations %}
+        <div class="menu__locations">
+          <strong>{{ "Available at these locations:" }}</strong>
+          {{ content.field_menu_locations }}
+        </div>
+      {% endif %}
+
       <a href="/menu" class="btn btn--secondary">
         <i class="fa fa-long-arrow-left"></i> {% trans %} See all menus {% endtrans %}
       </a>

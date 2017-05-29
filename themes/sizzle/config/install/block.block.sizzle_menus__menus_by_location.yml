@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.menus
+  module:
+    - ctools
+    - views
+  theme:
+    - sizzle
+id: menus__menus_by_location
+theme: sizzle
+region: bottom
+weight: 0
+provider: null
+plugin: 'views_block:menus-menus_by_location'
+settings:
+  id: 'views_block:menus-menus_by_location'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      location: location
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

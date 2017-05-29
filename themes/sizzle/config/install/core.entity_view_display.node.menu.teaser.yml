@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.menu.field_menu_teaser
     - field.field.node.menu.field_menu_variants
     - node.type.menu
+    - responsive_image.styles.menu_teaser_image
   module:
     - field_collection
     - responsive_image

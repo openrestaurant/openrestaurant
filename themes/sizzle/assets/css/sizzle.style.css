@@ -6208,8 +6208,10 @@ button.close {
   margin-left: -15px;
   margin-right: -15px; }
 
-#footer {
-  margin: 36px 0; }
+footer {
+  border-top: 1px solid #eeeeee;
+  padding: 2em 0;
+  margin: 2em 0; }
 
 body.maintenance-page .container {
   max-width: 970px !important; }
@@ -6608,6 +6610,9 @@ ul.nav > li.dropdown:after {
     color: #f26838;
     background: none; }
 
+.node__meta {
+  margin-bottom: 1em; }
+
 .field-collection-container {
   border: 0; }
   .field-collection-container .field-collection-view {
@@ -6799,12 +6804,11 @@ table {
 
 ul.links {
   padding: 0;
+  margin: 1em 0 0;
   list-style: none outside none; }
-  ul.links.inline {
-    margin: 0; }
-    ul.links.inline li {
-      margin: 0 10px 0 0;
-      padding: 0; }
+  ul.links.inline li {
+    margin: 0 10px 0 0;
+    padding: 0; }
 
 .carousel .carousel-control {
   z-index: 100; }
@@ -7480,6 +7484,12 @@ ul.dropdown-menu {
   .menu__variant__price {
     float: right;
     padding-left: 0.5em; }
+
+.menu__locations {
+  margin: 1em 0; }
+  .menu__locations ul {
+    margin-top: .5em;
+    padding: 0 0 0 1em; }
 
 @media (min-width: 768px) {
   .menu--teaser .menu__image {
