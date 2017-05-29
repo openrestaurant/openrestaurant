@@ -1,3 +1,9 @@
+Open Restaurant 8.x-2.30, 2017-05-29
+-------------------
+- Update core and contrib modules.
+- Add location support for menus.
+- Override radix libraries in sizzle.info.yml.
+
 Open Restaurant 8.x-2.12, 2017-03-20
 -------------------
 - Update drupal core to 8.2.7
