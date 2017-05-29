@@ -1,4 +1,4 @@
-Open Restaurant 8.x-2.30, 2017-05-29
+Open Restaurant 8.x-2.20, 2017-05-29
 -------------------
 - Update core and contrib modules.
 - Add location support for menus.
