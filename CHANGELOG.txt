@@ -1,3 +1,9 @@
+Open Restaurant 8.x-2.30, 2017-07-24
+-------------------
+- Update Drupal core to 8.3.5.
+- Remove composer.lock from profile.
+- Add the hero link to the hero.
+
 Open Restaurant 8.x-2.20, 2017-05-29
 -------------------
 - Update core and contrib modules.
