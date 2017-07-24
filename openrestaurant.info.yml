@@ -2,7 +2,7 @@ name: Open Restaurant
 type: profile
 description: 'Everything you need to build your restaurant website.'
 core: 8.x
-version: 2.2.0
+version: 2.3.0
 exclusive: true
 distribution:
   name: Open Restaurant
