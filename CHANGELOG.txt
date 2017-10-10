@@ -1,3 +1,7 @@
+Open Restaurant 8.x-2.40, 2017-10-10
+-------------------
+- Issue #2915070: Update drupal core and contrib to latest releases.
+
 Open Restaurant 8.x-2.30, 2017-07-24
 -------------------
 - Update Drupal core to 8.3.5.
