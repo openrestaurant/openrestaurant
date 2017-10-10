@@ -9,10 +9,10 @@ projects[address][type] = module
 projects[address][version] = 1.x-dev
 
 projects[admin_toolbar][type] = module
-projects[admin_toolbar][version] = 1.19
+projects[admin_toolbar][version] = 1.20
 
 projects[config_update][type] = module
-projects[config_update][version] = 1.3
+projects[config_update][version] = 1.4
 
 projects[ctools][type] = module
 projects[ctools][version] = 3.0
@@ -33,7 +33,7 @@ projects[geocoder][type] = module
 projects[geocoder][version] = 2.0-alpha5
 
 projects[geofield][type] = module
-projects[geofield][version] = 1.0-alpha2
+projects[geofield][version] = 1.0-alpha4
 
 projects[inline_entity_form][type] = module
 projects[inline_entity_form][version] = 1.0-beta1
