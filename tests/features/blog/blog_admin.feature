@@ -44,7 +44,7 @@ Feature: Blog admin
     And I press "Remove"
     And I wait for AJAX to finish
     And I attach the file "image.jpg" to "files[field_blog_post_featured_image_0]"
-    And I press "Save and keep published"
+    And I press "Save"
     Then I should see "Blog post Gumbo beet greens has been updated."
     When I visit "/blog"
     Then the ".view--blog-posts--blog" element should contain "Gumbo beet greens"
