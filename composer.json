@@ -73,6 +73,12 @@
     "drupal/pathauto": "1.0.0",
     "drupal/token": "1.0.0",
     "drupal/tvi": "1.0.0-beta1",
-    "drupal/radix": "3.1.0"
+    "drupal/radix": "3.1.0",
+    "commerceguys/intl": "~0.7",
+    "commerceguys/addressing": "~1.0",
+    "drexarj/disqus-php": "dev-master",
+    "willdurand/geocoder": "^3.3",
+    "phayes/geophp": "dev-master",
+    "egeloen/http-adapter": "^1.0"
   }
 }
