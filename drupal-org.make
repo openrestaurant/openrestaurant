@@ -6,7 +6,7 @@ defaults[projects][subdir] = "contrib"
 
 ; Modules
 projects[address][type] = module
-projects[address][version] = 1.x-dev
+projects[address][version] = 1.4
 
 projects[admin_toolbar][type] = module
 projects[admin_toolbar][version] = 1.20
@@ -30,10 +30,10 @@ projects[field_collection][type] = module
 projects[field_collection][version] = 1.0-alpha1
 
 projects[geocoder][type] = module
-projects[geocoder][version] = 2.0-alpha5
+projects[geocoder][version] = 2.1
 
 projects[geofield][type] = module
-projects[geofield][version] = 1.0-alpha4
+projects[geofield][version] = 1.1
 
 projects[inline_entity_form][type] = module
 projects[inline_entity_form][version] = 1.0-beta1

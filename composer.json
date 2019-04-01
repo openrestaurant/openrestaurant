@@ -59,7 +59,7 @@
     "cweagans/composer-patches": "^1.5.0",
     "composer/installers": "^1.0",
     "drupal/core": "^8.6.0",
-    "drupal/address": "1.x-dev",
+    "drupal/address": "^1.4.0",
     "drupal/admin_toolbar": "1.20.0",
     "drupal/config_update": "1.6.0",
     "drupal/ctools": "3.0.0",
@@ -67,18 +67,12 @@
     "drupal/disqus": "1.0.0-rc3",
     "drupal/features": "3.5.0",
     "drupal/field_collection": "1.0.0-alpha1",
-    "drupal/geocoder": "2.0.0-alpha5",
-    "drupal/geofield": "1.0.0-alpha4",
+    "drupal/geocoder": "^2.1.0",
+    "drupal/geofield": "^1.1.0",
     "drupal/inline_entity_form": "1.0.0-beta1",
     "drupal/pathauto": "1.0.0",
     "drupal/token": "1.0.0",
     "drupal/tvi": "1.0.0-beta1",
-    "drupal/radix": "3.1.0",
-    "commerceguys/intl": "~0.7",
-    "commerceguys/addressing": "~1.0",
-    "drexarj/disqus-php": "dev-master",
-    "willdurand/geocoder": "^3.3",
-    "phayes/geophp": "dev-master",
-    "egeloen/http-adapter": "^1.0"
+    "drupal/radix": "3.1.0"
   }
 }
