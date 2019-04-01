@@ -12,7 +12,7 @@ projects[admin_toolbar][type] = module
 projects[admin_toolbar][version] = 1.20
 
 projects[config_update][type] = module
-projects[config_update][version] = 1.5
+projects[config_update][version] = 1.6
 
 projects[ctools][type] = module
 projects[ctools][version] = 3.0
