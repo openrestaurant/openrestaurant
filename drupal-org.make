@@ -6,7 +6,7 @@ defaults[projects][subdir] = "contrib"
 
 ; Modules
 projects[address][type] = module
-projects[address][version] = 1.4
+projects[address][version] = 1.6
 
 projects[admin_toolbar][type] = module
 projects[admin_toolbar][version] = 1.20
